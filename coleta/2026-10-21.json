@@ -1,0 +1,355 @@
+{
+ "gerado_em": "2026-10-21T20:12:40+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Two Is Enough: Binary Classification Priors Suffice for Multi-Class In-Context Tabular Prediction",
+   "url": "http://arxiv.org/abs/2610.27569v1",
+   "data": "2026-10-20",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular foundation models (TFMs) pretrain a transformer on large-scale synthetic priors so that a single forward pass yields zero-shot tabular prediction. TabICLv2 samples the class count of its classification prior during pretraining, and the prevailing configuration caps it at ten. We report a counter-intuitive result: setting this cap directly to two---making every pretrained classification task binary---still yields weights that perform zero-shot K-way classification 2. On the 38 TabArena classification datasets (200 bootstrap rounds, anchored at default RF = 1000), the binary two-stage recipe reaches 1590.1 Elo, above the official default at 1568.0 (+22.1), above TabPFN-v2.6 (1577.1) an"
+  },
+  {
+   "titulo": "On Data Scaling in Tabular ML: More Data, Better Generalization?",
+   "url": "http://arxiv.org/abs/2610.26794v1",
+   "data": "2026-10-19",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Recent work in tabular machine learning has emphasized the importance of diverse and realistic evaluation settings. The niche of large-scale (1M+) data, however, remains under-explored. To study training-data scaling, we assemble eight real-world tabular datasets with up to around ten million training examples, retaining the natural distribution shifts of the tasks and using random-split evaluation as a control. We find that GBDTs and MLP-based models show broadly similar scaling trends, with gains from both additional training data and algorithmic improvements. Tabular foundation models show more varied scaling behavior, with recent versions benefiting more consistently from larger contexts"
+  },
+  {
+   "titulo": "Scenario Generalization and Sector Transfer in Real Surface Irrigation Surrogate Modelling with Tabular Models",
+   "url": "http://arxiv.org/abs/2610.26005v1",
+   "data": "2026-10-19",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Surface irrigation planning requires screening many operating conditions and spatial configurations, while high-fidelity shallow-water-equation (SWE) simulations are expensive. We study tabular surrogate models for predicting maximum water height from drone-derived field morphology, terrain, hydrological, spatial, and scenario descriptors, where each row represents a spatial cell under one irrigation scenario. To assess deployment feasibility, we evaluate gradient-boosted trees, neural tabular models, AutoML, and tabular foundation models (TFMs) under two regimes: same-sector generalization, where a model predicts unseen scenarios after observing a limited set of configurations in the same s"
+  },
+  {
+   "titulo": "FTFM: Factorized Tabular Foundation Models",
+   "url": "http://arxiv.org/abs/2610.25558v1",
+   "data": "2026-10-18",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular foundation models (TFMs) are becoming a powerful alternative to conventional tabular learning, adapting to new datasets in context without task-specific training. Current architectures, however, face a trade-off: models that preserve cell-level representations are expensive because they repeatedly attend across rows and columns, while faster models collapse each row into a fixed embedding and lose this fine-grained state. We introduce Factorized Tabular Foundation Models (FTFM), which preserve cell representations while factorizing their computation through one contextual latent per row and one per column. Cells no longer attend to one another directly; instead, each cell is updated "
+  },
+  {
+   "titulo": "Securing Agentic Commerce Through Behavior-Aware Fraud Detection and Cybersecurity for Trusted AI-Agent Payment Authorization",
+   "url": "http://arxiv.org/abs/2610.27483v1",
+   "data": "2026-10-20",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "The growing use of autonomous artificial intelligence agents in digital commerce creates new security concerns involving agent impersonation, unauthorized payments, compromised agents, and misuse of delegated authority. This research introduces the Autonomous Commerce Agent Guard System (ACAGS), a cybersecurity framework combining supervised machine learning, behavioral analytics, agent-specific authorization controls, and explainable AI. The framework was evaluated using synthetic financial transaction data augmented with simulated agent characteristics and five adversarial scenarios. XGBoost was selected following comparisons with alternative classifiers. Across ten experimental runs, beha"
+  },
+  {
+   "titulo": "Debiased Prior-Data Fitted Networks for Amortized Bayesian Semi-Parametric Inference",
+   "url": "http://arxiv.org/abs/2610.28314v1",
+   "data": "2026-10-20",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "Prior-data fitted networks (PFNs) have recently gained popularity as an end-to-end approach to amortized Bayesian inference. Yet, their statistical behavior for semi-parametric targets, such as means under missingness or causal effects, remains poorly understood. In this work, we develop theoretical foundations for debiased PFNs to perform inference on finite-dimensional targets in general semi-parametric settings. First, we show that, despite being Bayes-optimal with respect to the target, an idealized PFN can exhibit a posterior concentration rate that implicitly depends on the concentration rates of (latent) nuisance functions and can become slower as the prior becomes more diverse. Then,"
+  },
+  {
+   "titulo": "SITO: Sifting a Commercial Text-Safety API for Missed Harm and False Flags in English, Ukrainian and Surzhyk",
+   "url": "http://arxiv.org/abs/2610.27178v1",
+   "data": "2026-10-19",
+   "query": "all:\"money mule\" OR all:\"authorized push payment\"",
+   "resumo": "Platforms that host young users screen messages with commercial text-safety APIs, but independent evidence on how often such systems miss harm or flag harmless text is scarce, especially outside English, and the documentation of the one studied here leaves its false-positive rate unquantified. We evaluated one such API, Tuteliq Detect as deployed under the release identifier tuteliq-detect-v5.20261011 (not the separately published v6 model), on six harm categories: authorised push-payment fraud, money-mule recruitment, social engineering, romance scams, gambling harm and bullying. We built SITO (Synthetic Independent Text-safety benchmark with Overflagging tests; sito is Ukrainian for 'sieve"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "Self-Credit: Credit Assignment for Long-Horizon Agentic RL via Intra-group Rescaling",
+    "url": "https://huggingface.co/papers/2610.28388",
+    "data": "2026-10-19",
+    "resumo": "LLM agents are commonly trained with RLVR, but the sparse nature of typical RLVR rewards makes credit assignment challenging, especially for long-horizon tasks. We propose Self-Credit, an end-to-end agentic RL method that creates dense supervision signals from sparse outcome rewards using self-generated credit assignment via intra-group rescaling. Self-Credit builds on group-based RL with three components. First, during its rollouts, the policy model generates summaries with citations to earlier turns containing critical evidence, which serve as self-generated credit. Second, we refine this model-generated credit with intra-group rescaling, which compares cited actions across successful and "
+   },
+   {
+    "titulo": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
+    "url": "https://huggingface.co/papers/2610.06830",
+    "data": "2026-10-04",
+    "resumo": "Memory has become integral to the LLM agent ecosystem, supporting information retention and reuse across interactions. However, most existing agent memory systems construct memory in a query-agnostic manner, which can incur unnecessary preprocessing cost and discard details that later prove essential. Recent studies have begun shifting memory processing toward runtime adaptation, but typically specialize in particular operations or fixed processing schemes, leaving flexible control over performance, cost, and latency largely underexplored. To address this challenge, we present MemPilot, a flexible framework that orchestrates on-demand memory curation under different performance--cost--latenc"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2112801057541668959",
+   "texto": "💡The #Python array API standard offers a solution. It is a shared specification for NumPy-like operations, adopted by the major array libraries.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2112801057159971150",
+   "texto": "Some context:\n\nFor the past decade, #scikitlearn has delegated computations to core dependencies like NumPy, SciPy, and Cython. All three were designed for CPUs, which meant that scikit-learn workflows were limited to CPUs, too.\n\nThat design has become a bottleneck.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2112801056849600996",
+   "texto": "🏎️ @scikit_learn 1.9 deep dive: Did you know you can accelerate your scikit-learn workflows on #GPUs?\n\nFrom 82 seconds to 2 seconds. See how Emily Chen reduced training time of a ridge regression model.\n\n▶️ Watch the full deep dive: https://youtu.be/j-Iq7iXQvEA",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2112463440497594504",
+   "texto": "👋 We’re at #NVIDIAGTC Berlin this week 🇩🇪\n\nWe’re the team that stewards @scikit_learn, the global standard for machine learning downloaded over 5 billion times.\n\nHere’s what we’re sharing in Berlin and where to catch us 🧵",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2112705068801868134",
+   "texto": "An awesome guide for new grads, their managers, and anyone working with AI. So really, everyone! \n\nFavorite part: the \"whiteboard defense.\" Can you explain and defend what you shipped? If not, you're \"a meat proxy for the model.\" \n\nLucky to have @vikrams039 on the  @stripe team!\nhttps://www.vikramsingh.me/increase-your-slope",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2112281007860879858",
+   "texto": "We recently scaled Shield, @stripe's transaction fraud model, and improved recall by more than 8%. A few lessons that apply well beyond fraud:",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2112281013774950755",
+   "texto": "The winner was a better stochastic weight averaging setup that now prevents tens of millions of dollars a year in additional fraud for businesses on Stripe.",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2112281015058403723",
+   "texto": "More at https://stripe.dev/blog/scaling-radar-fighting-fraud-with-agent-assisted-machine-learning",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112990399065370826",
+   "texto": "Anthropic's Muse?",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112990289954844717",
+   "texto": "I study both companies closely. \n\nThey're not far apart in AI talent.\n\nNubank has the most scaled, dedicated foundation model for lending in the world.\n\nRamp has much more of a story around product velocity and AI first services like router or glass",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/ebloch/status/2112933987547226359",
+   "texto": "Insane. \n\nMy dot found an $8,300 mistake in my tax return. The return was prepared by a tax firm that is best in class! \n\nPeople, if you’re not using ChatGPT for your Finances, you are definitely leaving money on the table.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/BackseatVC/status/2112916226464682346",
+   "texto": "Muse, Instinct, and Grokbot really changed agentic commerce \n\nFrom what we can see on @link, total transactions increased by 38x, volume by 20x in September \n\nWhat are people having their agents buy? Retail was the most popular, then travel, and then music and entertainment",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112906052438237633",
+   "texto": "The OCC just published its final GENIUS Act stablecoin rules.\n\nAn executive order or similar action can't easily undo a final rule, especially one that came from implementing an act of Congress. \n\nKey points.\n\n- The yield ban stays. No direct yield from stablecoin issuer to consumer.\n- HOWEVER: The presumption that rewards programs break the yield ban is gone.\n- BUT the OCC says stablecoins are nascent and will judge each arrangement case by case\n\nThat's a lot of room for discretion in this OCC and the ones that follow it.\n\n---\n\nIt also refuses two safe harbors.\n\n- No safe harbor for existing ",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/borjaneira_/status/2112654395473047769",
+   "texto": "I still firmly believe that even though stablecoins and tokenized deposits look like competitors right now, they're going to coexist and serve different audiences\n\nThis year looks like the year of tokenized deposits, but getting the design right takes way more than just spinning up a wallet. It requires really adapting the core banking system to support them properly, so you actually get the best of both worlds: the benefits of a traditional deposit and the advantages of being onchain",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2112321775380185181",
+   "texto": "One of my favorite Dee Hock frameworks is what he called trying to master the \"four ways of looking at things: As they were, as they are, as they might become, and as they ought to be.\"\n\nThrough that lens, it's easy to see AI as a technology driving significant change between the way the economy worked five years ago and the way it works today.\n\nIt's also easy to speculate on where it might lead, especially given the many real risks and challenges around AI alignment.\n\nBut I'd argue the most important thing anyone can do is develop a perspective on how it \"ought to be,\" and then build toward t",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/chuk_xyz/status/2112633994865148059",
+   "texto": "Unsecured credit is a massive opportunity. \n\nFor neobanks (stablecoin or otherwise), consumers platforms and much more. \n\nThe hard part is stitching together distribution, underwriting, and capital in a way where incentives are aligned. \n\nTala brings years of underwriting and access to capital. Neobanks deliver much needed credit to users and get increased monetization and retention. \n\nExcited to see more of this!",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112662989371531697",
+   "texto": "Happy TradFi Tuesday 🫡\n\nAbsolutely incredible bit of work here from @borjaneira_",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Octop3s/status/2112635889247801483",
+   "texto": "this is going to be a floodgate of crypto neobanks offering unsecured lending to their users.\n\nthis year alone, we’ve had many shutdowns and pivots, not because the card business isn’t booming or users aren’t coming in.\n\nbut because the business is unsustainable. they need to constantly incentivize users, and those users leave immediately when they stop getting incentivized.\n\nWith this, they finally went from the generic:\n\nearn → spend → save\n\nto:\n\nearn → spend → save → credit\n\nunlike the card business, where you’d need to constantly spend money on marketing and cashback to eventually earn int",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/shivsiroya/status/2112544391680368758",
+   "texto": "@Tala is bringing uncollateralized credit into the @eldoradoio wallet: offer to USDT in seconds, settled onchain on @tempo. Starting in Bolivia, with more of LatAm to come.\n\n@eldoradoio is on 🔥 and we're excited to keep turning up the heat. \n\nhttps://www.linkedin.com/posts/shivanisiroya_today-we-announced-an-embedded-credit-partnership-ugcPost-7518300107839070208-y4TS",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/stablecoing/status/2112564472803942570",
+   "texto": "Today, I’m extremely excited to announce @eldoradoio's  first stablecoin-powered credit product, in partnership with @talamobile  and powered by @tempo ! 🚀\n\nAccess to credit remains one of the biggest barriers to economic growth in Latin America. Millions of people are excluded from traditional lending simply because they lack the documentation, credit history, or collateral banks require.\n\nWe believe access to credit should be determined by your potential, not just your paperwork.\n\nStarting in Bolivia, eligible El Dorado users will be able to open their wallets, access pre-qualified credit of",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112615730130870305",
+   "texto": "Tala is a company you are not paying enough attention to\n\nUnsecured onchain credit.\n\nEmbedded in wallets.\n\n$10bn lent.\n\nExceptional risk adjusted results in \"high risk\" markets",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112301408762597811",
+   "texto": "The world's fastest growing Neobanj isn't Ramp or Mercury, Nubank or Revolut.\n\nIt's Plata in Mexico \n\nThey just passed $1bn in run rate.\n\nAnd the CEO is speaking @FintechNerdCon",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/jbahrdestefano/status/2112278285073736182",
+   "texto": "Pretty amazing to see @mercury’s 9yr journey to $1B run-rate\n\nWorth noting:\n\n> Growth looks like it’s re-accelerating at scale - went from $500M in ‘24 rev to a $650M run-rate in Sep ‘25, and is now growing ~50% YoY\n\n> Rev per customer dipped which makes sense as new customers skewed SMB + rates came down\n\n> Customer growth keeps accelerating: +40% in ‘24, +50% in ‘25, then 300K to 450K+ in under 10 mos\n\nMany of the estimates in the table def aren’t perfectly accurate but should be directionally solid",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112296632683503752",
+   "texto": "Visa and @meshpay are making stablecoins spendable in 175m merchants\n\nI saw this and I thought it was a Visa direct integration.\n\nIt's FAR more interesting.\n\n---\n\nThe partnership is consumers to pay in-store and online directly from the balances they already hold in their wallet apps.\n\nThis means anyone with the Mesh pay SDK (Klashi, Coinbase, Polymarket) can pay from their stablecoin balance.\n\nBut how it works is fascinating.\n\n---\n\nMesh issues a \"ghost card\" (a virtual card) that the user doesn't see, tagged to the KYC of the wallet holder. \n\nSo as you go to pay, you can tap to pay, and use y",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112279119232954607",
+   "texto": "Mercury has crossed $1bn in annualized revenue.\n\nA massive milestone. \n\nThey like Ramp have also been on a tear launching new AI products and new products period like \n\n- Accounting \n- Spend management \n- A CLI and MCP that can move money \n\nThe hyperscalers of finance are coming fast, and major major competition for the incumbents at this point.\n\nWhat's fun is this comes just a week after the Twitter beef between Ramp and Mercury each attacking the others business model on one particular product line.\n\nThe Fintech on Fintech competition is starting to get spicy too 🔥",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112205958835278238",
+   "texto": "WOW!!! \n\nRamp applied for an OCC Trust Charter to custody digital assets.\n\nMy guess is this allows them to custody stablecoins for clients that need that. \n\nBut in time it potentially let's them he a great solution for all things tokenized money market funds and cash.\n\nSame logic as a lot of people applying. \n\n- If there was ever a time to apply it's now.\n- Potentially better unit economics vs having someone else custody \n- More control over experience / funds flow",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/TokenizedPod/status/2112197090797293822",
+   "texto": "🚨 Ep. 105 of @TokenizedPod: Is the Stablecoin Sandwich Dead?\n\n@sytaylor & @cuysheffield are joined by:\n\n👉 @jacqmelinek, Founder & CEO, @StrataMedia_ \n\n👉 @manueljgodoym, Co-Founder & CEO, @Felixpago\n\nTo discuss:\n\n🏛️ Mastercard and BVNK launch unified fiat and stablecoin accounts\n\n↔ Visa Direct launches stablecoin-powered cross-border money movement and payouts\n\n❗️ Stablecoin liquidity challenges across smaller Latin American remittance corridors\n\n💳 Rain launches embedded stablecoin wallets and vertically integrated payments infrastructure\n\n🔎 Hiding stablecoin complexity from customers and unloc",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112963783832264762",
+   "texto": "Jay Leno says the middle of the consumer market is dead.\n\nPorsche wants to be Ferrari. Hotels are Motel 6 or Four Seasons. Restaurants are fast food or top end.\n\nFor founders, that's a warning.\n\nThe most dangerous place to build right now may not be the bottom or the top.\n\nIt's the middle.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112196926175060206",
+   "texto": "Wild: Anthropic is launching its own version of Universal Basic Income, and it's starting with $48 billion.\n\nThe company behind Claude just announced a Public Benefit Fund backed by 5% of its shares.\n\nAt its last $965B valuation, that's roughly $48B in equity, pending shareholder approval 🤯\n\nAnd here's where it gets interesting:\n\n→ Every 50% increase in Anthropic's valuation could trigger another 2% allocation, at the board's discretion\n→ The fund could support workers displaced by AI, finance nonprofits, or make direct payments to specific groups\n→ Combined with existing founder and employee ",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112901917345038659",
+   "texto": "Elon Musk just admitted humans probably won't stay in control of AI.\n\nHis math: a million times more digital intelligence than biological intelligence.\n\n\"It's hard to imagine humans being in control in that scenario.\" - Musk\n\nHis plan B:\n\n\"So I hope the AI is nice to us.\" 🤯",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112850481303163387",
+   "texto": "Wild: Anthropic's new IPO prospectus shows an $80.7 BILLION loss. And that's not even the number worrying investors most 😳\n\nDespite two straight quarters of adjusted operating profit, some investors are now discussing a $1.5T IPO valuation.\n\nThat's $500B below earlier expectations.\n\nFor the perspective, the original $2T target was 70% of Amazon's market cap, despite Anthropic generating less than 9% of its annual revenue 🤯\n\nThe Wall Street Journal's leaked draft reveals why:\n\n→ $16.3B in H1 revenue, up from $1.1B a year earlier\n→ $80.7B net loss, including $72B in financing-related accounting ",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112831033557094633",
+   "texto": "Amazon CEO Andy Jassy told a16z's Ben Horowitz that Amazon is out of compute until beyond 2028.\n\nBen's take is that this isn't the dot-com bubble.\n\nBack then, the network was built before there were enough users.\n\nIn AI, there's more demand than anyone can supply.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112078043820810326",
+   "texto": "Jensen Huang says the next wave of AI is physical AI, and it’s coming for the world’s largest industries.\n\nMost AI today doesn’t understand the laws of physics, friction, inertia, or cause and effect - abilities that children and even pets already have.\n\nHis plan: put physical AI into robots. In the next 10 years, build highly robotic factories that run nonstop and end the global labor shortage.",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112771896852795505",
+   "texto": "Elon Musk on merging SpaceX and Tesla:\n\n\"Do I think it would be a good idea? Yes.\"\n\nBut he says assuming it's a certainty \"would be overstating it.\"\n\nBoth companies have formed special committees of independent directors to look at it. Elon can't take part because he's a conflicted party.\n\nAnd on the Tesla side, it needs 50% of all shares, not just those who vote.\n\nHis reason: \"we are pretty much in the super intelligence singularity.\"",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112626815831319036",
+   "texto": "Jensen Huang on the new era of computing:\n\n> The last 50 years were about software programming\n> Now the computer programs itself\n> That advantage has been \"accrued into artificial intelligence\"\n\nElectrons will never replace atoms.\n\nGood news for Germany's engineers.",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112602225520308640",
+   "texto": "Jensen Huang just said AGI will never replace domain expertise.\n\nA general AI can be as smart as you want. It still won't match someone \"very, very specialized\" in electromechanical technology.\n\nAI can only augment your capability.\n\nDomain expertise is the moat.",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112565349098852432",
+   "texto": "Update: the cause was a power event in one zone of Google Cloud's London region.\n\nAnd it wasn't just a UK problem. I'm in Lithuania 🇱🇹, and my Revolut was having issues too.\n\nHSBC, Lloyds, Halifax and Bank of Scotland were hit as well. So was the UK courts' remote hearing platform.\n\nOne power failure in one data center zone, felt all the way in Vilnius.\n\nThat's what concentration risk looks like.",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112538230578880684",
+   "texto": "BREAKING: Google Cloud is still having issues in its Western Europe region, and it's taking dozens of sites down with it.\n\nAmong those affected, per Sky News:\n\n→ Revolut (lots of services were down)\n→ HSBC\n→ Royal Mail\n\nTurns out, when one cloud provider has a bad day, your bank does too.",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112407552956756275",
+   "texto": "Europe keeps asking how to regulate AI. Jensen Huang just told Chancellor Merz it's asking the wrong question first:\n\n\"There's nothing to regulate if the industry doesn't thrive.\"\n\nIt seems Europe's real problem may not be regulation.\n\nIt's that there isn't enough industry to regulate yet.\n\nEurope needs to accelerate.",
+   "data": "2026-10-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112268552098972084",
+   "texto": "The cost of starting a company is collapsing, and Mark Zuckerberg says AI is why.\n\nHis take: AI can now do a lot of what a company needs better than the average person doing it, so more companies can get started more easily.\n\nThink about what that means:\n\n→ Way more founders\n→ Way more competition for the same customers\n→ The edge shifts from building to taste, distribution, and speed\n\nStarting gets easier. Winning doesn't.",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112246230336078015",
+   "texto": "Elon Musk, standing next to Trump, when asked about AI and job security:\n\n\"By far the most likely outcome is an age of abundance, where we don't have just a universal basic income; we have universal high income.\"\n\nNo word on who pays for it.\n\nAnthropic just put a number on it: 5% of its shares, roughly $48B at its last valuation, into a Public Benefit Fund.\n\nTalk is cheap. $48B isn't.",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2112217304813437310",
+   "texto": "Dario Amodei, 6 months ago, when asked how to soften AI's hit to white-collar jobs:\n\n\"This may be a controversial proposal, but something like taxing AI companies like us, we may need to get to things that are that extreme.\"\n\nNow Anthropic is putting 5% of its shares, roughly $48B at its last valuation, into a Public Benefit Fund.\n\nAnthropic isn't waiting for the tax.",
+   "data": "2026-10-19"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2112914845674918328",
+   "texto": "\"What will our sales be next quarter?\"\n\nFor data teams, answering that usually means pulling data from a dozen tables, then joining, cleaning, engineering features and checking for leakage. Even with a coding agent, you're steering every step.\n\nTabPFN-Rel is our harness for running TabPFN on relational databases. Define your tables and prediction task in YAML and SQL, or let your coding agent do it. TabPFN-Rel handles the joins, feature engineering and prediction, and follows best practices in relational machine learning.\n\nNew in this release:\n→ Even better performance: #1 using TabPFN-3.5-Plu",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2112916243279958515",
+   "texto": "Also announcement blog with more info: https://priorlabs.ai/blog-posts/look-into-the-future-with-tabpfn-rel?utm_source=x&utm_campaign=relational",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2112552678081634588",
+   "texto": "How much stock of a life-saving drug should a pharmaceutical company order today, when future demand is uncertain? Order too little and patients go without. Order too much and you pay to store expensive stock.\n\nRahul Joshi from tulanā wrote a guest blog on how they solve this exact problem for their customers. The demo uses synthetic data modeled on a real customer: 7 years of weekly demand (5 for history, 2 held out), sharp seasonal surges, missing weeks, and a 6-week order lead time.\n\nTheir approach:\n1. Build a probabilistic demand forecast\n2. Simulate many possible futures and pick the re-o",
+   "data": "2026-10-20"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @FrankRHutter: HTTPError",
+  "X @nubank: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

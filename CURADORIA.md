@@ -25,41 +25,17 @@ Leia `site/edicoes.json` (array de edições, a mais recente primeiro). Junte to
 
 ## Passo 2: varredura das últimas ~48h
 
-Use WebSearch e WebFetch (carregue com ToolSearch "select:WebSearch,WebFetch" se estiverem deferidas).
+### 2a. Coleta pronta (fonte principal)
 
-**arXiv** (a API funciona via WebFetch): `http://export.arxiv.org/api/query?search_query=<q>&sortBy=submittedDate&sortOrder=descending&max_results=15`, com estas queries:
-- `all:"tabular foundation model"`
-- `all:"transaction" AND all:"foundation model"`
-- `all:"event sequence" AND (all:bank OR all:financial)`
-- `all:"credit scoring" AND (all:transformer OR all:LLM)`
-- `all:fraud AND (all:"foundation model" OR all:LLM OR all:agent)`
-- `all:"prior-data fitted"`
-- `all:"money mule" OR all:"authorized push payment"`
+Um workflow do GitHub roda às 7h15 e grava `coleta/<AAAA-MM-DD>.json` com o que saiu nos últimos 3 dias em arXiv, Hugging Face, GitHub, X e Reddit. O ambiente da nuvem bloqueia esses sites, então este arquivo é a única forma de cobri-los.
 
-**Hugging Face:**
-- `https://huggingface.co/api/daily_papers?limit=50`: filtre por tabular, transação, fraude, crédito e sequência de eventos.
-- `https://huggingface.co/api/models?author=Prior-Labs&sort=lastModified`
+1. Rode `git pull` e leia o arquivo de hoje. Se não existir, use o mais recente da pasta e registre isso em `fontes_com_falha`.
+2. O campo `falhas` do arquivo lista as fontes que não responderam: copie-as para `fontes_com_falha`.
+3. Abra com WebFetch só os itens que parecerem relevantes, quando precisar de mais contexto que o resumo. Isso vale para links de arXiv, Hugging Face e GitHub; se der erro, use o resumo do arquivo.
 
-**GitHub:** `https://api.github.com/repos/<repo>/releases?per_page=3` para estes repositórios:
-- PriorLabs/TabPFN
-- soda-inria/tabicl
-- limix-ldm-ai/LimiX
-- autogluon/tabarena
-- autogluon/autogluon
-- pytorch-lifestream/pytorch-lifestream
+### 2b. Notícias e blogs
 
-**X** (só funciona via fxtwitter): `https://api.fxtwitter.com/2/profile/<user>/statuses?count=10`, com estes perfis:
-- FrankRHutter, Prior_Labs, noahholl, LennartPurucker, innixma, dholzmueller, GaelVaroquaux, autogluon, ChristophMolnar
-- RohanRamanath, nubank, emilygsands, sytaylor, LinasBeliunas, rasbt, NeoSpaceAI
-
-Faça as chamadas uma por vez. Um 404 "User not found" costuma ser limite de taxa: siga em frente e tente esse perfil de novo no fim, uma vez só.
-
-**Reddit:** o WebFetch é bloqueado. Use WebSearch com cada query abaixo + "reddit" e aceite cobertura parcial:
-- `TabPFN OR TabICL OR "tabular foundation model"`
-- `transaction transformer fraud`
-- `"foundation model" credit`
-
-**Notícias e blogs** (WebSearch, mode standard, várias buscas no mesmo turno):
+Use WebSearch, no mode standard, com várias buscas no mesmo turno. Carregue a ferramenta com ToolSearch `select:WebSearch,WebFetch` se ela estiver deferida. Faça estas buscas:
 - NeoSpace LDM
 - nuFormer Nubank
 - "transaction foundation model"

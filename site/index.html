@@ -205,7 +205,7 @@ footer.credit b { color: var(--ink); font-weight: 500; }
         <button role="tab" id="tab-fontes" data-view="fontes" aria-selected="false">Quem seguir</button>
       </nav>
       <div class="actions">
-        <button class="ghost" id="theme" aria-label="Alternar tema claro e escuro">Tema</button>
+        <button class="ghost" id="theme">Modo escuro</button>
         <a class="btn" href="https://t.me/radarnextgen" target="_blank" rel="noopener">Receber no Telegram</a>
       </div>
     </div>
@@ -456,14 +456,18 @@ function show(view) {
 document.querySelectorAll("nav.primary button").forEach(b => b.addEventListener("click", () => { show(b.dataset.view); scrollTo({ top: 0 }); }));
 show((location.hash || "").slice(1));
 
+/* o botão mostra o modo para o qual ele leva */
+function temaAtual() { return document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); }
+function rotulaTema() { document.getElementById("theme").textContent = temaAtual() === "dark" ? "Modo claro" : "Modo escuro"; }
 document.getElementById("theme").addEventListener("click", () => {
-  const sys = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  const now = document.documentElement.dataset.theme || sys;
-  const next = now === "dark" ? "light" : "dark";
+  const next = temaAtual() === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = next;
   try { localStorage.setItem("tema", next); } catch (e) {}
+  rotulaTema();
 });
 try { const t = localStorage.getItem("tema"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+rotulaTema();
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", rotulaTema);
 
 /* radar: ângulo = tema, raio = sinal */
 function renderRadar(ed, itens) {

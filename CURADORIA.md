@@ -31,7 +31,7 @@ Um workflow do GitHub roda às 7h15 e grava `coleta/<AAAA-MM-DD>.json` com o que
 
 1. Rode `git pull` e leia o arquivo de hoje. Se não existir, use o mais recente da pasta e registre isso em `fontes_com_falha`.
 2. O campo `falhas` do arquivo lista as fontes que não responderam: copie-as para `fontes_com_falha`.
-3. Abra com WebFetch só os itens que parecerem relevantes, quando precisar de mais contexto que o resumo. Isso vale para links de arXiv, Hugging Face e GitHub; se der erro, use o resumo do arquivo.
+3. Use o `resumo` de cada item do arquivo (abstract do paper, texto do post). Não tente WebFetch em arXiv, Hugging Face, GitHub ou X: esses hosts são bloqueados na nuvem, e esse bloqueio **não** conta como fonte com falha. Em `fontes_com_falha` entram só as `falhas` da coleta e buscas web que deram erro.
 
 ### 2b. Reddit
 
@@ -77,7 +77,7 @@ Use a data de hoje em America/Sao_Paulo (`TZ=America/Sao_Paulo date +%F`).
 
 ### 4a. Se houver pelo menos 1 item relevante
 
-Insira no início de `site/edicoes.json` este objeto. Se já existir uma edição com o mesmo `id`, substitua.
+Insira no início de `site/edicoes.json` uma edição nova para hoje. Nunca adicione itens a edições anteriores. Se já existir uma edição com o `id` de hoje (rodada repetida no mesmo dia), substitua só essa.
 
 ```json
 {

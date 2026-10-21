@@ -1,18 +1,15 @@
 {
   "data": "2026-10-21",
   "novidade": true,
-  "titulo": "Edição zero · o que aconteceu de ago a out/2026",
-  "destaque": "O mercado está convergindo para foundation models de transação como gerador de embeddings ao lado do GBM.",
+  "titulo": "Razorpay entra no clube dos FMs de pagamento; fraude em pagamentos feitos por agentes",
+  "destaque": "Mais uma empresa de pagamentos de mercado emergente lança foundation model próprio, e começa a aparecer pesquisa sobre antifraude para compras iniciadas por agentes de IA.",
   "itens_novos": 3,
   "principal": {
-    "titulo": "Plaid lança Fraud Foundation Model para o Protect (+40% em testes internos)",
-    "url": "https://plaid.com/blog/introducing-fraud-foundation-model-for-protect/"
+    "titulo": "Razorpay lança Vulcan, FM de pagamentos com NVIDIA e AWS",
+    "url": "https://press.aboutamazon.com/aws-international/2026/8/razorpay-launches-vulcan-indias-first-ai-payments-foundation-model-fueled-by-nvidia-and-aws-re-architecting-payments-for-a-350-bn-e-comm-future-by-2030"
   },
   "fontes_com_falha": [
-    "arXiv (host bloqueado)",
-    "Hugging Face (host bloqueado)",
-    "GitHub (coleta vazia)",
-    "X (HTTPError na coleta)",
-    "Reddit (só WebSearch, cobertura parcial)"
+    "Reddit (só busca web, cobertura parcial)",
+    "X: 2 perfis com limite de taxa"
   ]
 }

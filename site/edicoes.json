@@ -2,6 +2,47 @@
   {
     "id": "2026-10-21",
     "data": "2026-10-21",
+    "titulo": "Razorpay entra no clube dos FMs de pagamento; fraude em pagamentos feitos por agentes",
+    "destaque": "Mais uma empresa de pagamentos de mercado emergente lança foundation model próprio, e começa a aparecer pesquisa sobre antifraude para compras iniciadas por agentes de IA.",
+    "resumo": [
+      "Razorpay (Índia) lançou o Vulcan, FM de pagamentos com NVIDIA e AWS, citando ganhos em fraude de cartão internacional.",
+      "Novo paper propõe tabular foundation models fatorizados (FTFM).",
+      "Paper sobre detecção de fraude comportamental quando quem paga é um agente de IA."
+    ],
+    "itens": [
+      {
+        "titulo": "Razorpay lança Vulcan, FM de pagamentos com NVIDIA e AWS",
+        "url": "https://press.aboutamazon.com/aws-international/2026/8/razorpay-launches-vulcan-indias-first-ai-payments-foundation-model-fueled-by-nvidia-and-aws-re-architecting-payments-for-a-350-bn-e-comm-future-by-2030",
+        "fonte": "noticia",
+        "tema": "transacional",
+        "sinal": "medio",
+        "data": "2026-08-01",
+        "porque": "Mais um FM transacional de uma adquirente em mercado emergente de pagamentos instantâneos, com ganhos reportados em fraude de cartão internacional (números da própria empresa, não verificados). Útil como referência para quem avalia FM em Pix e adquirência."
+      },
+      {
+        "titulo": "FTFM: Factorized Tabular Foundation Models",
+        "url": "http://arxiv.org/abs/2610.25558v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-10-20",
+        "porque": "Nova proposta de tabular foundation model fatorizado; só o título foi lido, vale acompanhar se escala melhor que TabPFN para dados maiores."
+      },
+      {
+        "titulo": "Segurança de comércio agêntico: detecção de fraude comportamental para autorização de pagamentos por agentes de IA",
+        "url": "http://arxiv.org/abs/2610.27483v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-10-20",
+        "porque": "Aponta um vetor novo para antifraude: pagamentos iniciados por agentes. Só o título foi lido; relevante para quem planeja regras e modelos para esse tráfego."
+      }
+    ],
+    "perguntas": []
+  },
+  {
+    "id": "edicao-zero",
+    "data": "2026-10-20",
     "titulo": "Edição zero · o que aconteceu de ago a out/2026",
     "destaque": "O mercado está convergindo para foundation models de transação como gerador de embeddings ao lado do GBM.",
     "resumo": [
@@ -82,33 +123,6 @@
         "sinal": "baixo",
         "data": "2026-09-18",
         "porque": "Mais um grande player com FM de transações, mas sem métricas públicas."
-      },
-      {
-        "titulo": "Razorpay lança Vulcan, FM de pagamentos com NVIDIA e AWS",
-        "url": "https://press.aboutamazon.com/aws-international/2026/8/razorpay-launches-vulcan-indias-first-ai-payments-foundation-model-fueled-by-nvidia-and-aws-re-architecting-payments-for-a-350-bn-e-comm-future-by-2030",
-        "fonte": "noticia",
-        "tema": "transacional",
-        "sinal": "medio",
-        "data": "2026-08-01",
-        "porque": "Mais um FM transacional de uma adquirente em mercado emergente de pagamentos instantâneos, com ganhos reportados em fraude de cartão internacional (números da própria empresa, não verificados). Útil como referência para quem avalia FM em Pix e adquirência."
-      },
-      {
-        "titulo": "FTFM: Factorized Tabular Foundation Models",
-        "url": "http://arxiv.org/abs/2610.25558v1",
-        "fonte": "arxiv",
-        "tema": "tabular",
-        "sinal": "baixo",
-        "data": "2026-10-20",
-        "porque": "Nova proposta de tabular foundation model fatorizado; só o título foi lido, vale acompanhar se escala melhor que TabPFN para dados maiores."
-      },
-      {
-        "titulo": "Segurança de comércio agêntico: detecção de fraude comportamental para autorização de pagamentos por agentes de IA",
-        "url": "http://arxiv.org/abs/2610.27483v1",
-        "fonte": "arxiv",
-        "tema": "agentes",
-        "sinal": "baixo",
-        "data": "2026-10-20",
-        "porque": "Aponta um vetor novo para antifraude: pagamentos iniciados por agentes. Só o título foi lido; relevante para quem planeja regras e modelos para esse tráfego."
       }
     ],
     "perguntas": [

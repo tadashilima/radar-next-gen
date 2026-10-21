@@ -1,12 +1,9 @@
 {
   "data": "2026-10-21",
-  "novidade": true,
-  "titulo": "Edição zero · o que aconteceu de ago a out/2026",
-  "destaque": "O mercado está convergindo para foundation models de transação como gerador de embeddings ao lado do GBM. Para fraude em transferências e cash-out ainda não há prova pública de ganho.",
-  "itens_novos": 8,
-  "principal": {
-    "titulo": "Plaid lança Fraud Foundation Model para o Protect (+40% em testes internos)",
-    "url": "https://plaid.com/blog/introducing-fraud-foundation-model-for-protect/"
-  },
-  "fontes_com_falha": []
+  "novidade": false,
+  "titulo": "",
+  "destaque": "",
+  "itens_novos": 0,
+  "principal": {},
+  "fontes_com_falha": ["arXiv (host bloqueado)", "Hugging Face (host bloqueado)", "GitHub API (403)", "X/fxtwitter (sem acesso)", "Reddit (só WebSearch, cobertura parcial)"]
 }

@@ -43,9 +43,6 @@ def montar(st):
         linhas = ["Sem novidade relevante hoje.", "", f"Radar completo: {SITE_URL}"]
         tg = [f"<b>Radar Next Gen · {dia}</b>", "", "Sem novidade relevante hoje.",
               f'<a href="{SITE_URL}">Ver o radar</a>']
-    falhas = st.get("fontes_com_falha") or []
-    if falhas:
-        linhas += ["", "Fontes que falharam hoje: " + ", ".join(falhas)]
     corpo = "\n".join(linhas) + "\n\nCuradoria de Lucas Tadashi Lima.\n"
     return assunto, corpo, "\n".join(tg)
 

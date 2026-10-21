@@ -3,7 +3,7 @@
     "id": "2026-10-21",
     "data": "2026-10-21",
     "titulo": "Edição zero · o que aconteceu de ago a out/2026",
-    "destaque": "O mercado está convergindo para foundation models de transação como gerador de embeddings ao lado do GBM. Para fraude em transferências e cash-out ainda não há prova pública de ganho.",
+    "destaque": "O mercado está convergindo para foundation models de transação como gerador de embeddings ao lado do GBM.",
     "resumo": [
       "Plaid lançou um Fraud Foundation Model (06/10) e a Ant lançou um transformer para pagamentos (18/09): o modelo de transação vira produto de prateleira.",
       "TabPFN-3.5 lidera o TabArena, mas os pesos proíbem uso comercial; TabICLv2 é a alternativa aberta.",

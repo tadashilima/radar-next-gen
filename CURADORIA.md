@@ -33,7 +33,14 @@ Um workflow do GitHub roda às 7h15 e grava `coleta/<AAAA-MM-DD>.json` com o que
 2. O campo `falhas` do arquivo lista as fontes que não responderam: copie-as para `fontes_com_falha`.
 3. Abra com WebFetch só os itens que parecerem relevantes, quando precisar de mais contexto que o resumo. Isso vale para links de arXiv, Hugging Face e GitHub; se der erro, use o resumo do arquivo.
 
-### 2b. Notícias e blogs
+### 2b. Reddit
+
+O Reddit bloqueia tanto o GitHub quanto a nuvem. Se `reddit` vier vazio na coleta, rode WebSearch com cada query abaixo acrescida da palavra "reddit" e aceite cobertura parcial:
+- TabPFN OR "tabular foundation model"
+- transaction transformer fraud
+- "foundation model" credit
+
+### 2c. Notícias e blogs
 
 Use WebSearch, no mode standard, com várias buscas no mesmo turno. Carregue a ferramenta com ToolSearch `select:WebSearch,WebFetch` se ela estiver deferida. Faça estas buscas:
 - NeoSpace LDM

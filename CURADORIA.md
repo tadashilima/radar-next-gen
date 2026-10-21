@@ -11,7 +11,7 @@ O Radar Next Gen é um site público de curadoria sobre modelos "next gen" para 
 - o que muda quando esses modelos vão para produção (latência, governança, regulação).
 
 O leitor é quem decide adoção desses modelos em bancos brasileiros (PMs, heads de modelagem, cientistas). Os interesses mais quentes são:
-- fraude em transferências, Pix e cash-out de conta corrente (inclusive contas laranja);
+- fraude em pagamentos e transferências (Pix, contas laranja);
 - fraude e crédito em cartões;
 - avaliação de fornecedores de LDM contra GBMs.
 
@@ -82,7 +82,7 @@ Cada item tem estes campos:
 - `fonte`: um de `x`, `reddit`, `arxiv`, `hf`, `github`, `blog`, `noticia`, `podcast`, `evento`.
 - `tema`: um de `ldm`, `transacional`, `tabular`, `agentes`, `producao`, `brasil`.
 - `sinal`: um de `alto`, `medio`, `baixo`.
-  - `alto`: muda uma decisão de adoção agora. Exemplos: resultado em fraude de transferência ou cash-out; lançamento de FM por banco ou fornecedor relevante; regulação; novidade de fornecedor de LDM.
+  - `alto`: muda uma decisão de adoção agora. Exemplos: resultado em fraude de pagamentos ou transferências; lançamento de FM por banco ou fornecedor relevante; regulação; novidade de fornecedor de LDM.
   - `medio`: vale ler esta semana.
   - `baixo`: só para saber.
 - `data`: data da publicação, no formato AAAA-MM-DD.

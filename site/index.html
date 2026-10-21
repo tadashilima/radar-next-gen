@@ -171,6 +171,7 @@ th { text-align: left; font: 500 12.5px var(--sans); color: var(--muted); paddin
 td { vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); line-height: 1.45; }
 tr:last-child td { border-bottom: 0; }
 td.n { font-family: var(--serif); font-size: 17px; font-weight: 500; white-space: nowrap; }
+td.q { white-space: nowrap; color: var(--muted); font-size: 13.5px; padding-top: 12px; }
 
 .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
 .cols h3 { font-size: 18px; margin-bottom: 8px; }
@@ -243,22 +244,22 @@ footer.credit b { color: var(--ink); font-weight: 500; }
   <section class="doc" id="view-mapa" role="tabpanel" aria-labelledby="tab-mapa" hidden>
     <section>
       <p class="thesis">Quem está na frente não está trocando o GBM. Treina um modelo de sequência sobre os eventos do cliente, gera embeddings e pluga no modelo que já existe, ou ajusta os dois juntos.</p>
-      <p class="note">Linha de base de outubro de 2026. Quase todo número abaixo é divulgado pela própria empresa. Onde não houve verificação independente, está marcado.</p>
+      <p class="note">Linha de base de outubro de 2026, do mais recente para o mais antigo. Quase todo número abaixo é divulgado pela própria empresa. Onde não houve verificação independente, está marcado.</p>
     </section>
 
     <section>
       <h2>Foundation models de transações</h2>
       <div class="tbl"><table>
-        <thead><tr><th>Quem</th><th>O que divulgou</th><th>Produção</th></tr></thead>
+        <thead><tr><th>Quando</th><th>Quem</th><th>O que divulgou</th><th>Produção</th></tr></thead>
         <tbody>
-          <tr><td class="n">Nubank, nuFormer</td><td>Transformer sobre transações ajustado junto com rede tabular (DCNv2). Supera LightGBM sozinho. Nova geração com 4x contexto e 4x velocidade. <a href="https://arxiv.org/abs/2507.23267">arXiv 2507.23267</a>, <a href="https://building.nu.com/fine-tuning-transaction-user-models/">blog</a></td><td>Sim: cartões BR/MX e crédito sem garantia BR (2T26)</td></tr>
-          <tr><td class="n">Stripe, Payments FM</td><td>Embeddings por pagamento treinados em dezenas de bilhões de transações, usados no Radar. Card testing detectado de 59% para 97%. <a href="https://techcrunch.com/2025/05/07/stripe-unveils-ai-foundation-model-for-payments-reveals-deeper-partnership-with-nvidia">TechCrunch</a></td><td>Sim</td></tr>
-          <tr><td class="n">Revolut, PRAGMA</td><td>Encoder de 10M a 1B parâmetros, 24 bi eventos. Crédito PR-AUC +130%, fraude recall +65%. <b>Em AML e mulas piora (F0.5 −47%)</b>: olha um usuário por vez e não enxerga o grafo. <a href="https://arxiv.org/abs/2604.08649">arXiv 2604.08649</a></td><td>Backtests divulgados</td></tr>
-          <tr><td class="n">Visa</td><td>TREASURE: +111% em comportamento anômalo vs. produção (<a href="https://arxiv.org/abs/2511.19693">arXiv 2511.19693</a>). Comprou a Featurespace (TallierLTM). Visa Protect A2A pegou 54% da fraude que passou pelos bancos em piloto no Reino Unido.</td><td>Parcial</td></tr>
-          <tr><td class="n">Plaid, Fraud FM</td><td>Lançado em 06/10/2026, +40% em testes internos. <a href="https://plaid.com/blog/introducing-fraud-foundation-model-for-protect/">blog</a></td><td>Via vendas</td></tr>
-          <tr><td class="n">WeChat Pay, SeqLLM</td><td>Embeddings de comportamento no detector de fraude: Precision@0,01% +26,8 p.p. <a href="https://arxiv.org/abs/2608.03063">arXiv 2608.03063</a></td><td>Sim</td></tr>
-          <tr><td class="n">Mastercard</td><td>"Large tabular model" anunciado em 03/2026, bilhões de transações. <span class="unv">só snippet</span></td><td>Em desenvolvimento</td></tr>
-          <tr><td class="n">Adyen, Ant, PayPal</td><td>Adyen com modelos de transação em escala (citado pela NVIDIA); Ant com "3-in-1 Transformer" (09/2026); PayPal só em vaga de emprego. <span class="unv">sem métricas</span></td><td>Sem informação</td></tr>
+          <tr><td class="q">out/2026</td><td class="n">Plaid, Fraud FM</td><td>Lançado em 06/10/2026, +40% em testes internos. <a href="https://plaid.com/blog/introducing-fraud-foundation-model-for-protect/">blog</a></td><td>Via vendas</td></tr>
+          <tr><td class="q">set/2026</td><td class="n">Adyen, Ant, PayPal</td><td>Ant com "3-in-1 Transformer" (09/2026); Adyen com modelos de transação em escala (citado pela NVIDIA); PayPal só em vaga de emprego. <span class="unv">sem métricas</span></td><td>Sem informação</td></tr>
+          <tr><td class="q">ago/2026</td><td class="n">Nubank, nuFormer</td><td>Transformer sobre transações ajustado junto com rede tabular (DCNv2). Supera LightGBM sozinho. Nova geração com 4x contexto e 4x velocidade (resultado do 2T26). Paper de jul/2025: <a href="https://arxiv.org/abs/2507.23267">arXiv 2507.23267</a>, <a href="https://building.nu.com/fine-tuning-transaction-user-models/">blog</a></td><td>Sim: cartões BR/MX e crédito sem garantia BR (2T26)</td></tr>
+          <tr><td class="q">ago/2026</td><td class="n">Revolut, PRAGMA</td><td>Encoder de 10M a 1B parâmetros, 24 bi eventos. Crédito PR-AUC +130%, fraude recall +65%. <b>Em AML e mulas piora (F0.5 −47%)</b>: olha um usuário por vez e não enxerga o grafo. Versão 2 do paper de abr/2026: <a href="https://arxiv.org/abs/2604.08649">arXiv 2604.08649</a></td><td>Backtests divulgados</td></tr>
+          <tr><td class="q">ago/2026</td><td class="n">WeChat Pay, SeqLLM</td><td>Embeddings de comportamento no detector de fraude: Precision@0,01% +26,8 p.p. <a href="https://arxiv.org/abs/2608.03063">arXiv 2608.03063</a></td><td>Sim</td></tr>
+          <tr><td class="q">mar/2026</td><td class="n">Mastercard</td><td>"Large tabular model" anunciado, bilhões de transações. <span class="unv">só snippet</span></td><td>Em desenvolvimento</td></tr>
+          <tr><td class="q">nov/2025</td><td class="n">Visa</td><td>TREASURE: +111% em comportamento anômalo vs. produção (<a href="https://arxiv.org/abs/2511.19693">arXiv 2511.19693</a>). Comprou a Featurespace (TallierLTM). Visa Protect A2A pegou 54% da fraude que passou pelos bancos em piloto no Reino Unido.</td><td>Parcial</td></tr>
+          <tr><td class="q">mai/2025</td><td class="n">Stripe, Payments FM</td><td>Embeddings por pagamento treinados em dezenas de bilhões de transações, usados no Radar. Card testing detectado de 59% para 97%. <a href="https://techcrunch.com/2025/05/07/stripe-unveils-ai-foundation-model-for-payments-reveals-deeper-partnership-with-nvidia">TechCrunch</a></td><td>Sim</td></tr>
         </tbody>
       </table></div>
       <p class="note">Contrapeso útil: na receita aberta da NVIDIA (<a href="https://developer.nvidia.com/blog/build-your-own-transaction-foundation-model-for-financial-intelligence/">jun/2026</a>), embeddings sozinhos perdem do XGBoost (AUC 0,8775 vs 0,9885). Somados às features originais, AUC +0,41% e AP +42%. O ganho aparece na cauda, não na AUC.</p>
@@ -267,14 +268,14 @@ footer.credit b { color: var(--ink); font-weight: 500; }
     <section>
       <h2>Foundation models tabulares</h2>
       <div class="tbl"><table>
-        <thead><tr><th>Modelo</th><th>Ponto principal</th><th>Licença</th></tr></thead>
+        <thead><tr><th>Quando</th><th>Modelo</th><th>Ponto principal</th><th>Licença</th></tr></thead>
         <tbody>
-          <tr><td class="n">TabPFN-3 / 3.5</td><td>Até ~1M linhas numa H100; 3.5 lidera o TabArena (set/2026), aceita splits temporais e texto. SHAP 120x mais rápido. <a href="https://arxiv.org/abs/2609.17895">arXiv 2609.17895</a></td><td><b>Pesos proíbem uso comercial</b>: precisa licença enterprise</td></tr>
-          <tr><td class="n">TabICLv2 (INRIA)</td><td>Milhões de linhas com menos de 50 GB de GPU, bate RealTabPFN-2.5. ICML 2026. <a href="https://github.com/soda-inria/tabicl">repo</a></td><td>Aberto</td></tr>
-          <tr><td class="n">Mitra (Amazon)</td><td>Forte abaixo de ~5 mil linhas; já no AutoGluon 1.4.</td><td>Apache-2.0</td></tr>
-          <tr><td class="n">LimiX / LimiX-2M</td><td>Alternativa aberta generalista.</td><td>Apache-2.0</td></tr>
-          <tr><td class="n">KumoRFM-2</td><td>FM relacional: trabalha sobre várias tabelas ligadas, sem achatar.</td><td>Comercial</td></tr>
-          <tr><td class="n">Google TabFM</td><td>Zero-shot, até 10 classes (jun/2026).</td><td>Restrita</td></tr>
+          <tr><td class="q">set/2026</td><td class="n">TabPFN-3 / 3.5</td><td>Até ~1M linhas numa H100; 3.5 lidera o TabArena, aceita splits temporais e texto. SHAP 120x mais rápido. <a href="https://arxiv.org/abs/2609.17895">arXiv 2609.17895</a></td><td><b>Pesos proíbem uso comercial</b>: precisa licença enterprise</td></tr>
+          <tr><td class="q">jul/2026</td><td class="n">TabICLv2 (INRIA)</td><td>Milhões de linhas com menos de 50 GB de GPU, bate RealTabPFN-2.5. ICML 2026. <a href="https://github.com/soda-inria/tabicl">repo</a></td><td>Aberto</td></tr>
+          <tr><td class="q">jun/2026</td><td class="n">Google TabFM</td><td>Zero-shot, até 10 classes.</td><td>Restrita</td></tr>
+          <tr><td class="q">jul/2025</td><td class="n">Mitra (Amazon)</td><td>Forte abaixo de ~5 mil linhas; já no AutoGluon 1.4.</td><td>Apache-2.0</td></tr>
+          <tr><td class="q">2025</td><td class="n">LimiX / LimiX-2M</td><td>Alternativa aberta generalista.</td><td>Apache-2.0</td></tr>
+          <tr><td class="q"><span class="unv">a confirmar</span></td><td class="n">KumoRFM-2</td><td>FM relacional: trabalha sobre várias tabelas ligadas, sem achatar.</td><td>Comercial</td></tr>
         </tbody>
       </table></div>
     </section>
@@ -441,7 +442,9 @@ function minutos(ed) {
   return Math.max(1, Math.round(n / 200));
 }
 function rotulo(ed) { return ed.id === "edicao-zero" ? "Edição zero" : cap(fmt(ed.data, { weekday: "long", day: "numeric", month: "long" })); }
-function fonteData(i) { return (FONTES[i.fonte] || i.fonte || "Fonte") + (i.data ? ", " + fmt(i.data, { day: "numeric", month: "short", year: "numeric" }).replace(".", "") : ""); }
+/* data primeiro: a recência é critério junto com o sinal */
+function fonteData(i) { return (i.data ? fmt(i.data, { day: "numeric", month: "short", year: "numeric" }).replace(".", "") + ", " : "sem data, ") + (FONTES[i.fonte] || i.fonte || "fonte"); }
+function ordenar(itens) { return [...(itens || [])].sort((a, b) => ((RANK[a.sinal] ?? 2) - (RANK[b.sinal] ?? 2)) || (b.data || "").localeCompare(a.data || "")); }
 
 /* navegação */
 function show(view) {
@@ -521,7 +524,7 @@ function itemRow(i, idx, recolher) {
 function renderEdition() {
   const ed = edicoes[cur], box = document.getElementById("edition");
   box.replaceChildren();
-  const itens = [...(ed.itens || [])].sort((a, b) => (RANK[a.sinal] ?? 2) - (RANK[b.sinal] ?? 2));
+  const itens = ordenar(ed.itens);
   const lead = itens[0], rest = itens.slice(1);
   const dl = document.getElementById("dateline"); dl.replaceChildren();
   if (cur === 0) dl.append(el("span", { class: "today", text: "Edição de hoje" }));

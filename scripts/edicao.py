@@ -66,12 +66,13 @@ def minutos(ed):
 
 
 def ordenar(ed):
-    return sorted(ed.get("itens", []), key=lambda i: RANK.get(i.get("sinal"), 2))
+    """Sinal mais forte primeiro; dentro do mesmo sinal, o mais recente primeiro."""
+    return sorted(ed.get("itens", []), key=lambda i: (RANK.get(i.get("sinal"), 2), -(int(i["data"].replace("-", "")) if i.get("data") else 0)))
 
 
 def fonte_data(i):
-    f = FONTES.get(i.get("fonte"), i.get("fonte") or "Fonte")
-    return f"{f}, {data_curta(i['data'])}" if i.get("data") else f
+    f = FONTES.get(i.get("fonte"), i.get("fonte") or "fonte")
+    return f"{data_curta(i['data'])}, {f}" if i.get("data") else f"sem data, {f}"
 
 
 def edicao_do_dia(status=None):

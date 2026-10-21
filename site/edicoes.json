@@ -1,0 +1,29 @@
+[
+  {
+    "id": "2026-10-21",
+    "data": "2026-10-21",
+    "titulo": "Edição zero · o que aconteceu de ago a out/2026",
+    "destaque": "O mercado está convergindo para foundation models de transação como gerador de embeddings ao lado do GBM. Para fraude em transferências e cash-out ainda não há prova pública de ganho.",
+    "resumo": [
+      "Plaid lançou um Fraud Foundation Model (06/10) e a Ant lançou um transformer para pagamentos (18/09): o modelo de transação vira produto de prateleira.",
+      "TabPFN-3.5 lidera o TabArena, mas os pesos proíbem uso comercial; TabICLv2 é a alternativa aberta.",
+      "Nubank confirmou o nuFormer em produção em cartões e crédito, com nova geração mais rápida (2T26).",
+      "NeoSpace negocia rodada de até US$250M; os números de performance divulgados seguem sem auditoria independente."
+    ],
+    "itens": [
+      {"titulo": "Plaid lança Fraud Foundation Model para o Protect (+40% em testes internos)", "url": "https://plaid.com/blog/introducing-fraud-foundation-model-for-protect/", "fonte": "blog", "tema": "transacional", "sinal": "alto", "data": "2026-10-06", "porque": "Primeiro FM de fraude vendido como produto para bancos e fintechs. Vira referência comercial para comparar outros modelos de transação."},
+      {"titulo": "Nubank 2T26: nuFormer em produção em cartões BR/MX e crédito sem garantia", "url": "https://nu.com/en/newsroom/company/nu-holdings-ltd-reports-second-quarter-2026-financial-results", "fonte": "noticia", "tema": "brasil", "sinal": "alto", "data": "2026-08-13", "porque": "O caso mais maduro de FM de transações no Brasil já roda em cartões e crédito. É a régua para qualquer banco brasileiro que esteja avaliando o tema."},
+      {"titulo": "Revolut PRAGMA (v2): FM bancário forte em crédito, fraco em AML", "url": "https://arxiv.org/abs/2604.08649", "fonte": "arxiv", "tema": "transacional", "sinal": "alto", "data": "2026-08-24", "porque": "Mostra o ponto cego de modelos por cliente em mulas e redes: quem avalia FM para fraude de transferência precisa testar esse cenário à parte."},
+      {"titulo": "TabPFN-3.5: SOTA no TabArena, com splits temporais e texto", "url": "https://arxiv.org/abs/2609.17895", "fonte": "arxiv", "tema": "tabular", "sinal": "medio", "data": "2026-09-15", "porque": "O tabular FM mais forte hoje. Uso em produção exige licença enterprise, o que pesa na escolha frente a alternativas abertas."},
+      {"titulo": "NeoSpace negocia rodada de até US$250M a US$1,25 bi de valuation", "url": "https://startupi.com.br/neospace-negocia-rodada-de-ate-us-250-milhoes/", "fonte": "noticia", "tema": "ldm", "sinal": "medio", "data": "2026-08-18", "porque": "Maior aposta brasileira em Large Data Models para bancos, agora mirando os EUA."},
+      {"titulo": "WeChat Pay SeqLLM: embeddings de comportamento no detector de fraude", "url": "https://arxiv.org/abs/2608.03063", "fonte": "arxiv", "tema": "transacional", "sinal": "medio", "data": "2026-08-04", "porque": "Caso em produção com o desenho mais comum do mercado: embedding de sequência somado ao detector existente."},
+      {"titulo": "NVIDIA: receita aberta de transaction foundation model", "url": "https://developer.nvidia.com/blog/build-your-own-transaction-foundation-model-for-financial-intelligence/", "fonte": "blog", "tema": "producao", "sinal": "medio", "data": "2026-06-16", "porque": "Embedding sozinho perde do XGBoost; somado às features, ganha forte em AP. Ajuda a calibrar a expectativa: o ganho aparece na cauda, não na AUC."},
+      {"titulo": "Ant International lança transformer 3-em-1 para pagamentos, contas e câmbio", "url": "https://www.theasianbanker.com/press-releases/ant-international-launches-full-stack-ai-native-solutions-for-payment-account-fx-treasury-and-growth-operations-for-global-businesses", "fonte": "noticia", "tema": "transacional", "sinal": "baixo", "data": "2026-09-18", "porque": "Mais um grande player com FM de transações, mas sem métricas públicas."}
+    ],
+    "perguntas": [
+      "Na avaliação de um FM de transações, estamos medindo ganho na cauda (AP, recall a baixo FPR) ou só AUC/KS?",
+      "Como o modelo se comporta em contas laranja, onde modelos por cliente pioram?",
+      "Em segmentos com pouco dado, vale um teste com um tabular FM aberto (TabICLv2)?"
+    ]
+  }
+]

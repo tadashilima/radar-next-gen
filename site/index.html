@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Curadoria diária do estado da arte em foundation models para crédito e fraude: transações, modelos tabulares, agentes e produção.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2214%22 fill=%22none%22 stroke=%22%231D57B8%22 stroke-width=%223%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%224%22 fill=%22%231D57B8%22/%3E%3C/svg%3E">
+<title>Radar Next Gen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: coluna de leitura única (~760px) com abas; feed diário como "edições" empilhadas, mapa e fontes como fichas de referência. */
+:root {
+  --bg: #F2F4F6;
+  --surface: #FFFFFF;
+  --ink: #15202B;
+  --muted: #5A6774;
+  --line: #D8DEE5;
+  --accent: #1D57B8;
+  --accent-soft: #E3ECFA;
+  --hi: #B4451A;  --hi-soft: #FBE9E0;
+  --mid: #8A6A00; --mid-soft: #FBF2D4;
+  --lo: #5A6774;  --lo-soft: #E9EDF1;
+  --ok: #1E7A4C;  --ok-soft: #E2F3EA;
+  --f-display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E141A; --surface: #151D25; --ink: #E3E9EF; --muted: #93A1AE; --line: #26313C;
+    --accent: #84AEF2; --accent-soft: #1A2A42;
+    --hi: #F0956A; --hi-soft: #3A2218; --mid: #E2C35A; --mid-soft: #33290F;
+    --lo: #93A1AE; --lo-soft: #1F2830; --ok: #6CCB98; --ok-soft: #15301F;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E141A; --surface: #151D25; --ink: #E3E9EF; --muted: #93A1AE; --line: #26313C;
+  --accent: #84AEF2; --accent-soft: #1A2A42;
+  --hi: #F0956A; --hi-soft: #3A2218; --mid: #E2C35A; --mid-soft: #33290F;
+  --lo: #93A1AE; --lo-soft: #1F2830; --ok: #6CCB98; --ok-soft: #15301F;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 800px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 72px; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: clamp(30px, 6vw, 42px); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 22px; font-weight: 600; }
+h3 { font-size: 17px; font-weight: 600; }
+p { margin: 0; }
+.mono { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.02em; }
+.eyebrow { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
+
+header.top { display: grid; gap: 10px; margin-bottom: 28px; }
+header.top .lede { color: var(--muted); max-width: 62ch; }
+.sweep { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; margin-top: 6px; }
+.sweep .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); display: inline-block; margin-right: 6px; vertical-align: 1px; }
+
+nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 28px; overflow-x: auto; }
+nav.tabs button { font: 600 14px var(--f-display); color: var(--muted); background: none; border: 0; padding: 10px 12px; border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap; }
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+nav.tabs button:hover { color: var(--ink); }
+
+section.view { display: grid; gap: 28px; }
+.block { display: grid; gap: 12px; }
+.block > p, .block li { max-width: 68ch; }
+.thesis { font-family: var(--f-display); font-size: 20px; line-height: 1.4; font-weight: 500; border-left: 3px solid var(--accent); padding-left: 16px; }
+
+/* chips */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 500 12px var(--f-mono); padding: 3px 8px; border-radius: 999px; background: var(--lo-soft); color: var(--muted); border: 1px solid transparent; }
+button.chip { cursor: pointer; }
+button.chip[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+.sig { font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 7px; border-radius: 4px; }
+.sig.alto { background: var(--hi-soft); color: var(--hi); }
+.sig.medio { background: var(--mid-soft); color: var(--mid); }
+.sig.baixo { background: var(--lo-soft); color: var(--lo); }
+
+/* feed */
+.edition { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; gap: 16px; }
+.edition-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+.edition .destaque { font-family: var(--f-display); font-size: 18px; font-weight: 500; line-height: 1.4; }
+.edition ul.resumo { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.items { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.item { display: grid; gap: 6px; padding: 14px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+.item:last-child { border-bottom: 0; padding-bottom: 0; }
+.item-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.item a.t { font-weight: 600; color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+.item a.t:hover { color: var(--accent); text-decoration: underline; }
+.item .why { color: var(--muted); font-size: 14px; }
+.item .why b { color: var(--ink); font-weight: 600; }
+.asks { background: var(--accent-soft); border-radius: 8px; padding: 12px 14px; display: grid; gap: 6px; }
+.asks ul { margin: 0; padding-left: 18px; }
+.empty { border: 1px dashed var(--line); border-radius: 10px; padding: 28px 20px; color: var(--muted); display: grid; gap: 6px; }
+
+/* tables */
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); background: var(--bg); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-weight: 600; white-space: nowrap; }
+
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.card ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.card.win h3 { color: var(--ok); }
+.card.lose h3 { color: var(--hi); }
+.unv { font-family: var(--f-mono); font-size: 11px; color: var(--mid); }
+.note { font-size: 13px; color: var(--muted); }
+
+/* fontes */
+.src-group { display: grid; gap: 10px; }
+.src { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 4px 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.src:last-child { border-bottom: 0; }
+.src .h { font-weight: 600; overflow-wrap: anywhere; }
+.src .d { color: var(--muted); font-size: 14px; }
+@media (max-width: 560px) { .src { grid-template-columns: 1fr; } }
+
+/* caso */
+.steps { display: grid; gap: 0; border-left: 2px solid var(--line); margin-left: 6px; }
+.step { position: relative; padding: 0 0 18px 20px; display: grid; gap: 4px; }
+.step::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--line); }
+.step.now::before { background: var(--accent); border-color: var(--accent); }
+.credit { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); }
+.step .when { font: 500 12px var(--f-mono); color: var(--muted); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .edition { animation: rise .3s ease-out both; }
+  @keyframes rise { from { transform: translateY(4px); } to { transform: none; } }
+}
+</style>
+<style>html{color-scheme:light}body{margin:0;padding-top:env(safe-area-inset-top,0px)}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <span class="eyebrow">Curadoria diária · next gen em crédito e fraude</span>
+    <h1>Radar Next Gen</h1>
+    <p class="lede">Foundation models para crédito e fraude: o que saiu no X, Reddit, arXiv e blogs das empresas, filtrado pelo que muda decisões em bancos e fintechs.</p>
+    <div class="sweep mono"><span><span class="dot"></span>Varredura todo dia, 8h</span><span id="last-ed">Carregando edições…</span><a id="tg" href="#" target="_blank" rel="noopener" hidden>Receber no Telegram →</a></div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Seções">
+    <button role="tab" id="tab-feed" data-view="feed" aria-selected="true">Edições</button>
+    <button role="tab" id="tab-mapa" data-view="mapa" aria-selected="false">Mapa do estado da arte</button>
+    <button role="tab" id="tab-fontes" data-view="fontes" aria-selected="false">Quem seguir</button>
+  </nav>
+
+  <!-- FEED -->
+  <section class="view" id="view-feed" role="tabpanel" aria-labelledby="tab-feed">
+    <div class="block">
+      <div class="chips" id="filters" aria-label="Filtrar por tema"></div>
+    </div>
+    <div id="feed" class="block" style="gap:20px">
+      <div class="empty" id="feed-empty">
+        <h3>As edições aparecem aqui</h3>
+        <p>Todo dia às 8h uma varredura lê X, Reddit, arXiv, Hugging Face e blogs das empresas e grava a edição do dia nesta página. Dias sem novidade relevante não geram edição. Cada item traz a fonte, o tema, um sinal de relevância e por que importa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="view" id="view-mapa" role="tabpanel" aria-labelledby="tab-mapa" hidden>
+    <div class="block">
+      <span class="eyebrow">Linha de base · outubro de 2026</span>
+      <p class="thesis">Quem está na frente não está trocando o GBM. Treina um modelo de sequência sobre os eventos do cliente, gera embeddings e pluga no modelo que já existe, ou ajusta os dois juntos.</p>
+      <p class="note">Quase todo número abaixo é divulgado pela própria empresa. Onde não houve verificação independente, está marcado.</p>
+    </div>
+
+    <div class="block">
+      <h2>Foundation models de transações</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Quem</th><th>O que divulgou</th><th>Produção</th></tr></thead>
+        <tbody>
+          <tr><td class="n">Nubank · nuFormer</td><td>Transformer sobre transações ajustado junto com rede tabular (DCNv2). Supera LightGBM sozinho. Nova geração com 4x contexto e 4x velocidade. <a href="https://arxiv.org/abs/2507.23267">arXiv 2507.23267</a> · <a href="https://building.nu.com/fine-tuning-transaction-user-models/">blog</a></td><td>Sim: cartões BR/MX e crédito sem garantia BR (2T26)</td></tr>
+          <tr><td class="n">Stripe · Payments FM</td><td>Embeddings por pagamento treinados em dezenas de bilhões de transações, usados no Radar. Card testing detectado de 59% para 97%. <a href="https://techcrunch.com/2025/05/07/stripe-unveils-ai-foundation-model-for-payments-reveals-deeper-partnership-with-nvidia">TechCrunch</a></td><td>Sim</td></tr>
+          <tr><td class="n">Revolut · PRAGMA</td><td>Encoder de 10M a 1B parâmetros, 24 bi eventos. Crédito PR-AUC +130%, fraude recall +65%. <b>Em AML/mulas piora (F0.5 −47%)</b>: olha um usuário por vez e não enxerga o grafo. <a href="https://arxiv.org/abs/2604.08649">arXiv 2604.08649</a></td><td>Backtests divulgados</td></tr>
+          <tr><td class="n">Visa</td><td>TREASURE: +111% em comportamento anômalo vs. produção (<a href="https://arxiv.org/abs/2511.19693">arXiv 2511.19693</a>). Comprou a Featurespace (TallierLTM). Visa Protect A2A pegou 54% da fraude que passou pelos bancos em piloto UK.</td><td>Parcial</td></tr>
+          <tr><td class="n">Plaid · Fraud FM</td><td>Lançado em 06/10/2026, +40% em testes internos. <a href="https://plaid.com/blog/introducing-fraud-foundation-model-for-protect/">blog</a></td><td>Via vendas</td></tr>
+          <tr><td class="n">WeChat Pay · SeqLLM</td><td>Embeddings de comportamento no detector de fraude: Precision@0,01% +26,8 p.p. <a href="https://arxiv.org/abs/2608.03063">arXiv 2608.03063</a></td><td>Sim</td></tr>
+          <tr><td class="n">Mastercard</td><td>"Large tabular model" anunciado em 03/2026, bilhões de transações. <span class="unv">só snippet</span></td><td>Em desenvolvimento</td></tr>
+          <tr><td class="n">Adyen, Ant, PayPal</td><td>Adyen com modelos de transação em escala (citado pela NVIDIA); Ant com "3-in-1 Transformer" (09/2026); PayPal só em vaga de emprego. <span class="unv">sem métricas</span></td><td>—</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Contrapeso útil: na receita aberta da NVIDIA (<a href="https://developer.nvidia.com/blog/build-your-own-transaction-foundation-model-for-financial-intelligence/">jun/2026</a>), embeddings sozinhos perdem do XGBoost (AUC 0,8775 vs 0,9885). Somados às features originais, AUC +0,41% e AP +42%. O ganho aparece na cauda, não na AUC.</p>
+    </div>
+
+    <div class="block">
+      <h2>Foundation models tabulares</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Modelo</th><th>Ponto principal</th><th>Licença</th></tr></thead>
+        <tbody>
+          <tr><td class="n">TabPFN-3 / 3.5</td><td>Até ~1M linhas numa H100; 3.5 lidera o TabArena (set/2026), aceita splits temporais e texto. SHAP 120x mais rápido. <a href="https://arxiv.org/abs/2609.17895">arXiv 2609.17895</a></td><td><b>Pesos proíbem uso comercial</b>: precisa licença enterprise</td></tr>
+          <tr><td class="n">TabICLv2 (INRIA)</td><td>Milhões de linhas com &lt;50 GB de GPU, bate RealTabPFN-2.5. ICML 2026. <a href="https://github.com/soda-inria/tabicl">repo</a></td><td>Aberto</td></tr>
+          <tr><td class="n">Mitra (Amazon)</td><td>Forte abaixo de ~5 mil linhas; já no AutoGluon 1.4.</td><td>Apache-2.0</td></tr>
+          <tr><td class="n">LimiX / LimiX-2M</td><td>Alternativa aberta generalista.</td><td>Apache-2.0</td></tr>
+          <tr><td class="n">KumoRFM-2</td><td>FM relacional: trabalha sobre várias tabelas ligadas, sem achatar.</td><td>Comercial</td></tr>
+          <tr><td class="n">Google TabFM</td><td>Zero-shot, até 10 classes (jun/2026).</td><td>Restrita</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="two">
+      <div class="card win">
+        <h3>Onde ganham do GBM</h3>
+        <ul>
+          <li>Bases pequenas ou low-default: PME, carteira nova, LGD (Baesens et al., <a href="https://arxiv.org/abs/2605.18147">2605.18147</a>).</li>
+          <li>Crédito e fraude no nível do cliente com histórico longo de eventos: a sequência substitui feature engineering manual.</li>
+          <li>Ataques novos e de enumeração (Stripe, Visa).</li>
+        </ul>
+      </div>
+      <div class="card lose">
+        <h3>Onde ainda não há prova</h3>
+        <ul>
+          <li>Bases grandes e largas com drift: a evidência independente não acompanha os benchmarks dos fornecedores.</li>
+          <li>AML e contas laranja: precisam de grafo e visão entre instituições.</li>
+          <li><b>Fraude em transferência / cash-out</b>: não existe benchmark público de FM vs. GBM.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>O que a produção ensinou</h2>
+      <div class="two">
+        <div class="card"><h3>Latência</h3><p>FMs tabulares levam 150 ms a 1,3 s em GPU. Distilar para XGBoost cai para ~2 ms em CPU retendo ~97% da AUC (<a href="https://arxiv.org/abs/2605.18654">2605.18654</a>). Referência: score de ataque de conta da Visa em 20 ms.</p></div>
+        <div class="card"><h3>Arquitetura padrão</h3><p>Embeddings em batch ou near-real-time + features em tempo real dentro do GBM. Ajuste conjunto (encoder + modelo tabular) rende mais, mas acopla os ciclos de re-treino.</p></div>
+        <div class="card"><h3>Drift e re-treino</h3><p>Versionar o encoder e reavaliar todos os modelos que consomem o embedding a cada nova versão. Agentes como o ACRM (ACL 2026) reduziram refresh de crédito de semanas para 1,1 dia.</p></div>
+        <div class="card"><h3>Risco de modelo</h3><p>SHAP sobre embedding perde significado de negócio; distilação para árvores ajuda na validação. EUA trocaram SR 11-7 pelo SR 26-2 (abr/2026). Brasil: <span class="unv">a pesquisar</span>.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>LLMs e agentes no fluxo de modelagem</h2>
+      <ul>
+        <li>LLM lendo tabela direto só ajuda em few-shot. Onde se paga: embedding de texto (descrição do estabelecimento, +16% em crédito na Revolut).</li>
+        <li>Agentes de ML: topo do MLE-bench perto de 64% de medalhas. Nubank diz ter laboratório automatizado que cortou experimentação "de meses para um dia".</li>
+        <li>Nenhum banco grande nomeado usa agentes para desenvolver modelo regulado, ainda.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FONTES -->
+  <section class="view" id="view-fontes" role="tabpanel" aria-labelledby="tab-fontes" hidden>
+    <div class="block">
+      <span class="eyebrow">Lista lida pela varredura diária</span>
+      <h2>Quem seguir</h2>
+      <p class="note">Perfis do X conferidos em out/2026.</p>
+    </div>
+
+    <div class="src-group">
+      <h3>X · tabular foundation models</h3>
+      <div class="card" style="gap:0">
+        <div class="src"><a class="h" href="https://x.com/FrankRHutter">@FrankRHutter</a><span class="d">Fundador da Prior Labs, criador do TabPFN.</span></div>
+        <div class="src"><a class="h" href="https://x.com/Prior_Labs">@Prior_Labs</a><span class="d">Lançamentos do TabPFN (3.5 em set/2026).</span></div>
+        <div class="src"><a class="h" href="https://x.com/noahholl">@noahholl</a><span class="d">Noah Hollmann, CTO da Prior Labs.</span></div>
+        <div class="src"><a class="h" href="https://x.com/LennartPurucker">@LennartPurucker</a><span class="d">TabArena, o benchmark de referência.</span></div>
+        <div class="src"><a class="h" href="https://x.com/innixma">@innixma</a><span class="d">Nick Erickson: AutoGluon e TabArena.</span></div>
+        <div class="src"><a class="h" href="https://x.com/dholzmueller">@dholzmueller</a><span class="d">David Holzmüller (INRIA): TabICL, RealMLP.</span></div>
+        <div class="src"><a class="h" href="https://x.com/GaelVaroquaux">@GaelVaroquaux</a><span class="d">INRIA / scikit-learn, grupo do TabICL (alternativa aberta).</span></div>
+        <div class="src"><a class="h" href="https://x.com/SamuelMullr">@SamuelMullr</a><span class="d">Co-criador dos PFNs.</span></div>
+        <div class="src"><a class="h" href="https://x.com/autogluon">@autogluon</a><span class="d">Mitra e AutoGluon (Amazon).</span></div>
+        <div class="src"><a class="h" href="https://x.com/ChristophMolnar">@ChristophMolnar</a><span class="d">Interpretabilidade; escreveu o "State of Tabular FMs 2026".</span></div>
+        <div class="src"><a class="h" href="https://x.com/ziv_ravid">@ziv_ravid</a><span class="d">Ravid Shwartz-Ziv, o debate deep learning vs. árvores.</span></div>
+        <div class="src"><a class="h" href="https://x.com/tunguz">@tunguz</a><span class="d">Bojan Tunguz, ML tabular prático.</span></div>
+      </div>
+    </div>
+
+    <div class="src-group">
+      <h3>X · transações, fintech e curadoria</h3>
+      <div class="card" style="gap:0">
+        <div class="src"><a class="h" href="https://x.com/RohanRamanath">@RohanRamanath</a><span class="d">Lidera IA na Nubank (nuFormer).</span></div>
+        <div class="src"><a class="h" href="https://x.com/nubank">@nubank</a><span class="d">Anúncios oficiais.</span></div>
+        <div class="src"><a class="h" href="https://x.com/emilygsands">@emilygsands</a><span class="d">Head of Data &amp; AI da Stripe, porta-voz do Payments FM.</span></div>
+        <div class="src"><a class="h" href="https://x.com/thegautam">@thegautam</a><span class="d">Ex-Applied ML da Stripe.</span></div>
+        <div class="src"><a class="h" href="https://x.com/sytaylor">@sytaylor</a><span class="d">Simon Taylor, Fintech Brainfood.</span></div>
+        <div class="src"><a class="h" href="https://x.com/LinasBeliunas">@LinasBeliunas</a><span class="d">Fintech; cobriu o PRAGMA da Revolut.</span></div>
+        <div class="src"><a class="h" href="https://x.com/rasbt">@rasbt</a><span class="d">Sebastian Raschka, pesquisa em LLMs.</span></div>
+        <div class="src"><a class="h" href="https://x.com/_akhaliq">@_akhaliq</a><span class="d">Curadoria diária de papers.</span></div>
+      </div>
+    </div>
+
+    <div class="src-group">
+      <h3>Reddit · buscas com filtro "New"</h3>
+      <div class="card" style="gap:0">
+        <div class="src"><span class="h">r/MachineLearning, r/datascience</span><span class="d mono">TabPFN OR TabICL OR "tabular foundation model" · TabArena</span></div>
+        <div class="src"><span class="h">r/MachineLearning, r/fintech</span><span class="d mono">"transaction" transformer fraud · "foundation model" credit scoring</span></div>
+        <div class="src"><span class="h">r/LocalLLaMA, r/quant</span><span class="d mono">nuFormer OR PRAGMA OR "payments foundation model" · LLM agent fraud detection</span></div>
+        <div class="src"><span class="h">r/brdev, r/dataengineering</span><span class="d">Discussão brasileira e de pipeline de dados.</span></div>
+      </div>
+    </div>
+
+    <div class="src-group">
+      <h3>Blogs, newsletters e podcasts</h3>
+      <div class="card" style="gap:0">
+        <div class="src"><a class="h" href="https://building.nubank.com">Building Nubank</a><span class="d">Série sobre foundation models e nuFormer.</span></div>
+        <div class="src"><a class="h" href="https://stripe.dev/blog">Stripe dev blog</a><span class="d">"How we built it: Radar" e o Payments FM.</span></div>
+        <div class="src"><a class="h" href="https://priorlabs.ai/blog">Prior Labs blog</a><span class="d">Relatórios técnicos do TabPFN.</span></div>
+        <div class="src"><a class="h" href="https://www.amazon.science/blog">Amazon Science</a><span class="d">Mitra e AutoGluon.</span></div>
+        <div class="src"><a class="h" href="https://developer.nvidia.com/blog">NVIDIA developer blog</a><span class="d">Receitas de transaction FM e cases (inclui NeoSpace).</span></div>
+        <div class="src"><a class="h" href="https://mindfulmodeler.substack.com">Mindful Modeler</a><span class="d">Christoph Molnar, tabular e interpretabilidade.</span></div>
+        <div class="src"><a class="h" href="https://magazine.sebastianraschka.com">Ahead of AI</a><span class="d">Sebastian Raschka.</span></div>
+        <div class="src"><a class="h" href="https://www.brainfood.xyz">Fintech Brainfood</a><span class="d">Simon Taylor, visão de negócio em fintech.</span></div>
+        <div class="src"><a class="h" href="https://linas.substack.com">Linas's Newsletter</a><span class="d">Fintech, casos de bancos.</span></div>
+        <div class="src"><span class="h">Podcasts</span><span class="d">Machine Learning Street Talk (Hutter sobre TabPFN), Cognitive Revolution (Emily Sands sobre o FM da Stripe), NeoFeed Revolução da IA (NeoSpace).</span></div>
+      </div>
+    </div>
+
+    <div class="src-group">
+      <h3>arXiv, Hugging Face e GitHub</h3>
+      <div class="card" style="gap:0">
+        <div class="src"><span class="h">arXiv</span><span class="d">cs.LG, stat.ML, q-fin.RM. Buscas: <span class="mono">"tabular foundation model" · "transaction" AND "foundation model" · "event sequence" AND bank · "credit scoring" AND transformer · fraud AND LLM</span></span></div>
+        <div class="src"><a class="h" href="https://huggingface.co/papers">Hugging Face Papers</a><span class="d">Papers do dia; orgs Prior-Labs, autogluon, stableai-org.</span></div>
+        <div class="src"><span class="h">GitHub</span><span class="d"><a href="https://github.com/PriorLabs/TabPFN">PriorLabs/TabPFN</a> · <a href="https://github.com/soda-inria/tabicl">soda-inria/tabicl</a> · <a href="https://github.com/limix-ldm-ai/LimiX">LimiX</a> · <a href="https://github.com/autogluon/tabarena">autogluon/tabarena</a> · <a href="https://github.com/pytorch-lifestream/pytorch-lifestream">pytorch-lifestream</a> (sequências de eventos bancários)</span></div>
+      </div>
+    </div>
+
+    <div class="src-group">
+      <h3>Brasil</h3>
+      <div class="card" style="gap:0">
+        <div class="src"><span class="h">Nubank newsroom</span><span class="d">Releases de resultado trazem o status do nuFormer.</span></div>
+        <div class="src"><a class="h" href="https://www.bcb.gov.br/publicacoes/trabalhosdiscussao">BCB · Trabalhos para Discussão</a><span class="d">Pesquisa do Banco Central; agenda 2026–2029.</span></div>
+        <div class="src"><span class="h">Imprensa</span><span class="d">Finsiders Brasil, NeoFeed, Exame IA, Brazil Journal, Valor.</span></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Agenda</h3>
+      <div class="tbl"><table style="min-width:480px">
+        <thead><tr><th>Evento</th><th>Quando</th><th>Por quê</th></tr></thead>
+        <tbody>
+          <tr><td class="n">ICAIF 2026</td><td>14–17 nov 2026, Milão</td><td>IA em finanças, o mais próximo do nosso tema.</td></tr>
+          <tr><td class="n">NeurIPS 2026</td><td>6–12 dez 2026, Sydney</td><td>Papers de tabular e sequência.</td></tr>
+          <tr><td class="n">ICLR 2027</td><td>26–30 abr 2027</td><td>Papers de arquitetura.</td></tr>
+          <tr><td class="n">KDD 2027 (ADS)</td><td>1–5 ago 2027, San Jose</td><td>Trilha aplicada, onde bancos publicam.</td></tr>
+          <tr><td class="n">Febraban Tech 2027</td><td>a anunciar</td><td>Ecossistema brasileiro.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <footer class="credit mono">Curadoria de Lucas Tadashi Lima · fontes públicas, números como divulgados pelas empresas</footer>
+</div>
+
+<script>
+const TEMAS = { ldm: "Large Data Models", transacional: "FM de transações", tabular: "FM tabular", agentes: "LLMs e agentes", producao: "Produção e risco", brasil: "Brasil" };
+const FONTES = { x: "X", reddit: "Reddit", arxiv: "arXiv", hf: "Hugging Face", github: "GitHub", blog: "Blog", noticia: "Notícia", podcast: "Podcast", evento: "Evento" };
+const VIEWS = ["feed", "mapa", "fontes"];
+const TELEGRAM_URL = "";
+let filtro = null;
+let edicoes = [];
+
+function show(view) {
+  if (!VIEWS.includes(view)) view = "feed";
+  VIEWS.forEach(v => {
+    document.getElementById("view-" + v).hidden = v !== view;
+    document.getElementById("tab-" + v).setAttribute("aria-selected", String(v === view));
+  });
+  try { history.replaceState(null, "", "#" + view); } catch (e) {}
+}
+document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => show(b.dataset.view)));
+show((location.hash || "").slice(1));
+
+function el(tag, attrs, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === "class") n.className = v; else if (k === "text") n.textContent = v; else n.setAttribute(k, v);
+  }
+  kids.flat().forEach(k => k != null && n.append(k));
+  return n;
+}
+function fmtData(iso) {
+  const d = new Date(iso + "T12:00:00");
+  return isNaN(d) ? (iso || "") : d.toLocaleDateString("pt-BR", { day: "2-digit", month: "short", year: "numeric" });
+}
+function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : "#"; }
+
+function renderFiltros() {
+  const box = document.getElementById("filters");
+  box.replaceChildren();
+  const all = el("button", { class: "chip", "aria-pressed": String(filtro === null), text: "Todos os temas" });
+  all.onclick = () => { filtro = null; renderFiltros(); renderFeed(); };
+  box.append(all);
+  Object.entries(TEMAS).forEach(([k, label]) => {
+    const b = el("button", { class: "chip", "aria-pressed": String(filtro === k), text: label });
+    b.onclick = () => { filtro = filtro === k ? null : k; renderFiltros(); renderFeed(); };
+    box.append(b);
+  });
+}
+
+function renderFeed() {
+  const feed = document.getElementById("feed");
+  const empty = document.getElementById("feed-empty");
+  feed.querySelectorAll(".edition").forEach(n => n.remove());
+  empty.hidden = edicoes.length > 0;
+  edicoes.forEach(ed => {
+    const itens = (ed.itens || []).filter(i => !filtro || i.tema === filtro);
+    if (filtro && !itens.length) return;
+    const card = el("article", { class: "edition" },
+      el("div", { class: "edition-head" },
+        el("h2", { text: ed.titulo || fmtData(ed.data) }),
+        el("span", { class: "mono", text: fmtData(ed.data) + " · " + (ed.itens || []).length + " itens" })
+      ),
+      ed.destaque ? el("p", { class: "destaque", text: ed.destaque }) : null,
+      (ed.resumo && ed.resumo.length && !filtro) ? el("ul", { class: "resumo" }, ed.resumo.map(r => el("li", { text: r }))) : null,
+      el("div", { class: "items" }, itens.map(i =>
+        el("div", { class: "item" },
+          el("div", { class: "item-meta" },
+            el("span", { class: "sig " + (i.sinal || "baixo"), text: i.sinal || "baixo" }),
+            el("span", { class: "chip", text: FONTES[i.fonte] || i.fonte || "Fonte" }),
+            el("span", { class: "chip", text: TEMAS[i.tema] || i.tema || "" }),
+            i.data ? el("span", { class: "mono", text: fmtData(i.data) }) : null
+          ),
+          el("a", { class: "t", href: safeUrl(i.url), target: "_blank", rel: "noopener", text: i.titulo || i.url }),
+          i.porque ? el("p", { class: "why" }, el("b", { text: "Por que importa: " }), i.porque) : null
+        )
+      )),
+      (ed.perguntas && ed.perguntas.length && !filtro) ? el("div", { class: "asks" },
+        el("h3", { text: "Para pensar" }),
+        el("ul", {}, ed.perguntas.map(p => el("li", { text: p })))
+      ) : null
+    );
+    feed.append(card);
+  });
+}
+
+renderFiltros();
+renderFeed();
+
+(async () => {
+  const lastEd = document.getElementById("last-ed");
+  const tg = document.getElementById("tg");
+  if (TELEGRAM_URL) { tg.href = TELEGRAM_URL; tg.hidden = false; }
+  try {
+    const r = await fetch("edicoes.json", { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    edicoes = (await r.json()).sort((a, b) => (b.data || "").localeCompare(a.data || ""));
+    lastEd.textContent = edicoes.length ? "Última edição: " + fmtData(edicoes[0].data) : "Nenhuma edição ainda";
+    renderFeed();
+  } catch (e) { lastEd.textContent = "Não consegui carregar as edições"; }
+})();
+</script>
+
+</body>
+</html>

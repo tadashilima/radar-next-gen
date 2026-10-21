@@ -1,0 +1,93 @@
+name: Publicar e notificar
+
+# A curadoria diária (rotina na nuvem) commita site/edicoes.json e site/status.json.
+# Se ela empurrar para um branch claude/*, este workflow traz o commit para main.
+# Depois publica o site no GitHub Pages e, se status.json mudou, manda o resumo.
+on:
+  push:
+    branches: [main, "claude/**"]
+  workflow_dispatch:
+    inputs:
+      notificar:
+        description: "Enviar o resumo mesmo sem mudança no status.json"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+    outputs:
+      status_mudou: ${{ steps.diff.outputs.status_mudou }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Trazer commit de claude/* para main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git fetch origin main
+          echo "ANTES=$(git rev-parse origin/main)" >> "$GITHUB_ENV"
+          git checkout main
+          git merge --no-edit "origin/${GITHUB_REF_NAME}" -X theirs
+          git push origin main
+          git push origin --delete "${GITHUB_REF_NAME}" || true
+      - name: Ver se o status.json mudou
+        id: diff
+        run: |
+          git fetch origin main
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "status_mudou=${{ inputs.notificar }}" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          BASE="${ANTES:-${{ github.event.before }}}"
+          if [ -z "$BASE" ] || ! git cat-file -e "$BASE" 2>/dev/null; then BASE="origin/main~1"; fi
+          if git diff --name-only "$BASE" origin/main | grep -q '^site/status.json$'; then
+            echo "status_mudou=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "status_mudou=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  publicar:
+    needs: sincronizar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+  notificar:
+    needs: [sincronizar, publicar]
+    if: needs.sincronizar.outputs.status_mudou == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Enviar resumo
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+          GMAIL_USER: ${{ vars.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_DESTINATARIOS: ${{ secrets.EMAIL_DESTINATARIOS }}
+          SITE_URL: https://tadashilima.github.io/radar-next-gen/
+        run: python3 scripts/notificar.py

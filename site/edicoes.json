@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-10-22",
+    "data": "2026-10-22",
+    "titulo": "Tabular foundation models: relacional e escala em foco",
+    "destaque": "Dia calmo: a Prior Labs leva o TabPFN para bancos relacionais e um novo estudo testa como TFMs escalam até milhões de linhas frente a GBDTs.",
+    "resumo": [
+      "TabPFN-Rel roda TabPFN em tabelas relacionais sem feature engineering manual.",
+      "Estudo de escala tabular compara TFMs, GBDTs e MLPs até ~10M de linhas.",
+      "Nenhuma novidade nova em FMs transacionais ou regulação encontrada."
+    ],
+    "itens": [
+      {
+        "titulo": "Prior Labs lança TabPFN-Rel, harness para rodar TabPFN direto em bancos relacionais",
+        "url": "https://priorlabs.ai/blog-posts/look-into-the-future-with-tabpfn-rel",
+        "fonte": "blog",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-10-21",
+        "porque": "Reduz o trabalho de joins e feature engineering ao definir tabelas e tarefa em YAML/SQL, o que pode encurtar pilotos de tabular foundation models em crédito e fraude. Falta ver desempenho em dados transacionais grandes; a descrição vem da própria Prior Labs."
+      },
+      {
+        "titulo": "Escala de dados em ML tabular: GBDTs, MLPs e foundation models em até ~10 milhões de linhas",
+        "url": "http://arxiv.org/abs/2610.26794v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-10-19",
+        "porque": "Compara GBDTs, MLPs e tabular foundation models com shift natural de distribuição; segundo o resumo, versões recentes de TFMs se beneficiam mais de contextos maiores. Relevante para quem compara TFMs a GBMs em bases de crédito e fraude de alto volume."
+      },
+      {
+        "titulo": "\"Two Is Enough\": priors binários bastam para classificação multiclasse em TFMs in-context",
+        "url": "http://arxiv.org/abs/2610.27569v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-10-20",
+        "porque": "Mostra que pré-treinar só com tarefas binárias já dá classificação multiclasse zero-shot competitiva no TabArena. Detalhe de pré-treino, útil só para acompanhar a evolução dos TFMs."
+      }
+    ],
+    "perguntas": [
+      "Um TFM aplicado direto a tabelas relacionais supera um GBM com features manuais na sua base de fraude?"
+    ]
+  },
+  {
     "id": "2026-10-21",
     "data": "2026-10-21",
     "titulo": "Razorpay entra no clube dos FMs de pagamento; fraude em pagamentos feitos por agentes",

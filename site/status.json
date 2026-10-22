@@ -1,15 +1,17 @@
 {
-  "data": "2026-10-21",
+  "data": "2026-10-22",
   "novidade": true,
-  "titulo": "Razorpay entra no clube dos FMs de pagamento; fraude em pagamentos feitos por agentes",
-  "destaque": "Mais uma empresa de pagamentos de mercado emergente lança foundation model próprio, e começa a aparecer pesquisa sobre antifraude para compras iniciadas por agentes de IA.",
+  "titulo": "Tabular foundation models: relacional e escala em foco",
+  "destaque": "Dia calmo: a Prior Labs leva o TabPFN para bancos relacionais e um novo estudo testa como TFMs escalam até milhões de linhas frente a GBDTs.",
   "itens_novos": 3,
   "principal": {
-    "titulo": "Razorpay lança Vulcan, FM de pagamentos com NVIDIA e AWS",
-    "url": "https://press.aboutamazon.com/aws-international/2026/8/razorpay-launches-vulcan-indias-first-ai-payments-foundation-model-fueled-by-nvidia-and-aws-re-architecting-payments-for-a-350-bn-e-comm-future-by-2030"
+    "titulo": "Prior Labs lança TabPFN-Rel, harness para rodar TabPFN direto em bancos relacionais",
+    "url": "https://priorlabs.ai/blog-posts/look-into-the-future-with-tabpfn-rel"
   },
   "fontes_com_falha": [
-    "Reddit (só busca web, cobertura parcial)",
-    "X: 2 perfis com limite de taxa"
+    "Coleta de hoje (2026-10-22) ausente: usada a de 2026-10-21",
+    "X @FrankRHutter e @nubank: HTTPError",
+    "Reddit: vazio na coleta, sem cobertura",
+    "WebFetch de letsmoney e finsidersbrasil indisponível"
   ]
 }

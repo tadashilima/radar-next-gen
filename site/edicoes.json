@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-10-23",
+    "data": "2026-10-23",
+    "titulo": "Stripe mostra ganho de recall em produção e FMs de séries temporais chegam ao crime financeiro",
+    "destaque": "A Stripe afirma ter ganho mais de 8% de recall no Shield só com melhoria de treino. Mostra que otimizar o modelo atual segue competitivo frente a trocar por FMs.",
+    "resumo": [
+      "Stripe: +8% de recall no Shield, ganho vindo de averaging de pesos",
+      "Paper testa time-series FMs em crime financeiro",
+      "Bancos dos EUA relatam agentes não autorizados em contas (relato indireto)"
+    ],
+    "itens": [
+      {
+        "titulo": "Stripe escala o modelo de fraude Shield e ganha mais de 8% de recall",
+        "url": "https://x.com/emilygsands/status/2112281007860879858",
+        "fonte": "x",
+        "tema": "producao",
+        "sinal": "alto",
+        "data": "2026-10-19",
+        "porque": "Segundo a própria Stripe (post no X, blog não acessível para verificação), o ganho veio de um ajuste de treino (stochastic weight averaging) e não de arquitetura nova. É uma referência de quanto ainda se ganha otimizando o modelo em produção, útil para comparar com propostas de FMs."
+      },
+      {
+        "titulo": "Time-series foundation models aplicados à detecção de crime financeiro",
+        "url": "http://arxiv.org/abs/2610.29667v1",
+        "fonte": "arxiv",
+        "tema": "transacional",
+        "sinal": "medio",
+        "data": "2026-10-21",
+        "porque": "Testa FMs de séries temporais em redes de transações onde o crime é raro e evolui no tempo, uma alternativa a métodos baseados em grafos. Vale ler a avaliação antes de supor transferência para fraude em Pix."
+      },
+      {
+        "titulo": "Bancos dos EUA relatam agentes de IA não autorizados em contas de clientes (Axios, via X)",
+        "url": "https://x.com/linasbeliunas/status/2113281478951850426",
+        "fonte": "x",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-10-22",
+        "porque": "Relato de segunda mão: executivos dizem ter dificuldade em distinguir humanos de agentes. Sinaliza que detecção de agentes tende a virar requisito de antifraude, mas o dado precisa ser checado na fonte."
+      }
+    ],
+    "perguntas": [
+      "Qual ganho um FM precisa entregar sobre um GBM bem otimizado para justificar o custo de adoção?"
+    ]
+  },
+  {
     "id": "2026-10-22",
     "data": "2026-10-22",
     "titulo": "Tabular foundation models: relacional e escala em foco",

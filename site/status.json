@@ -1,17 +1,20 @@
 {
-  "data": "2026-10-22",
+  "data": "2026-10-23",
   "novidade": true,
-  "titulo": "Tabular foundation models: relacional e escala em foco",
-  "destaque": "Dia calmo: a Prior Labs leva o TabPFN para bancos relacionais e um novo estudo testa como TFMs escalam até milhões de linhas frente a GBDTs.",
+  "titulo": "Stripe mostra ganho de recall em produção e FMs de séries temporais chegam ao crime financeiro",
+  "destaque": "A Stripe afirma ter ganho mais de 8% de recall no Shield só com melhoria de treino. Mostra que otimizar o modelo atual segue competitivo frente a trocar por FMs.",
   "itens_novos": 3,
   "principal": {
-    "titulo": "Prior Labs lança TabPFN-Rel, harness para rodar TabPFN direto em bancos relacionais",
-    "url": "https://priorlabs.ai/blog-posts/look-into-the-future-with-tabpfn-rel"
+    "titulo": "Stripe escala o modelo de fraude Shield e ganha mais de 8% de recall",
+    "url": "https://x.com/emilygsands/status/2112281007860879858"
   },
   "fontes_com_falha": [
-    "Coleta de hoje (2026-10-22) ausente: usada a de 2026-10-21",
-    "X @FrankRHutter e @nubank: HTTPError",
-    "Reddit: vazio na coleta, sem cobertura",
-    "WebFetch de letsmoney e finsidersbrasil indisponível"
+    "Coleta de hoje (2026-10-23) ausente: usada a de 2026-10-22",
+    "X @dholzmueller: HTTPError",
+    "X @rasbt: HTTPError",
+    "X @NeoSpaceAI: HTTPError",
+    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError; WebSearch de Reddit não rodada",
+    "WebSearch NeoSpace LDM sem resultados relevantes",
+    "stripe.dev inacessível (DNS)"
   ]
 }

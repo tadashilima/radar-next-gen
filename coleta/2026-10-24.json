@@ -1,0 +1,270 @@
+{
+ "gerado_em": "2026-10-24T14:00:58+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Your Token Is Gone: A Token-Consumption Countermeasure for Disrupting LLM-Based Scam Systems",
+   "url": "http://arxiv.org/abs/2610.30666v1",
+   "data": "2026-10-22",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "LLM-based scam systems increasingly combine adaptive dialogue, persistent context, external tools, and multi-agent coordination to automate personalized fraud. These capabilities also create a resource dependency: every reasoning step, model call, and coordination round incurs inference cost. We present TokenTrap, a resource-oriented defense that redirects suspected scam systems toward benign, low-value computation while withholding credentials, payments, and other exploitable information. TokenTrap combines three components: an architecture-specific token-task library, a router that selects among single-agent, hierarchical, and flat multi-agent workflows, and a bounded anti-guardrail strate"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "Realism VS Accuracy: Event Sequence Forecasting from a Generative Modeling Perspective",
+    "url": "https://huggingface.co/papers/2610.12586",
+    "data": "2026-10-07",
+    "resumo": "Event sequences are chains of random events, each described by heterogeneous (numerical and categorical) features. The problem of event sequence forecasting occurs in finance, healthcare, business process intelligence, and other fields. In this work, we study multi-horizon forecasting of event sequences as a conditional generative modeling problem. We evaluate forecasts not only for prediction accuracy, but also for distributional realism. To this end, we present a benchmark comprising metrics for both quality aspects, strong statistical baselines, recent models adapted from adjacent fields, and curated real-world datasets. Careful evaluation reveals that no method excels at both accuracy an"
+   },
+   {
+    "titulo": "RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing",
+    "url": "https://huggingface.co/papers/2610.19705",
+    "data": "2026-10-18",
+    "resumo": "LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as single-round, multi-round, or agentic routing, which fixes how model calls are organized and limits adaptation to different query needs. We propose RouteWeaver, a unified routing framework that integrates these routing modes within a single LLM policy, jointly learning which mode to use and how to select models within that mode. To jointly optimize mode selection and within-mode execution, we develop COMET-GRPO (COordinated Mode-Execution Training), which decouples the trajectory-level advantage into"
+   },
+   {
+    "titulo": "Inherited, Not Invented: Tracing the Provenance of Wait in Reasoning Models",
+    "url": "https://huggingface.co/papers/2610.30882",
+    "data": "2026-10-22",
+    "resumo": "Reinforcement learning (RL) is credited with teaching reasoning models to write {wait} before reconsidering a step, yet large RL accuracy gains do not require the word. This view can confuse what RL discovers with what a model inherits from its training data. We trace the word through open models' training histories, reading it with label-free indices of frequency, position, form and usage and an injected-error test, all computed from sampled outputs. We find that zero-RL almost never coins the marker: on bases that lack the word, RL raises MATH-500 accuracy substantially while {wait} stays near absent. It arrives with training data: mid-training in OLMo-3, and fine-tuning on reasoning trace"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/soupsranjan/status/2113767214725894473",
+   "texto": "🚨 Excited to share Sardine's latest product suite on AI Token fraud: https://www.sardine.ai/token\n\nAI Token is the new gold bar that fraudsters and nation-states steal and launder to distill their own models. Here's how Sardine helps:\n\n1. Bank-grade \"Know Your Business\" (KYB) and \"Know Your Consumer (KYC), so you are not onboarding shell companies set up to distill frontier models\n\nSardine offers KYC and KYB globally. The same bank-grade technology that protects financial institutions globally from illicit activities is what you get.\n\n2. Signup fraud: We want you to offer free trials and Token",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113710822731989172",
+   "texto": "Your agent looks like a giant fraud and liability problem to your bank. \n\nEven if you sent it.\n\nThe bank needs to know who it’s acting for and whether you approved what it’s doing.\n\nI mapped the protocols that could make this work: https://x.com/i/article/2113655631399833600",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113623013765632141",
+   "texto": "Tokenized deposits are internal stablecoins for banks\n\nBecause \"a bank\" is actually lots of little banks inside a big one.",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113595089276584170",
+   "texto": "SoFi just launched a bank deposit token that pays 4.4% and swaps into its stablecoin 24/7.\n\nAnd look at the timing.\n\nThey announced one day after the OCC finalised the GENIUS Act rules.\n\nSoFi Earn (SOFIE) is a $1 token held as a deposit at SoFi Bank. (Kinda love that name)\n\nIt's FDIC insured up to $250k, variable 4.40% APY, no minimum balance.\n\nAnd rolling out to SoFi Crypto members through November.\n\n---\n\nThis is not like a Stablecoin in utility.\n\nYou can't send SOFIE to another person, an exchange or an external wallet.\n\nTo move it, you convert 1:1 into SoFiUSD, the bank's stablecoin. The yi",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113572458951225764",
+   "texto": "Shopping is the most common use case for Muse \n\nAnd the average transaction size is $200",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113259264395374917",
+   "texto": "Visa is in late-stage talks to buy Fireblocks for ~$2.5bn (Axios)\n\nThat is roughly 70% below the $8bn valuation Fireblocks raised at in 2022.\n\nFireblocks runs custody and wallet infrastructure for 2,400+ institutions, including BNY Mellon and BNP Paribas, and says it has secured over $10tn in transfers. It has become the biggest player in digital asset custody.\n\nBut increasingly it's expanding in more directions and product cross-sell, while underneath, competitors like DFNS are winning market share and mind share. Fireblocks hasn't raised in a while.\n\nVisa's stablecoin settlement crossed a $2",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113307898151387165",
+   "texto": "UPDATE: Fireblocks has denied this rumor or any knowledge of it!",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113307772942983569",
+   "texto": "UPDATE: Fireblocks has denied this rumor or any knowledge of it!\n\nQuite emphatically.",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113271067020030404",
+   "texto": "GG @tryramp",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113036309971579281",
+   "texto": "Those Blockchain not Bitcoin boys might have had a point.\n\nWhat about blockchains and new assets  (of which Bitcoin was one)",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113032588831113364",
+   "texto": "Merchant economics will become an issue.\n\nRight now accepting agent payments is like accepting Amex.\n\nExpensive.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113031988777246935",
+   "texto": "Stripe is on a day 1 integration streak\n\nIncredible through delivery\n\nClearly, all the other wallets then integrate, but there's a lot of value in being first",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112990399065370826",
+   "texto": "Anthropic's Muse?",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2112990289954844717",
+   "texto": "I study both companies closely. \n\nThey're not far apart in AI talent.\n\nNubank has the most scaled, dedicated foundation model for lending in the world.\n\nRamp has much more of a story around product velocity and AI first services like router or glass",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/ebloch/status/2112933987547226359",
+   "texto": "Insane. \n\nMy dot found an $8,300 mistake in my tax return. The return was prepared by a tax firm that is best in class! \n\nPeople, if you’re not using ChatGPT for your Finances, you are definitely leaving money on the table.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/BackseatVC/status/2112916226464682346",
+   "texto": "Muse, Instinct, and Grokbot really changed agentic commerce \n\nFrom what we can see on @link, total transactions increased by 38x, volume by 20x in September \n\nWhat are people having their agents buy? Retail was the most popular, then travel, and then music and entertainment",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113942444915990844",
+   "texto": "Demis Hassabis just recalled asking big MIT names in classic AI about deep learning + RL.\n\nThey thought it was a very bad idea.\n\nHe didn't agree with their reasons, and went on to set up DeepMind.\n\nGoogle later ended up acquiring the AI startup for ~$600 million.\n\nAbsolute legend 🤯",
+   "data": "2026-10-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113873792451649894",
+   "texto": "Sam Altman says he no longer thinks we'll be able to \"just patch all the bugs.\"\n\nHis reasoning: AI models keep getting smarter, and they can probably find \"bugs that are outside of the normal threat model of what we think a hacker can do. Hardware level, insane stuff.\"\n\nSecurity teams are still freaking out. But he says most leaders have \"somewhat moved on.\"\n\nHis fix: switch the whole defense model and use the same AI as \"a new kind of defense shield.\"",
+   "data": "2026-10-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113733531545551085",
+   "texto": "The CEO of Anthropic watching as China launches a new AI model that approaches Claude Opus 5.5 on coding & agents, costs about 2x less, and will have open weights released by November 4 - and there’s nothing he can do about it.",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113710130894422276",
+   "texto": "Demis Hassabis says today's AI \"will be nothing compared to the systems that are coming down the road in one, two years.\"\n\nBut most people skipped what he said right before that.\n\nHe called today's AI incidents \"serious warning shots for the industry\" and is calling for a standards body to test and certify frontier AI systems.\n\nCyber issues are already here. His bigger worry is bio, and even nuclear.\n\nHis point: get a grip on it now, while the models are still this weak.",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113618249409548518",
+   "texto": "The AI race isn't just about who has the smartest model.\n\nElon Musk's point: intelligence is worth little if it can't act on the world. Dolphins and whales are smart, but they have no hands.\n\nGive AI a robot body and it \"could have a science lab and run experiments.\"\n\nThe real moat may be in atoms, not tokens.",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113532606222340397",
+   "texto": "Everyone's asking which jobs AI will replace.\n\nEric Schmidt's answer: the coordination layer.\n\nThe 10,000-person company of today could be built around inventors, salespeople, and leaders.\n\n\"You've got a couple thousand people you don't need.\"\n\nIt's already happening:\n\n→ Barclays is cutting 5,000 jobs, about 5% of its workforce, as it relies more on AI\n→ Kroger plans to cut about 3,000 corporate jobs over three years, roughly 37% of its corporate staff\n\nMiddle management may be the first casualty of AI.",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113382133926387976",
+   "texto": "Elon Musk just proposed a simple AI safety plan to Walter Isaacson.\n\n> Skip the slow regulatory agency\n> Frontier labs hold a call once a week\n> Rivals get access a week before a model release\n\nGrok, GPT, and Claude all having a call on Teams.\n\nWould be quite epic, right? 😂",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113340931554660455",
+   "texto": "This week:\n\n→ Stripe plugged into Anthropic's Claude Duet so agents can make purchases\n→ Visa started piloting AI agents paying B2B invoices\n→ Microsoft says a state-aligned group used AI agents to hit 2,250+ Microsoft 365 tenants\n\nAnd now Axios reports that major U.S. banks are detecting unauthorized third-party AI agents inside customer accounts, some taking actions that appear independent of user instructions.\n\nBanks were built to verify humans.\n\nMaybe the hardest problem in finance may not be fraud. \n\nIt may be telling an agent you trusted from one you didn't.",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113281478951850426",
+   "texto": "WHOA: Major U.S. banks are finding unauthorized AI agents inside customer accounts, per Axios.\n\nSome are taking actions that appear independent of user instructions.\n\nExecutives say they're struggling to tell humans from agents, and authorized agents from rogue ones.\n\nSeveral banks are already preparing \"day after\" scenarios.\n\nWild times.",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113265932432703531",
+   "texto": "Physical AI is going to be far bigger than AI.\n\nJensen was right again.",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113158222030758258",
+   "texto": "Billionaire Citadel founder & CEO Ken Griffin says investors are \"almost certainly\" in the midst of an AI bubble.\n\nAt the same time:\n\n→ Andy Jassy says Amazon is out of compute until beyond 2028\n→ Anthropic has committed up to $338B to compute across Google, Amazon, Microsoft, Nscale, and Lambda\n\nA bubble where demand outruns supply may not be the bubble people think it is.",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2113003447574306955",
+   "texto": "JUST IN: Anthropic launches Claude Duet, a proactive AI agent.\n\nIt comes to you with what needs your attention, completes tasks, keeps working when you step away, and checks with you before acting on your behalf.\n\nGrok Bot. Meta's Muse. Now Claude Duet.\n\nThe personal AI agent race is officially on.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2113272949356810514",
+   "texto": "TabPFN-Rel gives your agent a relational prediction engine to call instead of a pipeline to write. The agent uses your business context and schema to define the task: what to predict, for which entities and over what period. TabPFN-Rel follows the relationships between tables, builds the features and predicts with TabPFN-3.5.\n\nIt has guardrails built in for the mistakes agents typically make, like temporal leakage and incorrect handling of data types.\n\nTo get started, install the tabpfn-rel:relational-prediction skill in Claude Code or Codex and point your agent at your data.\n\nMore in the blog",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2113228357194358901",
+   "texto": "📣 Live session for TabPFN-Rel incoming\n\nMost business data is spread across many linked tables, but most ML tools expect one flat table. A few months ago, we released RelArena to push relational ML research. Now, join us to see how TabPFN-Rel makes predictions directly on relational databases, without hand-built joins or feature engineering.\n\nWe'll cover:\n→ RelArena - the new benchmark for relational ML and why we need it\n→ What relational machine learning is, and why flattening tables by hand slows you down\n→ How TabPFN-Rel works, and how it prevents data leakage\n→ Defining prediction tasks i",
+   "data": "2026-10-22"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2112914845674918328",
+   "texto": "\"What will our sales be next quarter?\"\n\nFor data teams, answering that usually means pulling data from a dozen tables, then joining, cleaning, engineering features and checking for leakage. Even with a coding agent, you're steering every step.\n\nTabPFN-Rel is our harness for running TabPFN on relational databases. Define your tables and prediction task in YAML and SQL, or let your coding agent do it. TabPFN-Rel handles the joins, feature engineering and prediction, and follows best practices in relational machine learning.\n\nNew in this release:\n→ Even better performance: #1 using TabPFN-3.5-Plu",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2112916243279958515",
+   "texto": "Also announcement blog with more info: https://priorlabs.ai/blog-posts/look-into-the-future-with-tabpfn-rel?utm_source=x&utm_campaign=relational",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "RohanRamanath",
+   "url": "https://x.com/rohanramanath/status/2113737127553053128",
+   "texto": "This week in New York, I joined the AI Symposium hosted by @Evident_HQ  on a panel about how companies can harness AI agents. We talked about what a harness really is, why agents earn autonomy through verification rather than by running longer on their own, and how human experts become the training signal as agents scale. Thank you @AlexandraMousav  for the invitation, and to everyone in the room for the insightful conversation. In banking, trust is built in the system around the model, and it was great to see so many peers working on the same problem.",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "RohanRamanath",
+   "url": "https://x.com/sytaylor/status/2112990289954844717",
+   "texto": "I study both companies closely. \n\nThey're not far apart in AI talent.\n\nNubank has the most scaled, dedicated foundation model for lending in the world.\n\nRamp has much more of a story around product velocity and AI first services like router or glass",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2113007858380161318",
+   "texto": "What does it look like for an agent to help you run your business?\n\n@AnthropicAI's Claude Duet, launching today in research preview, brings together Link's wallet for agents and Stripe MCP to take on more of your everyday work.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2113007859802005790",
+   "texto": "With Link, Claude Duet can buy what your business needs (digital ads, business cards, lunch for the team, more whiteboard markers, you name it).\n\nWith @stripe MCP, it can send invoices and payment links, issue refunds, or analyze revenue.",
+   "data": "2026-10-21"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2113007861152530455",
+   "texto": "I'm excited about how practical this is becoming.",
+   "data": "2026-10-21"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @noahholl: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

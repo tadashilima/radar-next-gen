@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-10-24",
+    "data": "2026-10-24",
+    "titulo": "Dia calmo: PRAGMA da Revolut e dois papers sobre agentes e golpes",
+    "destaque": "Sem grande novidade nas últimas 48h; o item mais útil é a análise do PRAGMA, da Revolut, que mostra ganhos em fraude e crédito mas fraqueza em AML.",
+    "resumo": [
+      "PRAGMA: bom em fraude e crédito, pior em AML (grafo)",
+      "Golpes por LLM e monitores de agentes correlacionados em arXiv",
+      "Coleta de hoje ausente; usada a de 23/10"
+    ],
+    "itens": [
+      {
+        "titulo": "PRAGMA, da Revolut: foundation model de eventos bancários, com ganhos em fraude e crédito e queda em AML",
+        "url": "https://philippdubach.com/posts/inside-pragma-revoluts-foundation-model-for-banking/",
+        "fonte": "blog",
+        "tema": "transacional",
+        "sinal": "medio",
+        "data": "2026-04-01",
+        "porque": "Segundo análises secundárias, o modelo reporta ganho relativo de recall em fraude e de PR-AUC em crédito sobre baselines internos, mas piora em AML por não enxergar grafo. Serve de referência para comparar FM por cliente contra GBM e componentes de grafo; os números vêm de backtest e não foram verificados na fonte primária."
+      },
+      {
+        "titulo": "Contramedida de consumo de tokens para travar golpes automatizados por LLM",
+        "url": "http://arxiv.org/abs/2610.30666v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-10-22",
+        "porque": "O paper trata de golpes com diálogo adaptativo e multiagente e propõe elevar o custo computacional do golpista. Indica que engenharia social automatizada por LLM é vetor de fraude a ser considerado em modelos de detecção."
+      },
+      {
+        "titulo": "Falhas correlacionadas em monitores de IA que aprovam ações de agentes",
+        "url": "http://arxiv.org/abs/2610.29178v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-10-21",
+        "porque": "Mostra que combinar vários monitores de aprovação antes de ações como pagamentos pode falhar de forma correlacionada. Relevante para governança de agentes que executam operações financeiras."
+      }
+    ],
+    "perguntas": [
+      "Um FM por cliente precisa ser combinado com componente de grafo para cobrir AML e contas laranja?"
+    ]
+  },
+  {
     "id": "2026-10-23",
     "data": "2026-10-23",
     "titulo": "Stripe mostra ganho de recall em produção e FMs de séries temporais chegam ao crime financeiro",

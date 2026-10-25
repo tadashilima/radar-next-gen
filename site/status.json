@@ -1,16 +1,14 @@
 {
-  "data": "2026-10-24",
-  "novidade": true,
-  "titulo": "Dia calmo: PRAGMA da Revolut e dois papers sobre agentes e golpes",
-  "destaque": "Sem grande novidade nas últimas 48h; o item mais útil é a análise do PRAGMA, da Revolut, que mostra ganhos em fraude e crédito mas fraqueza em AML.",
-  "itens_novos": 3,
-  "principal": {
-    "titulo": "PRAGMA, da Revolut: foundation model de eventos bancários, com ganhos em fraude e crédito e queda em AML",
-    "url": "https://philippdubach.com/posts/inside-pragma-revoluts-foundation-model-for-banking/"
-  },
+  "data": "2026-10-25",
+  "novidade": false,
+  "titulo": "",
+  "destaque": "",
+  "itens_novos": 0,
+  "principal": {},
   "fontes_com_falha": [
-    "Coleta de 24/10 ausente (usada a de 23/10)",
-    "Reddit (HTTPError na coleta)",
-    "WebFetch de letsmoney.com.br e philippdubach.com sem resolução DNS"
+    "Coleta de 2026-10-25 ausente (usada a de 2026-10-24, já curada)",
+    "X @noahholl: HTTPError",
+    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError e sem cobertura via WebSearch",
+    "WebFetch bloqueado na nuvem: datas de itens candidatos (Sardine, Mastercard LTM, plano de 16 regras do BC) não verificadas"
   ]
 }

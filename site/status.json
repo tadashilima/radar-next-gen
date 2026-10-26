@@ -1,14 +1,18 @@
 {
-  "data": "2026-10-25",
-  "novidade": false,
-  "titulo": "",
-  "destaque": "",
-  "itens_novos": 0,
-  "principal": {},
+  "data": "2026-10-26",
+  "novidade": true,
+  "titulo": "Dia calmo: benchmark de sequências de eventos e alerta de voz sintética",
+  "destaque": "Poucas novidades diretas sobre FMs de transações; o destaque é um benchmark que mostra que nenhum método de previsão de sequências de eventos vence ao mesmo tempo em acurácia e realismo.",
+  "itens_novos": 2,
+  "principal": {
+    "titulo": "Benchmark de previsão de sequências de eventos: acurácia e realismo não vêm juntos",
+    "url": "https://huggingface.co/papers/2610.12586"
+  },
   "fontes_com_falha": [
-    "Coleta de 2026-10-25 ausente (usada a de 2026-10-24, já curada)",
-    "X @noahholl: HTTPError",
-    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError e sem cobertura via WebSearch",
-    "WebFetch bloqueado na nuvem: datas de itens candidatos (Sardine, Mastercard LTM, plano de 16 regras do BC) não verificadas"
+    "X @GaelVaroquaux: HTTPError",
+    "X @autogluon: HTTPError",
+    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError",
+    "Coleta de hoje (2026-10-26) ainda não existia; usada a de 2026-10-25",
+    "Busca web: NeoSpace LDM sem resultados relevantes; canaltech inacessível"
   ]
 }

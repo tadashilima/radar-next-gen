@@ -1,5 +1,36 @@
 [
   {
+    "id": "2026-10-26",
+    "data": "2026-10-26",
+    "titulo": "Dia calmo: benchmark de sequências de eventos e alerta de voz sintética",
+    "destaque": "Poucas novidades diretas sobre FMs de transações; o destaque é um benchmark que mostra que nenhum método de previsão de sequências de eventos vence ao mesmo tempo em acurácia e realismo.",
+    "resumo": [
+      "Novo benchmark de previsão de sequências de eventos (acurácia vs. realismo distribucional).",
+      "Modelo de voz pequeno e conversacional da Block reacende o alerta sobre golpes por telefone."
+    ],
+    "itens": [
+      {
+        "titulo": "Benchmark de previsão de sequências de eventos: acurácia e realismo não vêm juntos",
+        "url": "https://huggingface.co/papers/2610.12586",
+        "fonte": "hf",
+        "tema": "transacional",
+        "sinal": "medio",
+        "data": "2026-10-07",
+        "porque": "Quem avalia modelos sobre históricos de eventos de clientes ganha um benchmark com baselines estatísticos fortes; o resumo indica que nenhum método lidera nas duas dimensões, o que pede avaliar também o realismo, não só a acurácia."
+      },
+      {
+        "titulo": "Modelo de voz da Block, pequeno e rodando em celular, preocupa por escalar golpes telefônicos",
+        "url": "https://x.com/soupsranjan/status/2114029649592451161",
+        "fonte": "x",
+        "tema": "producao",
+        "sinal": "baixo",
+        "data": "2026-10-24",
+        "porque": "Segundo o autor do post, voz sintética conversacional barata tende a ampliar golpes que começam por ligação; vale considerar sinais de canal e comportamento nos modelos antifraude. É opinião, não dado verificado."
+      }
+    ],
+    "perguntas": []
+  },
+  {
     "id": "2026-10-24",
     "data": "2026-10-24",
     "titulo": "Dia calmo: PRAGMA da Revolut e dois papers sobre agentes e golpes",

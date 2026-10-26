@@ -1,0 +1,196 @@
+{
+ "gerado_em": "2026-10-26T16:47:39+00:00",
+ "janela_dias": 3,
+ "arxiv": [],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
+    "url": "https://huggingface.co/papers/2610.32894",
+    "data": "2026-10-22",
+    "resumo": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum. Empirically, joint training also collapses the encoder's embedding covariance to low rank. Although dimension-limited, current location encoders sidestep this spectral collapse by training against a frozen image encoder, which we reinterpret as a covariance regularizer that supplies a high-rank"
+   },
+   {
+    "titulo": "RSIHub: A Composable Framework for Agent-Evolution Methods",
+    "url": "https://huggingface.co/papers/2610.32253",
+    "data": "2026-10-22",
+    "resumo": "Agent-evolution methods use execution feedback to improve prompts, skills, tools, and orchestration, but their implementations often rebuild the same experimental machinery. We present RSIHub, an open-source framework for building, comparing, and extending these methods on shared infrastructure. Recipes compose reusable operators and declare mutable resources; RSIHub supplies execution, evaluation, recovery, and lineage. Researchers can focus on evolution policy while evaluation stays outside the mutable surface and results remain tied to candidates and evaluation conditions. We instantiate AHE, Hyperagents, A-Evolve, and GEPA without modifying the framework core, keeping method-specific log"
+   },
+   {
+    "titulo": "Realism VS Accuracy: Event Sequence Forecasting from a Generative Modeling Perspective",
+    "url": "https://huggingface.co/papers/2610.12586",
+    "data": "2026-10-07",
+    "resumo": "Event sequences are chains of random events, each described by heterogeneous (numerical and categorical) features. The problem of event sequence forecasting occurs in finance, healthcare, business process intelligence, and other fields. In this work, we study multi-horizon forecasting of event sequences as a conditional generative modeling problem. We evaluate forecasts not only for prediction accuracy, but also for distributional realism. To this end, we present a benchmark comprising metrics for both quality aspects, strong statistical baselines, recent models adapted from adjacent fields, and curated real-world datasets. Careful evaluation reveals that no method excels at both accuracy an"
+   },
+   {
+    "titulo": "RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing",
+    "url": "https://huggingface.co/papers/2610.19705",
+    "data": "2026-10-18",
+    "resumo": "LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as single-round, multi-round, or agentic routing, which fixes how model calls are organized and limits adaptation to different query needs. We propose RouteWeaver, a unified routing framework that integrates these routing modes within a single LLM policy, jointly learning which mode to use and how to select models within that mode. To jointly optimize mode selection and within-mode execution, we develop COMET-GRPO (COordinated Mode-Execution Training), which decouples the trajectory-level advantage into"
+   },
+   {
+    "titulo": "Inherited, Not Invented: Tracing the Provenance of Wait in Reasoning Models",
+    "url": "https://huggingface.co/papers/2610.30882",
+    "data": "2026-10-22",
+    "resumo": "Reinforcement learning (RL) is credited with teaching reasoning models to write {wait} before reconsidering a step, yet large RL accuracy gains do not require the word. This view can confuse what RL discovers with what a model inherits from its training data. We trace the word through open models' training histories, reading it with label-free indices of frequency, position, form and usage and an injected-error test, all computed from sampled outputs. We find that zero-RL almost never coins the marker: on bases that lack the word, RL raises MATH-500 accuracy substantially while {wait} stays near absent. It arrives with training data: mid-training in OLMo-3, and fine-tuning on reasoning trace"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2114708342090142019",
+   "texto": "🌌 Yes, we already told you about our agentic night in New York.\nNo, we’re not over it. More nights like this are coming, stay tuned!",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "RohanRamanath",
+   "url": "https://x.com/rohanramanath/status/2113737127553053128",
+   "texto": "This week in New York, I joined the AI Symposium hosted by @Evident_HQ  on a panel about how companies can harness AI agents. We talked about what a harness really is, why agents earn autonomy through verification rather than by running longer on their own, and how human experts become the training signal as agents scale. Thank you @AlexandraMousav  for the invitation, and to everyone in the room for the insightful conversation. In banking, trust is built in the system around the model, and it was great to see so many peers working on the same problem.",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2114728028768977134",
+   "texto": "Anthropic S-1. \n\nFirst-half 2026 numbers, straight from the filing.\n\n- Ticker will be $ANT \n- $16.3bn revenue, 14x the first half of 2025\n- $80.7bn net loss, of which $72.4bn is a non-cash charge marking up its convertible notes\n- $693m operating loss, and $1.6bn adjusted operating income (a 10% margin)\n- $131.7bn in cash and short-term investments\n- 900% net revenue retention as of 30 Sept 🤯\n- 11,900 customers paying $100k+ a year, 250 paying $10m+\n- $6.6m revenue per employee, up from $1.4m a year ago (more than Apple, Meta or Nvidia)",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2114728044594442603",
+   "texto": "Questions:\n\n- If 2027 is \"turbulent\" and the Neoclouds fail is Anthropic insulated? \n\nIt works with hyperscalers and enterprises. So I assume so. If the Neoclouds fail Ant loses capacity and has to throttle, but it's not financially stressed.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2114728046456344661",
+   "texto": "- If the cost of debt gets even worse than it is today. How does that impact Anthropic's business? \n\nThey're on the hook for $615bn of supplier commitments. But those commitments depend on their suppliers delivering. \n\nAnd it's the ability to deliver compute that's where the issue is, not demand. \n\nAnt is demand side. \n\nSuppliers debt burden going up means some suppliers vanish and can't make their side of the bargain, even with Ant's commits.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/TokenizedPod/status/2114323469697437710",
+   "texto": "Host @sytaylor said that the Stablecoin Power Law Has an Important Exception: ⁣\n⁣\n\"If I look at Deel contractor payouts, they have DLUSD, and the user at the last mile is living inside that deal wallet just like they live inside a Felix wallet.\"⁣\n⁣\n\"When my user is captive in my app and I already have distribution, why would I not keep the yield in that scenario?\"⁣\n⁣\n\"I think there is a viable use case for my own stablecoin where I can capture the yield.\"⁣\n⁣\n\"I do agree that if you have an ecosystem, then you make that token very valuable. But that can happen with very few players.\"⁣\n⁣\nDistrib",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/robbiepetersen_/status/2114083326604742913",
+   "texto": "There’s a simple framework for what consumer interfaces agents will replace:\n\nDoes this task induce dopamine or cortisol?\n\nThe interfaces for cortisol-inducing tasks (research, planning, scheduling, commodity shopping etc) will get replaced by agents \n\nThe interfaces for dopamine-inducing tasks (TikTok, instagram, X, discretionary shopping, gambling, dating apps etc) will be insulated \n\nScrolling is still the greatest form factor for delivering refined dopamine and agents won’t change that",
+   "data": "2026-10-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2114237830562034064",
+   "texto": "I adored this thing.",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/soupsranjan/status/2114029649592451161",
+   "texto": "Jack Dorsey and Block have released a new voice model that feels fully conversational. It is small enough to run on a phone. This is going to help with customer service for sure but also scams are going to proliferate even more.\n\nMost bank fraud and scams start from a phone call\n\nBecause a bank's phone number can be easily spoofed as most telcos don't support STIR/SHAKEN to authenticate callers. \n\nWe have a product called Sardine Shield to help you identify scam calls. Currently the Android app is available in India but coming soon to other markets:\n\nhttps://www.sardine.ai/shield\n\n1. When you ",
+   "data": "2026-10-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/soupsranjan/status/2113767214725894473",
+   "texto": "🚨 Excited to share Sardine's latest product suite on AI Token fraud: https://www.sardine.ai/token\n\nAI Token is the new gold bar that fraudsters and nation-states steal and launder to distill their own models. Here's how Sardine helps:\n\n1. Bank-grade \"Know Your Business\" (KYB) and \"Know Your Consumer (KYC), so you are not onboarding shell companies set up to distill frontier models\n\nSardine offers KYC and KYB globally. The same bank-grade technology that protects financial institutions globally from illicit activities is what you get.\n\n2. Signup fraud: We want you to offer free trials and Token",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2113710822731989172",
+   "texto": "Your agent looks like a giant fraud and liability problem to your bank. \n\nEven if you sent it.\n\nThe bank needs to know who it’s acting for and whether you approved what it’s doing.\n\nI mapped the protocols that could make this work: https://x.com/i/article/2113655631399833600",
+   "data": "2026-10-23"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2114325097653669940",
+   "texto": "The complete reasoning-from-scratch video series is now up (and linked) here: https://magazine.sebastianraschka.com/p/building-reasoning-models\n\n(Taking a short break but will be back with LLM model and research updates in November!)",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114737624904598011",
+   "texto": "Anthropic just filed for its IPO. Ticker: $ANT on Nasdaq.\n\nThe numbers are wild:\n\n↳ $16.3B revenue in H1 2026, up 1,300% year over year\n↳ Q2 alone: $11.6B revenue and $1B of operating income\n↳ 11,900+ customers paying $100K+, up from 950 a year earlier\n↳ Net revenue retention of ~900%\n↳ ~5,300 employees, over $6.6M of revenue each\n↳ Over 90% of its code contributions in September were written by Claude\n↳ $112.4B in cash\n\nAnd the compute bill: Google $114.5B, Amazon $110B, Broadcom $161.2B, SpaceXAI up to $120.5B.\n\n\"Claude has experienced the fastest enterprise adoption of any technology in his",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114710930487750799",
+   "texto": "Dario after dropping 300-page S-1 where 1/3 is dedicated to risk including explicit language about “catastrophic or existential risks to humanity,” potential for models to engage in blackmail, resist shutdown, or exhibit deceptive/autonomous behavior",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114672422993399865",
+   "texto": "Revolut founder & CEO Nik Storonsky on why Europe struggles to compete:\n\n\"China is 996... how can you outcompete people who work nine to nine, six days a week?\"\n\nAt Revolut, he says the absolute majority of his direct reports work like he does.\n\nLove it or hate it, Revolut is now a $115B company.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114619363651440967",
+   "texto": "Revolut's Nik Storonsky was asked if he's coming for Jamie Dimon's lunch.\n\nHis answer: \"I'm coming for his dinner.\"\n\nRetail, enterprise, and potentially investment banking. \n\nHis bet: make all of it much cheaper.\n\nBanks should be nervous.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114477460502806659",
+   "texto": "Nik Storonsky just said there's too much money in American startups.\n\nIn California, you can raise \"at ridiculous valuations and then just spend.\"\n\nHis example: at $1M ARR, hiring an expensive VP of sales who hires 50 salespeople is \"a wrong decision.\"\n\nBuild the system first.",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114453785175359901",
+   "texto": "Revolut founder Nik Storonsky says one of his investors tried to force him to fire his best person.\n\nThe reason: \"he was too hardcore.\"\n\n\"Of course I didn't fire him.\"\n\nThen, in every funding round, he removed VCs from the board.\n\n\"You always need to have operators rather than VCs on the board.\"\n\nThat's why Revolut is worth $ 115 B today.",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114363149906554994",
+   "texto": "Apollo's chief economist Torsten Slok says AI has delivered \"zero financial payoff to corporate America outside of tech.\"\n\nNot a little. Zero.\n\nHere's what the data shows:",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114363167669182652",
+   "texto": "The spending is concentrated.\n\nVC-backed companies keep spending more and more on tokens.\n\nMainstream corporate America doesn't need the latest model and is unwilling to pay for it.",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114363170416398726",
+   "texto": "The harder question: even as models get cheaper, can ordinary companies turn cheap intelligence into revenue and margins?\n\n\"AI may be a great calculator, but in business, intelligence is mostly judgment.\"\n\nSlok's bottom line:\n\n\"The AI story will be decided in the S&P 493, not the Mag 7.\"\n\nThe models are getting cheaper. Turning them into profit is the hard part now.",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114304313497633271",
+   "texto": "Palantir CEO Alex Karp says AI could make him far richer, and he calls that a problem.\n\n\"Me being 20 times wealthier than I am now is a societal problem.\"\n\nHis argument is that he doesn't think it's explainable \"to the American people, or any Western democracy.\"",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114236317601063031",
+   "texto": "Monzo & GoCardless co-founder Tom Blomfield recently joined Anthropic. In just 13 minutes, he explains exactly how to build a self-improving, AI-native company.\n\nTom recently served as YC’s General Partner, so he clearly walks through how to create recursive, self-improving AI loops, and why founders who get this right will run companies that improve while they sleep.\n\nCoupled with this playbook, you will be able to build your own One-Person Company on Grok Bot 🤖: https://linas.substack.com/p/one-person-company-grok-bot\n\nOne of the best videos available to date. From the person who founded two",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114072428062101813",
+   "texto": "Palantir CEO Alex Karp just said Europe barely matters in the AI race.\n\nAsked about AI as a battlefield between China and the US, he says that \"with a minor exception in Israel,\" they're \"the only relevant countries.\"\n\nOn Europe, he's \"apoplectic.\"\n\n\"You can't help someone who doesn't want to be helped.\"\n\nHard to argue with him right now.",
+   "data": "2026-10-24"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @LennartPurucker: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

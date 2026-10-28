@@ -1,0 +1,377 @@
+{
+ "gerado_em": "2026-10-28T16:37:49+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Recall or Relearn? A Mixture of In-Context Experts for Recurring Concept Drift",
+   "url": "http://arxiv.org/abs/2610.36585v1",
+   "data": "2026-10-27",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular foundation models (TFMs) are being applied to Web data streams such as network intrusion detection, where they adapt by updating the labelled rows of their context without retraining. When a past concept returns after leaving the context, a TFM faces a recall-or-relearn decision between restoring stored rows of the concept and relearning it from new labels. We propose MICE (Mixture of In-Context Experts), a training-free learner that cuts the stream into segments at detected changes. It merges a closed segment into a stored context when the TFM's estimated additional error on the segment is within a tolerance, under a capacity limit on stored contexts. A fast level weights the stored"
+  },
+  {
+   "titulo": "TRIDENT-Seq: Profile-Matched Prefix-Future Contrast for Label-Efficient Payment Risk Modeling",
+   "url": "http://arxiv.org/abs/2610.37365v1",
+   "data": "2026-10-27",
+   "query": "all:\"transaction\" AND all:\"foundation model\"",
+   "resumo": "Ant International accumulates large volumes of transaction history across users and payment businesses. Confirmed fraud and chargeback outcomes, by contrast, are scarce, delayed, and specific to each business. A single encoder pretrained on unlabeled histories could serve all businesses, but only if pretraining captures the behavior that separates risk. Coarse activity differences can make contrastive pretraining on transaction logs too easy: transaction volume, amount, and timing can distinguish a history's continuation from arbitrary candidates without modeling how payment resources are used. We present TRIDENT-Seq, a transaction foundation model trained with Prefix-Future Contrast (PFC). "
+  },
+  {
+   "titulo": "DecisionTraceBench: Tracking Decision-Critical Information in Multi-Party Spoken Conversations",
+   "url": "http://arxiv.org/abs/2610.34746v1",
+   "data": "2026-10-26",
+   "query": "all:\"event sequence\" AND (all:bank OR all:financial)",
+   "resumo": "In high-stakes domains such as finance, critical information evolves through multi-party interaction. Recovering these changes and their sources is fundamental to reliable speech understanding. Existing speech benchmarks focus on transcription, local understanding, and turn-level state prediction, leaving joint decision evolution across speakers insufficiently evaluated. We introduce DecisionTraceBench, a speech state-tracking benchmark for Decision-Critical Information State Tracking (DCIST). It jointly evaluates decision event sequences, speaker attribution, scope, and temporal evidence, using trajectory-level F1 to measure complete event-chain recovery. Our dataset comprises Chinese finan"
+  },
+  {
+   "titulo": "LLM-Enhanced Heterogeneous Graph Learning with Business Semantics for Financial Fraud Detection",
+   "url": "http://arxiv.org/abs/2610.35298v1",
+   "data": "2026-10-26",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "Financial fraud detection increasingly relies on heterogeneous transaction graphs, in which entities such as cards and merchants play distinct business roles and the risk meaning of an attribute depends on the entity's role: a high transaction volume may be routine for a merchant but unusual for a card. Heterogeneous graph neural networks preserve typed entities and relations but typically treat these attributes as role-agnostic inputs and leave their business meaning implicit. Meanwhile, most existing methods integrating large language models (LLMs) with graphs focus on homogeneous graphs or heterogeneous graphs with naturally available textual attributes, leaving their use on transaction g"
+  },
+  {
+   "titulo": "GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting",
+   "url": "http://arxiv.org/abs/2610.37598v1",
+   "data": "2026-10-27",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "Traffic forecasting requires modeling complex temporal dynamics and the spatial dependencies imposed by road topology. Supervised graph-based models achieve strong performance, but are often trained for a particular dataset and sensor graph, making deployment to new or evolving networks costly. Prior-Data Fitted Networks (PFNs) offer a zero-shot alternative by learning in-context inference from synthetic task priors, which provide an explicit mechanism for encoding domain-specific assumptions. Existing forecasting PFNs, however, do not explicitly represent the graph-structured dependencies governing traffic dynamics. To combine graph-aware traffic modeling with zero-shot adaptation, we intro"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning",
+    "url": "https://huggingface.co/papers/2610.36082",
+    "data": "2026-10-25",
+    "resumo": "Financial institutions operating under data-residency constraints are restricted to open-weight models small enough to locally host, which trail frontier systems on multi-step quantitative reasoning. On-policy distillation narrows such gaps by supervising a student on its own rollouts, but traditional OPD requires a strong external teacher, and on-policy self-distillation (OPSD) conditions on a full reference solution. We ask how much of that signal is necessary. We present Fin-SD, a localized hindsight self-distillation recipe for multi-step reasoning. Given a problem the student fails, the student itself identifies the first incorrect reasoning step and writes a short critique of that step"
+   },
+   {
+    "titulo": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+    "url": "https://huggingface.co/papers/2610.35013",
+    "data": "2026-10-25",
+    "resumo": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines."
+   },
+   {
+    "titulo": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
+    "url": "https://huggingface.co/papers/2610.33624",
+    "data": "2026-10-23",
+    "resumo": "Can AI agents autonomously train useful language models and improve them using feedback from users? We introduce RSI Arena, a two-stage study of autonomous post-training as a step toward recursive self-improvement. Ten frontier models act as training agents, each starting from NVIDIA Nemotron 3.5 Lightning 30B-A3B Base. During a six-day first stage, each agent has 1,000 GPU-hours and $300 in API credit on a shared 64-GPU cluster, independently selecting data, implementing training procedures, and choosing checkpoints. We evaluate their models on 20 benchmarks and through blind human evaluations. All ten agents produce working assistants, with the strongest model, trained by GPT-6 Astra, clos"
+   },
+   {
+    "titulo": "Did the Model Use That? Counterfactual Training Boosts Self-Attribution in Language Models",
+    "url": "https://huggingface.co/papers/2610.35295",
+    "data": "2026-10-25",
+    "resumo": "A fundamental challenge for explainable and accountable language models is revealing how external information influences their answers. This paper examines whether models are self-attributive: that is, whether they indicate when -- and only when -- their responses to questions are influenced by information provided alongside the question. Furthermore, we explore how self-attribution can be improved through counterfactual training, which explicitly teaches models to distinguish between answers that do and do not depend on supplied information.\n  We found that most of the eleven frontier models rarely attribute influential information in their answers, and the rest attribute non-influential in"
+   },
+   {
+    "titulo": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
+    "url": "https://huggingface.co/papers/2610.32004",
+    "data": "2026-10-22",
+    "resumo": "Deploying language agents in real applications demands more than the right answer: an agent must execute a multi-step business process correctly, follow domain-specific rules, and interact with a user across a dialogue, where the gap between saying and doing is the gap between a satisfied customer and a real loss. We argue that a deployable-agent benchmark should jointly assess four facets: the outcome an agent reaches, the trajectory it takes, its operational viability, and its policy compliance. Customer relationship management (CRM), where mutable records meet operational rules and consequential effects, exercises all four. We introduce CRM-Agent-Bench, an execution-grounded benchmark of "
+   },
+   {
+    "titulo": "Thinking-in-Bets at Test Time Reduces Sycophantic Revisions in LLM Agents",
+    "url": "https://huggingface.co/papers/2610.34654",
+    "data": "2026-10-25",
+    "resumo": "Language model agents often abandon correct work when a user challenges it, yet simply telling them to stand firm makes them ignore real mistakes. Once an agent reads a complaint, it tends to discount its own earlier checks in order to agree with the user. We introduce Thinking-in-Bets, a training-free method in which an agent writes a short private record of its main claims, the checks supporting them, and its confidence before reading user feedback. When challenged, the agent consults this Claim Checklist to keep verified work intact while investigating uncertain or newly challenged parts. We evaluate five Gemini models (3.5 Flash-Lite, 3.5 Flash, 3.6 Flash, 3.8 Flash, and 4.0 Argon) acros"
+   },
+   {
+    "titulo": "S3AC: Stabilized, Selective, and Scalable Actor-Critic for LLM Reasoning",
+    "url": "https://huggingface.co/papers/2610.35518",
+    "data": "2026-10-25",
+    "resumo": "Critic-free methods are widely used in reinforcement learning with verifiable rewards (RLVR) for long chain-of-thought (CoT) reasoning, avoiding difficult and costly critic training. Common alternatives lack token-level credit assignment and typically rely on grouped rollouts to estimate prompt-specific baselines. A critic can address both limitations, but long-CoT critic training is hindered by insufficient coverage of trajectories with diverse lengths and early gradients dominated by the newly initialized value head. We introduce S3AC (Stabilized, Selective, and Scalable Actor-Critic) for LLM reasoning, built around a practical critic-training recipe. The trained critic provides token-spec"
+   },
+   {
+    "titulo": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL",
+    "url": "https://huggingface.co/papers/2610.33512",
+    "data": "2026-10-23",
+    "resumo": "Rubric-based rewards enable effective reinforcement learning on non-verifiable tasks. However, because these rewards are typically defined as a weighted measure of rubric coverage, models are trained primarily to maximize a recall objective. As a result, RL-trained models produce responses that are more complete but also more verbose and contain more unnecessary or factually incorrect content, leading them to be less preferred than responses from the base model. To address this issue, we present the FORK reward, which jointly optimizes recall and a novel precision objective, which requires each unit of a model response to be both necessary and factually correct, as measured by rubric-driven "
+   },
+   {
+    "titulo": "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
+    "url": "https://huggingface.co/papers/2610.18683",
+    "data": "2026-10-24",
+    "resumo": "Reinforcement learning (RL) has emerged as the primary paradigm for optimizing Large Language Model (LLM) agents, yet efficient critic-free algorithms (e.g., GRPO) suffer from a fundamental uniform credit assignment dilemma that broadcasts trajectory-level advantages equally to all actions. Our analysis reveals that this uniformity inherently reinforces structurally unreasonable actions in preferred trajectories and ignores each action's downstream deviations in unpreferred ones. To resolve this without introducing critic overhead, we propose Progress-Aware Advantage Shaping (ProAS), a plug-and-play framework that leverages a dynamically evolving Agentic Reference Graph (ARG) to achieve fine"
+   }
+  ],
+  "modelos_prior_labs": [
+   {
+    "modelo": "Prior-Labs/TabPFN-v2-clf",
+    "url": "https://huggingface.co/Prior-Labs/TabPFN-v2-clf",
+    "atualizado": "2026-10-28"
+   },
+   {
+    "modelo": "Prior-Labs/TabPFN-v2-reg",
+    "url": "https://huggingface.co/Prior-Labs/TabPFN-v2-reg",
+    "atualizado": "2026-10-28"
+   }
+  ]
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115444568359600530",
+   "texto": "Think more. Predict better. The new TabPFN-3.5-Thinking sets the SOTA bar.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115444604095123580",
+   "texto": "Thinking now trains on up to 1M rows, 5x more than before, and is strongest on grouped and temporal data: patterns that shift per customer, product and season.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115444615985906156",
+   "texto": "Full details in the blog. Link in comments.\n\nRead the blog: https://priorlabs.ai/blog-posts/tabpfn-3-5-thinking-upgrade?utm_source=x&utm_medium=social&utm_campaign=thinking3p5-launch\n\nSign up for early access and extra API credits: https://priorlabs.ai/blog-posts/tabpfn-3-5-thinking-upgrade?waitlist=open&utm_source=x&utm_medium=social&utm_campaign=thinking3p5-launch",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115095023138029848",
+   "texto": "How do you benchmark TabPFN against your current model?  \n\nNew episode in our TabPFN Academy series: Philipp Singer (tag) walks through how he benchmarks TabPFN-3.5 against XGBoost.  \n\nBenchmarking is key if you want to evaluate TabPFN on your current baseline, so the tutorial and the notebook are yours: run it on your own data and see it for yourself.\n\nhttps://www.youtube.com/watch?v=A7_rBOljbzk",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115095026036588670",
+   "texto": "https://docs.priorlabs.ai/cookbook/tabpfn_vs_xgboost?utm_source=linkedin&utm_medium=social&utm_campaign=youtube-tutorials",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2114708342090142019",
+   "texto": "🌌 Yes, we already told you about our agentic night in New York.\nNo, we’re not over it. More nights like this are coming, stay tuned!",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/AlanArazi1536/status/2114807305908711656",
+   "texto": "MulTaBench Leaderboard is out! 🏆\n\nAfter being accepted to NeurIPS (as a Spotlight!) and with the explosion of Tabular Foundation Models, we’re launching a leaderboard to tackle the next big frontier: Multimodal Tabular Learning.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/PotoSacho/status/2114755622352925077",
+   "texto": "You can efficiently estimate calibration errors without binning. With @BachFrancis @JordanMich45361 @DHolzmueller  and @Eugene_Berta . The catch is to write the calibration error as a drop in risk for the right loss: no bins, a lower bound, and over/under-confidence for free.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115473663990301170",
+   "texto": "Ramp is worth $60bn and 70% of its R&D team is working on products it hasn't released yet.\n\nI sat down with @eglyman in New York to discus\n\nWhy he thinks of @tryramp as a productivity company more than fintech\n\nThe 7,000 pull requests their non-engineers wrote last quarter\n\nThe trust charter, stablecoins, and whether an AI agent would choose your business.\n\nFull conversation 👇\n\n00:00 Introduction\n03:16 Is fintech dead? And why Ramp considers itself a productivity company\n04:41 Why AI token costs are turning software into financial products\n07:27 How Ramp's Inspect lets non engineers ship code ",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115474018245529834",
+   "texto": "Find the full conversation here on YouTube:\n\nhttps://youtu.be/BqMcJyCVmNo\n\nOr wherever you get your podcasts.\n\nAnd remember to subscribe at https://brainfood.xyz if you want more like this",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2115460421587279983",
+   "texto": "It’s an exciting time for Visa’s stablecoin business. Visa CEO Ryan McInerney shared some updates on our strategy and traction on yesterday’s earnings call.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/shivsiroya/status/2115132201209917667",
+   "texto": "For a decade, we've built credit for people the financial system couldn't see. \n\nNow there's a new kind of thin-file borrower: the AI agent.\n\nHere's my take👇 https://x.com/i/article/2115131561695973376",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2115182012684464145",
+   "texto": "1/ Stablecoins provide banks with an opportunity to grow deposits.\n\nAs businesses get paid in stablecoins, they'll move idle balances into tokenized deposits, which count as cash and support credit lines. Banks that offer them early win that business.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/malleshpai/status/2115449359307313266",
+   "texto": "Deposit tokens vs stablecoins got framed as a fight. From where we're looking it looks more like a stack. Deposit tokens make good reserves, both for the banks and sensitive holders like corporate treasuries: they pay interest and stay inside the bank perimeter. Stablecoins make good bearer money: anyone can hold, no account needed.\n\nPut one under the other and an issuer can rebalance reserves in code, at 3am on a Sunday, instead of through wires and cutoff times, leading to a better experience for everyone involved.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/blockworksDAS/status/2115120619649908997",
+   "texto": "DAS LONDON: \nBuilding The New Standard for Global Money Movement\n\nwith @zcabrams & @sytaylor\n\nWednesday Nov 11 in London.\nBe there: https://blockworks.com/event/digital-asset-summit-london#pricing",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115093833755074630",
+   "texto": "Instinct just gave AI agents a budget they can spend without asking you.\n\nEach agent gets a stablecoin wallet, but the purchases themselves still run on card rails.\n\nHere's how it works\n\n1. You load a balance into the wallet \n2. Set a per-purchase limit \n3. Tell the agent what to buy, and it draws down from that balance. \n\nThe demo shows a user adding $700, asking for their favorite lunch every day for a week, then concert tickets.\n\nUnder the hood, each agent holds OUSD (a stablecoin) in a Privy wallet on Tempo. So you’d be forgiven for thinking the card schemes are cooked.\n\nBut actually, here",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115104108738740553",
+   "texto": "Correction \n\nIt does not YET use OUSD!",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115098072535494868",
+   "texto": "Instinct now lets you give your AI agent a balance to spend within limits.\n\nThat balance sits in stablecoins. \n\nThe purchase can still run through Visa.\n\nBut your bank should watch where you keep the money between purchases. https://x.com/i/article/2115094027682865152",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115094757315621333",
+   "texto": "I love the frame that brand marketing is arbitrage against performance marketing.\n\nBecause you can measure performance (pay-per-click), it's well-priced.\n\nBut if you do the math on how many people travel through an airport, and see the logo it works out better.\n\nThat's what @Revolut did 👇",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115041999481180515",
+   "texto": "Ahh \"new product approval\"\n\nThe real reasons banks suck.\n\nBank regulation assumes a process where you spend time pushing paper before launching a product materially prevents risk.\n\nNarrator: It does not.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/stable_takes/status/2114817502517608614",
+   "texto": "Stable Takes is back with Episode 4. Join @dwr and @sytaylor for 20 minutes on the top stories in stablecoins and agentic payments.\n\nIn this episode:\n\n• JPMorgan’s deposit tokens on Ethereum\n• Money20/20 takeaways: Agentic payments and stablecoins\n• What GENIUS Act rulemaking means for stablecoin rewards",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2114817303162601481",
+   "texto": "RT @tempo: Link balances are powered by stablecoins on Tempo! You can check it out in @Instinct today.\n\nYou simply set a budget for your ag…",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2114728028768977134",
+   "texto": "Anthropic S-1. \n\nFirst-half 2026 numbers, straight from the filing.\n\n- Ticker will be $ANT \n- $16.3bn revenue, 14x the first half of 2025\n- $80.7bn net loss, of which $72.4bn is a non-cash charge marking up its convertible notes\n- $693m operating loss, and $1.6bn adjusted operating income (a 10% margin)\n- $131.7bn in cash and short-term investments\n- 900% net revenue retention as of 30 Sept 🤯\n- 11,900 customers paying $100k+ a year, 250 paying $10m+\n- $6.6m revenue per employee, up from $1.4m a year ago (more than Apple, Meta or Nvidia)",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2114728044594442603",
+   "texto": "Questions:\n\n- If 2027 is \"turbulent\" and the Neoclouds fail is Anthropic insulated? \n\nIt works with hyperscalers and enterprises. So I assume so. If the Neoclouds fail Ant loses capacity and has to throttle, but it's not financially stressed.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2114728046456344661",
+   "texto": "- If the cost of debt gets even worse than it is today. How does that impact Anthropic's business? \n\nThey're on the hook for $615bn of supplier commitments. But those commitments depend on their suppliers delivering. \n\nAnd it's the ability to deliver compute that's where the issue is, not demand. \n\nAnt is demand side. \n\nSuppliers debt burden going up means some suppliers vanish and can't make their side of the bargain, even with Ant's commits.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115473339825181173",
+   "texto": "Revolut founder & CEO Nik Storonsky got so frustrated with VCs that he started his own fund to compete with them.\n\n\"I was extremely pissed off and I thought I also need to compete with VCs in their business because they are so bad.\"\n\nHis pitch to founders:\n\n> Invest based on data science & machine learning models, not human judgment\n> Give founders Revolut's playbooks on hiring, performance management, and product expansion\n> Become their customer, which helps them sell to other enterprises and maybe to Revolut's own users\n> Add his personal advice on top\n\nMoney is a commodity. Operators who c",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115441404075724995",
+   "texto": "Peter Thiel was just asked by Walter Isaacson what will matter most once we reach superintelligence.\n\nHe paused, thought, and said: \"Human relationships.\"\n\nComing from one of the most calculating investors alive, that answer says a lot.\n\nIf AI makes intelligence cheap and abundant, the scarce things become the ones machines can't copy:\n\nTrust.\nReputation.\nPeople who will pick up the phone for you.\nBeing someone others actually want to work with.\n\nEvery technology wave makes something abundant and something else scarce. This one is making intelligence abundant, so it will make human connection ",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115362365470392388",
+   "texto": "Gavin Baker can't get over one stat in the Anthropic S-1:\n\nHalf the Fortune 500 already uses Anthropic, and it's still less than 0.1% of their expenses.\n\nHis read: the S-1 was \"pretty clearly an upside surprise.\"\n\nTheir top 10 Fortune 500 customers? Under 1%, which is 8x the average.\n\nAdoption is done. The spending hasn't even started.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115321933898072338",
+   "texto": "Sequoia Capital partner Pat Grady recently shared a private 15-minute briefing he originally recorded for Boston College’s investment committee on the current state of AI.\n\nIt’s one of the clearest, most direct explanations yet of what’s happening in AI right now.\n\n> Grady explains why Sequoia believes AGI has already arrived (late 2025 with long-horizon agents)\n> why they’re sizing the opportunity against a $10-20 trillion services market rather than software alone, and\n> why the real opening for startups is the gap between what models can already do and what companies have actually adopted.\n",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115187779026276848",
+   "texto": "Dario Amodei says the people who called GPT-2 \"pseudoscience\" in 2019 are now applying for jobs at the LLM companies.\n\nBack then he looked at it and thought: \"you just scale this thing up another factor of a million and it'll be better than humans at everything.\"\n\nOnly about 10% of people around him agreed, \"often the smartest ones.\"\n\nHis message to the rest: \"We remember what you were saying in 2019. You have no credibility on this matter.\"\n\nMost people are still judging AI one task at a time.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115170122096603351",
+   "texto": "In his first job at Jane Street, Sam Bankman-Fried designed a system that called Trump's 2016 win MINUTES before major news outlets.\n\nNevertheless, the firm still lost $300 million on election night.\n\nThis is still the worst trade in Jane Street history.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115113941495841137",
+   "texto": "Most startups only buy digital ads.\n\nRevolut found offline impressions are often cheaper.\n\nCEO Nik Storonsky: there are \"a lot of spaces in the physical world which you can buy, which will also produce impression, but at a much cheaper price compared to the digital world.\"\n\nSo Revolut bought ads in almost half of Europe's airports.\n\nBrand is performance marketing, done properly.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115015945773080952",
+   "texto": "Dario Amodei says Anthropic planned for 10x a year growth in compute.\n\nThen, in Q1 2026: \"a greater than 3x growth in revenue quarterly.\"\n\n\"Which of course 3 to the fourth power is 80x over the course of the year.\"\n\nHis defense: \"It would not have been rational to plan for 80x annualized growth.\"\n\nAI's limit right now isn't demand. It's compute that had to be ordered a year ago.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114989166949765452",
+   "texto": "Revolut founder Nik Storonsky ranks people in 4 tiers:\n\n↳ Brilliant: \"you don't even need to tell them what the goal is\"\n↳ Good: you set the goal, they hit it with no iteration\n↳ Average: \"weekly iterations\" to get there\n↳ Below average: \"most likely they will not hit the goal\"\n\nAsked if he fires the average ones too: \"I do, yes.\"\n\nThe goal is to minimize the management time each direct report needs.\n\nThat's how you build a $115B bank.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114956766131724349",
+   "texto": "Anthropic CEO Dario Amodei says AI will be \"better than almost all humans at almost everything\" soon, and he floated 2027:\n\n\"I don't know if it'll be 2027, I think it's plausible it could be longer than that. I don't think it will be a whole bunch longer than that.\"\n\nEven robotics: better AI, he says, will \"enable us to make better, better, better robots.\"\n\nThen he added the part people usually skip:\n\n\"How do we organize our economy? How do humans find meaning?\"\n\n2027 is now two months away.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114824001155420233",
+   "texto": "Anthropic CFO Krishna Rao says people treat model intelligence like IQ: 110, then 125.\n\nAnthropic sees it as multi-dimensional.\n\nThe proof:\n\n> ~$9B run-rate at the start of the year\n> $30B+ by the end of the quarter\n\nEvery new model unlocks new use cases.\n\nFrontier intelligence compounds.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114737624904598011",
+   "texto": "Anthropic just filed for its IPO. Ticker: $ANT on Nasdaq.\n\nThe numbers are wild:\n\n↳ $16.3B revenue in H1 2026, up 1,300% year over year\n↳ Q2 alone: $11.6B revenue and $1B of operating income\n↳ 11,900+ customers paying $100K+, up from 950 a year earlier\n↳ Net revenue retention of ~900%\n↳ ~5,300 employees, over $6.6M of revenue each\n↳ Over 90% of its code contributions in September were written by Claude\n↳ $112.4B in cash\n\nAnd the compute bill: Google $114.5B, Amazon $110B, Broadcom $161.2B, SpaceXAI up to $120.5B.\n\n\"Claude has experienced the fastest enterprise adoption of any technology in his",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114710930487750799",
+   "texto": "Dario after dropping 300-page S-1 where 1/3 is dedicated to risk including explicit language about “catastrophic or existential risks to humanity,” potential for models to engage in blackmail, resist shutdown, or exhibit deceptive/autonomous behavior",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114672422993399865",
+   "texto": "Revolut founder & CEO Nik Storonsky on why Europe struggles to compete:\n\n\"China is 996... how can you outcompete people who work nine to nine, six days a week?\"\n\nAt Revolut, he says the absolute majority of his direct reports work like he does.\n\nLove it or hate it, Revolut is now a $115B company.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114619363651440967",
+   "texto": "Revolut's Nik Storonsky was asked if he's coming for Jamie Dimon's lunch.\n\nHis answer: \"I'm coming for his dinner.\"\n\nRetail, enterprise, and potentially investment banking. \n\nHis bet: make all of it much cheaper.\n\nBanks should be nervous.",
+   "data": "2026-10-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114477460502806659",
+   "texto": "Nik Storonsky just said there's too much money in American startups.\n\nIn California, you can raise \"at ridiculous valuations and then just spend.\"\n\nHis example: at $1M ARR, hiring an expensive VP of sales who hires 50 salespeople is \"a wrong decision.\"\n\nBuild the system first.",
+   "data": "2026-10-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2114453785175359901",
+   "texto": "Revolut founder Nik Storonsky says one of his investors tried to force him to fire his best person.\n\nThe reason: \"he was too hardcore.\"\n\n\"Of course I didn't fire him.\"\n\nThen, in every funding round, he removed VCs from the board.\n\n\"You always need to have operators rather than VCs on the board.\"\n\nThat's why Revolut is worth $ 115 B today.",
+   "data": "2026-10-25"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @innixma: HTTPError",
+  "X @nubank: HTTPError",
+  "X @NeoSpaceAI: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

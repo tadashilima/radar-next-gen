@@ -1,5 +1,36 @@
 [
   {
+    "id": "2026-10-28",
+    "data": "2026-10-28",
+    "titulo": "Dia calmo: grafos com LLM em fraude e novo benchmark tabular",
+    "destaque": "Sem lançamento de peso hoje; o destaque é um paper que combina LLMs e grafos heterogêneos de transações para fraude.",
+    "resumo": [
+      "Paper une LLM e GNN heterogêneo para fraude em transações",
+      "MulTaBench lança leaderboard para tabular foundation models multimodais"
+    ],
+    "itens": [
+      {
+        "titulo": "LLM + grafos heterogêneos com semântica de negócio para fraude financeira",
+        "url": "http://arxiv.org/abs/2610.35298v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "medio",
+        "data": "2026-10-26",
+        "porque": "Propõe usar LLMs para dar significado de negócio (papel de cartão vs. lojista) aos atributos em GNNs de transações. Vale ler para quem compara grafos com modelos de sequência em fraude; resultados ainda precisam de validação em dados próprios."
+      },
+      {
+        "titulo": "Leaderboard MulTaBench para aprendizado tabular multimodal (NeurIPS Spotlight)",
+        "url": "https://x.com/AlanArazi1536/status/2114807305908711656",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-10-26",
+        "porque": "Cria um benchmark público para tabular foundation models com dados multimodais. Útil como referência ao avaliar fornecedores, embora longe de dados de fraude e crédito."
+      }
+    ],
+    "perguntas": []
+  },
+  {
     "id": "2026-10-26",
     "data": "2026-10-26",
     "titulo": "Dia calmo: benchmark de sequências de eventos e alerta de voz sintética",

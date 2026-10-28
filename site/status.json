@@ -1,9 +1,17 @@
 {
-  "data": "2026-10-27",
-  "novidade": false,
-  "titulo": "",
-  "destaque": "",
-  "itens_novos": 0,
-  "principal": {},
-  "fontes_com_falha": ["X @LennartPurucker: HTTPError", "Reddit r/MachineLearning, r/datascience e r/fintech: HTTPError (coleta)", "Coleta de 2026-10-26 usada (não havia a de hoje)"]
+  "data": "2026-10-28",
+  "novidade": true,
+  "titulo": "Dia calmo: grafos com LLM em fraude e novo benchmark tabular",
+  "destaque": "Sem lançamento de peso hoje; o destaque é um paper que combina LLMs e grafos heterogêneos de transações para fraude.",
+  "itens_novos": 2,
+  "principal": {
+    "titulo": "LLM + grafos heterogêneos com semântica de negócio para fraude financeira",
+    "url": "http://arxiv.org/abs/2610.35298v1"
+  },
+  "fontes_com_falha": [
+    "X @Prior_Labs, @LennartPurucker, @innixma, @rasbt: HTTPError (coleta)",
+    "Reddit r/MachineLearning, r/datascience e r/fintech: HTTPError (coleta)",
+    "Coleta de 2026-10-27 usada (não havia a de hoje)",
+    "WebSearch sem resultados úteis para NeoSpace LDM, TabPFN e Stripe Radar"
+  ]
 }

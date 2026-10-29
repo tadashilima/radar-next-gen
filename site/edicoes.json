@@ -1,5 +1,58 @@
 [
   {
+    "id": "2026-10-29",
+    "data": "2026-10-29",
+    "titulo": "Modelo fundacional transacional de pagamentos e TabPFN-3.5-Thinking",
+    "destaque": "A Ant International publicou o TRIDENT-Seq, um modelo fundacional transacional para risco em pagamentos que atende vários negócios com um só encoder. Em paralelo, a Prior Labs lançou o TabPFN-3.5-Thinking, mirando dados temporais e agrupados.",
+    "resumo": [
+      "TRIDENT-Seq: pré-treino contrastivo em históricos de transações para risco de pagamentos",
+      "TabPFN-3.5-Thinking treina em até 1M de linhas",
+      "MICE trata concept drift recorrente em TFMs sem retreino",
+      "Buscas web sem notícia nova relevante; coleta usada é a de 28/10"
+    ],
+    "itens": [
+      {
+        "titulo": "TRIDENT-Seq: modelo fundacional transacional da Ant International para risco em pagamentos",
+        "url": "http://arxiv.org/abs/2610.37365v1",
+        "fonte": "arxiv",
+        "tema": "transacional",
+        "sinal": "alto",
+        "data": "2026-10-27",
+        "porque": "Propõe um encoder único pré-treinado em históricos sem rótulo (contraste prefixo-futuro) para servir vários negócios de pagamentos, onde fraude confirmada é escassa e atrasada. Vale checar se o ganho resiste fora do benchmark do autor antes de comparar com GBMs."
+      },
+      {
+        "titulo": "TabPFN-3.5-Thinking: treino em até 1M de linhas e foco em dados agrupados e temporais",
+        "url": "https://x.com/prior_labs/status/2115444568359600530",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-10-28",
+        "porque": "A Prior Labs diz que o modelo é mais forte justamente em padrões que mudam por cliente e por período, o caso típico de crédito e fraude. Ainda é afirmação do fornecedor; o tutorial de benchmark contra XGBoost ajuda a testar na sua base."
+      },
+      {
+        "titulo": "MICE: modelos tabulares em contexto lidam com concept drift recorrente sem retreino",
+        "url": "http://arxiv.org/abs/2610.36585v1",
+        "fonte": "arxiv",
+        "tema": "producao",
+        "sinal": "medio",
+        "data": "2026-10-27",
+        "porque": "Mostra como decidir entre restaurar contexto antigo ou reaprender quando um padrão volta, sem retreinar o TFM. Relevante para fraude, onde golpes reaparecem em ciclos (testado em detecção de intrusão, não em fraude bancária)."
+      },
+      {
+        "titulo": "Leaderboard MulTaBench para aprendizado tabular multimodal",
+        "url": "https://x.com/AlanArazi1536/status/2114807305908711656",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-10-26",
+        "porque": "Passa a existir um ranking público para TFMs com texto e imagem junto de colunas tabulares, útil como referência ao avaliar fornecedores."
+      }
+    ],
+    "perguntas": [
+      "Um encoder único por transações compensa frente a GBMs por negócio quando os rótulos de fraude são atrasados?"
+    ]
+  },
+  {
     "id": "2026-10-28",
     "data": "2026-10-28",
     "titulo": "Dia calmo: grafos com LLM em fraude e novo benchmark tabular",

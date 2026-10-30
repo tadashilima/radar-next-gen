@@ -1,0 +1,341 @@
+{
+ "gerado_em": "2026-10-30T16:41:54+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "TabCUQ: Context-Uncertainty Quantification for Tabular Foundation Models",
+   "url": "http://arxiv.org/abs/2610.39558v1",
+   "data": "2026-10-29",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular foundation models use in-context learning to estimate conditional expected outcomes and average treatment effects for specific groups of individuals. Using these estimates to guide scientific decisions requires reliable uncertainty quantification. The challenge is to account simultaneously for two sources of uncertainty: limited-context bias and context variation arising from the small labeled sample supplied at inference. Predictive spread does not directly quantify both sources of uncertainty, and we observe that the ordinary bootstrap may substantially overestimate context variation, whereas subsampling may underestimate it. We introduce TabCUQ, a perturbation-based framework that"
+  },
+  {
+   "titulo": "Interpretable by Design Tabular Prediction via In-Context Local Linear Learning",
+   "url": "http://arxiv.org/abs/2610.39506v1",
+   "data": "2026-10-29",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "In-context learning (ICL) lets tabular foundation models make predictions without dataset-specific training or fine-tuning. These models achieve strong predictive accuracy, but interpreting how individual features contribute to the prediction remains difficult. In biology, for example, feature contributions can help identify biomarkers or risk genes. Post-hoc interpretability methods assign feature importance scores, but these scores do not indicate what the model actually uses and can lead to explanation errors. We introduce TICL$^3$ (Tabular In-Context Local Linear Learning), an interpretable-by-design predictor that uses a tabular foundation model to guide a simple linear prediction rule."
+  },
+  {
+   "titulo": "Tabular Foundation Models Dramatically Outperform Bespoke Photometric Redshift Estimators",
+   "url": "http://arxiv.org/abs/2610.39332v1",
+   "data": "2026-10-29",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Estimating galaxy redshifts (a proxy for distance) from imaging data alone, also known as photometric redshifts (photo-$z$'s), is essential for studies of extragalactic astrophysics and cosmology. However, data-driven estimators rely on spectroscopic training datasets, which are scarce and systematically biased toward bright and easily observed galaxies. In this work, we show that tabular foundation models (TFMs), whose synthetic pretraining amounts to a learned prior over regression problems, can outperform bespoke estimators using only in-context learning. Evaluating on a widely used benchmark dataset, we find that TFMs predicting full probability distributions in a single forward pass sys"
+  },
+  {
+   "titulo": "Tabular foundation models are not a shortcut to calibrated clinical risk prediction: a pre-registered simulation against the true risk",
+   "url": "http://arxiv.org/abs/2610.39065v1",
+   "data": "2026-10-28",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular foundation models are pretrained networks that predict risk from a table without fitting a model. Whether their risks are correct (calibrated) has been judged on real data, where true risk is unknown. In a pre-registered simulation with known true risks, we compared TabPFN-3.5, TabICLv2 and Mitra-v2 with Firth logistic regression with intercept correction (FLIC) in 58 scenarios and 1,000 random designs, then on four clinical data sets. Foundation models were not a shortcut to calibration. Their calibration slope matched FLIC's within the pre-registered margin in 36 or 37 of 48 core scenarios and was better only at n = 200 with a 3% event rate. Even 3,000 patients were often not enoug"
+  },
+  {
+   "titulo": "Machine Learning-Based Detection of Mobile Money Scan Messages in Ghana: A Comparative Evaluation of Naive Bayes, Support Vector Machine, and Randon Forest Classifiers",
+   "url": "http://arxiv.org/abs/2610.40544v1",
+   "data": "2026-10-29",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "Mobile money (MoMo) is Ghana's preferred retail payment channel, recording GHC518.4 billion in transactions in December 2025 and over 26.7 million active accounts (Graphic Online, 2026). This growth has coincided with increased social-engineering fraud over Short Message Service (SMS) and Unstructured Supplementary Service Data (USSD), where fraudsters impersonate network operators, agents, relatives, or regulators to obtain personal identification numbers (PINs), identity data, or funds. We present a supervised machine-learning pipeline for classifying scam and legitimate Ghanaian MoMo SMS messages using a labelled corpus of 220 messages across 18 scam and legitimate subcategories. Domain-s"
+  },
+  {
+   "titulo": "Complementing Text Based Moderation with Multimodal Grounding: Detecting Fraudulent Inducement Behaviors on Short Video Platforms",
+   "url": "http://arxiv.org/abs/2610.38185v1",
+   "data": "2026-10-28",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "Short video platforms have become a primary channel for black and gray industry operations in internet finance, where inducements such as prompts to like, follow, join private chat groups, or click external links frequently steer users toward fraud. Because such videos are short, dynamic, and often convey intent through fleeting visual cues rather than stable text, a moderation system must guarantee detection recall and localize the offending segment so reviewers inspect only the relevant clip. Existing OCR+LLM pipelines transcribe on-screen text frame by frame and classify the transcript, but exploit only textual information. Many inducements are conveyed through visual cues OCR cannot obse"
+  },
+  {
+   "titulo": "Learning a Prior-Data Fitted Network for Graph Foundation Models via Structural Causal Model Priors",
+   "url": "http://arxiv.org/abs/2610.38335v1",
+   "data": "2026-10-28",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "Graph Foundation Models (GFMs) have recently emerged as a promising paradigm for learning transferable representations across different graphs and domains. However, existing GFMs face notable limitations, including limited pre-training scale or reliance on aligning with textual information in Large Language Models (LLMs). To overcome these limitations, recent studies have drawn inspiration from prior-data fitted networks (PFNs), which learn from large synthetic datasets and support multi-domain prediction backed by causal learning. However, existing graph PFNs encounter severe difficulties in modeling causal relationships within and across node and edge sets, generating diverse graph structu"
+  },
+  {
+   "titulo": "GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting",
+   "url": "http://arxiv.org/abs/2610.37598v1",
+   "data": "2026-10-27",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "Traffic forecasting requires modeling complex temporal dynamics and the spatial dependencies imposed by road topology. Supervised graph-based models achieve strong performance, but are often trained for a particular dataset and sensor graph, making deployment to new or evolving networks costly. Prior-Data Fitted Networks (PFNs) offer a zero-shot alternative by learning in-context inference from synthetic task priors, which provide an explicit mechanism for encoding domain-specific assumptions. Existing forecasting PFNs, however, do not explicitly represent the graph-structured dependencies governing traffic dynamics. To combine graph-aware traffic modeling with zero-shot adaptation, we intro"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+    "url": "https://huggingface.co/papers/2610.38342",
+    "data": "2026-10-27",
+    "resumo": "Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen information set and professional evaluation criteria. We introduce Investor's Last Exam (ILE), an equity-research benchmark led by experienced buy-side investors and fund managers. Its three components are a versioned financial database spanning 3.43 million document versions and nine source categories, supplemented by structured market data, with validated timestamps governing retrieval and comput"
+   },
+   {
+    "titulo": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
+    "url": "https://huggingface.co/papers/2610.30161",
+    "data": "2026-09-29",
+    "resumo": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIn"
+   },
+   {
+    "titulo": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
+    "url": "https://huggingface.co/papers/2610.37230",
+    "data": "2026-10-26",
+    "resumo": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported mod"
+   },
+   {
+    "titulo": "How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning",
+    "url": "https://huggingface.co/papers/2610.36082",
+    "data": "2026-10-25",
+    "resumo": "Financial institutions operating under data-residency constraints are restricted to open-weight models small enough to locally host, which trail frontier systems on multi-step quantitative reasoning. On-policy distillation narrows such gaps by supervising a student on its own rollouts, but traditional OPD requires a strong external teacher, and on-policy self-distillation (OPSD) conditions on a full reference solution. We ask how much of that signal is necessary. We present Fin-SD, a localized hindsight self-distillation recipe for multi-step reasoning. Given a problem the student fails, the student itself identifies the first incorrect reasoning step and writes a short critique of that step"
+   },
+   {
+    "titulo": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+    "url": "https://huggingface.co/papers/2610.35013",
+    "data": "2026-10-25",
+    "resumo": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines."
+   },
+   {
+    "titulo": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
+    "url": "https://huggingface.co/papers/2610.33624",
+    "data": "2026-10-23",
+    "resumo": "Can AI agents autonomously train useful language models and improve them using feedback from users? We introduce RSI Arena, a two-stage study of autonomous post-training as a step toward recursive self-improvement. Ten frontier models act as training agents, each starting from NVIDIA Nemotron 3.5 Lightning 30B-A3B Base. During a six-day first stage, each agent has 1,000 GPU-hours and $300 in API credit on a shared 64-GPU cluster, independently selecting data, implementing training procedures, and choosing checkpoints. We evaluate their models on 20 benchmarks and through blind human evaluations. All ten agents produce working assistants, with the strongest model, trained by GPT-6 Astra, clos"
+   }
+  ],
+  "modelos_prior_labs": [
+   {
+    "modelo": "Prior-Labs/TabPFN-v2-clf",
+    "url": "https://huggingface.co/Prior-Labs/TabPFN-v2-clf",
+    "atualizado": "2026-10-28"
+   },
+   {
+    "modelo": "Prior-Labs/TabPFN-v2-reg",
+    "url": "https://huggingface.co/Prior-Labs/TabPFN-v2-reg",
+    "atualizado": "2026-10-28"
+   }
+  ]
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115817413044281799",
+   "texto": "📣 Less than a week to go for our TabPFN-Rel live session\n\nIf you're interested in relational machine learning and how we're bringing tabular foundation models like TabPFN-3.5 to the field, this one is not to miss.\n\nWe'll cover everything from RelArena (the new benchmark for relational ML) to TabPFN-Rel, our new harness for TFMs, brining them relational ML capabilities. Expect hands on examples on how to use the harness, and more news on what's next for us at Prior Labs!\n\n📅 November 4th, 6PM CET\n🔗 Register: https://app.livestorm.co/prior-labs/machine-learning-on-relational-databases-with-tabpfn",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115444568359600530",
+   "texto": "Think more. Predict better. The new TabPFN-3.5-Thinking sets the SOTA bar.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115444604095123580",
+   "texto": "Thinking now trains on up to 1M rows, 5x more than before, and is strongest on grouped and temporal data: patterns that shift per customer, product and season.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2115444615985906156",
+   "texto": "Full details in the blog. Link in comments.\n\nRead the blog: https://priorlabs.ai/blog-posts/tabpfn-3-5-thinking-upgrade?utm_source=x&utm_medium=social&utm_campaign=thinking3p5-launch\n\nSign up for early access and extra API credits: https://priorlabs.ai/blog-posts/tabpfn-3-5-thinking-upgrade?waitlist=open&utm_source=x&utm_medium=social&utm_campaign=thinking3p5-launch",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2116168285016215866",
+   "texto": "Why is @tryramp releasing a token router, AI harness, and now a coding agent? \n\n@eglyman says they followed their clients. \n\nToken-based AI usage introduced real marginal and variable costs to software. \n\n\"It didn't matter how much you used Excel; you still paid the same. That's not true with AI\"\n\nIt led Ramp to ask how businesses can get more productivity from every dollar, hour, or token.\n\nAnd they had the answer internally: managing the cost of tokens, routing them, and helping build context around employees. \n\nThat's why soon 50% of Ramp's revenue will be from software, not cards.",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2116155368669696485",
+   "texto": "The commanding heights - just read the whole thing.\n\nTook me about an hour to read, is the talk of the AI and Wall St crowd and essentially argues.\n\n- The US and China will be the two countries with AI, which creates a cold war condition.\n\n- The US durable advantage is compute and capital, with 70% of compute compared to 5% in China meaning they can stay at the frontier.\n\n- The US state will see this as a coming cold war, and look to own more of these companies, just as threatened states have historically in war conditions\n\n- China will not monetize its models because it won’t let its currency",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115747212852363548",
+   "texto": "Meta's @Muse answers questions very differently from ChatGPT or Anthropic.\n\nIt cites more sources but uses far fewer words and tables, and doesn't try to ask a follow-up.\n\nThis short-form content is designed for dealing with tasks rather than continuing a conversation, and frankly, it's far less exhausting to read. This speaks to a really well designed AI experience and its so different from the base LLMs.\n\nGreat study by the AirOps team  👇\n\ngg @alexandr_wang",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115822766314410234",
+   "texto": "chart by @saltzman_jason",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/soupsranjan/status/2115528413985341681",
+   "texto": "Next week we’re co-hosting an event with @a16z and @typesafeai called ‘Jev and the Future of Fraud Fighting.’\n\nWhen Jev came out a month ago, I tested it on an actual fraud incident at a Sardine customer. What I found shocked me:\n\n- Jev outperformed LLMs in fraud applications and slightly beat traditional rules based approaches.\n- Jev classified best at 93% recall, followed closely by the velocity rules our Data Analyst Agent proposed at 90%, with an LLM making the classification decision trailing at 62%.\n\nAfter that test, I shared the results internally and we started incorporating Jev into t",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2115576226761101473",
+   "texto": "Your agents shouldn’t need a new account and a credit card for every service they have to use.\n\n@MPP enables them to discover services, get a price, and pay all in a single request flow. No separate API keys or billing for each provider.\n\n@brendan_j_ryan from Tempo Labs explains:",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/MbyM/status/2115674497781039547",
+   "texto": "“Why have you designed your organization in the way that you have, in a world where computers can think?” –@eglyman \n\n“The best thing about AI is it's allowed us to look at every process and question it. And a lot of the benefit was just changing the process.” –@velez_david",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115473663990301170",
+   "texto": "Ramp is worth $60bn and 70% of its R&D team is working on products it hasn't released yet.\n\nI sat down with @eglyman in New York to discus\n\nWhy he thinks of @tryramp as a productivity company more than fintech\n\nThe 7,000 pull requests their non-engineers wrote last quarter\n\nThe trust charter, stablecoins, and whether an AI agent would choose your business.\n\nFull conversation 👇\n\n00:00 Introduction\n03:16 Is fintech dead? And why Ramp considers itself a productivity company\n04:41 Why AI token costs are turning software into financial products\n07:27 How Ramp's Inspect lets non engineers ship code ",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2115474018245529834",
+   "texto": "Find the full conversation here on YouTube:\n\nhttps://youtu.be/BqMcJyCVmNo\n\nOr wherever you get your podcasts.\n\nAnd remember to subscribe at https://brainfood.xyz if you want more like this",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2115460421587279983",
+   "texto": "It’s an exciting time for Visa’s stablecoin business. Visa CEO Ryan McInerney shared some updates on our strategy and traction on yesterday’s earnings call.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/shivsiroya/status/2115132201209917667",
+   "texto": "For a decade, we've built credit for people the financial system couldn't see. \n\nNow there's a new kind of thin-file borrower: the AI agent.\n\nHere's my take👇 https://x.com/i/article/2115131561695973376",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2115182012684464145",
+   "texto": "1/ Stablecoins provide banks with an opportunity to grow deposits.\n\nAs businesses get paid in stablecoins, they'll move idle balances into tokenized deposits, which count as cash and support credit lines. Banks that offer them early win that business.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/malleshpai/status/2115449359307313266",
+   "texto": "Deposit tokens vs stablecoins got framed as a fight. From where we're looking it looks more like a stack. Deposit tokens make good reserves, both for the banks and sensitive holders like corporate treasuries: they pay interest and stay inside the bank perimeter. Stablecoins make good bearer money: anyone can hold, no account needed.\n\nPut one under the other and an issuer can rebalance reserves in code, at 3am on a Sunday, instead of through wires and cutoff times, leading to a better experience for everyone involved.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116184392284439001",
+   "texto": "In May, Goldman Sachs made a bold call on AI: within 3 to 12 months, the hyperscalers would hit a \"gross margin inflection.\"\n\nFive months later, it's worth checking the scorecard, because this was the week everyone decided the AI math is breaking.\n\nThe bear case, in numbers:\n\n• Alphabet's free cash flow: -$9.1B last quarter, on $51.4B of capex (plus a $5.2B EU fine)\n• Meta's free cash flow turned negative for the first time\n• Microsoft's free cash flow fell 27% to $18.6B, and it says it will tap outside funding\n• Alphabet stock fell as much as 15.8% in a day, wiping out more than $550B\n\nBut Go",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116144983128289429",
+   "texto": "This is brilliant! Has to be the best fintech ad this year 😂\n\nWhoever did this at Trade Republic deserves a raise.",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116107333847691585",
+   "texto": "For decades, memory makers would spend $20B on capex to make $19B.\n\nNow Sam Altman thinks each of them is about to make ~$100B in free cash flow a year.\n\nThey're still cautious about building new fabs, because they remember how many times they nearly went bankrupt doing exactly that.\n\n\"I think the invisible hand is failing right now.\"\n\nTurns out the scarcest memory in AI is the memory of the last bust.",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116050044486824410",
+   "texto": "In 2024, Terry had just made partner at work. Then his words started slurring at business dinners.\n\nThe diagnosis was ALS, which takes your voice first.\n\nNow, with a Neuralink implant, he thinks the words and hears them in his own voice, rebuilt from recordings made before he got sick.\n\n\"Neuralink has given me back my voice.\"\n\nLove or hate Elon all you want, but he's truly changing the world.",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115926336984555742",
+   "texto": "Mark Cuban killed every get-rich-quick course in two sentences.\n\n\"If those were good businesses, they wouldn't be telling you about them. They would just be doing them.\"\n\n> Drop shipping, shoe drops, sidewalk water blasters\n> Same for stock tips\n\nThe edge isn't for sale.",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115891488819196290",
+   "texto": "Mark Cuban explains why founders get the exact opposite of what they expected.\n\n\"If you have to ask yourself if you can be an entrepreneur, you're probably not an entrepreneur.\"\n\nAn employee's kid gets sick, and it's your problem too.\n\nControl is a myth.",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115872563352228096",
+   "texto": "Sam Altman just said he doesn't want one superintelligence.\n\nHe wants a trillion smaller ones.\n\n\"I would much rather intuitively have a trillion AIs of like slightly superhuman intelligence join society than one AI of one trillion IQ\"\n\nHis bet is swarms of AIs, not one god-model.",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115825650493702404",
+   "texto": "Microsoft cut 4,800 jobs this year, and everyone thinks it is replacing people with AI.\n\nAt ~$200K per role, that saves roughly $960M a year.\n\nMicrosoft plans ~$175B in capex for 2026. That's about $480M a day.\n\nSo the layoffs pay for about two days of AI data centers.\n\nThe snacks were never the problem.\n\nIt's all about AI spending, and payroll is just the easiest line to trim.",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115803517700952264",
+   "texto": "Mark Cuban just called it: we're in a bubble, and everything is a meme stock.\n\nMiss earnings by a penny, and the stock drops 18%.\n\n\"The intrinsic value of that company hasn't changed 18%.\"\n\nBitcoin, Google, Apple. All traded like baseball cards.\n\nThe price is the story. The value is a footnote.",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115746968593187052",
+   "texto": "Mark Cuban's rule for new tech: everyone is tied for second.\n\nOnly the creator knows it better.\n\nIn the PC days, he stayed in a retail store overnight, teaching himself software.\n\n\"It's the same with AI.\"\n\nLearn it faster than everyone, and you're in second by yourself.",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115703347651002544",
+   "texto": "If Thiel is right that the relational side of being human matters more in the AI era, the skills that compound are:\n\n→ Reading people\n→ Selling an idea\n→ Taste: knowing what's good\n→ Telling a story people remember\n→ Asking better questions, of people and of AI\n\nKnowledge is getting cheap. Trust isn't.",
+   "data": "2026-10-29"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115539365996765685",
+   "texto": "Apple resisted touchscreen laptops for more than a decade. Steve Jobs called vertical touch \"ergonomically terrible.\"\n\nToday, under new CEO John Ternus, Apple launched its first one.\n\nEvery new leader inherits sacred cows.\n\nThe good ones know which ones to keep and which ones to retire. https://x.com/Cartidise/status/2115498522476994721/video/1",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115510311759331683",
+   "texto": "Still can’t believe SBF could have been the greatest investor in history.\n\n→ $500M in Anthropic could be worth up to ~$160B (at a $2T IPO valuation).\n→ $700M in SpaceX via K5 would be worth around $15B today.\n→ $648M in Robinhood would be more than $6B today.\n→ A tiny $200k investment in Cursor would be ~$3B.\n\nSam Bankman-Fried would be worth nearly $190 billion today, surpassing Jensen Huang & Steve Ballmer.\n\nInstead, he decided to commit fraud, and now he's inmate no. 37244-510.\n\nSuch a wasted potential.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115473339825181173",
+   "texto": "Revolut founder & CEO Nik Storonsky got so frustrated with VCs that he started his own fund to compete with them.\n\n\"I was extremely pissed off and I thought I also need to compete with VCs in their business because they are so bad.\"\n\nHis pitch to founders:\n\n> Invest based on data science & machine learning models, not human judgment\n> Give founders Revolut's playbooks on hiring, performance management, and product expansion\n> Become their customer, which helps them sell to other enterprises and maybe to Revolut's own users\n> Add his personal advice on top\n\nMoney is a commodity. Operators who c",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115441404075724995",
+   "texto": "Peter Thiel was just asked by Walter Isaacson what will matter most once we reach superintelligence.\n\nHe paused, thought, and said: \"Human relationships.\"\n\nComing from one of the most calculating investors alive, that answer says a lot.\n\nIf AI makes intelligence cheap and abundant, the scarce things become the ones machines can't copy:\n\nTrust.\nReputation.\nPeople who will pick up the phone for you.\nBeing someone others actually want to work with.\n\nEvery technology wave makes something abundant and something else scarce. This one is making intelligence abundant, so it will make human connection ",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115362365470392388",
+   "texto": "Gavin Baker can't get over one stat in the Anthropic S-1:\n\nHalf the Fortune 500 already uses Anthropic, and it's still less than 0.1% of their expenses.\n\nHis read: the S-1 was \"pretty clearly an upside surprise.\"\n\nTheir top 10 Fortune 500 customers? Under 1%, which is 8x the average.\n\nAdoption is done. The spending hasn't even started.",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115321933898072338",
+   "texto": "Sequoia Capital partner Pat Grady recently shared a private 15-minute briefing he originally recorded for Boston College’s investment committee on the current state of AI.\n\nIt’s one of the clearest, most direct explanations yet of what’s happening in AI right now.\n\n> Grady explains why Sequoia believes AGI has already arrived (late 2025 with long-horizon agents)\n> why they’re sizing the opportunity against a $10-20 trillion services market rather than software alone, and\n> why the real opening for startups is the gap between what models can already do and what companies have actually adopted.\n",
+   "data": "2026-10-28"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115187779026276848",
+   "texto": "Dario Amodei says the people who called GPT-2 \"pseudoscience\" in 2019 are now applying for jobs at the LLM companies.\n\nBack then he looked at it and thought: \"you just scale this thing up another factor of a million and it'll be better than humans at everything.\"\n\nOnly about 10% of people around him agreed, \"often the smartest ones.\"\n\nHis message to the rest: \"We remember what you were saying in 2019. You have no credibility on this matter.\"\n\nMost people are still judging AI one task at a time.",
+   "data": "2026-10-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2115170122096603351",
+   "texto": "In his first job at Jane Street, Sam Bankman-Fried designed a system that called Trump's 2016 win MINUTES before major news outlets.\n\nNevertheless, the firm still lost $300 million on election night.\n\nThis is still the worst trade in Jane Street history.",
+   "data": "2026-10-27"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

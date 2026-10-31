@@ -1,5 +1,77 @@
 [
   {
+    "id": "2026-10-31",
+    "data": "2026-10-31",
+    "titulo": "TabPFN-3.5-Thinking amplia contexto e Jev entra na conversa sobre fraude",
+    "destaque": "A Prior Labs lançou o TabPFN-3.5-Thinking com até 1M de linhas e foco em dados temporais por cliente. Os números são da fornecedora, então o passo seguinte é validar contra GBMs em dados próprios.",
+    "resumo": [
+      "TabPFN-3.5-Thinking: 5x mais linhas e ganho em dados temporais",
+      "Jev: relato de 93% de recall em fraude, ainda sem fonte primária",
+      "Calibração de TFMs segue questão em aberto",
+      "Sessão sobre TabPFN-Rel em 4/nov"
+    ],
+    "itens": [
+      {
+        "titulo": "TabPFN-3.5-Thinking: Prior Labs sobe para 1M de linhas de contexto e mira dados temporais por cliente",
+        "url": "https://x.com/prior_labs/status/2115444604095123580",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "alto",
+        "data": "2026-10-28",
+        "porque": "A Prior Labs diz que o modo Thinking agora treina com até 1M de linhas (5x mais) e rende mais em dados agrupados e temporais, o perfil de carteiras de crédito e fraude por cliente. Vale rodar um benchmark próprio contra GBM, pois o resultado é reportado pela fornecedora."
+      },
+      {
+        "titulo": "Jev: modelo de fraude teria 93% de recall em teste num cliente da Sardine, contra 62% de um LLM",
+        "url": "https://x.com/soupsranjan/status/2115528413985341681",
+        "fonte": "x",
+        "tema": "producao",
+        "sinal": "medio",
+        "data": "2026-10-28",
+        "porque": "Um executivo da Sardine relata teste informal em um incidente real: o Jev superou LLMs e ficou ligeiramente acima de regras de velocity. É um único caso, sem fonte primária, e não ficou claro quem é o dono do modelo; serve como sinal de que modelos especializados em fraude competem com LLMs genéricos."
+      },
+      {
+        "titulo": "Tabular foundation models não garantem risco calibrado, mostra simulação pré-registrada",
+        "url": "http://arxiv.org/abs/2610.39065v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-10-28",
+        "porque": "O estudo é em risco clínico, mas a pergunta (as probabilidades de TFMs estão calibradas?) vale igual para PD e score de fraude. Antes de adotar, convém checar calibração na própria carteira."
+      },
+      {
+        "titulo": "TabCUQ: quantificação de incerteza do contexto em tabular foundation models",
+        "url": "http://arxiv.org/abs/2610.39558v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-10-29",
+        "porque": "Propõe medir a incerteza que vem do conjunto de contexto usado no in-context learning. Útil para governança de TFMs, mas o foco do paper é efeito de tratamento em ciência."
+      },
+      {
+        "titulo": "Predição tabular interpretável por design via aprendizado linear local em contexto",
+        "url": "http://arxiv.org/abs/2610.39506v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-10-29",
+        "porque": "Tenta explicar predições individuais de TFMs, ponto sensível para explicabilidade exigida em crédito. Ainda é pesquisa, sem validação em dados bancários."
+      },
+      {
+        "titulo": "Prior Labs faz sessão ao vivo sobre TabPFN-Rel e dados relacionais em 4 de novembro",
+        "url": "https://x.com/prior_labs/status/2115817413044281799",
+        "fonte": "evento",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-10-29",
+        "porque": "Apresenta o benchmark RelArena e um harness que leva TFMs a bancos de dados relacionais, o formato real de clientes, contas e transações."
+      }
+    ],
+    "perguntas": [
+      "Quanto de ganho do TabPFN sobre GBM sobrevive em dados temporais com drift por cliente?",
+      "As probabilidades de um TFM chegam calibradas o bastante para políticas de limite e corte?"
+    ]
+  },
+  {
     "id": "2026-10-29",
     "data": "2026-10-29",
     "titulo": "Modelo fundacional transacional de pagamentos e TabPFN-3.5-Thinking",

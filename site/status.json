@@ -1,9 +1,16 @@
 {
-  "data": "2026-10-30",
-  "novidade": false,
-  "titulo": "",
-  "destaque": "",
-  "itens_novos": 0,
-  "principal": {},
-  "fontes_com_falha": ["Coleta de 2026-10-30 ainda não disponível (usada a de 2026-10-29, já curada)", "X @FrankRHutter: HTTPError", "X @Prior_Labs: HTTPError", "X @noahholl: HTTPError", "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError"]
+  "data": "2026-10-31",
+  "novidade": true,
+  "titulo": "TabPFN-3.5-Thinking amplia contexto e Jev entra na conversa sobre fraude",
+  "destaque": "A Prior Labs lançou o TabPFN-3.5-Thinking com até 1M de linhas e foco em dados temporais por cliente. Os números são da fornecedora, então o passo seguinte é validar contra GBMs em dados próprios.",
+  "itens_novos": 6,
+  "principal": {
+    "titulo": "TabPFN-3.5-Thinking: Prior Labs sobe para 1M de linhas de contexto e mira dados temporais por cliente",
+    "url": "https://x.com/prior_labs/status/2115444604095123580"
+  },
+  "fontes_com_falha": [
+    "Coleta de hoje (2026-10-31) ausente: usada a de 2026-10-30",
+    "Reddit (HTTPError na coleta; sem cobertura)",
+    "WebFetch timesbrasil.com.br bloqueado; item do Banco Central não confirmado"
+  ]
 }

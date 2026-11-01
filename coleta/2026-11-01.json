@@ -1,0 +1,108 @@
+{
+ "gerado_em": "2026-11-01T16:49:02+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Machine Learning-Based Detection of Mobile Money Scan Messages in Ghana: A Comparative Evaluation of Naive Bayes, Support Vector Machine, and Randon Forest Classifiers",
+   "url": "http://arxiv.org/abs/2610.40544v1",
+   "data": "2026-10-29",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "Mobile money (MoMo) is Ghana's preferred retail payment channel, recording GHC518.4 billion in transactions in December 2025 and over 26.7 million active accounts (Graphic Online, 2026). This growth has coincided with increased social-engineering fraud over Short Message Service (SMS) and Unstructured Supplementary Service Data (USSD), where fraudsters impersonate network operators, agents, relatives, or regulators to obtain personal identification numbers (PINs), identity data, or funds. We present a supervised machine-learning pipeline for classifying scam and legitimate Ghanaian MoMo SMS messages using a labelled corpus of 220 messages across 18 scam and legitimate subcategories. Domain-s"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
+    "url": "https://huggingface.co/papers/2610.38293",
+    "data": "2026-10-28",
+    "resumo": "Quarterly earnings forecasting requires an agent to connect financial evidence to the income-statement line items that produce a company's reported earnings. We introduce EPSBench, a benchmark for studying this ability across 149 firm-quarters from 86 US companies. Agents read a fixed collection of filings, earnings-call transcripts, and news, then estimate company-specific income-statement drivers with cited evidence. A shared accounting calculator converts these estimates into GAAP diluted earnings per share (EPS), providing a common basis for comparing forecast assumptions. We evaluate six models under a common harness, assessing point forecast error relative to date-matched analyst conse"
+   },
+   {
+    "titulo": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+    "url": "https://huggingface.co/papers/2610.38342",
+    "data": "2026-10-27",
+    "resumo": "Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen information set and professional evaluation criteria. We introduce Investor's Last Exam (ILE), an equity-research benchmark led by experienced buy-side investors and fund managers. Its three components are a versioned financial database spanning 3.43 million document versions and nine source categories, supplemented by structured market data, with validated timestamps governing retrieval and comput"
+   },
+   {
+    "titulo": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
+    "url": "https://huggingface.co/papers/2610.30161",
+    "data": "2026-09-29",
+    "resumo": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIn"
+   },
+   {
+    "titulo": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
+    "url": "https://huggingface.co/papers/2610.37230",
+    "data": "2026-10-26",
+    "resumo": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported mod"
+   },
+   {
+    "titulo": "How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning",
+    "url": "https://huggingface.co/papers/2610.36082",
+    "data": "2026-10-25",
+    "resumo": "Financial institutions operating under data-residency constraints are restricted to open-weight models small enough to locally host, which trail frontier systems on multi-step quantitative reasoning. On-policy distillation narrows such gaps by supervising a student on its own rollouts, but traditional OPD requires a strong external teacher, and on-policy self-distillation (OPSD) conditions on a full reference solution. We ask how much of that signal is necessary. We present Fin-SD, a localized hindsight self-distillation recipe for multi-step reasoning. Given a problem the student fails, the student itself identifies the first incorrect reasoning step and writes a short critique of that step"
+   },
+   {
+    "titulo": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+    "url": "https://huggingface.co/papers/2610.35013",
+    "data": "2026-10-25",
+    "resumo": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines."
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/AndrewCurran_/status/2116583791166939268",
+   "texto": "This is from the Roblox Q3 2026 Shareholder Letter. The top chart is daily users of their MCP server, the bottom is assets uploaded. Opus 5.5 was released September 22nd. Over the past month, more than 80% of the top 100 games used AI. Things changed in September.",
+   "data": "2026-10-31"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tryramp/status/2116229209119203624",
+   "texto": "Last quarter, 7,000 pull requests at Ramp were merged by people who aren't engineers.\n\nTwo years ago that number was zero.\n\n@eglyman on what Inspect does to the life of a bug report:",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2116238563826401561",
+   "texto": "OnePay, the consumer fintech trusted by millions of Americans, is bringing stablecoins into everyday banking on Tempo.\n\nStarting today @onepay is rolling out stablecoin deposits so customers can spend them as dollars.\n\nThis is just part of OnePay's broader partnership with Tempo.",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2116187406747754908",
+   "texto": "Proud of our progress as stablecoin settlement crosses $25B of annualized volume but it still feels like day one. \n\nhttps://finance.yahoo.com/markets/crypto/articles/visa-reports-tenfold-increase-stablecoin-124500039.html",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2116168285016215866",
+   "texto": "Why is @tryramp releasing a token router, AI harness, and now a coding agent? \n\n@eglyman says they followed their clients. \n\nToken-based AI usage introduced real marginal and variable costs to software. \n\n\"It didn't matter how much you used Excel; you still paid the same. That's not true with AI\"\n\nIt led Ramp to ask how businesses can get more productivity from every dollar, hour, or token.\n\nAnd they had the answer internally: managing the cost of tokens, routing them, and helping build context around employees. \n\nThat's why soon 50% of Ramp's revenue will be from software, not cards.",
+   "data": "2026-10-30"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2116155368669696485",
+   "texto": "The commanding heights - just read the whole thing.\n\nTook me about an hour to read, is the talk of the AI and Wall St crowd and essentially argues.\n\n- The US and China will be the two countries with AI, which creates a cold war condition.\n\n- The US durable advantage is compute and capital, with 70% of compute compared to 5% in China meaning they can stay at the frontier.\n\n- The US state will see this as a coming cold war, and look to own more of these companies, just as threatened states have historically in war conditions\n\n- China will not monetize its models because it won’t let its currency",
+   "data": "2026-10-30"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @FrankRHutter: HTTPError",
+  "X @Prior_Labs: HTTPError",
+  "X @innixma: HTTPError",
+  "X @ChristophMolnar: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "X @emilygsands: HTTPError",
+  "X @LinasBeliunas: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

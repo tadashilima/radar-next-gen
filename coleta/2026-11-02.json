@@ -1,0 +1,129 @@
+{
+ "gerado_em": "2026-11-02T20:21:50+00:00",
+ "janela_dias": 3,
+ "arxiv": [],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "AuditFL: A Contract-Backed Clearing Layer for Open Federated Learning",
+    "url": "https://huggingface.co/papers/2610.41278",
+    "data": "2026-10-29",
+    "resumo": "Federated learning (FL) keeps raw data local, but most deployments still rely on a trusted coordinator for client admission, checkpoint distribution, update collection, aggregation, and rewards. This paper presents AuditFL, a contract-backed clearing layer for auditable FL in open settings. AuditFL keeps training and aggregation off chain, stores model artifacts in an assumed reliable off-chain artifact store, and records only content identifiers and economic state on chain. Clients reserve update tickets with deposits, publish update identifiers, and later claim refunds or rewards; the task coordinator publishes global checkpoints and finalizes rounds through deterministic settlement rules."
+   },
+   {
+    "titulo": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+    "url": "https://huggingface.co/papers/2610.40799",
+    "data": "2026-10-28",
+    "resumo": "Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns "
+   },
+   {
+    "titulo": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
+    "url": "https://huggingface.co/papers/2610.38293",
+    "data": "2026-10-28",
+    "resumo": "Quarterly earnings forecasting requires an agent to connect financial evidence to the income-statement line items that produce a company's reported earnings. We introduce EPSBench, a benchmark for studying this ability across 149 firm-quarters from 86 US companies. Agents read a fixed collection of filings, earnings-call transcripts, and news, then estimate company-specific income-statement drivers with cited evidence. A shared accounting calculator converts these estimates into GAAP diluted earnings per share (EPS), providing a common basis for comparing forecast assumptions. We evaluate six models under a common harness, assessing point forecast error relative to date-matched analyst conse"
+   },
+   {
+    "titulo": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+    "url": "https://huggingface.co/papers/2610.38342",
+    "data": "2026-10-27",
+    "resumo": "Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen information set and professional evaluation criteria. We introduce Investor's Last Exam (ILE), an equity-research benchmark led by experienced buy-side investors and fund managers. Its three components are a versioned financial database spanning 3.43 million document versions and nine source categories, supplemented by structured market data, with validated timestamps governing retrieval and comput"
+   },
+   {
+    "titulo": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
+    "url": "https://huggingface.co/papers/2610.30161",
+    "data": "2026-09-29",
+    "resumo": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIn"
+   },
+   {
+    "titulo": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
+    "url": "https://huggingface.co/papers/2610.37230",
+    "data": "2026-10-26",
+    "resumo": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported mod"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "RohanRamanath",
+   "url": "https://x.com/TomP1Bellingham/status/2117003356191277497",
+   "texto": "Drive to Survive will now be a ten-part series entirely on the Mexico City Grand Prix weekend",
+   "data": "2026-11-01"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2117319649599672368",
+   "texto": "The problem with agentic commerce and personal agents is we're thinking about per task intent rather than broader scopes of delegation.\n\nIs anyone working on actually delegated authority? That's apparent",
+   "data": "2026-11-02"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/AndrewCurran_/status/2116583791166939268",
+   "texto": "This is from the Roblox Q3 2026 Shareholder Letter. The top chart is daily users of their MCP server, the bottom is assets uploaded. Opus 5.5 was released September 22nd. Over the past month, more than 80% of the top 100 games used AI. Things changed in September.",
+   "data": "2026-10-31"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2117333963748344144",
+   "texto": "Eric Schmidt says there's one type of employee every company loves and almost none actually need: \"glue people.\"\n\n\"Incredibly nice people who sit at interstitial boundaries between groups... They are very, very loyal and people love them and you don't need them at all.\"\n\nHe learned it at Novell, where every time he removed them from one group, \"they'd show up in another group.\"\n\nSo at Google, Larry Page's fix was simple: \"Let's just review all the hiring.\" From then on, they \"reviewed every offer packet, literally everyone.\"\n\nEarly Google had other unpopular rules too:\n\n→ No hiring your friend",
+   "data": "2026-11-02"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2117250639377875132",
+   "texto": "ALS took away Jake Schneider's ability to use his wheelchair's joystick and foot pedal.\n\nNow he drives it with his thoughts.\n\nJake is Neuralink's 7th human patient. He got the N1 implant in June 2025, and here he is steering outdoors using \"only mind power.\"\n\nHis words: \"Neuralink has given me the ability to go on walks with my son again.\"\n\nThat's what brain-computer interfaces actually mean. \n\nNot sci-fi. A dad going for a walk with his son.",
+   "data": "2026-11-02"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2117217101790183695",
+   "texto": "Sam Altman just said the quiet part out loud:\n\n\"At the start of this year, AI was mostly not as smart as our smartest scientists, and now it's mostly smarter than them.\"\n\nHe added that AI went from mostly unable to do a lot of white-collar jobs to now doing \"a lot of parts of that.\"\n\nThe rest of what he said in Abu Dhabi today matters even more:\n\n> Biggest challenge facing AI, in one word: \"Energy\"\n> 6 years ago, OpenAI's heaviest internal user burned ~100K tokens a month. Today the top user burns ~500 billion\n> Costs can fall \"in almost every way, except, you know, atoms are still atoms\"\n> Hu",
+   "data": "2026-11-02"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2117154155873579305",
+   "texto": "Chamath had his team turn Anthropic's S-1 risk factors into a word cloud to see what the company is actually afraid of.\n\nThe #1 risk: compute. Regulation is a close second.\n\nHow the fears rank by share of words:\n\n→ Compute: data centers, power, chips, grid, electricity, hardware\n→ Regulation: government policy, sanctions, export controls\n→ Zero data retention, privacy and IP\n→ AI safety\n→ Making money\n→ Competitors\n→ Governance\n\nWhat barely shows up: customer traction, employees leaving, taxes.\n\nDrill into compute and the order is data centers, then financing commitments, then power.\n\nHis take",
+   "data": "2026-11-02"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116992438304989535",
+   "texto": "Reed Jobs tells one of the wildest brain stories I've heard.\n\nA friend of his has glioblastoma. Average survival is about a year. He's in year 5.\n\nThe cancer started in the left hemisphere, in the language center, and his speech slurred. Surgeons removed the tumor.\n\nThen his speech came back.\n\nHis neurologist wasn't surprised: when they have to remove Broca's area in adults, about 30% of the time language function migrates to the right hemisphere.\n\n\"We don't understand how, but it happens.\"\n\nThis isn't just an anecdote. fMRI studies of brain-tumor patients have documented language centers shif",
+   "data": "2026-11-01"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116939204957552721",
+   "texto": "Productivity in US tech, finance, and professional services is ~45% above 2012, way above its pre-2020 trend.\n\nEveryone's calling it the first proof of AI in the data.\n\nThe FT's John Burn-Murdoch says it isn't, and his case is hard to dismiss:\n\n1. The timing is wrong. The US uptick starts in 2020. Even the second leg, in 2022, came when AI meant chatbots, not agents.\n\n2. Only the US has it. AI use is now widespread in these sectors across rich countries. The UK, Canada, the EU, France, and Germany sit roughly on trend.\n\n3. Look at what's driving it. Output in US tech stayed on trend. Headcount",
+   "data": "2026-11-01"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116772046042435845",
+   "texto": "Bill Ackman says the blind will see again \"not in months but years, but not too many years.\"\n\nAnd this isn't a hot take. It's personal.\n\nIn February, his 26-year-old daughter Lucy suffered a massive brain hemorrhage. She couldn't walk, speak, or see. Today she's relearning to walk and speak, but optic nerve damage has taken about 98% of her vision.\n\nSince then, he has:\n\n• Met with Neuralink and other BCI companies, including some \"very promising lower intervention technologies\"\n• Committed ~$400M with Neri Oxman to a brain research and recovery institute that will build BCIs, not just fund pap",
+   "data": "2026-11-01"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116476205222301917",
+   "texto": "Larry Ellison on where AI's real value is:\n\nChatGPT, Anthropic, Grok, Llama: \"they're all trained on all of the data on the internet.\"\n\nBut \"for these models to reach their peak value… you need to make privately owned data available to those models as well.\"\n\nSame internet.\nSame data.\nIncreasingly similar models.\n\nThe edge isn't the model. It's what you let it see.",
+   "data": "2026-10-31"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2116407723470336423",
+   "texto": "The most honest thing an AI CEO has said lately wasn't about benchmarks.\n\nOpenAI's Sam Altman watched a new model solve his researchers' hardest career problems, one after another, and felt \"much more sadness and melancholy\" than he expected.\n\nHe still thinks it's right for the world and can't be stopped.\n\nBoth can be true. Most AI takes only hold one.",
+   "data": "2026-10-31"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

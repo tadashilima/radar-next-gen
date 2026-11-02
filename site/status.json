@@ -1,12 +1,14 @@
 {
-  "data": "2026-11-01",
+  "data": "2026-11-02",
   "novidade": false,
   "titulo": "",
   "destaque": "",
   "itens_novos": 0,
   "principal": {},
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-01) ainda não existia: usada a de 2026-10-31",
-    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError na coleta; WebSearch sem cobertura útil"
+    "Coleta de hoje (2026-11-02) ausente: usada a de 2026-11-01",
+    "X: 7 perfis com HTTPError (FrankRHutter, Prior_Labs, innixma, ChristophMolnar, RohanRamanath, emilygsands, LinasBeliunas)",
+    "Reddit: r/MachineLearning, r/datascience e r/fintech com HTTPError; coleta vazia",
+    "Buscas web sem datas verificáveis; blogs.nvidia.com e canaltech.com.br inacessíveis na nuvem"
   ]
 }

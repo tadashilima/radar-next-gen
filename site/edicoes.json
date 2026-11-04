@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-11-04",
+    "data": "2026-11-04",
+    "titulo": "Dia de papers: TFMs em dados relacionais e monitoramento de OOD",
+    "destaque": "Dois papers tratam de generalização e monitoramento de foundation models tabulares, temas centrais para levar esses modelos à produção. Não houve anúncio de banco ou fornecedor no período.",
+    "resumo": [
+      "TFMs generalizam em bancos relacionais inéditos, segundo novo paper",
+      "CCD propõe detecção de OOD para TabPFN e similares",
+      "Grafos dinâmicos ganham tokenização comum"
+    ],
+    "itens": [
+      {
+        "titulo": "Por que foundation models tabulares funcionam em dados relacionais nunca vistos",
+        "url": "http://arxiv.org/abs/2611.02936v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-02",
+        "porque": "Tenta explicar a generalização de TFMs em bancos relacionais, o cenário típico de dados de clientes e transações. Vale ler para calibrar quando um TFM pode substituir GBMs sem retreino."
+      },
+      {
+        "titulo": "CCD: detecção de fora-da-distribuição calibrada pelo contexto em TFMs in-context",
+        "url": "http://arxiv.org/abs/2611.01489v1",
+        "fonte": "arxiv",
+        "tema": "producao",
+        "sinal": "medio",
+        "data": "2026-11-01",
+        "porque": "Propõe monitorar OOD em modelos como o TabPFN, que predizem a partir de um contexto rotulado. Relevante para governança em produção, por exemplo detectar drift em fraude."
+      },
+      {
+        "titulo": "Tokenização de interações dá linguagem comum a foundation models de grafos dinâmicos",
+        "url": "http://arxiv.org/abs/2611.03246v1",
+        "fonte": "arxiv",
+        "tema": "transacional",
+        "sinal": "baixo",
+        "data": "2026-11-02",
+        "porque": "Abordagem de grafos dinâmicos que pode inspirar modelos de transações entre contas. Foco em sistemas web, sem validação em fraude bancária."
+      }
+    ],
+    "perguntas": [
+      "Como vocês monitoram drift em modelos in-context, sem pesos para inspecionar?"
+    ]
+  },
+  {
     "id": "2026-10-31",
     "data": "2026-10-31",
     "titulo": "TabPFN-3.5-Thinking amplia contexto e Jev entra na conversa sobre fraude",

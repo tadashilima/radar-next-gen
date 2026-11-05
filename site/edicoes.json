@@ -1,5 +1,57 @@
 [
   {
+    "id": "2026-11-05",
+    "data": "2026-11-05",
+    "titulo": "TabPFN-3.5-Thinking na API e novo pré-treino para sequências de transações",
+    "destaque": "A Prior Labs liberou o TabPFN-3.5-Thinking na API, com resultados autodeclarados que merecem replicação em fraude e crédito. Sem anúncio de banco ou fornecedor de LDM no período.",
+    "resumo": [
+      "TabPFN-3.5-Thinking disponível via API e playground",
+      "TAPES propõe pré-treino alinhado à tarefa para sequências de transações",
+      "Agentes web ganham benchmark contra golpes (ScamWorld)"
+    ],
+    "itens": [
+      {
+        "titulo": "TabPFN-3.5-Thinking chega à API da Prior Labs",
+        "url": "https://x.com/prior_labs/status/2118002683164364826",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "alto",
+        "data": "2026-11-04",
+        "porque": "A Prior Labs diz ter 95% de win rate sobre o modelo anterior #1 em dados reais grandes (números do próprio fornecedor, não verificados de forma independente). Vale replicar contra GBMs em bases de fraude e crédito antes de concluir qualquer coisa."
+      },
+      {
+        "titulo": "TAPES: pré-treino preditivo conjunto para sequências de transações",
+        "url": "http://arxiv.org/abs/2611.04747v1",
+        "fonte": "arxiv",
+        "tema": "transacional",
+        "sinal": "medio",
+        "data": "2026-11-03",
+        "porque": "Propõe alinhar os alvos de pré-treino (valores, mudanças, relações com eventos passados) às tarefas finais em sequências transacionais. Relevante para quem decide como montar o pré-treino de um FM transacional próprio ou contratado."
+      },
+      {
+        "titulo": "PFN priors melhoram otimização de hiperparâmetros em modelos tabulares clássicos",
+        "url": "http://arxiv.org/abs/2611.05141v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-11-03",
+        "porque": "Os priors sintéticos usados em TabPFN também ajudam modelos treinados do zero, como GBMs. Pode render ganho pequeno de tuning sem trocar de modelo."
+      },
+      {
+        "titulo": "ScamWorld: ambiente para testar agentes web contra fraude online",
+        "url": "http://arxiv.org/abs/2611.04879v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-11-03",
+        "porque": "Mede como agentes que navegam e compram em nome do usuário reagem a golpes reais reconstruídos. Sinaliza um vetor de risco novo à medida que agentes passam a operar contas e pagamentos."
+      }
+    ],
+    "perguntas": [
+      "Os ganhos do TabPFN-3.5-Thinking se mantêm contra GBMs bem ajustados em dados de fraude desbalanceados e com drift?"
+    ]
+  },
+  {
     "id": "2026-11-04",
     "data": "2026-11-04",
     "titulo": "Dia de papers: TFMs em dados relacionais e monitoramento de OOD",

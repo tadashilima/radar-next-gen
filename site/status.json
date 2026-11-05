@@ -1,17 +1,16 @@
 {
-  "data": "2026-11-04",
+  "data": "2026-11-05",
   "novidade": true,
-  "titulo": "Dia de papers: TFMs em dados relacionais e monitoramento de OOD",
-  "destaque": "Dois papers tratam de generalização e monitoramento de foundation models tabulares, temas centrais para levar esses modelos à produção. Não houve anúncio de banco ou fornecedor no período.",
-  "itens_novos": 3,
+  "titulo": "TabPFN-3.5-Thinking na API e novo pré-treino para sequências de transações",
+  "destaque": "A Prior Labs liberou o TabPFN-3.5-Thinking na API, com resultados autodeclarados que merecem replicação em fraude e crédito. Sem anúncio de banco ou fornecedor de LDM no período.",
+  "itens_novos": 4,
   "principal": {
-    "titulo": "Por que foundation models tabulares funcionam em dados relacionais nunca vistos",
-    "url": "http://arxiv.org/abs/2611.02936v1"
+    "titulo": "TabPFN-3.5-Thinking chega à API da Prior Labs",
+    "url": "https://x.com/prior_labs/status/2118002683164364826"
   },
   "fontes_com_falha": [
-    "X @dholzmueller: HTTPError",
-    "X @RohanRamanath: HTTPError",
-    "X @emilygsands: HTTPError",
-    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError"
+    "Coleta de hoje (2026-11-05) ausente: usada a de 2026-11-04",
+    "X @noahholl e @rasbt: HTTPError",
+    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError na coleta; cobertura via WebSearch parcial"
   ]
 }

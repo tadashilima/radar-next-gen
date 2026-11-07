@@ -1,5 +1,68 @@
 [
   {
+    "id": "2026-11-07",
+    "data": "2026-11-07",
+    "titulo": "Itaú compra a NeoSpace; TabPFN e NVIDIA movem o front tabular",
+    "destaque": "Segundo a imprensa, o Itaú anunciou em 26/10 a compra da NeoSpace (LDM) por cerca de R$ 2,9 bi, sujeita a Cade e Banco Central. Se confirmada, o principal fornecedor brasileiro de LDM passa a ser controlado por um grande banco, o que muda a análise de fornecedor para os concorrentes.",
+    "resumo": [
+      "Itaú anuncia aquisição da NeoSpace, já usada em crédito, relacionamento e prevenção a fraude",
+      "Prior Labs publica caso de banco com TabPFN-3.5-Thinking (números simulados)",
+      "Dirk Holzmüller (TabICL) vai para a NVIDIA, que desenvolve o modelo aberto Kumo Tabular",
+      "Sardine lança protocolo Know Your Human para fraude em comércio com agentes"
+    ],
+    "itens": [
+      {
+        "titulo": "Itaú anuncia aquisição da NeoSpace, criadora do LDM, por cerca de R$ 2,9 bi",
+        "url": "https://startups.com.br/negocios/ma/itau-adquire-neospace-por-r-29b-para-ampliar-solucoes-de-ia/",
+        "fonte": "noticia",
+        "tema": "ldm",
+        "sinal": "alto",
+        "data": "2026-10-26",
+        "porque": "Segundo as reportagens, o Itaú já usava a tecnologia em crédito, relacionamento e fraude e liderou a rodada de 2025 com 15%; o negócio ainda depende de Cade e Banco Central. Quem avalia NeoSpace como fornecedor precisa considerar exclusividade, neutralidade e continuidade de oferta para outros bancos."
+      },
+      {
+        "titulo": "Prior Labs: caso de banco com TabPFN-3.5-Thinking supera XGBoost em campanha simulada",
+        "url": "https://x.com/prior_labs/status/2118721942253625518",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-06",
+        "porque": "O cookbook ranqueia 200 mil clientes e relata ganho de cerca de 8% sobre XGBoost no top 10%, mas com valores simulados e caso de propensão, não de fraude. Serve como roteiro de teste de TabPFN contra GBM, não como evidência em produção."
+      },
+      {
+        "titulo": "Holzmüller, coautor do TabICL, entra na NVIDIA para o modelo aberto Kumo Tabular",
+        "url": "https://x.com/DHolzmueller/status/2118464393113665818",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-05",
+        "porque": "Indica que a NVIDIA investe em um tabular foundation model aberto de ponta, o que amplia as opções além de Prior Labs e fornecedores fechados. Vale acompanhar licença e benchmarks antes de montar a shortlist."
+      },
+      {
+        "titulo": "Sardine lança 'Know Your Human' para compartilhar identificadores de humano entre comerciantes e emissores",
+        "url": "https://x.com/soupsranjan/status/2118400840100917358",
+        "fonte": "x",
+        "tema": "agentes",
+        "sinal": "medio",
+        "data": "2026-11-05",
+        "porque": "Com agentes de IA comprando em nome de clientes, a fraude passa a depender de sinais de dispositivo, IP e KYC compartilhados entre os dois lados da transação. O post não traz métricas, então a eficácia ainda não foi demonstrada."
+      },
+      {
+        "titulo": "Visa lança benchmark de comércio com agentes: modelos falharam em 42,8% das execuções",
+        "url": "https://x.com/sytaylor/status/2118674700624711967",
+        "fonte": "x",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-11-06",
+        "porque": "Segundo o relato de terceiro no X, 22 modelos foram testados e em parte das falhas o agente concluiu a compra mesmo assim. É um dado inicial sobre o risco de pagamentos iniciados por agentes, e o número vem de fonte secundária."
+      }
+    ],
+    "perguntas": [
+      "Com a NeoSpace sob controle de um grande banco, qual é o plano B para quem pretendia contratar um LDM brasileiro?",
+      "Qual benchmark interno mostraria se TabPFN supera GBM em fraude, e não só em propensão?"
+    ]
+  },
+  {
     "id": "2026-11-05",
     "data": "2026-11-05",
     "titulo": "TabPFN-3.5-Thinking na API e novo pré-treino para sequências de transações",

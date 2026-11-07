@@ -1,13 +1,18 @@
 {
-  "data": "2026-11-06",
-  "novidade": false,
-  "titulo": "",
-  "destaque": "",
-  "itens_novos": 0,
-  "principal": {},
+  "data": "2026-11-07",
+  "novidade": true,
+  "titulo": "Itaú compra a NeoSpace; TabPFN e NVIDIA movem o front tabular",
+  "destaque": "Segundo a imprensa, o Itaú anunciou em 26/10 a compra da NeoSpace (LDM) por cerca de R$ 2,9 bi, sujeita a Cade e Banco Central. Se confirmada, o principal fornecedor brasileiro de LDM passa a ser controlado por um grande banco, o que muda a análise de fornecedor para os concorrentes.",
+  "itens_novos": 5,
+  "principal": {
+    "titulo": "Itaú anuncia aquisição da NeoSpace, criadora do LDM, por cerca de R$ 2,9 bi",
+    "url": "https://startups.com.br/negocios/ma/itau-adquire-neospace-por-r-29b-para-ampliar-solucoes-de-ia/"
+  },
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-06) ausente: usada a de 2026-11-05",
-    "X @dholzmueller: HTTPError",
-    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError na coleta; cobertura via WebSearch parcial"
+    "Coleta de hoje (2026-11-07) ausente: usada a de 2026-11-06",
+    "Coleta: arXiv com HTTPError/TimeoutError em 7 queries",
+    "Coleta: X com HTTPError em 6 perfis (innixma, GaelVaroquaux, autogluon, nubank, emilygsands, rasbt)",
+    "Reddit: coleta vazia (HTTPError); cobertura via WebSearch parcial e sem resultados",
+    "thepaypers.com e economicnewsbrasil.com.br fora da rede permitida (não verificados por WebFetch)"
   ]
 }

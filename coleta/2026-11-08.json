@@ -1,0 +1,341 @@
+{
+ "gerado_em": "2026-11-08T16:40:10+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
+   "url": "http://arxiv.org/abs/2611.08281v1",
+   "data": "2026-11-05",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "Personal AI agents face social engineering attacks supported by forged multimodal content, but existing evaluations mainly focus on text-based dialogue, leaving their intrinsic security under such attacks insufficiently studied. We introduce Multimodal-SEA, an interactive benchmark comprising 608 expert-designed tasks grounded in real-world fraud cases, covering 14 domains and 152 attack scenarios with prepared multimodal content. The tasks span four difficulty levels and reflect the distinct social and cultural contexts of Chinese and English environments. Agents inspect content, verify requests, and execute actions in simulated applications, with attack outcomes grounded in verifiable tool"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+    "url": "https://huggingface.co/papers/2611.06728",
+    "data": "2026-11-03",
+    "resumo": "Streaming video understanding requires models to repeatedly decide whether to respond or continue observing. Recently, Group Relative Policy Optimization (GRPO) has been applied to this setting, with existing approaches emphasizing reward design while retaining a single trajectory-level advantage across turns. Such shared credit can reinforce redundant replies after earlier successes and discourage useful follow-ups after earlier failures. We propose TurnWise, a turn-level GRPO framework that aligns learning with individual streaming decisions. TurnWise addresses the mismatch between trajectory-level feedback and turn-level interaction, promoting informative responses and reducing redundancy"
+   },
+   {
+    "titulo": "FinForesight: A Diagnostic Backtesting Benchmark for Deep Research Systems in Financial Forecasting",
+    "url": "https://huggingface.co/papers/2611.01621",
+    "data": "2026-10-31",
+    "resumo": "Anticipating financial outcomes requires synthesizing evolving evidence and reasoning under uncertainty, making deep research systems promising tools for forecasting. Yet evaluating forecasting ability is challenging because historical backtests may reward memorized outcomes or information retrieved after the forecast date. Live forecasting avoids direct access to realized outcomes, but feedback arrives only after events resolve. To obtain timely feedback and assess historical scores, we introduce FinForesight, a diagnostic backtesting benchmark for financial deep research systems. Across the Chinese, U.S., and Hong Kong markets, the benchmark evaluates four forecasting tasks: valuation, ret"
+   },
+   {
+    "titulo": "Kierston & KierstonBench: Simulation of Allentown, PA and Evaluation of Language Models in Crime Investigation and Surveillance Tasks",
+    "url": "https://huggingface.co/papers/2611.04785",
+    "data": "2026-11-02",
+    "resumo": "Large language models are candidates for collecting and analyzing records in criminal investigations and mass surveillance. Their capability and accuracy in this work cannot currently be measured. Real deployments lack the ground truth needed to score a model's conclusions, and no benchmark evaluates these capabilities in a simulated environment. We present Kierston, a city-scale simulation engine, and KierstonBench, a benchmark that tests these capabilities against known simulated events. Kierston models approximately 125,000 residents of Allentown, Pennsylvania, generating their daily activities and the telecommunications, financial, administrative and license-plate records that surveillan"
+   },
+   {
+    "titulo": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
+    "url": "https://huggingface.co/papers/2611.05036",
+    "data": "2026-11-02",
+    "resumo": "Large language models are deployed as long-horizon agents that compose diverse tools across MCP services into executable workflows. Existing MCP environment-scaling methods are data-centric: they first synthesize a database and scenario, then derive tools and tasks from them. As a result, tool interfaces may not match real ones, tool compositions are not grounded in execution, and tasks rarely span more than one environment. We propose ToolSpace, a tool-centric framework that reverses this order. ToolSpace mines data, state, and retry dependencies from adjacent calls in execution traces of real MCP services and open agent corpora, using deterministic rules rather than LLM judgment, and clust"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2118721942253625518",
+   "texto": "TabPFN-3.5-Thinking spends extra compute at fit time to get better at the metric you care about. In our new cookbook, that's worth €28,900 more in campaign value than XGBoost.\n\nThe setup: a bank ranks 200,000 customers by how likely they are to make a transaction, and only contacts the top of the list. Whose list finds more of the right people?\n\n→ Thinking ranks the right customers higher than XGBoost and standard TabPFN-3.5\n→ In its top 1%, more than 95 in 100 make a transaction\n→ Contacting the top 10% earns about 8% more than with XGBoost\n\nSimulated figures (€100 per transaction, €2 per con",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/DHolzmueller/status/2118464389439189411",
+   "texto": "After three wonderful years at Inria, I'm excited to join NVIDIA this week to push the frontier of open foundation models for structured data!\n\nAt Inria, I co-developed models and benchmarks for classification and regression on tabular data. 1/",
+   "data": "2026-11-05"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/DHolzmueller/status/2118464393113665818",
+   "texto": "Our tabular foundation model, TabICL (with @JingangQu, @GaelVaroquaux, and @MarineLeMorvan) was particularly popular since it was competitive and open-source. With Kumo Tabular, NVIDIA is developing an open state-of-the-art model, and I'm excited to be part of this effort. 2/",
+   "data": "2026-11-05"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/DHolzmueller/status/2118464395638448525",
+   "texto": "(I also moved to Munich along the way.)\nI'm grateful to my amazing collaborators and mentors at Inria as well as external ones, who made the journey enjoyable and without whom this would not have been possible. 3/3",
+   "data": "2026-11-05"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/lil_dill/status/2118777083682078746",
+   "texto": "🤯",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/Noahpinion/status/2118481560009863335",
+   "texto": "Ernie has been the most circumspect, level-headed, and thorough analyst of the macroeconomics of the First AI Boom. If you're not following him, you should be!",
+   "data": "2026-11-05"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2118400373073613294",
+   "texto": "Agents do almost all of our queries, dashboards, and analyses at @stripe. We know you want agents working with your data too, including your Stripe data. So we built it!",
+   "data": "2026-11-05"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2118400378358452527",
+   "texto": "The agent gets our modeled schema, guidance on how metrics are defined, and hundreds of pre-built reports, so it knows how to get the right answer. And every answer shows the SQL, so you know exactly what's happening under the hood.",
+   "data": "2026-11-05"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2118400379968966718",
+   "texto": "Queries are free through January 31, 2027. To start, just tell your agent \"Pull in my Stripe data.\" \n\nEager to hear what you, and your agent, think!",
+   "data": "2026-11-05"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/AIMind_Ai/status/2119373785904148487",
+   "texto": "What the f*ck, Anthropic? I pay 5x more for Claude Opus 5.5 than in September, and this is what I get.\n\nIn September, the $20 plan was enough. Now I’m on $100 because the $20 plan runs out.\n\nBoth videos come from the exact same prompt, and I ran it on max effort both times.\n\nIs Anthropic secretly nerfing Claude Opus 5.5 so Claude Fable 5.5 looks better at launch?",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/mcagney/status/2119136269997334540",
+   "texto": "Transfer agents still run on 1970s rules — they need your name and a physical mailing address.\n\nFor tokenized securities, a digital wallet address does the job better: more privacy, faster settlement, more engaged shareholder governance.\n\nWe filed a joint comment with Securitize, Bullish/Equiniti and Plume asking the SEC to modernize transfer agent rules. 🧵\n\n@Securitize @bullish @equiniti @centrifuge @plumenetwork",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119444593322197027",
+   "texto": "Brb",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/austincampbell/status/2119204011114975392",
+   "texto": "Democrats just swept into power because of a voter base tired of drama, with affordability as far and away the main concern.\n\nIf the Democrats go right back to what they did in 2020, only harder, they will be right back out in 2028!\n\nSolve real problems. Stop the theater.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tanayj/status/2119187386576097342",
+   "texto": "Wild that Shopify merchants have captured ~half of incremental US e-commerce sales since 2025.\n\nShopify's overall share of US e-commerce is now 14%",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119351830169768188",
+   "texto": "This is stunningly insightful from @chamath \n\nI'm shook for two reasons \n\n1. The clarity of this articulation \n\n2. It took this long to see the fucking obvious",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119351334906241182",
+   "texto": "Despite the best efforts of many agentic commerce is still broken.\n\nBecause payments are hard.\n\nSo many things can go wrong. The issuing bank could flag it as fraud. The merchant could. There's millions of edge cases.\n\nAgents just add more.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/AndrewCurran_/status/2119084460344053998",
+   "texto": "AI 2027 has been updated. With Astra we were five weeks behind the curve, with the mysterious model 4 we are now six weeks ahead.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119327824511127609",
+   "texto": "Weekend sorted.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/soupsranjan/status/2118777313722785848",
+   "texto": "Fraud and conversion rates are two sides of the same coin. If you remove the fear of fraud, conversion goes up.\n\nThat’s our goal with Know Your Human for agentic commerce. Here’s a quick demo showing our new KYH product in action as an agent - Muse - tries to purchase a product.\n\nHere’s how it works:\n\n1. Sardine’s Device Intelligence, running at this merchant’s checkout, detects that the order came through an agentic browser such as Muse, Dot or Instinct.\n\n2. Instead of blocking the order, the merchant steps it up to the human. As you can see, the merchant is able to…\n\n3. Text a tracking link ",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/0xVishnya/status/2119067501531107395",
+   "texto": "Tempo just launched credit. It won't lend a dollar itself\n\n@tempo, the payments chain incubated by Stripe and Paradigm, now matches businesses with outside lenders. Draws and repayments settle in stablecoins in under a second, 24/7\n\nWhat fintechs can borrow for:\n- prefunding: send payouts before incoming funds arrive\n- receivables: borrow against card settlements or invoices\n- working capital: fund the loans they give their own customers\n- consumer credit: offer loans through a licensed lending partner\n\nHow it works:\n- facilities can have no minimum draw, so you pay interest only on what you u",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/scottew/status/2119090715787776337",
+   "texto": "I will be there! Come to Fintech Nerdcon and let’s all hang out.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119085076218565032",
+   "texto": "Just 10 days until Fintech Nerdcon! \n\nIf you want your ear to the ground on \n\n- Agentic commerce\n- What's happening in AI adoption\n- Stablecoins in practice\n- What happens to all the bank charters post midterms\n\nThis is *the* place to be\n\nhttps://fintechnerdcon.com",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119055025637044687",
+   "texto": "Crypto as an industry is here to stay. Far better to have rules of the road established, and if you can make them a high watermark all the better.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/austincampbell/status/2118865424108699883",
+   "texto": "I never thought I would have to type these words, but to be very clear, we should not execute @elonmusk and @profgalloway is way out of line here.\n\nNobody should be wishing for another french revolution, and as a gentle reminder, the left all got killed at the end there.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/astrange/status/2118563700311495037",
+   "texto": "Very cool simulation use case.  Nubank iterated/ released agents faster/better by testing on simulated vs. real customers.  All companies will need to do this.  Most won't be able to hire the talent.   Expect \"Simulation as a Service\" demand to 🚀",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2118736294142525774",
+   "texto": "Consumer credit is on chain \n\nAnd scaling rapidly.",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tomrobin/status/2118643618760253601",
+   "texto": "The crypto industry is still under attack - NK is laundering $3.2B through our exchanges, bridges and other services - right now.\n20k+ wallets. 16 chains. 36+ services. 65k+ transactions. Every gap is one they’ll use.\nNeed crypto transaction screening today? Contact @elliptic 👇",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2118674700624711967",
+   "texto": "AI agents failed 42.8% of Visa's shopping tests\n\nIn more than half of those failures, the agent bought something anyway 😳\n\nWhich is striking when you consider that six in ten UK adults told YouGov they'd stop using an AI shopping agent after one mistake.\n\nSo we needed a benchmark to see where its failing. Cue Visa...\n\n---\n\nVisa launched its Agentic Commerce Benchmark on Thursday:\n\n- Testing 22 AI models from 12 labs, 15 shopping tasks, three runs each\n- 57.2% of runs passed (best model 82.2%, worst 28.9%)\n- A model passed all three runs of a task only 34.2% of the time\n- 23.1% of all runs ende",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119439910285316594",
+   "texto": "Coinbase CEO Brian Armstrong just shared how he runs an org chart of AI agents.\n\nHis setup:\n\n→ One lead agent per area of focus, running continuously\n→ A chief of staff agent overseeing them\n→ Sub-agents that write code, test it, chase reviews, and coordinate with team members\n\nEverything needing his attention lands in one prioritized queue. Product reviews include screenshots and a video demo.\n\nHe clears the queue in batches, mostly through voice and keyboard shortcuts.\n\nOver time, the system captures his preferences and judgment into what he calls a “Brian brain.”\n\nThe goal: “fewer correctio",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119409529792176552",
+   "texto": "Revolut has cut AI coding costs about 10x by making a self-hosted Chinese model its default in place of Claude Code.\n\nIt runs Zhipu AI’s GLM on its own Nvidia GPUs for about $0.30 per million tokens.\n\nHere’s how Revolut did it, what it really costs, and what it means for anyone building, buying, or backing AI: https://linas.substack.com/p/revolut-ai-coding-costs-open-source-models",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119372645053636991",
+   "texto": "Real footage of Warren Buffett this week while markets were crashing and Berkshire Hathaway hit new all-time highs 😂",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119351798209106102",
+   "texto": "Chamath just explained why slowing data-center construction could strengthen the biggest AI companies.\n\nHis argument: the companies with existing compute capacity gain bargaining power when new supply gets harder to build.\n\nThe frontier labs still need more capacity. Infrastructure owners can choose what to do with theirs:\n\n→ Keep renting it to customers\n→ Charge more if supply tightens\n→ Reserve more for their own AI products\n\nHis example is Google. Giving more compute to Gemini could help it catch up while competitors struggle to secure the capacity they need.\n\n“It sets the hyperscalers to b",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119309169484247449",
+   "texto": "Anthropic reportedly has nearly $150 billion in cash and liquid investments. It still wants to raise another $80-100 billion.\n\nThe reason: a planned $900 billion in compute and infrastructure spending over the coming years.\n\nAccording to the FT, the Claude maker intends to go public before Thanksgiving despite the tech selloff.\n\nThe numbers:\n\n→ Expected IPO valuation: $1.25–1.75 trillion\n→ Current valuation: $965 billion\n→ Q3 revenue: about $17 billion, up almost 50%\n→ Reported annualised revenue run rate: about $81 billion, versus $65 billion at the end of July\n\nThat last number is an extrapo",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119162110320017735",
+   "texto": "Steve Jobs believed a great software developer could outperform a good one by 25 to 50 times.\n\nNot a bad developer. A good one.\n\nHis comparison:\n\n→ Best versus worst taxi driver: perhaps 2 to 1\n→ Best versus worst cook: maybe 3 to 1\n→ Best versus worst software person: about 100 to 1 or more\n\nThese were his estimates. His conclusion was what mattered:\n\n“It really pays to go after the best people in the world.”\n\nThen came the painful part: letting people go when they didn’t measure up. He said he tried to do it humanely, but it was never fun.\n\nFor Jobs, keeping the hiring bar high included deci",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119083985099710775",
+   "texto": "Revolut founder Nik Storonsky says he has personally interviewed about 10,000 people.\n\nHe looks for two things:\n\n→ First-principles problem solving. When circumstances change, can you work through a problem without relying on an old playbook?\n\n→ A record of outperforming your peers, starting at university and continuing through your jobs.\n\nThe second filter is particularly blunt. He wants to know what you achieved relative to the people around you, not just where you worked.\n\nAfter roughly 10,000 interviews, he’s still looking for evidence that you can figure things out and deliver.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119112855022637187",
+   "texto": "BTW, in case you missed it, also check out How Revolut Cut AI Costs 90% and Started Shipping Faster 🚀: https://linas.substack.com/p/revolut-ai-coding-costs-open-source-models",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119054343970160786",
+   "texto": "OpenAI’s Greg Brockman casually revealed a JPMorgan Chase partnership that hadn’t been announced.\n\n“We just papered a partnership with JPMorgan Chase.”\n\nHe says the bank will:\n\n→ Use Codex\n→ Use OpenAI’s cyber models “to secure themselves”\n→ Deploy its models for knowledge work across the company\n\nThe cybersecurity piece is the one to watch here.\n\nBecause helping employees write documents is one thing, asking a vendor to help secure a bank means trusting it with a very different class of work.\n\nNo financial terms were shared.\n\nBut this is a much bigger ambition than giving staff a chatbot.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119023637617418335",
+   "texto": "Tech has no moat. Apparently, neither do restaurants 😂\n\nAnyone can now vibe-code their own SaaS, vibe-cook their own meals, and vibe-bake their own bread.\n\nWhy pay for software when you can build it yourself?\n\nWhy pay for dinner when you can cook it yourself?\n\nSaaS is dead. Restaurants are cooked. Bakeries are toast 🍞",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118985847416516890",
+   "texto": "Wild: Berkshire Hathaway is now sitting on a staggering $365 billion in cash. That’s enough to buy 472 companies in the S&P 500 😳\n\nFor the perspective, 6 months ago that pile was ~$397B and untouched.\n\nQ2 under new CEO Greg Abel:\n\n→ ~$20B net stock buying (ended a 14-quarter sell streak)\n→ ~$10B Alphabet\n→ ~$4.5B buybacks\n→ Taylor Morrison ~$6.8B\n\nBuffett built the pile waiting out expensive markets. Now Berkshire has enough dry powder to act as the AI trade is getting marked down.\n\nInteresting times 🍿",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118664290043330837",
+   "texto": "Anthropic realising they could have IPOed at a $2 trillion valuation if they just went public a few months earlier.\n\nThey waited. Now they’re fighting to clear $1T.",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118812721219285311",
+   "texto": "P.S. also check out Anthropic’s amended S-1 filing & full break down of the AI giant’s IPO 🤖: https://linas.substack.com/p/fintechpulse1148",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118788125195637046",
+   "texto": "This pretty much sums up Anthropic's S-1 😂\n\nOh, and METR is not really an independent research center. The founder was Dario’s roommate.",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118734673371168906",
+   "texto": "Anthropic is reportedly lowering the IPO target to ~$1 trillion.\n\nMajor IPO investors now say the $1.5T ask has to come down, per WSJ.\n\nOne floated closer to $1T. Delay, or raising less than the ~$100B ask, are also on the table.\n\nThe amended S-1:\n\n→ ~$895B of purchase commitments + leases, almost all compute\n\n→ Google ≥$121B, Amazon ≥$110B, Microsoft ≥$45B — largely non-cancelable. You pay whether you use the capacity or not\n\n→ Broadcom-related equipment leases ~$161B\n\n→ Cash: $146.6B (Sept 30)\n\nThis is the same funding model as the hyperscalers. Dilute equity to fund capex.\n\nBut you need a s",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118700893726032134",
+   "texto": "Yesterday's $2.5 trillion Nasdaq wipeout may have just derailed the biggest IPO in history. Major investors are now pushing back on Anthropic's $1.5-2 trillion IPO, arguing that $1T is more realistic 😳\n\nAnthropic was reportedly targeting a listing before Thanksgiving.\n\nBut Wall Street's appetite for expensive AI bets is shifting fast.\n\n→ AI demand is soaring.\n→ Compute commitments are enormous.\n→ Even $1 trillion would be an extraordinary valuation.\n\nOf course, nothing about Anthropic's technology changed overnight.\n\nClaude is still incredible, and the demand is sky-high.\n\nBut what did change ",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118617581854543956",
+   "texto": "Palantir CEO Alex Karp on why the company keeps winning contracts under both parties:\n\n“From a business perspective, we’ve done well under both parties. Our products are superior, we stand by their superiority, and both parties recognize that we have the best products.”\n\nThat’s the whole moat argument in two sentences.\n\nNot narrative. Not lobbying. A product both sides keep buying because they can’t get the same capability elsewhere.\n\nMost defense/AI vendors sell a story that matches whoever is in power.\n\nKarp’s claim is the opposite: the software is good enough that the buyer’s politics stop ",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118592869644533830",
+   "texto": "Warren Buffett on what to do when your stocks drop 50%.\n\n→ “You’re not going to pick the bottom, and… nobody else can pick it for you.”\n→ Be prepared, when you buy a stock, for it to go down 50% or more - and be comfortable with it\n→ Berkshire itself dropped 50% three different times. “There wasn’t anything wrong with Berkshire when those three times occurred.”\n→ On borrowed money, you could have been cleaned out\n→ “If you can’t handle it psychologically, then you really shouldn’t own stocks, because you’re going to buy and sell them at the wrong time.”\n\nThen the closer that still hits in a we",
+   "data": "2026-11-06"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118437044817183135",
+   "texto": "Instead of another Netflix episode tonight, spend 9 minutes with Warren Buffett.\n\nGoldman Sachs 10,000 Small Businesses graduation panel. Same stage as Bloomberg, Blankfein and Dorsey. \n\nSomeone asks him for one thing founders can do tomorrow morning.\n\nHis answer:\n\n→ Write “Delight my customer” on the bathroom mirror - lipstick is fine\n→ Not “satisfy.” Delight.\n→ Jeff Bezos as the classic example: started tiny, still wakes up every day figuring out how to delight the customer\n→ Delighted customers become a sales force you don’t pay and don’t see - talking about you all the time\n→ “I don’t reme",
+   "data": "2026-11-05"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2118408153989869837",
+   "texto": "Maybe Anthropic will actually cancel its IPO 🤔",
+   "data": "2026-11-05"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

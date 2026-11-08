@@ -1,5 +1,55 @@
 [
   {
+    "id": "2026-11-08",
+    "data": "2026-11-08",
+    "titulo": "Dia calmo: NVIDIA reforça tabular aberto e papers sobre agentes e fraude",
+    "destaque": "Sem novidade de alto sinal. O movimento mais relevante é a ida de Holzmüller (TabICL) à NVIDIA para um tabular FM aberto, que reforça o front de alternativas aos GBMs.",
+    "resumo": [
+      "Autor do TabICL entra na NVIDIA para modelo aberto para dados estruturados",
+      "Paper sobre active in-context learning para tabular FMs",
+      "Dois papers de agentes e fraude: scambaiting e benchmark de engenharia social"
+    ],
+    "itens": [
+      {
+        "titulo": "Holzmüller (TabICL) vai para a NVIDIA para desenvolver modelo fundacional aberto para dados estruturados",
+        "url": "https://x.com/DHolzmueller/status/2118464393113665818",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-05",
+        "porque": "Segundo o próprio autor, a NVIDIA desenvolve com a Kumo um tabular FM aberto de ponta. Para quem avalia alternativas aos GBMs, é mais um sinal de que haverá opção aberta e com respaldo de fornecedor."
+      },
+      {
+        "titulo": "Active in-context learning para tabular foundation models: quando e onde rotular",
+        "url": "http://arxiv.org/abs/2611.07886v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-11-05",
+        "porque": "Estuda como escolher quais linhas rotular para o contexto de um TFM congelado. Pode interessar onde rótulo de fraude é caro e escasso; ainda é resultado acadêmico."
+      },
+      {
+        "titulo": "Scambaiting agêntico: agentes que se passam por vítimas para extrair contas laranja e carteiras",
+        "url": "http://arxiv.org/abs/2611.08170v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-11-05",
+        "porque": "Posiciona agentes como fonte de inteligência sobre contas de passagem, tema próximo de contas laranja. É um artigo de posicionamento, sem evidência de produção."
+      },
+      {
+        "titulo": "Multimodal-SEA: benchmark de segurança de agentes contra engenharia social multimodal baseada em fraudes reais",
+        "url": "http://arxiv.org/abs/2611.08281v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-11-05",
+        "porque": "Traz 608 tarefas para testar se agentes pessoais caem em golpes com conteúdo forjado. Útil como referência se agentes forem executar ações financeiras."
+      }
+    ],
+    "perguntas": []
+  },
+  {
     "id": "2026-11-07",
     "data": "2026-11-07",
     "titulo": "Itaú compra a NeoSpace; TabPFN e NVIDIA movem o front tabular",

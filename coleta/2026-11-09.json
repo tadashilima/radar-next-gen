@@ -1,0 +1,289 @@
+{
+ "gerado_em": "2026-11-09T20:43:32+00:00",
+ "janela_dias": 3,
+ "arxiv": [],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "Human-Centred, Risk-Constrained Evaluation of Financial Document Recognition: Evidence, Critical Errors, and Selective Automation",
+    "url": "https://huggingface.co/papers/2611.02775",
+    "data": "2026-11-02",
+    "resumo": "Financial document recognition is often assessed using character and word error rates, although these metrics do not express whether a system preserves the financial facts on which people and organisations act. This paper develops a human-centred, risk-constrained framework for evaluating financial document recognition as evidence recovery and decision support. It defines typed financial facts linked to visible source regions and separates verbatim transcription, deterministic normalization, and business interpretation. A layered quality model covers text, localization, layout, tables, fields, fact correctness, evidence grounding, uncertainty, robustness, and operational performance. Non-com"
+   },
+   {
+    "titulo": "LLMs Don't Know What They Know: Benchmarking Temporal Self-Knowledge for Financial Backtesting",
+    "url": "https://huggingface.co/papers/2611.06808",
+    "data": "2026-11-03",
+    "resumo": "Financial backtests of large language models (LLMs) are meaningful only if the model did not already know the outcomes it is asked to predict. Practitioners guard against this by trusting a vendor's stated knowledge cutoff, by asking the model what it knows, or by instructing it to answer as of a past date. To verify whether any of these safeguards can be trusted, we introduce FinDendro, a benchmark of 2,226 dated U.S. facts from 1999 to 2026, covering monthly macroeconomic series, month-end stock prices and Federal Reserve decisions. Each fact yields four prompts: a value question, Recall and Predict questions that pair each candidate value with a claim of knowing or guessing without a decl"
+   },
+   {
+    "titulo": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+    "url": "https://huggingface.co/papers/2611.06728",
+    "data": "2026-11-03",
+    "resumo": "Streaming video understanding requires models to repeatedly decide whether to respond or continue observing. Recently, Group Relative Policy Optimization (GRPO) has been applied to this setting, with existing approaches emphasizing reward design while retaining a single trajectory-level advantage across turns. Such shared credit can reinforce redundant replies after earlier successes and discourage useful follow-ups after earlier failures. We propose TurnWise, a turn-level GRPO framework that aligns learning with individual streaming decisions. TurnWise addresses the mismatch between trajectory-level feedback and turn-level interaction, promoting informative responses and reducing redundancy"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119890587004342683",
+   "texto": "Bill Ackman's advice to AI founders: raise the money, then spend as if the next round won't happen.\n\nOn The Knowledge Project, he describes investors putting $50 million into a company at a $400 million valuation, followed by another $50 million at $1 billion just two weeks later.\n\nThat kind of funding can change how a founder spends. \n\nA company that was bootstrapping suddenly has enough cash to assume money will always be available.\n\nAckman expects a high-profile blowup to reset those expectations.\n\nHis distinction is runway. He believes disciplined companies with years of cash will survive,",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119872571944345673",
+   "texto": "Revolut's $115 billion valuation puts it at roughly 2x Nubank's $NU public market value.\n\nFascinating growth.",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119849058194043020",
+   "texto": "😂",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119822364774953173",
+   "texto": "the internal structure of AI & tech companies",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119784561856958678",
+   "texto": "Marc Andreessen just said the AI gap between startups and incumbents is the widest he's seen in his entire career.\n\nOn the a16z podcast with Ben Horowitz and Chris Dixon, he put it like this:\n\n\"The AI-native early-stage startups have just a completely different view on what they can do with AI than the typical incumbents in almost any industry.\"\n\nAnd he says the gap is still widening, because AI keeps getting better week by week.\n\nHis conclusion: a lot of industries are \"really up for grabs.\"\n\nThe risk for big companies isn't slow adoption. It's underestimating what AI can already do.",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119749677918638519",
+   "texto": "Nailed it! The entire AI economy has a single point of failure nobody saw coming, and it has nothing to do with GPUs 👏😂\n\nIt's Jensen Huang's wife, and now she’s single-handedly holding the global economy together.\n\nHuang spent 33 years building Nvidia into a $4.5 trillion giant. NVIDIA can now engineer some of the world's most advanced AI chips. Yet managing its CEO's personal life might be its biggest engineering challenge.\n\nTurns out, when Jensen said he loves Chinese models, he wasn’t talking about DeepSeek, Kimi, or GLM… 😭",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119729735106232448",
+   "texto": "Revolut playbook for building one of the world’s most successful banks in 10 years:\n\n↳ Product is the growth engine.\n↳ Breadth & depth at once. \n↳ Three moats that reinforce each other: distribution → in-house tech stack → proprietary tx/behaviour data at scale.\n↳ One global stack and brand.\n↳ Legal entities mirror the architecture: banking, securities/crypto, payments/insurance separately capitalised, so friction in one line doesn’t choke the others.\n↳ Build in-house.\n↳ Hiring as an engineering problem: 1.7M applications in 2025, 0.15% accepted.\n↳ Customer service runs like a product line, no",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119686314199286204",
+   "texto": "This is how Brian Armstrong (Coinbase CEO) runs his AI agents:",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119544174802276699",
+   "texto": "Revolut founder & CEO Nik Storonsky, pitching a currency-exchange app with “more than 6,000 pre-product subscribers.”\n\nToday, Revolut has more than 80 million retail customers and a $115 billion valuation.\n\nIn this early pitch, he talks about sending money to friends, exchanging currencies at the interbank rate, and processing over $200,000 in transactions during the first month of private beta.\n\nThe numbers since:\n\n→ £1.5 million seed round in 2015\n→ $6 billion in revenue in 2025\n→ $1.7 billion in net profit in 2025\n→ Five consecutive profitable years\n\nIt’s easy to look at the company now and",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119525602411585539",
+   "texto": "$115 billion fintech giant Revolut just showed the world its AI strategy.\n\nRevolut cut AI coding costs by roughly 90% without abandoning Claude Code or Codex.\n\nIts approach: make self-hosted models the default and frontier models the exception.\n\nAt AI Engineer NYC, AI infrastructure lead David Abitbol described the rollout to roughly 2,000 engineers:\n\n→ Some engineers were spending $1,000–$10,000/month on frontier tools, with limited returns\n→ Claude Code initially came with strict budget limits\n→ Around April, Revolut began self-hosting open-weight GLM models from Zhipu AI\n→ Roughly 56 Nvidia",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119502461010591898",
+   "texto": "Elon Musk says his Airstream is parked right next to the power plant at his Memphis AI site.\n\nBut the interesting part isn’t where he sleeps. It’s why he works alongside the team.\n\nAt the Baron Investment Conference, he described:\n\n→ Walking the entire site, sometimes 4 or 5 times a day\n→ Pulling heavy power cables\n→ Doing fiber optic cabling\n→ Working on power-plant management software\n\nHis reason: to understand the difficulty of the work and what could improve it.\n\n“There is no upstairs.”\n\nHe says he’s walking the floor and actively asking questions, rather than waiting in an office for peop",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119439910285316594",
+   "texto": "Coinbase CEO Brian Armstrong just shared how he runs an org chart of AI agents.\n\nHis setup:\n\n→ One lead agent per area of focus, running continuously\n→ A chief of staff agent overseeing them\n→ Sub-agents that write code, test it, chase reviews, and coordinate with team members\n\nEverything needing his attention lands in one prioritized queue. Product reviews include screenshots and a video demo.\n\nHe clears the queue in batches, mostly through voice and keyboard shortcuts.\n\nOver time, the system captures his preferences and judgment into what he calls a “Brian brain.”\n\nThe goal: “fewer correctio",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119409529792176552",
+   "texto": "Revolut has cut AI coding costs about 10x by making a self-hosted Chinese model its default in place of Claude Code.\n\nIt runs Zhipu AI’s GLM on its own Nvidia GPUs for about $0.30 per million tokens.\n\nHere’s how Revolut did it, what it really costs, and what it means for anyone building, buying, or backing AI: https://linas.substack.com/p/revolut-ai-coding-costs-open-source-models",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119372645053636991",
+   "texto": "Real footage of Warren Buffett this week while markets were crashing and Berkshire Hathaway hit new all-time highs 😂",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119351798209106102",
+   "texto": "Chamath just explained why slowing data-center construction could strengthen the biggest AI companies.\n\nHis argument: the companies with existing compute capacity gain bargaining power when new supply gets harder to build.\n\nThe frontier labs still need more capacity. Infrastructure owners can choose what to do with theirs:\n\n→ Keep renting it to customers\n→ Charge more if supply tightens\n→ Reserve more for their own AI products\n\nHis example is Google. Giving more compute to Gemini could help it catch up while competitors struggle to secure the capacity they need.\n\n“It sets the hyperscalers to b",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119309169484247449",
+   "texto": "Anthropic reportedly has nearly $150 billion in cash and liquid investments. It still wants to raise another $80-100 billion.\n\nThe reason: a planned $900 billion in compute and infrastructure spending over the coming years.\n\nAccording to the FT, the Claude maker intends to go public before Thanksgiving despite the tech selloff.\n\nThe numbers:\n\n→ Expected IPO valuation: $1.25–1.75 trillion\n→ Current valuation: $965 billion\n→ Q3 revenue: about $17 billion, up almost 50%\n→ Reported annualised revenue run rate: about $81 billion, versus $65 billion at the end of July\n\nThat last number is an extrapo",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119162110320017735",
+   "texto": "Steve Jobs believed a great software developer could outperform a good one by 25 to 50 times.\n\nNot a bad developer. A good one.\n\nHis comparison:\n\n→ Best versus worst taxi driver: perhaps 2 to 1\n→ Best versus worst cook: maybe 3 to 1\n→ Best versus worst software person: about 100 to 1 or more\n\nThese were his estimates. His conclusion was what mattered:\n\n“It really pays to go after the best people in the world.”\n\nThen came the painful part: letting people go when they didn’t measure up. He said he tried to do it humanely, but it was never fun.\n\nFor Jobs, keeping the hiring bar high included deci",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119083985099710775",
+   "texto": "Revolut founder Nik Storonsky says he has personally interviewed about 10,000 people.\n\nHe looks for two things:\n\n→ First-principles problem solving. When circumstances change, can you work through a problem without relying on an old playbook?\n\n→ A record of outperforming your peers, starting at university and continuing through your jobs.\n\nThe second filter is particularly blunt. He wants to know what you achieved relative to the people around you, not just where you worked.\n\nAfter roughly 10,000 interviews, he’s still looking for evidence that you can figure things out and deliver.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119112855022637187",
+   "texto": "BTW, in case you missed it, also check out How Revolut Cut AI Costs 90% and Started Shipping Faster 🚀: https://linas.substack.com/p/revolut-ai-coding-costs-open-source-models",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119054343970160786",
+   "texto": "OpenAI’s Greg Brockman casually revealed a JPMorgan Chase partnership that hadn’t been announced.\n\n“We just papered a partnership with JPMorgan Chase.”\n\nHe says the bank will:\n\n→ Use Codex\n→ Use OpenAI’s cyber models “to secure themselves”\n→ Deploy its models for knowledge work across the company\n\nThe cybersecurity piece is the one to watch here.\n\nBecause helping employees write documents is one thing, asking a vendor to help secure a bank means trusting it with a very different class of work.\n\nNo financial terms were shared.\n\nBut this is a much bigger ambition than giving staff a chatbot.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2119687267673321856",
+   "texto": "À @Palaiseau91, le cheminement vélo montant sur le plateau de Saclay (très pratiqué par les gens allant au boulot) est sur des espaces partagés avec les piétons.\n\nCe cheminement est parfois dangereux car trop étroit.\n\nLa mairie choisi verbalisation plutôt que modernisation",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2119687287302685180",
+   "texto": "@Palaiseau91 @gdelasteyrie, vous êtes maire de Palaiseau, président de la communauté d'agglomérations Paris-Saclay, vice-président région en charge des Transports, vous pouvez adapter les infrastructures, plutôt que d'envoyer votre Police Municipale verbaliser ceux qui empruntent voies de bus",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119851810798387628",
+   "texto": "Absolute banger of a free report for all things prediction markets 👇",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/borjaneira_/status/2119821350080741649",
+   "texto": "Equity perpetuals are screaming for tokenized stock securities lending so they finally have a dance partner\n\ncould this be an article title, hmm?",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119800887363403877",
+   "texto": "Memecoins are just gross",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Cointelegraph/status/2119582815683477773",
+   "texto": "🇺🇸 NEW: Prediction markets like Kalshi and Polymarket could face fierce scrutiny in Washington as Democrats, fresh off their midterm sweep, vow to crack down on the industry, per Politico.",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119768002505691219",
+   "texto": "Coinbase now owns a national trust bank.\n\nThe charter is for its custody business. The new bank will hold crypto for institutions, with the OCC as its regulator.\n\nFor context, Coinbase already holds roughly 80% of US spot bitcoin ETF assets. It will move that business into the new bank over three years.\n\nThe OCC signed off on 6 November, seven months after conditional approval in April.\n\nTrading, staking and lending stay in other Coinbase companies, and the bank can point its clients to them.\n\nIssuing a stablecoin wasn't part of the application, according to the OCC's April decision.\n\n---\n\nCoi",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/RobDenBleyker/status/2119568237528498428",
+   "texto": "if any hot Chinese spies are reading this I have lots of insider knowledge on AI, the government etc",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/InvestingAddict/status/2119538756915274217",
+   "texto": "Me and Jensen Huang’s ex wife after she gets half his money in the divorce.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119530928720818298",
+   "texto": "Which comes out just as stocks are crashing...",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119473256281354717",
+   "texto": "Instinct just renewed my car insurance at 20% cheaper. \n\nTook a bit of fiddling but I'd say it did 90% of the work, I did 10%.\n\nI recognize not everyone is as patient for janky not quite 100% automated experiences. \n\nBut agents are magic.\n\nKudos @noahrshinn especially considering this was a UK insurance package for a UK car.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/mcagney/status/2119136269997334540",
+   "texto": "Transfer agents still run on 1970s rules — they need your name and a physical mailing address.\n\nFor tokenized securities, a digital wallet address does the job better: more privacy, faster settlement, more engaged shareholder governance.\n\nWe filed a joint comment with Securitize, Bullish/Equiniti and Plume asking the SEC to modernize transfer agent rules. 🧵\n\n@Securitize @bullish @equiniti @centrifuge @plumenetwork",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119444593322197027",
+   "texto": "Brb",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/austincampbell/status/2119204011114975392",
+   "texto": "Democrats just swept into power because of a voter base tired of drama, with affordability as far and away the main concern.\n\nIf the Democrats go right back to what they did in 2020, only harder, they will be right back out in 2028!\n\nSolve real problems. Stop the theater.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tanayj/status/2119187386576097342",
+   "texto": "Wild that Shopify merchants have captured ~half of incremental US e-commerce sales since 2025.\n\nShopify's overall share of US e-commerce is now 14%",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119351830169768188",
+   "texto": "This is stunningly insightful from @chamath \n\nI'm shook for two reasons \n\n1. The clarity of this articulation \n\n2. It took this long to see the fucking obvious",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119351334906241182",
+   "texto": "Despite the best efforts of many agentic commerce is still broken.\n\nBecause payments are hard.\n\nSo many things can go wrong. The issuing bank could flag it as fraud. The merchant could. There's millions of edge cases.\n\nAgents just add more.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/AndrewCurran_/status/2119084460344053998",
+   "texto": "AI 2027 has been updated. With Astra we were five weeks behind the curve, with the mysterious model 4 we are now six weeks ahead.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119327824511127609",
+   "texto": "Weekend sorted.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/0xVishnya/status/2119067501531107395",
+   "texto": "Tempo just launched credit. It won't lend a dollar itself\n\n@tempo, the payments chain incubated by Stripe and Paradigm, now matches businesses with outside lenders. Draws and repayments settle in stablecoins in under a second, 24/7\n\nWhat fintechs can borrow for:\n- prefunding: send payouts before incoming funds arrive\n- receivables: borrow against card settlements or invoices\n- working capital: fund the loans they give their own customers\n- consumer credit: offer loans through a licensed lending partner\n\nHow it works:\n- facilities can have no minimum draw, so you pay interest only on what you u",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/scottew/status/2119090715787776337",
+   "texto": "I will be there! Come to Fintech Nerdcon and let’s all hang out.",
+   "data": "2026-11-07"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @noahholl: HTTPError",
+  "X @autogluon: HTTPError",
+  "X @ChristophMolnar: HTTPError",
+  "X @emilygsands: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

@@ -1,5 +1,46 @@
 [
   {
+    "id": "2026-11-09",
+    "data": "2026-11-09",
+    "titulo": "Dia calmo: modelos tabulares abertos e antifraude para agentes",
+    "destaque": "Sem novidade de alto sinal hoje. O movimento mais relevante é a ida de um autor do TabICL para a NVIDIA, que desenvolve um modelo tabular aberto com a Kumo.",
+    "resumo": [
+      "NVIDIA mira foundation model tabular aberto (Kumo Tabular)",
+      "Sardine apresenta KYH para fraude em comércio com agentes",
+      "Coleta de hoje ausente: usada a de 08/11"
+    ],
+    "itens": [
+      {
+        "titulo": "Pesquisador do TabICL entra na NVIDIA para tocar modelo tabular aberto com a Kumo",
+        "url": "https://x.com/DHolzmueller/status/2118464393113665818",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-05",
+        "porque": "Segundo o próprio autor, a NVIDIA desenvolve um foundation model tabular aberto de ponta com o Kumo Tabular. Para quem compara TabPFN e GBMs em crédito e fraude, indica mais um concorrente aberto no horizonte; ainda sem benchmarks públicos."
+      },
+      {
+        "titulo": "Sardine lança 'Know Your Human' contra fraude em compras feitas por agentes de IA",
+        "url": "https://x.com/soupsranjan/status/2118777313722785848",
+        "fonte": "x",
+        "tema": "agentes",
+        "sinal": "medio",
+        "data": "2026-11-06",
+        "porque": "Mostra um fornecedor de antifraude tratando o comércio por agentes como novo vetor, com identificação de quem está por trás do agente. Vale acompanhar como Pix e cartões devem tratar transações iniciadas por agentes; a demo é do fornecedor, sem números independentes."
+      },
+      {
+        "titulo": "Nubank usa clientes simulados para testar agentes antes de lançá-los",
+        "url": "https://x.com/astrange/status/2118563700311495037",
+        "fonte": "x",
+        "tema": "producao",
+        "sinal": "baixo",
+        "data": "2026-11-06",
+        "porque": "Comentário de terceiro, sem detalhes técnicos verificados, sobre simulação como etapa de validação de agentes. Só para saber que a prática de testar contra clientes sintéticos ganha espaço."
+      }
+    ],
+    "perguntas": []
+  },
+  {
     "id": "2026-11-08",
     "data": "2026-11-08",
     "titulo": "Dia calmo: NVIDIA reforça tabular aberto e papers sobre agentes e fraude",

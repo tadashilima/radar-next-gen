@@ -1,17 +1,16 @@
 {
-  "data": "2026-11-08",
+  "data": "2026-11-09",
   "novidade": true,
-  "titulo": "Dia calmo: NVIDIA reforça tabular aberto e papers sobre agentes e fraude",
-  "destaque": "Sem novidade de alto sinal. O movimento mais relevante é a ida de Holzmüller (TabICL) à NVIDIA para um tabular FM aberto, que reforça o front de alternativas aos GBMs.",
-  "itens_novos": 4,
+  "titulo": "Dia calmo: modelos tabulares abertos e antifraude para agentes",
+  "destaque": "Sem novidade de alto sinal hoje. O movimento mais relevante é a ida de um autor do TabICL para a NVIDIA, que desenvolve um modelo tabular aberto com a Kumo.",
+  "itens_novos": 3,
   "principal": {
-    "titulo": "Holzmüller (TabICL) vai para a NVIDIA para desenvolver modelo fundacional aberto para dados estruturados",
+    "titulo": "Pesquisador do TabICL entra na NVIDIA para tocar modelo tabular aberto com a Kumo",
     "url": "https://x.com/DHolzmueller/status/2118464393113665818"
   },
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-08) ausente: usada a de 2026-11-07",
-    "Coleta: X com HTTPError em @autogluon, @nubank, @sytaylor",
-    "Reddit: coleta vazia (HTTPError); WebSearch só retornou threads antigas (maio/2026)",
-    "Coleta: github vazio"
+    "Coleta de 2026-11-09 ausente (usada a de 2026-11-08)",
+    "Reddit (HTTPError em r/MachineLearning, r/datascience, r/fintech)",
+    "sardine.ai bloqueado na rede da nuvem"
   ]
 }

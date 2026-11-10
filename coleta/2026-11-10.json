@@ -1,0 +1,358 @@
+{
+ "gerado_em": "2026-11-10T17:49:43+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery",
+   "url": "http://arxiv.org/abs/2611.12491v1",
+   "data": "2026-11-09",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Bayesian optimization is widely used in active learning loops for materials science. Gaussian processes serve as the de-facto surrogate model family, but require task-dependent kernel choices and can lack the modeling capacity for complex relationships. Tabular foundation models (TFMs) have recently emerged as the state-of-the-art for predictive tasks on structured data, without requiring bespoke kernels or hyperparameter tuning. We evaluate two TFMs, TabPFN and TabICL, as out-of-the-box surrogate models on two standard materials science benchmarks, comparing against a large field of baselines encompassing Gaussian processes, random forests, and CatBoost. Our findings indicate that TFMs are "
+  },
+  {
+   "titulo": "An Evaluation of Tabular Foundation Models as Training-Free World Models",
+   "url": "http://arxiv.org/abs/2611.11921v1",
+   "data": "2026-11-09",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "World models are widely considered to be a potential key component of model-based reinforcement learning and robot planning, but typically require task-specific training on substantial interaction data. We investigate whether a pretrained tabular foundation model (TabFM) can serve as a training-free dynamics model for world modeling by framing next-state prediction as in-context regression over transition pairs, and where such a model helps and where it breaks. Across synthetic dynamical systems and robot locomotion benchmarks, TabFM is more accurate than LSTM and MLP models trained from scratch on the same limited transitions in almost all settings, and among regressors fitted to the same d"
+  },
+  {
+   "titulo": "Does Predictive Performance Translate to Causal Performance? Evaluating tabular foundation models as nuisance learners for causal effect estimation",
+   "url": "http://arxiv.org/abs/2611.11381v1",
+   "data": "2026-11-08",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular foundation models based on prior-data fitted networks (PFNs) achieve strong predictive performance, but their value for causal inference is unclear. We evaluated whether PFNs, which predict through in-context learning, could match or outperform conventional nuisance learners in supporting accurate causal estimation and reliable uncertainty quantification (inference). Learners modeled propensity scores and outcome regressions within doubly robust estimators of average causal effects, with and without cross-fitting, across synthetic and semi-synthetic settings with varying confounding complexity and effect heterogeneity. Under simple parametric data-generating processes, the PFNs were "
+  },
+  {
+   "titulo": "Fairness in Explainable AI Narratives: Decomposing Social Disparities in LLM-Generated Explanations",
+   "url": "http://arxiv.org/abs/2611.12592v1",
+   "data": "2026-11-09",
+   "query": "all:\"credit scoring\" AND (all:transformer OR all:LLM)",
+   "resumo": "Large language models (LLMs) are increasingly used to translate technical explainable AI (XAI) artefacts such as SHAP into explanatory narratives (XAINs) for lay users. In high-risk domains, these explanations are often the main resource through which individuals can understand and contest adverse decisions. Yet LLMs are known to reproduce social bias, even from proxy variables alone, and fairness in XAINs remains unstudied. Because XAINs are bound to a ground-truth artefact, fairness concerns not only what a narrative says and how, but also whether it is equally faithful across social groups. We introduce fairness in XAINs as a new field of research and propose a framework that generates na"
+  },
+  {
+   "titulo": "FraudBench: A Legal Evaluation of AI Deception",
+   "url": "http://arxiv.org/abs/2611.12167v1",
+   "data": "2026-11-09",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "We introduce FraudBench, an evaluation of large language models' (LLMs) propensities to recommend, assist, or directly take actions that would constitute fraud under U.S. law. Our evaluation contains a novel dataset of 159 scenarios based on real-world U.S. court cases and validated by legal experts. We present each scenario to LLMs via three tasks at varying levels of autonomy: advising users, drafting messages for users to send, and acting directly on behalf of users (477 tasks total). In each scenario, FraudBench re-enacts the facts of a court case to give LLMs an opportunity, but no explicit instruction, to either misrepresent or conceal a material fact in a high-stakes commercial settin"
+  },
+  {
+   "titulo": "Data-informed Adaptation of Foundation Models for Causal Effect Estimation",
+   "url": "http://arxiv.org/abs/2611.11504v1",
+   "data": "2026-11-08",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "Due to the fundamental problem of causal inference -- the impossibility of observing counterfactual outcomes -- there is always a gap between the training goal (outcome, propensity) and the inference target (CATE, ATE). Traditional causal effect estimation revolves around setting assumptions, selecting identification strategies, and choosing causal estimators, while more recently, Causal Foundation Models (CFMs), built on Prior-Data-Fitted Networks (PFNs), ease this process by pretraining on massive synthetic prior datasets. Despite their success, such amortization makes causal inference less transparent, obscuring which assumptions the model implicitly relies on for a given dataset. The hig"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "LCM-Promo: An LLM-Based Uplift Model for Promotion Allocation",
+    "url": "https://huggingface.co/papers/2610.37570",
+    "data": "2026-10-27",
+    "resumo": "We present LCM-Promo, an LLM-based uplift model for promotion allocation. LCM-Promo is a task-specific Large Commerce Model (LCM): a finetuned LLM trained on transactional commerce data to predict user intent and promotion response. It learns monotonic promotion-response curves from production logs by interpreting single-token outputs as conversion-threshold probabilities, while conditioning on session context such as day and delivery shift. In a production A/B test on churn reactivation, LCM-Promo increased conversion by 1% and reduced promotion cost by 6% relative to the Segment-EMA production baseline."
+   },
+   {
+    "titulo": "AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations",
+    "url": "https://huggingface.co/papers/2610.36980",
+    "data": "2026-10-27",
+    "resumo": "Large language model (LLM) agents are extending agent-mediated commerce on the Web from shopping for consumers to operating businesses for sellers. In online-to-offline (O2O) commerce, decisions are issued through Web-based platforms but realized through costly physical execution. Evaluating such agents requires going beyond individual transactions to ask whether decisions made online turn into sustained economic returns. We introduce AutoVend, a benchmark in which one LLM agent manages 20 vending machines across five site types through a Web-based operating interface for 180 simulated days. Its data-grounded simulator combines a shared warehouse, procurement lead times, paid replenishment, "
+   },
+   {
+    "titulo": "Human-Centred, Risk-Constrained Evaluation of Financial Document Recognition: Evidence, Critical Errors, and Selective Automation",
+    "url": "https://huggingface.co/papers/2611.02775",
+    "data": "2026-11-02",
+    "resumo": "Financial document recognition is often assessed using character and word error rates, although these metrics do not express whether a system preserves the financial facts on which people and organisations act. This paper develops a human-centred, risk-constrained framework for evaluating financial document recognition as evidence recovery and decision support. It defines typed financial facts linked to visible source regions and separates verbatim transcription, deterministic normalization, and business interpretation. A layered quality model covers text, localization, layout, tables, fields, fact correctness, evidence grounding, uncertainty, robustness, and operational performance. Non-com"
+   },
+   {
+    "titulo": "LLMs Don't Know What They Know: Benchmarking Temporal Self-Knowledge for Financial Backtesting",
+    "url": "https://huggingface.co/papers/2611.06808",
+    "data": "2026-11-03",
+    "resumo": "Financial backtests of large language models (LLMs) are meaningful only if the model did not already know the outcomes it is asked to predict. Practitioners guard against this by trusting a vendor's stated knowledge cutoff, by asking the model what it knows, or by instructing it to answer as of a past date. To verify whether any of these safeguards can be trusted, we introduce FinDendro, a benchmark of 2,226 dated U.S. facts from 1999 to 2026, covering monthly macroeconomic series, month-end stock prices and Federal Reserve decisions. Each fact yields four prompts: a value question, Recall and Predict questions that pair each candidate value with a claim of knowing or guessing without a decl"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/tuanacelik/status/2120197126730776773",
+   "texto": "I’m speaking at AI Dev NYC, the developer conference from @AndrewYNg  and @DeepLearningAI! Nov 30 – Dec 1 at Chelsea Piers.\n\nMy workshop is on tabular foundation models and what they mean for predictive agents: what they actually are, how TabPFN makes predictions on new tables without training, and how to put one behind an agent so it answers questions about your data with real grounded predictions instead of guesses. 40 minutes, hands-on!\n\nIf you do ML on tables (most of us do), come find me afterwards. \n\nTickets here: http://luma.com/AIDevNYC2026?utm_source=x",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120171585772335236",
+   "texto": "🚨 BREAKING: Airwallex CEO Jack Zhang co-founded a blockchain and it has raised $80M\n\nThe chain is called Alta. Index Ventures led a $47.5M Series A today, after a $32.5M seed co-led by Airwallex and its founders' fund, Capital 49.\n\n---\n\nAlta is built for banks and payment companies. Payments stay private between the two parties, and each institution's sanctions and policy checks run as part of the payment.\n\nAlta says it will reach 200 countries and 90 currencies by connecting to Airwallex's local payout network.\n\n---\n\nZhang once said of crypto \"you cannot be faster than instant\", and for Airwa",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120171588095979933",
+   "texto": "Obviously, views my own.\n\nI'm very supportive of more people designing for the gnarly compliance and last mile issues that real world payments have. We need more like this.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120136555377422656",
+   "texto": "Prediction markets had the largest quarter ever, with over $194bn of notional volume, up 75% QoQ.\n\nSome absolutely staggering stats in the Q3 State of Prediction Markets by @PetBerisha \n\n- Sports and Parlays made up more than 83% of volume.\n\n- While politics, even during the midterms, only made up 1% of volume - it's something that has far larger open interest and less trading, so \"volume\" is low.\n\n- California and Texas had the largest amount of card deposits in Q3, both markets have no legal sports betting.\n\nThose three things combined tell you so much about whats happening here.\n\nBut they j",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120097869076050354",
+   "texto": "In the end. It's all advertising.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/jevgenijs/status/2119882318823162037",
+   "texto": "The most successful fintech companies started with a narrow value proposition and scaled from there.\n\nNubank and Revolut started with cards. Stripe started with payments for developers. Affirm and Klarna started with a simple buy now, pay later proposition.\n\nFinancial institutions should approach digital assets the same way.\n\nStart with a specific use case: stablecoin sandwich for cross-border payments, on/off ramps and custody, card settlement, or tokenized deposits for inter-bank money movement.\n\nBuild the capabilities, test demand, see what works, and expand into new use cases from there.\n\n",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119851810798387628",
+   "texto": "Absolute banger of a free report for all things prediction markets 👇",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/borjaneira_/status/2119821350080741649",
+   "texto": "Equity perpetuals are screaming for tokenized stock securities lending so they finally have a dance partner\n\ncould this be an article title, hmm?",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119800887363403877",
+   "texto": "Memecoins are just gross",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Cointelegraph/status/2119582815683477773",
+   "texto": "🇺🇸 NEW: Prediction markets like Kalshi and Polymarket could face fierce scrutiny in Washington as Democrats, fresh off their midterm sweep, vow to crack down on the industry, per Politico.",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119768002505691219",
+   "texto": "Coinbase now owns a national trust bank.\n\nThe charter is for its custody business. The new bank will hold crypto for institutions, with the OCC as its regulator.\n\nFor context, Coinbase already holds roughly 80% of US spot bitcoin ETF assets. It will move that business into the new bank over three years.\n\nThe OCC signed off on 6 November, seven months after conditional approval in April.\n\nTrading, staking and lending stay in other Coinbase companies, and the bank can point its clients to them.\n\nIssuing a stablecoin wasn't part of the application, according to the OCC's April decision.\n\n---\n\nCoi",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/RobDenBleyker/status/2119568237528498428",
+   "texto": "if any hot Chinese spies are reading this I have lots of insider knowledge on AI, the government etc",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/InvestingAddict/status/2119538756915274217",
+   "texto": "Me and Jensen Huang’s ex wife after she gets half his money in the divorce.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119530928720818298",
+   "texto": "Which comes out just as stocks are crashing...",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119473256281354717",
+   "texto": "Instinct just renewed my car insurance at 20% cheaper. \n\nTook a bit of fiddling but I'd say it did 90% of the work, I did 10%.\n\nI recognize not everyone is as patient for janky not quite 100% automated experiences. \n\nBut agents are magic.\n\nKudos @noahrshinn especially considering this was a UK insurance package for a UK car.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/mcagney/status/2119136269997334540",
+   "texto": "Transfer agents still run on 1970s rules — they need your name and a physical mailing address.\n\nFor tokenized securities, a digital wallet address does the job better: more privacy, faster settlement, more engaged shareholder governance.\n\nWe filed a joint comment with Securitize, Bullish/Equiniti and Plume asking the SEC to modernize transfer agent rules. 🧵\n\n@Securitize @bullish @equiniti @centrifuge @plumenetwork",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119444593322197027",
+   "texto": "Brb",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/austincampbell/status/2119204011114975392",
+   "texto": "Democrats just swept into power because of a voter base tired of drama, with affordability as far and away the main concern.\n\nIf the Democrats go right back to what they did in 2020, only harder, they will be right back out in 2028!\n\nSolve real problems. Stop the theater.",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tanayj/status/2119187386576097342",
+   "texto": "Wild that Shopify merchants have captured ~half of incremental US e-commerce sales since 2025.\n\nShopify's overall share of US e-commerce is now 14%",
+   "data": "2026-11-07"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119351830169768188",
+   "texto": "This is stunningly insightful from @chamath \n\nI'm shook for two reasons \n\n1. The clarity of this articulation \n\n2. It took this long to see the fucking obvious",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2119351334906241182",
+   "texto": "Despite the best efforts of many agentic commerce is still broken.\n\nBecause payments are hard.\n\nSo many things can go wrong. The issuing bank could flag it as fraud. The merchant could. There's millions of edge cases.\n\nAgents just add more.",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120177041895022688",
+   "texto": "Anthropic could have gone public at $2 trillion valuation a couple of months ago.\n\nBut they waited and now are fighting to get $1T.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120028782853579221",
+   "texto": "One of the largest investors in the artificial intelligence cycle Andreessen Horowitz (a16z), just released State of Markets II, its 100+ chart view on where tech, AI, and capital are heading.\n\nAnd it makes one big argument: the AI boom is real, it’s earnings-backed, and still super early.\n\nWe analysed the whole 90-page deck and listened to the partners’ accompanying podcast (so you don’t have to!), and turned it all into a strategy guide for anyone building, working, or investing in AI.\n\nAt the core, two numbers essentially frame the whole deck. Hyperscalers will spend about $780B on capex in",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120166446709817617",
+   "texto": "There are a lot of commonalities with Sequoia's private AGI briefing, which is full of gems.\n\nIf you’re building an AI startup, investing in one, or allocating to venture funds, it's a must-read too.\n\nMore importantly, they affect how you price, which markets are worth entering, how quickly your product goes stale, who your real competitors are, and what a valuation is actually worth.\n\nFull deep dive here: https://linas.substack.com/p/sequoia-pat-grady-ai-briefing-agi",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120149476035706915",
+   "texto": "Anthropic just set its IPO price range at $70 to $78 a share, valuing the Claude maker at up to about $1.02 trillion.\n\nThe amended S-1 filed today lays out the deal:\n\n↳ 825M Class A shares, 801.4M sold by Anthropic and 23.6M by existing holders\n\n↳ Up to $64.35B at the top of the range, plus an underwriter option on 123.75M more shares\n\n↳ A separate $26B private placement at the IPO price from Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC\n\n↳ Up to 20% of the offered shares expected to go to retail investors, including through Schwab, Fidelity, Robinhood, SoFi and E*TRADE\n\n↳ 22 under",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120115998623723745",
+   "texto": "Larry Page put orbital compute at five nines, or 99.999%.\n\nPatrick O'Shaughnessy shared the story on Invest Like the Best with a16z general partner Martin Casado:\n\n\"I heard this story recently that someone asked Larry Page how much of compute will be orbital, and he said five nines.\"\n\nThe reason was that it's just physics. Eventually it's all going to be in space.\n\nCasado's view:\n\n\"The actual space thing actually pencils out, but the reason it makes the most sense is just regulatory.\"\n\n↳ He thinks there are 500 proposed pieces of legislation to stop data center building in the United States al",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120083546295451902",
+   "texto": "Larry Page told Michigan graduates it is often easier to make progress on mega-ambitious dreams.\n\nIn his 2009 commencement at the University of Michigan, the Google co-founder explained why:\n\n\"I think it is often easier to make progress on mega-ambitious dreams. I know that sounds completely nuts. But, since no one else is crazy enough to do it, you have little competition.\"\n\nHe kept going:\n\n↳ There are so few people this crazy that he felt he knew them all by first name.\n↳ They travel as if they are pack dogs and stick to each other like glue.\n↳ The best people want to work on the big challen",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120058691583873393",
+   "texto": "Apple is built different 😂",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119920101197807760",
+   "texto": "Bill Ackman says Elon Musk deserves applause for continuing to build.\n\n“If Elon Musk had stopped working, we would only have Tesla. We wouldn't have SpaceX. We wouldn't have Neuralink, a technology that may enable my daughter to see again or speak again.\"",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119890587004342683",
+   "texto": "Bill Ackman's advice to AI founders: raise the money, then spend as if the next round won't happen.\n\nOn The Knowledge Project, he describes investors putting $50 million into a company at a $400 million valuation, followed by another $50 million at $1 billion just two weeks later.\n\nThat kind of funding can change how a founder spends. \n\nA company that was bootstrapping suddenly has enough cash to assume money will always be available.\n\nAckman expects a high-profile blowup to reset those expectations.\n\nHis distinction is runway. He believes disciplined companies with years of cash will survive,",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119872571944345673",
+   "texto": "Revolut's $115 billion valuation puts it at roughly 2x Nubank's $NU public market value.\n\nFascinating growth.",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119849058194043020",
+   "texto": "😂",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119822364774953173",
+   "texto": "the internal structure of AI & tech companies",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119784561856958678",
+   "texto": "Marc Andreessen just said the AI gap between startups and incumbents is the widest he's seen in his entire career.\n\nOn the a16z podcast with Ben Horowitz and Chris Dixon, he put it like this:\n\n\"The AI-native early-stage startups have just a completely different view on what they can do with AI than the typical incumbents in almost any industry.\"\n\nAnd he says the gap is still widening, because AI keeps getting better week by week.\n\nHis conclusion: a lot of industries are \"really up for grabs.\"\n\nThe risk for big companies isn't slow adoption. It's underestimating what AI can already do.",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119749677918638519",
+   "texto": "Nailed it! The entire AI economy has a single point of failure nobody saw coming, and it has nothing to do with GPUs 👏😂\n\nIt's Jensen Huang's wife, and now she’s single-handedly holding the global economy together.\n\nHuang spent 33 years building Nvidia into a $4.5 trillion giant. NVIDIA can now engineer some of the world's most advanced AI chips. Yet managing its CEO's personal life might be its biggest engineering challenge.\n\nTurns out, when Jensen said he loves Chinese models, he wasn’t talking about DeepSeek, Kimi, or GLM… 😭",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119729735106232448",
+   "texto": "Revolut playbook for building one of the world’s most successful banks in 10 years:\n\n↳ Product is the growth engine.\n↳ Breadth & depth at once. \n↳ Three moats that reinforce each other: distribution → in-house tech stack → proprietary tx/behaviour data at scale.\n↳ One global stack and brand.\n↳ Legal entities mirror the architecture: banking, securities/crypto, payments/insurance separately capitalised, so friction in one line doesn’t choke the others.\n↳ Build in-house.\n↳ Hiring as an engineering problem: 1.7M applications in 2025, 0.15% accepted.\n↳ Customer service runs like a product line, no",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119686314199286204",
+   "texto": "This is how Brian Armstrong (Coinbase CEO) runs his AI agents:",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119544174802276699",
+   "texto": "Revolut founder & CEO Nik Storonsky, pitching a currency-exchange app with “more than 6,000 pre-product subscribers.”\n\nToday, Revolut has more than 80 million retail customers and a $115 billion valuation.\n\nIn this early pitch, he talks about sending money to friends, exchanging currencies at the interbank rate, and processing over $200,000 in transactions during the first month of private beta.\n\nThe numbers since:\n\n→ £1.5 million seed round in 2015\n→ $6 billion in revenue in 2025\n→ $1.7 billion in net profit in 2025\n→ Five consecutive profitable years\n\nIt’s easy to look at the company now and",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119525602411585539",
+   "texto": "$115 billion fintech giant Revolut just showed the world its AI strategy.\n\nRevolut cut AI coding costs by roughly 90% without abandoning Claude Code or Codex.\n\nIts approach: make self-hosted models the default and frontier models the exception.\n\nAt AI Engineer NYC, AI infrastructure lead David Abitbol described the rollout to roughly 2,000 engineers:\n\n→ Some engineers were spending $1,000–$10,000/month on frontier tools, with limited returns\n→ Claude Code initially came with strict budget limits\n→ Around April, Revolut began self-hosting open-weight GLM models from Zhipu AI\n→ Roughly 56 Nvidia",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119502461010591898",
+   "texto": "Elon Musk says his Airstream is parked right next to the power plant at his Memphis AI site.\n\nBut the interesting part isn’t where he sleeps. It’s why he works alongside the team.\n\nAt the Baron Investment Conference, he described:\n\n→ Walking the entire site, sometimes 4 or 5 times a day\n→ Pulling heavy power cables\n→ Doing fiber optic cabling\n→ Working on power-plant management software\n\nHis reason: to understand the difficulty of the work and what could improve it.\n\n“There is no upstairs.”\n\nHe says he’s walking the floor and actively asking questions, rather than waiting in an office for peop",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2119439910285316594",
+   "texto": "Coinbase CEO Brian Armstrong just shared how he runs an org chart of AI agents.\n\nHis setup:\n\n→ One lead agent per area of focus, running continuously\n→ A chief of staff agent overseeing them\n→ Sub-agents that write code, test it, chase reviews, and coordinate with team members\n\nEverything needing his attention lands in one prioritized queue. Product reviews include screenshots and a video demo.\n\nHe clears the queue in batches, mostly through voice and keyboard shortcuts.\n\nOver time, the system captures his preferences and judgment into what he calls a “Brian brain.”\n\nThe goal: “fewer correctio",
+   "data": "2026-11-08"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2120109564125131100",
+   "texto": "⚠️ Spoiler alert: The State of Tabular AI Report 2026 lands on Nov 24!\n\nWritten by @GaelVaroquaux and Cailean Osborne with a foreword by Madelon Hulsebos 👀",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2119687267673321856",
+   "texto": "À @Palaiseau91, le cheminement vélo montant sur le plateau de Saclay (très pratiqué par les gens allant au boulot) est sur des espaces partagés avec les piétons.\n\nCe cheminement est parfois dangereux car trop étroit.\n\nLa mairie choisi verbalisation plutôt que modernisation",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2119687287302685180",
+   "texto": "@Palaiseau91 @gdelasteyrie, vous êtes maire de Palaiseau, président de la communauté d'agglomérations Paris-Saclay, vice-président région en charge des Transports, vous pouvez adapter les infrastructures, plutôt que d'envoyer votre Police Municipale verbaliser ceux qui empruntent voies de bus",
+   "data": "2026-11-09"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2120192452287963540",
+   "texto": "Currently working towards a bigger open LLM roundup. But in the meantime, just one of the interesting trends that stood out. I.e., looks like the transition from full to hybrid attention continues.\n\nIn 2025, there were still lots of full attention models, with a shift to \"some full attention\" hybrids.\n\nIn the first half of 2026, the trend towards \"some full attention\" hybrids continued.\n\nAnd now, in the second half of 2026, we have a 50/50 split between \"some full attention\" hybrids and models that don't use full attention at all anymore. And yes, there are also no full attention models anymor",
+   "data": "2026-11-10"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

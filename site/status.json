@@ -1,16 +1,14 @@
 {
-  "data": "2026-11-09",
-  "novidade": true,
-  "titulo": "Dia calmo: modelos tabulares abertos e antifraude para agentes",
-  "destaque": "Sem novidade de alto sinal hoje. O movimento mais relevante é a ida de um autor do TabICL para a NVIDIA, que desenvolve um modelo tabular aberto com a Kumo.",
-  "itens_novos": 3,
-  "principal": {
-    "titulo": "Pesquisador do TabICL entra na NVIDIA para tocar modelo tabular aberto com a Kumo",
-    "url": "https://x.com/DHolzmueller/status/2118464393113665818"
-  },
+  "data": "2026-11-10",
+  "novidade": false,
+  "titulo": "",
+  "destaque": "",
+  "itens_novos": 0,
+  "principal": {},
   "fontes_com_falha": [
-    "Coleta de 2026-11-09 ausente (usada a de 2026-11-08)",
+    "Coleta de 2026-11-10 ausente (usada a de 2026-11-09; sem itens de arXiv, GitHub ou Reddit)",
+    "X @noahholl, @autogluon, @ChristophMolnar, @emilygsands (HTTPError na coleta)",
     "Reddit (HTTPError em r/MachineLearning, r/datascience, r/fintech)",
-    "sardine.ai bloqueado na rede da nuvem"
+    "thepaypers.com e letsmoney.com.br fora da rede permitida da nuvem (datas não verificadas)"
   ]
 }

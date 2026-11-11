@@ -1,5 +1,36 @@
 [
   {
+    "id": "2026-11-11",
+    "data": "2026-11-11",
+    "titulo": "Dia calmo: relatório de IA tabular à vista",
+    "destaque": "Sem grandes lançamentos nas últimas 48h; o destaque é o anúncio do State of Tabular AI Report 2026 (24/11) e um estudo mostrando limites dos PFNs para inferência causal.",
+    "resumo": [
+      "State of Tabular AI Report 2026 sai em 24/11",
+      "PFNs: desempenho preditivo não se traduz automaticamente em causal"
+    ],
+    "itens": [
+      {
+        "titulo": "State of Tabular AI Report 2026 sai em 24/11, assinado por Gaël Varoquaux",
+        "url": "https://x.com/probabl_ai/status/2120109564125131100",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-10",
+        "porque": "Relatório anunciado pela Probabl (scikit-learn) deve consolidar o estado dos tabular foundation models; pode servir de referência para comparar TabPFN e similares com GBMs. Conteúdo ainda não publicado."
+      },
+      {
+        "titulo": "Avaliação de PFNs para inferência causal: acurácia preditiva não garante desempenho causal",
+        "url": "http://arxiv.org/abs/2611.11381v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-11-08",
+        "porque": "Alerta para quem pensa em usar tabular foundation models em decisões de crédito com efeito causal (ex.: limite, oferta): bom desempenho preditivo não implica estimativas causais confiáveis."
+      }
+    ],
+    "perguntas": []
+  },
+  {
     "id": "2026-11-09",
     "data": "2026-11-09",
     "titulo": "Dia calmo: modelos tabulares abertos e antifraude para agentes",

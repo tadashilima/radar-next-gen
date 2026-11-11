@@ -1,14 +1,15 @@
 {
-  "data": "2026-11-10",
-  "novidade": false,
-  "titulo": "",
-  "destaque": "",
-  "itens_novos": 0,
-  "principal": {},
+  "data": "2026-11-11",
+  "novidade": true,
+  "titulo": "Dia calmo: relatório de IA tabular à vista",
+  "destaque": "Sem grandes lançamentos nas últimas 48h; o destaque é o anúncio do State of Tabular AI Report 2026 (24/11) e um estudo mostrando limites dos PFNs para inferência causal.",
+  "itens_novos": 2,
+  "principal": {
+    "titulo": "State of Tabular AI Report 2026 sai em 24/11, assinado por Gaël Varoquaux",
+    "url": "https://x.com/probabl_ai/status/2120109564125131100"
+  },
   "fontes_com_falha": [
-    "Coleta de 2026-11-10 ausente (usada a de 2026-11-09; sem itens de arXiv, GitHub ou Reddit)",
-    "X @noahholl, @autogluon, @ChristophMolnar, @emilygsands (HTTPError na coleta)",
-    "Reddit (HTTPError em r/MachineLearning, r/datascience, r/fintech)",
-    "thepaypers.com e letsmoney.com.br fora da rede permitida da nuvem (datas não verificadas)"
+    "Coleta de hoje (2026-11-11) ausente: usada a de 2026-11-10",
+    "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError na coleta"
   ]
 }

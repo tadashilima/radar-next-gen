@@ -1,0 +1,242 @@
+{
+ "gerado_em": "2026-11-12T18:19:00+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Accurate predictions of properties of energetic materials with tabular foundation models",
+   "url": "http://arxiv.org/abs/2611.14462v1",
+   "data": "2026-11-10",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "We use TabPFN, a recently developed tabular foundation model, to predict three properties of energetic materials: impact sensitivity, decomposition temperature and crystal density. Without any hyperparameter tuning, TabPFN outperforms the best published models for all three properties. It also substantially outperforms a wide range of established machine-learning models, including tuned gradient boosting (XGBoost), random forests and Gaussian processes. This holds both when the models are given hand-crafted molecular descriptors and when they are given learned representations from Chemprop's message-passing neural network. In particular, for all three properties, TabPFN applied to Chemprop's"
+  },
+  {
+   "titulo": "Tabular Foundation Models in Financial Predictions",
+   "url": "http://arxiv.org/abs/2611.13550v1",
+   "data": "2026-11-10",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "This technical note introduces tabular foundation models (TFMs) to accounting research and evaluates their performance in one common benchmark task: predicting firms' next-year earnings changes. TFMs produce numeric predictions and learn in context, without post-release training or tuning, making them natural and easy to use for forecasting. The TFMs we study are pretrained on synthetic tabular data, so they avoid look-ahead bias from memorizing firms' outcomes. We compare Google Research's TabFM with a fine-tuned open-weight large language model developed in recent accounting research and with several tree-based models. TabFM is more accurate than all comparison models. It is also faster an"
+  },
+  {
+   "titulo": "MediPFN: Amortized In-Context Nuisance Learning and Inference for Causal Mediation Analysis",
+   "url": "http://arxiv.org/abs/2611.13219v1",
+   "data": "2026-11-09",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Causal mediation analysis decomposes a treatment effect into indirect pathways through mediators and direct pathways through other processes. Tabular foundation models perform classification and regression through in-context learning, providing estimates of conditional means and propensity scores used in causal mediation analysis. Constructing confidence intervals from these estimates requires accounting for uncertainty introduced by fitting and combining several nuisance functions. We introduce MediPFN, an amortized inference framework that adapts a pretrained tabular foundation model to nuisance prediction and combines its predictions through a cross-fitted influence-function estimator. A "
+  },
+  {
+   "titulo": "INTENT: Out-of-Sample, Out-of-Time, and Cold-Start Evaluation on User Event Sequences",
+   "url": "http://arxiv.org/abs/2611.13069v1",
+   "data": "2026-11-09",
+   "query": "all:\"transaction\" AND all:\"foundation model\"",
+   "resumo": "Banks now train foundation models on ordered sequences of customer events such as transactions, app sessions, and authorizations. Deployed, such a model predicts forward in time, often for customers and merchants absent from training, yet each is evaluated on private data, so no two can be compared. Public benchmarks for such sequences rarely test a period the model has not seen; recommendation studies usually hold out each user's last events instead. We present INTENT (INTEraction, Novelty, and Transfer evaluation for next-action prediction), a public benchmark that scores a model in seven cells defined by whether the user, the period, and the target item appeared in training. An audit of 5"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+    "url": "https://huggingface.co/papers/2611.13001",
+    "data": "2026-11-07",
+    "resumo": "Generation, imputation, and prediction query different aspects of the same tabular distribution, but are usually evaluated separately. This leaves unclear which capabilities they share, how their training objectives interact, and whether one model can perform all three well. We introduce the One Table Benchmark (), spanning 56 datasets, 46 registered methods, and 20 capability axes under aligned data splits and explicit task contracts. We compare task ranks on aligned support, train five backbones under all seven non-empty objective combinations on five datasets with three seeds, and contrast fixed-model profiles with specialist portfolios. Rank comparisons connect imputation and prediction "
+   },
+   {
+    "titulo": "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
+    "url": "https://huggingface.co/papers/2611.07464",
+    "data": "2026-11-04",
+    "resumo": "Language agents increasingly work for users on the open Web, and finance is where trusting them is hardest. The data must come from the Web, the strategy lives in the user's head, and correctness depends on time, so an agent can fail silently: a strategy the user never asked for, unverified data, or a backtest that uses the future yields a report as convincing as a correct one. Existing benchmarks close the world somewhere, fixing the task, the data, or the timeline, and thereby remove these failures instead of measuring them. We introduce FINCOSMOS, an open-world evaluation paradigm for agents doing financial work. A simulated user holds a hidden strategy sampled from a compositional gramma"
+   },
+   {
+    "titulo": "Are Dense Rewards Worth Their Tokens in GRPO?",
+    "url": "https://huggingface.co/papers/2611.13560",
+    "data": "2026-11-09",
+    "resumo": "RLVR trains language models to reason by rewarding correct final answers. A widely used algorithm, group-relative policy optimization (GRPO), gives every token of a solution the same credit, so dense process rewards have been proposed to credit intermediate steps, for example with a Monte-Carlo reward that scores each step by sampling continuations from it. Comparing such a reward with GRPO per training update, or vetting it with a gradient test on a single batch, leaves out what it costs: in our setting, the continuations alone take 91% of all generated tokens. We introduce a matched-compute protocol that gives every training intervention the same budget, measured in generated tokens and tr"
+   },
+   {
+    "titulo": "Market-Conditioned JEPA: Learning from Unpredictable Market Shocks",
+    "url": "https://huggingface.co/papers/2611.13572",
+    "data": "2026-11-09",
+    "resumo": "Much of the variation in financial time series is driven by market-wide shocks that cannot be predicted from an asset's own history. Per-asset self-supervised learning treats this variation as irreducible noise. Under a latent factor model, we show that conditioning prediction on the realized market factor makes the asset's market exposure necessary for optimal prediction, while reducing the noise against which the asset-specific component is learned. Building on this insight, we introduce Market-Conditioned JEPA (MC-JEPA), a joint-embedding predictive architecture for financial time series. During training, we construct a leave-one-out market condition for each asset from the future target "
+   },
+   {
+    "titulo": "FraudBench: A Legal Evaluation of AI Deception",
+    "url": "https://huggingface.co/papers/2611.12167",
+    "data": "2026-11-08",
+    "resumo": "We introduce FraudBench, an evaluation of large language models' (LLMs) propensities to recommend, assist, or directly take actions that would constitute fraud under U.S. law. Our evaluation contains a novel dataset of 159 scenarios based on real-world U.S. court cases and validated by legal experts. We present each scenario to LLMs via three tasks at varying levels of autonomy: advising users, drafting messages for users to send, and acting directly on behalf of users (477 tasks total). In each scenario, FraudBench re-enacts the facts of a court case to give LLMs an opportunity, but no explicit instruction, to either misrepresent or conceal a material fact in a high-stakes commercial settin"
+   },
+   {
+    "titulo": "LCM-Promo: An LLM-Based Uplift Model for Promotion Allocation",
+    "url": "https://huggingface.co/papers/2610.37570",
+    "data": "2026-10-27",
+    "resumo": "We present LCM-Promo, an LLM-based uplift model for promotion allocation. LCM-Promo is a task-specific Large Commerce Model (LCM): a finetuned LLM trained on transactional commerce data to predict user intent and promotion response. It learns monotonic promotion-response curves from production logs by interpreting single-token outputs as conversion-threshold probabilities, while conditioning on session context such as day and delivery shift. In a production A/B test on churn reactivation, LCM-Promo increased conversion by 1% and reduced promotion cost by 6% relative to the Segment-EMA production baseline."
+   },
+   {
+    "titulo": "AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations",
+    "url": "https://huggingface.co/papers/2610.36980",
+    "data": "2026-10-27",
+    "resumo": "Large language model (LLM) agents are extending agent-mediated commerce on the Web from shopping for consumers to operating businesses for sellers. In online-to-offline (O2O) commerce, decisions are issued through Web-based platforms but realized through costly physical execution. Evaluating such agents requires going beyond individual transactions to ask whether decisions made online turn into sustained economic returns. We introduce AutoVend, a benchmark in which one LLM agent manages 20 vending machines across five site types through a Web-based operating interface for 180 simulated days. Its data-grounded simulator combines a shared warehouse, procurement lead times, paid replenishment, "
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "FrankRHutter",
+   "url": "https://x.com/FrankRHutter/status/2120620979324145974",
+   "texto": "I'm super excited about this course! It's been an honour to record with @AndrewYNg  🎉 \nThanks to everyone involved in this, and especially to @tuanacelik and Eliott Kalfon for teaching this with me!",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/tuanacelik/status/2120197126730776773",
+   "texto": "I’m speaking at AI Dev NYC, the developer conference from @AndrewYNg  and @DeepLearningAI! Nov 30 – Dec 1 at Chelsea Piers.\n\nMy workshop is on tabular foundation models and what they mean for predictive agents: what they actually are, how TabPFN makes predictions on new tables without training, and how to put one behind an agent so it answers questions about your data with real grounded predictions instead of guesses. 40 minutes, hands-on!\n\nIf you do ML on tables (most of us do), come find me afterwards. \n\nTickets here: http://luma.com/AIDevNYC2026?utm_source=x",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "RohanRamanath",
+   "url": "https://x.com/rohanramanath/status/2120650785184952466",
+   "texto": "Nov 18: I’m joining @OpenAI to share what we’ve learned reorganizing @nubank around AI.\n\nWe’ve been rethinking how AI shows up for our customers and our teams. Here’s what I’ll get into:\n\n→ Customer experience: where AI is changing how people interact with their bank\n→ Daily work: how our teams use it day to day, and what changed in how they work\n→ Adoption: what it actually takes to get people to use it, beyond the rollout\n→ Value: how we think about it and how we measure it\n\nWhat’s worked, what hasn’t, and what we’d do differently.\n\nWed 11/18 | 10am PST\nRegister here: https://webinar.openai.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120940664862986534",
+   "texto": "\"My partner Charlie says: there's only 3 ways that a smart person can go broke - he says 'liquor, ladies and leverage'\" - Warren Buffet\n\n🎯 ",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120892474138783992",
+   "texto": "Yesterday, NVIDIA's board was preparing to oust Jensen Huang after reports of a second affair. Today, Huang resigned as CEO, President, and board member, effective immediately.\n\nThe man who spent 33 years building NVIDIA into a $4 trillion AI giant is officially out.\n\nEnd of an era.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120874318951505936",
+   "texto": "Revolut founder & CEO Nik Storonsky just confirmed that the fintech giant is now trying to create an AI employee end-to-end.\n\n10 years of Revolut's KPIs, roadmaps, hiring, and performance systems \"might be all redundant\" because of AI in just 2-3 years.\n\nAI is eating finance.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120809339870929090",
+   "texto": "Sam Altman said he'd want his son to build the meta-skill of learning how to learn.\n\nHe also added:\n\n→ Learning to adapt, learning to be resilient to a lot of change\n→ Learning how to figure out what people want, and how to make useful products and services for them\n→ Learning how to interact in the world\n\n\"I'm so confident that people will still be the center of the story for each other.\"",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120753546308010219",
+   "texto": "Y Combinator just dropped their latest Request for Startups.\n⠀\nHere are 11 ideas they actually want to fund in the Winter 2027 batch:",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120639144934203518",
+   "texto": "Alex Karp says America's AI edge is not absolute.\n\nChina's work on its models is creative, and scale is on its side.\n\nHe's still on the US side. The old caricatures, he says, are not playing out.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120613947871285309",
+   "texto": "Anthropic co-founder Tom Brown just revealed Claude ported itself to AMD GPUs in 3 days.\n\nBringing up a new chip platform used to take dozens of engineers months of work.\n\nMythos did it with basically no human intervention, writing almost 100% of the kernels.\n\nWild.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120598026565845156",
+   "texto": "Revolut just revealed how it cut AI coding costs by 90% while making its 2,000 engineers dramatically more productive.\n\nAnd the implications for AI builders, investors, and model providers are bigger than they first appear.\n\nWe analysed the entire playbook shared by Revolut's AI operations lead and turned it into a practical strategy guide for anyone building, buying, or investing in AI.\n\nAt the core, three numbers tell the whole story.\n\n→ 90% lower AI costs, after moving from Anthropic and OpenAI APIs to a self-hosted, open-weight GLM model.\n\n→ 70% shorter development lead times, after engine",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120527364304347608",
+   "texto": "Banger career advice from Sama.\n\nEverything is sales.\n\n> CEO at a startup = sales\n> Partner at a VC firm = sales\n> CEO at a AI lab = sales\n\nHits even harder in the age of AI.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120218483883741493",
+   "texto": "Nik Storonsky just explained why Revolut doesn't want to be a lender.\n\nTech gets 40-50x earnings. Banks get about 10x.\n\nCredit profits can vanish when unemployment goes from 3% to 6%. Subscriptions can't make negative money.\n\nHence: under 10% of the balance sheet in loans.\n\nRevolut is a tech company that also happens to be a bank.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120508491735736750",
+   "texto": "BTW, in case you missed it, also check out How Revolut Cut AI Costs 90% & Started Shipping Faster 🚀: https://linas.substack.com/p/revolut-ai-coding-costs-open-source-models",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120277900234498080",
+   "texto": "Founder & CEO Nik Storonsky just said Revolut captures more than 50% of users up to 35 in almost every European country it's in.\n\nThe hard part: 50, 60, 70+ year olds, who hold most liquid assets.\n\nThe real goal is always your salary, because a $20 P2P user isn't very profitable.\n\nHave their salary, and you will own the customer.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120499626423779732",
+   "texto": "P.S. also check out How Revolut Cut AI Costs 90% & Started Shipping Faster 🚀: https://linas.substack.com/p/revolut-ai-coding-costs-open-source-models",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120465216131432484",
+   "texto": "Revolut didn't spend seriously on growth until 2022.\n\nFounder & CEO Nik Storonsky: the first 7 years were purely organic, just building products and getting licenses.\n\nToday, about 100,000 customers join every day.\n\nThat's 3M every month, or 36M per year 🤯\n\nGreat product first. Distribution followed.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120426612202053868",
+   "texto": "Anthropic CEO Dario Amodei just said cancer will be a relic of the past in less than a decade.\n\nHe said it in the closing minute of Anthropic's 42-minute IPO roadshow, launched on Tuesday.\n\nHis words: \"If today we look at things like cancer, Alzheimer's, heart disease, mental illness, these will be relics of the past in I think less than a decade.\"\n\nThen he added the part people usually skip.\n\n\"I believe that the company which gets the risk right will also be the company that has the license to operate, that society trusts and society believes can build the benefits in the right way.\"\n\n\"I thin",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120391602581414123",
+   "texto": "Revolut just confirmed a secondary share sale at a $115B valuation, roughly $2,017 per share and up more than 50% from the $75B round it set only last November.\n\nThat makes the financial technology heavyweight Europe’s most valuable private company.\n\nRecently, Bullhound Capital published “The Dawn of Modern Banking,” a 56-page report arguing that $115B is merely a waypoint: $400B+ by 2030, $1 trillion+ by 2035.\n\nBold as those numbers sound, the more interesting question is not whether they are too high. It is whether the report is bullish about the right things.\n\nAfter working through the full",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120251391096557859",
+   "texto": "Microsoft Office is dead: Anthropic just launched Claude Sheets, Whiteboards and Data inside chat.\n\nClaude is becoming the workspace & intelligence layer for all knowledge work.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120177041895022688",
+   "texto": "Anthropic could have gone public at $2 trillion valuation a couple of months ago.\n\nBut they waited and now are fighting to get $1T.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120028782853579221",
+   "texto": "One of the largest investors in the artificial intelligence cycle Andreessen Horowitz (a16z), just released State of Markets II, its 100+ chart view on where tech, AI, and capital are heading.\n\nAnd it makes one big argument: the AI boom is real, it’s earnings-backed, and still super early.\n\nWe analysed the whole 90-page deck and listened to the partners’ accompanying podcast (so you don’t have to!), and turned it all into a strategy guide for anyone building, working, or investing in AI.\n\nAt the core, two numbers essentially frame the whole deck. Hyperscalers will spend about $780B on capex in",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120166446709817617",
+   "texto": "There are a lot of commonalities with Sequoia's private AGI briefing, which is full of gems.\n\nIf you’re building an AI startup, investing in one, or allocating to venture funds, it's a must-read too.\n\nMore importantly, they affect how you price, which markets are worth entering, how quickly your product goes stale, who your real competitors are, and what a valuation is actually worth.\n\nFull deep dive here: https://linas.substack.com/p/sequoia-pat-grady-ai-briefing-agi",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120149476035706915",
+   "texto": "Anthropic just set its IPO price range at $70 to $78 a share, valuing the Claude maker at up to about $1.02 trillion.\n\nThe amended S-1 filed today lays out the deal:\n\n↳ 825M Class A shares, 801.4M sold by Anthropic and 23.6M by existing holders\n\n↳ Up to $64.35B at the top of the range, plus an underwriter option on 123.75M more shares\n\n↳ A separate $26B private placement at the IPO price from Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC\n\n↳ Up to 20% of the offered shares expected to go to retail investors, including through Schwab, Fidelity, Robinhood, SoFi and E*TRADE\n\n↳ 22 under",
+   "data": "2026-11-10"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @GaelVaroquaux: HTTPError",
+  "X @autogluon: HTTPError",
+  "X @ChristophMolnar: HTTPError",
+  "X @sytaylor: HTTPError",
+  "X @rasbt: HTTPError",
+  "X @NeoSpaceAI: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

@@ -1,15 +1,16 @@
 {
-  "data": "2026-11-11",
+  "data": "2026-11-12",
   "novidade": true,
-  "titulo": "Dia calmo: relatório de IA tabular à vista",
-  "destaque": "Sem grandes lançamentos nas últimas 48h; o destaque é o anúncio do State of Tabular AI Report 2026 (24/11) e um estudo mostrando limites dos PFNs para inferência causal.",
-  "itens_novos": 2,
+  "titulo": "Benchmark para modelos de eventos de clientes e agentes que confundem a antifraude",
+  "destaque": "Sem lançamentos de peso nas últimas 48h. O destaque é o INTENT, benchmark público para foundation models de eventos de clientes, e o alerta de que agentes pessoais de IA se parecem com account takeover.",
+  "itens_novos": 3,
   "principal": {
-    "titulo": "State of Tabular AI Report 2026 sai em 24/11, assinado por Gaël Varoquaux",
-    "url": "https://x.com/probabl_ai/status/2120109564125131100"
+    "titulo": "INTENT: benchmark público para modelos de sequências de eventos de clientes (fora da amostra, fora do tempo e cold-start)",
+    "url": "http://arxiv.org/abs/2611.13069v1"
   },
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-11) ausente: usada a de 2026-11-10",
-    "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError na coleta"
+    "Coleta de hoje (2026-11-12) ausente: usada a de 2026-11-11",
+    "X @innixma e @nubank: HTTPError",
+    "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError na coleta; WebSearch com cobertura parcial"
   ]
 }

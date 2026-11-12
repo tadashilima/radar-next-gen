@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-11-12",
+    "data": "2026-11-12",
+    "titulo": "Benchmark para modelos de eventos de clientes e agentes que confundem a antifraude",
+    "destaque": "Sem lançamentos de peso nas últimas 48h. O destaque é o INTENT, benchmark público para foundation models de eventos de clientes, e o alerta de que agentes pessoais de IA se parecem com account takeover.",
+    "resumo": [
+      "INTENT propõe avaliação comparável de FMs transacionais",
+      "TabFM do Google Research vence árvores em tarefa financeira",
+      "Agentes pessoais desafiam regras de antifraude"
+    ],
+    "itens": [
+      {
+        "titulo": "INTENT: benchmark público para modelos de sequências de eventos de clientes (fora da amostra, fora do tempo e cold-start)",
+        "url": "http://arxiv.org/abs/2611.13069v1",
+        "fonte": "arxiv",
+        "tema": "transacional",
+        "sinal": "medio",
+        "data": "2026-11-09",
+        "porque": "Hoje cada banco avalia seus foundation models transacionais em dados privados, sem comparação possível. Um benchmark que separa usuário, período e item novos dá uma régua para comparar fornecedores de LDM e GBMs, sobretudo em cold-start e drift temporal."
+      },
+      {
+        "titulo": "TabFM (Google Research) supera LLM ajustado e árvores em previsão de lucros, sem treino adicional",
+        "url": "http://arxiv.org/abs/2611.13550v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-10",
+        "porque": "Nota técnica reporta que um tabular foundation model pré-treinado em dados sintéticos bateu modelos de árvore e um LLM ajustado numa tarefa financeira, e é mais rápido. Evidência fora de crédito/fraude, mas reforça o teste de TFMs como baseline contra GBMs."
+      },
+      {
+        "titulo": "Agentes pessoais de IA parecem account takeover para sistemas de fraude legados",
+        "url": "https://x.com/soupsranjan/status/2120224249860248049",
+        "fonte": "x",
+        "tema": "producao",
+        "sinal": "medio",
+        "data": "2026-11-10",
+        "porque": "Agentes que operam a conta do cliente trazem dispositivo novo, sinais de VPN/proxy e comportamento automatizado, hoje sinais clássicos de fraude. Modelos de fraude precisarão distinguir agente autorizado de invasor, com risco de aumento de falsos positivos."
+      }
+    ],
+    "perguntas": [
+      "Seus modelos de fraude já distinguem um agente de IA autorizado de um account takeover?"
+    ]
+  },
+  {
     "id": "2026-11-11",
     "data": "2026-11-11",
     "titulo": "Dia calmo: relatório de IA tabular à vista",

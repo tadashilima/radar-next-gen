@@ -1,0 +1,429 @@
+{
+ "gerado_em": "2026-11-13T17:43:58+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Subsurface schematisation from sparse CPT data using the tabular foundation model TabPFN",
+   "url": "http://arxiv.org/abs/2611.16088v1",
+   "data": "2026-11-11",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Subsurface schematisation supports geotechnical decisions but remains challenging because sparse site-investigation data leave substantial gaps in information about ground conditions. This study explores TabPFN, a foundation model pretrained on general synthetic tabular data, for this task. Using only grid coordinates and soil behaviour type index observations from sparse cone penetration tests (CPTs), we first reconstruct two-dimensional sections without geotechnical fine-tuning or predefined layer boundaries. We evaluate the approach on synthetic sections and at two field sites in the Netherlands, comparing it with SchemaGAN, a conditional generative adversarial network trained on syntheti"
+  },
+  {
+   "titulo": "PhysICL: In-Context Learning of Physical Fields on Unstructured Meshes from Procedural Priors",
+   "url": "http://arxiv.org/abs/2611.15965v1",
+   "data": "2026-11-11",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Engineering design studies produce a few tens to a few hundred simulations of one problem, each on its own mesh, and their surrogates are retrained for every study. Tabular foundation models instead infer a new task from its examples in one forward pass, after pretraining on synthetic tasks. We demonstrate the feasibility of in-context learning for physical field prediction on unstructured meshes. A single model, PhysICL, pretrained solely on procedural tasks, predicts fields, with quantiles, directly on each query mesh from labeled simulations, without updating its weights. The same checkpoint accepts variable numbers of context examples, scalar inputs and input fields, and any number of ou"
+  },
+  {
+   "titulo": "TabOmics: A Small, Open Tabular Foundation Model for Wide Omics Data",
+   "url": "http://arxiv.org/abs/2611.15329v1",
+   "data": "2026-11-11",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Omics studies often produce tables with thousands to tens of thousands of molecular features and few samples. Tabular foundation models use diverse strategies to predict labels for such tables, with some relying on in-context learning, while approaches to wide tables may involve subsampling, grouping, or compressing features. We present TabOmics, a small, open family of tabular foundation models with 7.3M parameters, pretrained exclusively on synthetic tables. TabOmics processes all features retained after preprocessing jointly and derives predictions, attention-derived feature-importance scores, and test sample embeddings from the same forward pass. On 46 classification tasks from three ben"
+  },
+  {
+   "titulo": "From Forecasting to World Modeling: Can Temporal Foundation Models Recover Causal Response?",
+   "url": "http://arxiv.org/abs/2611.15009v1",
+   "data": "2026-11-11",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "A model that forecasts sales accurately can still mislead a retailer about how sales respond to a price change. We evaluate released tabular and time-series foundation models, as well as a foundation model pretrained specifically to estimate causal effects. We report three findings. First, forecast accuracy does not indicate the accuracy of the predicted effect of price, both on simulated data in which the true effect is known and on real retail sales records. Second, for the tabular foundation models, additional context improves forecasts but not the predicted effect of price. Third, instrumental variables, the standard remedy in econometrics, reduce this error only when supplied in a speci"
+  },
+  {
+   "titulo": "GenPFN: An In-Context Tabular Foundation Model Approach for Augmenting Small Datasets in Engineering",
+   "url": "http://arxiv.org/abs/2611.14804v1",
+   "data": "2026-11-10",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Costly simulations and experiments limit the data available for engineering design. This paper proposes GenPFN, a training-free candidate generator guided by a pretrained tabular Prior-Data Fitted Network (TabPFN) classifier with fixed weights. The context contains evaluated designs labeled desired (Class 1) or undesired (Class 0). GenPFN interpolates between desired designs and refines candidates using gated classifier gradients and Gaussian noise. Each candidate is evaluated using the problem's constraints and objective functions. Evaluated desired designs and their objective values augment the context for regression training. Evaluation spans fourteen selected problems, including a two-pa"
+  },
+  {
+   "titulo": "Beyond Row-Level Prediction: Evaluating and Learning Composition for Reusable Table Representations",
+   "url": "http://arxiv.org/abs/2611.14697v1",
+   "data": "2026-11-10",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tables are compositional, with content spread across a schema, cell values, rows, and columns. Large-scale operations such as retrieval, overlap estimation, deduplication, and data curation need these local signals composed into one reusable embedding vector per table. Table representation methods, however, are mostly evaluated through row-level prediction or supervised downstream tasks, which do not measure table-level embedding quality directly. We introduce a benchmark that evaluates table-level embeddings through four desiderata: consistency under partial views, discriminability across label granularities, robustness to benign perturbations, and efficiency. Across twelve methods on synth"
+  },
+  {
+   "titulo": "Accurate predictions of properties of energetic materials with tabular foundation models",
+   "url": "http://arxiv.org/abs/2611.14462v2",
+   "data": "2026-11-10",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "We use TabPFN, a recently developed tabular foundation model, to predict three properties of energetic materials: impact sensitivity, decomposition temperature and crystal density. Without any hyperparameter tuning, TabPFN outperforms the best published models for all three properties. It also substantially outperforms a wide range of established machine-learning models, including tuned gradient boosting (XGBoost), random forests and Gaussian processes. This holds both when the models are given hand-crafted molecular descriptors and when they are given learned representations from Chemprop's message-passing neural network. In particular, for all three properties, TabPFN applied to Chemprop's"
+  },
+  {
+   "titulo": "Large Payments Model",
+   "url": "http://arxiv.org/abs/2611.15814v1",
+   "data": "2026-11-11",
+   "query": "all:\"transaction\" AND all:\"foundation model\"",
+   "resumo": "Payment applications such as fraud detection, authorization prediction, and payment optimization draw on overlapping transaction information. This motivates a reusable payments intelligence layer that shares learned representations and predictive signals, rather than developing predictive models independently for each task. Realizing this shared capability requires handling heterogeneous transaction fields, high-cardinality identifiers, lifecycle-dependent attributes, long histories, and rare outcomes while meeting latency and cost constraints. We present Large Payments Model (LPM), a domain-specific foundation model designed for operational use and trained from scratch on large-scale struct"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+    "url": "https://huggingface.co/papers/2611.16961",
+    "data": "2026-11-11",
+    "resumo": "Existing adaptive-reasoning methods shorten the explicit reasoning a model writes, or skip it by switching modes; either way the answer is still written out token by token. Rather than deciding how much to think, we explore a different paradigm, zero-or-T thinking: a single model either answers from the implicit thinking inside one forward pass, generating no token, or performs full autoregressive reasoning at a cost of T tokens when that is worth paying. We realise it in a hybrid decision model (HDM), where one frozen backbone serves both modes and a lightweight self-routing block chooses between them. The block estimates the value of thinking, the utility the slow mode is expected to add o"
+   },
+   {
+    "titulo": "DeepStress: Stress-Testing Deep Search Agents",
+    "url": "https://huggingface.co/papers/2607.13920",
+    "data": "2026-11-11",
+    "resumo": "While search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. Such evidence is rare in benchmark corpora, and resulting failures are hard to reproduce. We propose DeepStress, a dynamic stress-testing framework that subjects agents to degraded evidence at controlled rates. It replaces the retrieval module with a synthetic environment where documents are generated dynamically for each query, under independent control of their trustworthiness, relevance, and factuality. To characterize behavior under stress, we go beyond binary accuracy with a five-way classification of final-answer outcomes and two ne"
+   },
+   {
+    "titulo": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "url": "https://huggingface.co/papers/2611.17167",
+    "data": "2026-11-11",
+    "resumo": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory,"
+   },
+   {
+    "titulo": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+    "url": "https://huggingface.co/papers/2611.13001",
+    "data": "2026-11-07",
+    "resumo": "Generation, imputation, and prediction query different aspects of the same tabular distribution, but are usually evaluated separately. This leaves unclear which capabilities they share, how their training objectives interact, and whether one model can perform all three well. We introduce the One Table Benchmark (), spanning 56 datasets, 46 registered methods, and 20 capability axes under aligned data splits and explicit task contracts. We compare task ranks on aligned support, train five backbones under all seven non-empty objective combinations on five datasets with three seeds, and contrast fixed-model profiles with specialist portfolios. Rank comparisons connect imputation and prediction "
+   },
+   {
+    "titulo": "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
+    "url": "https://huggingface.co/papers/2611.07464",
+    "data": "2026-11-04",
+    "resumo": "Language agents increasingly work for users on the open Web, and finance is where trusting them is hardest. The data must come from the Web, the strategy lives in the user's head, and correctness depends on time, so an agent can fail silently: a strategy the user never asked for, unverified data, or a backtest that uses the future yields a report as convincing as a correct one. Existing benchmarks close the world somewhere, fixing the task, the data, or the timeline, and thereby remove these failures instead of measuring them. We introduce FINCOSMOS, an open-world evaluation paradigm for agents doing financial work. A simulated user holds a hidden strategy sampled from a compositional gramma"
+   },
+   {
+    "titulo": "Are Dense Rewards Worth Their Tokens in GRPO?",
+    "url": "https://huggingface.co/papers/2611.13560",
+    "data": "2026-11-09",
+    "resumo": "RLVR trains language models to reason by rewarding correct final answers. A widely used algorithm, group-relative policy optimization (GRPO), gives every token of a solution the same credit, so dense process rewards have been proposed to credit intermediate steps, for example with a Monte-Carlo reward that scores each step by sampling continuations from it. Comparing such a reward with GRPO per training update, or vetting it with a gradient test on a single batch, leaves out what it costs: in our setting, the continuations alone take 91% of all generated tokens. We introduce a matched-compute protocol that gives every training intervention the same budget, measured in generated tokens and tr"
+   },
+   {
+    "titulo": "Market-Conditioned JEPA: Learning from Unpredictable Market Shocks",
+    "url": "https://huggingface.co/papers/2611.13572",
+    "data": "2026-11-09",
+    "resumo": "Much of the variation in financial time series is driven by market-wide shocks that cannot be predicted from an asset's own history. Per-asset self-supervised learning treats this variation as irreducible noise. Under a latent factor model, we show that conditioning prediction on the realized market factor makes the asset's market exposure necessary for optimal prediction, while reducing the noise against which the asset-specific component is learned. Building on this insight, we introduce Market-Conditioned JEPA (MC-JEPA), a joint-embedding predictive architecture for financial time series. During training, we construct a leave-one-out market condition for each asset from the future target "
+   },
+   {
+    "titulo": "FraudBench: A Legal Evaluation of AI Deception",
+    "url": "https://huggingface.co/papers/2611.12167",
+    "data": "2026-11-08",
+    "resumo": "We introduce FraudBench, an evaluation of large language models' (LLMs) propensities to recommend, assist, or directly take actions that would constitute fraud under U.S. law. Our evaluation contains a novel dataset of 159 scenarios based on real-world U.S. court cases and validated by legal experts. We present each scenario to LLMs via three tasks at varying levels of autonomy: advising users, drafting messages for users to send, and acting directly on behalf of users (477 tasks total). In each scenario, FraudBench re-enacts the facts of a court case to give LLMs an opportunity, but no explicit instruction, to either misrepresent or conceal a material fact in a high-stakes commercial settin"
+   },
+   {
+    "titulo": "LCM-Promo: An LLM-Based Uplift Model for Promotion Allocation",
+    "url": "https://huggingface.co/papers/2610.37570",
+    "data": "2026-10-27",
+    "resumo": "We present LCM-Promo, an LLM-based uplift model for promotion allocation. LCM-Promo is a task-specific Large Commerce Model (LCM): a finetuned LLM trained on transactional commerce data to predict user intent and promotion response. It learns monotonic promotion-response curves from production logs by interpreting single-token outputs as conversion-threshold probabilities, while conditioning on session context such as day and delivery shift. In a production A/B test on churn reactivation, LCM-Promo increased conversion by 1% and reduced promotion cost by 6% relative to the Segment-EMA production baseline."
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.0.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.0.0",
+   "data": "2026-11-13",
+   "notas": "### Breaking Changes\n\n- Previously saved fitted regressors (`.tabpfn_fit` archives and pickled estimators) are incompatible with the updated target preprocessing and must be refitted. Custom fine-tuning loops must pass `y_train_mean` and `y_train_std` to `fit_from_preprocessed`. ([#1198](https://github.com/PriorLabs/TabPFN/pull/1198))\n\n### Added\n\n- Add optional numerical sign flipping with `PreprocessorConfig(random_sign_flip_numericals=True)`, using reproducible signs per ensemble member after preprocessing. ([#1381](https://github.com/PriorLabs/TabPFN/pull/1381))\n- `TabPFNClassifier` and `TabPFNRegressor` take `group_col`: the label of the column that says which group a row belongs to, or a list of labels whose joint value is one composite key. The selected columns are replaced by one categorical feature holding that key's integer code, fitted on the training rows alone. ([#1392](https://github.com/PriorLabs/TabPFN/pull/1392))\n- Add `REGRESSION_TARGET_SIGN_FLIP` to `InferenceConfig`: when enabled, about half the regression ensemble members see their standardized target negated, and their predictions are mirrored back. ([#1393](https://github.com/PriorLabs/TabPFN/pull/1393))\n- The"
+  }
+ ],
+ "x": [
+  {
+   "perfil": "FrankRHutter",
+   "url": "https://x.com/FrankRHutter/status/2120620979324145974",
+   "texto": "I'm super excited about this course! It's been an honour to record with @AndrewYNg  🎉 \nThanks to everyone involved in this, and especially to @tuanacelik and Eliott Kalfon for teaching this with me!",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121287550539100342",
+   "texto": "🚨 BREAKING: OpenAI launched ChatGPT Wallet with Visa, Mastercard and Amex.\n\nJust when you thought Muse and Instinct were leading on commerce.\n\nHere's how it works:\n\n- Your dot (OpenAI's always-on agent) finds the item and you approve with Face ID.\n- The card network gives the merchant a one-time token in place of your card number.\n- The merchant recieves that network token, its processed by the network\n- Your bank sees it too and recognizes it as coming from you / your card and wallet\n\nIt's live for US Pro subscribers, inside an app with more than 1.2B weekly users. OpenAI takes no cut for now",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/0xtanishk/status/2121066730986651945",
+   "texto": "Configurable accounts are the endgame of what an onchain account should be.\n\nWe’ve solved in-place migration of current EOAs with PQ proofing.\n\nPay tx fee directly with multisig balances\n\nTiered spending perms in the multisig with access keys\n\nAnd it’s fast and cheap ⚡️",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/DanielSinclair/status/2120935211978674526",
+   "texto": "Tempo's speed has been really inspirational. Even more so once you learn of all of the technical investments they've made on fuzzing, DST, and AI tooling to build with more confidence. Top-tier.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121204565324267849",
+   "texto": "David Vélez's @Nubank just made a record $1.1bn profit in one quarter.\n\nIts efficiency ratio is 19.3%, which means 19 cents of operating cost for every dollar of net revenue. Four years ago it was 49%.\n\nQ3 in numbers (growth is FX-neutral):\n- Net income of $1.1bn, up 31%, at a 32% return on equity\n- Gross revenue of $6.3bn, up 37%\n- 143m customers, with 3.7m added in the quarter\n- 65% of Brazilian adults are customers and 86.3% of them use Nu every month\n- Loans up 33% to $41.6bn, deposits up 19% to $47.5bn\n- Full-year efficiency ratio guidance cut to 19-19.5%\n\n---\n\nCFO Rob Livingston gave one",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121199873680945425",
+   "texto": "Mobile payments sucked in 2011.\nIt got a lot better in 2014 with Apple Pay.\nNow it's normal.\n\nAgentic commerce sucks in 2026.\nIt will get better with network tokenization (2029?)\nAnd become at least 33% of online commerce within the decade from there.",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/liamihorne/status/2121064896565592359",
+   "texto": "We're building \"smart accounts\" and \"multisigs\" natively into @tempo - an account can optionally have multiple signers with weight based signing thresholds!\n\nTry it in the docs today if you're curious:\n https://tempo.xyz/developers/docs/accounts/create#create-a-configurable-account",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121193621273858368",
+   "texto": "\"4 eyes\" approval processes are commonplace for large institutions and companies. A simple yet effective way to prevent fraud or errors.\n\nThe payments system should support that natively. \n\nWith Tempo it does👇",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/chapello/status/2120940826046198212",
+   "texto": "We're excited to partner with @openstandard to deliver better products to @tryramp customers.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/ezrajsolo/status/2120965362225217829",
+   "texto": "1/ Stablecoin card volume is up 2000x in 3 years, now at a $20B annualized run rate. \n\nYC put stablecoin neobanks in its Oct 2026 Request for Startups. \n\nKAST is dominating consumer adoption.\n\nAnd more are coming.\n\nDoes the world need more neobanks? Probably not. But this trend is net good. Here is why, and where it's headed 🧵",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120909902591778964",
+   "texto": "Jensen Huang just resigned as Nvidia CEO after 33 years.\n\nJust when you think things can't get crazier, the world does this.\n\nWhat does it mean for \"circular finance\"\n\nFor example: Nvidia has promised up to $105 billion in guarantees for a single OpenAI campus in Ohio. But it's \"Fed Chair\" Jensen has gone and its stock fell 14% at open.\n\nHow do those two things compute? Would need a heck of a GPU for that!\n\n---\n\nNvidia is the lender of last resort for AI, going through its own confidence crisis.\n\nNvidia sells the chips, owns stakes in the companies that buy them, and guarantees some of their l",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120909735410958590",
+   "texto": "Excited to speak at this years Proof of Talk on the 3rd and 4th December\n\nhttps://Proofoftalk.io/abu-dhabi",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120904055619031054",
+   "texto": "PSA\n\nThis is how you do conference marketing:\n\nhttps://www.coinbax.com/nerdcon",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120883336914592088",
+   "texto": "United and eBay are now blocking personal AI agents like Meta's Muse.\n\nAnd I think this is a zero-downside move. Expect more to follow.\n\n---\n\nThe news:\n\n1. United said it will ban unauthorized AI agents from booking its flights. The ban covers its app, its website, and bookings through travel agencies and aggregators. United says handing your login to an agent exposes your data and your MileagePlus miles.\n\n2. The Verge found on Tuesday that Muse can no longer browse eBay listings, and eBay has banned unapproved agents from placing orders since February.\n\nThey join Amazon, Target, JPMorgan, Sch",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120882872269840652",
+   "texto": "RIP to the AI trade.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120879691766673867",
+   "texto": "Wow that fast. \n\nJensen is gone.\n\nThe king is dead.\n\nLong live the king.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120802902503494026",
+   "texto": "Proximity to meme accounts is an anti signal",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Shaughnessy119/status/2120661075423121632",
+   "texto": "You can simultaneously believe that having an affair is terrible, but Jensen is an incredible CEO, built a major company, and is a positive force for AI.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120792689050370244",
+   "texto": "What happens to all the Nvidia backdropped loans and equity if their share price tanks?",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2120792620762890446",
+   "texto": "How do you possibly replace the guy that had 60+ direct reports and built the company?",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/seyitaylor/status/2120596556982436216",
+   "texto": "absolute cinema.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121277392782049740",
+   "texto": "Revolut founder & CEO Nik Storonsky just revealed Revolut's entire product playbook:\n\n> 10-person team with a strong product owner\n> Anyone can pitch a \"new bet\"\n> Economics check first, then a committee\n> 9 to 18 months to build\n\nIf it grows fast, scale it. Doesn't grow - sunset it\n\nI wish more fintechs operated like that.",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121242137903653323",
+   "texto": "You can’t be fired from the Board of Directors if YOU ARE the Board of Directors.\n\nBanger advice from Telegram founder, CEO, Chairman and Director of the Board.",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121217786659639472",
+   "texto": "This is brilliant! Somebody created an AI version of The Office where Michael Scott welcomes Jensen Huang as the newest employee at Dunder Mifflin 👏😂\n\n“I was really looking forward to working with Jensen. We were gonna build an AI that will replace Toby.”\n\nI’d easily watch the whole season of this in a heartbeat.\n\nThe best AI video we’ve seen this year. https://x.com/MandelDuck/status/2120914062473155009/video/1",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121156590552105278",
+   "texto": "AI labs have been quietly acquiring small, focused teams that solve narrow problems:\n\n> Anthropic bought Mithril Medicine, a one-person biotech using Claude to coordinate 11 external labs on rare muscular dystrophy treatments.\n\n> OpenAI bought Odessia, an AI travel concierge founded by the ex-Sonder CEO.\n\n> OpenAI bought Orchestra Bio, AI agents that handle the operational grunt work of drug programs (timelines, finances, trial scheduling).\n\n> Anthropic bought Coefficient Bio, a sub-10-person team building AI tools for drug research planning and regulatory strategy.\n\n> OpenAI is acquiring Pier",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121130090163515550",
+   "texto": "Y Combinator just revealed what it wants founders to build in 2027. I went through all 11 categories and identified 33 startup ideas worth building right now 🚀\n\nAnd the biggest opportunities might not be where you'd expect.\n\nYC's latest Requests for Startups reveal a major shift: AI is getting cheaper, but the infrastructure, capital, data, and trust needed to deploy it are becoming the real bottlenecks.\n\nSo I put together a deep dive covering:\n\n→ 11 startup categories YC is actively looking to fund.\n\n→ 33 startup ideas, each with a target customer, business model, and one-line pitch.\n\n→ 11 co",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121007154895171936",
+   "texto": "Steve Jobs was asked what he learned at Apple. He paused for 20 seconds.\n\n\"I now take a longer-term view on people. When I see something not being done right, my first reaction isn't to go fix it.\"\n\nHe'd rather help the person learn, because \"we're building a team here.\"\n\nI wish more CEOs thought like that.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120990659930939868",
+   "texto": "Microsoft CEO, when realizing Anthropic is coming after their entire enterprise software stack",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120963008008732697",
+   "texto": "Peter Thiel said world-class entrepreneurs are something close to polymaths.\n\nHis example was Mark Zuckerberg:\n\n→ He could speak about the details of the Facebook product\n→ The way people think about social media, the psychology, the way the culture is shifting\n→ Management of the company\n→ How it fits into the bigger history of technology\n\n\"It's much more this polymath-like intellect that understands all these different things.\"",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120940664862986534",
+   "texto": "\"My partner Charlie says: there's only 3 ways that a smart person can go broke - he says 'liquor, ladies and leverage'\" - Warren Buffet\n\n🎯 ",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120892474138783992",
+   "texto": "Yesterday, NVIDIA's board was preparing to oust Jensen Huang after reports of a second affair. Today, Huang resigned as CEO, President, and board member, effective immediately.\n\nThe man who spent 33 years building NVIDIA into a $4 trillion AI giant is officially out.\n\nEnd of an era.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120874318951505936",
+   "texto": "Revolut founder & CEO Nik Storonsky just confirmed that the fintech giant is now trying to create an AI employee end-to-end.\n\n10 years of Revolut's KPIs, roadmaps, hiring, and performance systems \"might be all redundant\" because of AI in just 2-3 years.\n\nAI is eating finance.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120809339870929090",
+   "texto": "Sam Altman said he'd want his son to build the meta-skill of learning how to learn.\n\nHe also added:\n\n→ Learning to adapt, learning to be resilient to a lot of change\n→ Learning how to figure out what people want, and how to make useful products and services for them\n→ Learning how to interact in the world\n\n\"I'm so confident that people will still be the center of the story for each other.\"",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120753546308010219",
+   "texto": "Y Combinator just dropped their latest Request for Startups.\n⠀\nHere are 11 ideas they actually want to fund in the Winter 2027 batch:",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120639144934203518",
+   "texto": "Alex Karp says America's AI edge is not absolute.\n\nChina's work on its models is creative, and scale is on its side.\n\nHe's still on the US side. The old caricatures, he says, are not playing out.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120613947871285309",
+   "texto": "Anthropic co-founder Tom Brown just revealed Claude ported itself to AMD GPUs in 3 days.\n\nBringing up a new chip platform used to take dozens of engineers months of work.\n\nMythos did it with basically no human intervention, writing almost 100% of the kernels.\n\nWild.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120598026565845156",
+   "texto": "Revolut just revealed how it cut AI coding costs by 90% while making its 2,000 engineers dramatically more productive.\n\nAnd the implications for AI builders, investors, and model providers are bigger than they first appear.\n\nWe analysed the entire playbook shared by Revolut's AI operations lead and turned it into a practical strategy guide for anyone building, buying, or investing in AI.\n\nAt the core, three numbers tell the whole story.\n\n→ 90% lower AI costs, after moving from Anthropic and OpenAI APIs to a self-hosted, open-weight GLM model.\n\n→ 70% shorter development lead times, after engine",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120527364304347608",
+   "texto": "Banger career advice from Sama.\n\nEverything is sales.\n\n> CEO at a startup = sales\n> Partner at a VC firm = sales\n> CEO at a AI lab = sales\n\nHits even harder in the age of AI.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120218483883741493",
+   "texto": "Nik Storonsky just explained why Revolut doesn't want to be a lender.\n\nTech gets 40-50x earnings. Banks get about 10x.\n\nCredit profits can vanish when unemployment goes from 3% to 6%. Subscriptions can't make negative money.\n\nHence: under 10% of the balance sheet in loans.\n\nRevolut is a tech company that also happens to be a bank.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120508491735736750",
+   "texto": "BTW, in case you missed it, also check out How Revolut Cut AI Costs 90% & Started Shipping Faster 🚀: https://linas.substack.com/p/revolut-ai-coding-costs-open-source-models",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120277900234498080",
+   "texto": "Founder & CEO Nik Storonsky just said Revolut captures more than 50% of users up to 35 in almost every European country it's in.\n\nThe hard part: 50, 60, 70+ year olds, who hold most liquid assets.\n\nThe real goal is always your salary, because a $20 P2P user isn't very profitable.\n\nHave their salary, and you will own the customer.",
+   "data": "2026-11-10"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120499626423779732",
+   "texto": "P.S. also check out How Revolut Cut AI Costs 90% & Started Shipping Faster 🚀: https://linas.substack.com/p/revolut-ai-coding-costs-open-source-models",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120465216131432484",
+   "texto": "Revolut didn't spend seriously on growth until 2022.\n\nFounder & CEO Nik Storonsky: the first 7 years were purely organic, just building products and getting licenses.\n\nToday, about 100,000 customers join every day.\n\nThat's 3M every month, or 36M per year 🤯\n\nGreat product first. Distribution followed.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2120899453510942743",
+   "texto": "Hoping Nemotron keeps going.\n\nThankfully, open weight LLMs have some alternatives.\n\nBut their open data and full training recipes would be much harder to replace.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2120896608543924560",
+   "texto": "LLM training is hard. Hard to be a jack of all trades.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2120895037064020406",
+   "texto": "In reasoning model development, it's always been this interesting tension between training/optimizing chain-of-thoughts (CoTs) vs not touching them to preserve monitorability.\n\nCoTs are cool because we can check what the model is up to (e.g., whether it cheats or not) as long as it spells out its thought process. And we risk losing that if we explicitly optimize CoTs.\n\nTwo caveats:\n\n1) I.e., the catch of CoT and monitorability is that this only works if the written thinking reflects what the model is actually doing.\n\n2) Also, when models become more capable, they spell out less in the CoT (lik",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/brianrey_x/status/2120589317575954770",
+   "texto": "i've never learned as much as when building things from scratch.\n\ncurrently working through build a large language model by @rasbt, and it's one of the best ways i've found to actually understand how llms work.\n\nstill struggling to visualize all those dimensions.",
+   "data": "2026-11-11"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2120519373999816955",
+   "texto": "Hillclimbing: Make the model better (best intentions).\n\nBenchmarking: Measure how much better (best effort).\n\nBenchmaxxing: Make the numbers look better (best optics).",
+   "data": "2026-11-11"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @RohanRamanath: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

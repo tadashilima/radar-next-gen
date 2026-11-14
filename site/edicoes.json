@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-11-14",
+    "data": "2026-11-14",
+    "titulo": "Large Payments Model e TabPFN v10 chegam em dia de poucas novidades",
+    "destaque": "O destaque é o Large Payments Model (LPM), um foundation model de pagamentos treinado do zero para fraude, autorização e otimização, desenhado para operação com restrições de latência e custo. O mercado de modelos transacionais segue convergindo para um modelo compartilhado por várias tarefas.",
+    "resumo": [
+      "LPM: modelo fundacional de pagamentos treinado do zero, pensado para uso operacional",
+      "TabPFN v10.0.0 traz quebra de compatibilidade em regressores salvos",
+      "Estudo mostra que acurácia de previsão não garante efeito causal correto em FMs tabulares"
+    ],
+    "itens": [
+      {
+        "titulo": "Large Payments Model: foundation model de pagamentos treinado do zero para fraude, autorização e otimização",
+        "url": "http://arxiv.org/abs/2611.15814v1",
+        "fonte": "arxiv",
+        "tema": "transacional",
+        "sinal": "alto",
+        "data": "2026-11-11",
+        "porque": "Propõe uma camada única de inteligência de pagamentos reaproveitada entre tarefas, tratando campos heterogêneos, identificadores de alta cardinalidade, históricos longos e eventos raros sob restrições de latência e custo. É referência para comparar fornecedores de LDM e GBMs por tarefa; os resultados precisam ser lidos no paper antes de qualquer conclusão."
+      },
+      {
+        "titulo": "TabPFN v10.0.0: quebra de compatibilidade e novos recursos de pré-processamento e agrupamento",
+        "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.0.0",
+        "fonte": "github",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-13",
+        "porque": "Regressores já ajustados e salvos precisam ser reajustados, o que pesa em pipelines com modelos versionados. A nova opção group_col trata uma chave de grupo como feature categórica, relevante para dados com cliente ou conta como entidade."
+      },
+      {
+        "titulo": "Prever bem não basta: FMs tabulares e de séries temporais erram o efeito causal de preço mesmo com boa acurácia",
+        "url": "http://arxiv.org/abs/2611.15009v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-11-11",
+        "porque": "Em varejo, mais contexto melhora a previsão mas não o efeito estimado de preço. Para crédito e fraude, é um alerta ao usar FMs tabulares em decisões de intervenção (limite, preço, política), não só em score."
+      }
+    ],
+    "perguntas": [
+      "Um modelo fundacional compartilhado entre fraude e autorização supera modelos dedicados por tarefa em latência e custo no seu volume?"
+    ]
+  },
+  {
     "id": "2026-11-12",
     "data": "2026-11-12",
     "titulo": "Benchmark para modelos de eventos de clientes e agentes que confundem a antifraude",

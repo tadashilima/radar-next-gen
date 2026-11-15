@@ -1,0 +1,223 @@
+{
+ "gerado_em": "2026-11-15T17:09:55+00:00",
+ "janela_dias": 3,
+ "arxiv": [],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+    "url": "https://huggingface.co/papers/2611.16961",
+    "data": "2026-11-11",
+    "resumo": "Existing adaptive-reasoning methods shorten the explicit reasoning a model writes, or skip it by switching modes; either way the answer is still written out token by token. Rather than deciding how much to think, we explore a different paradigm, zero-or-T thinking: a single model either answers from the implicit thinking inside one forward pass, generating no token, or performs full autoregressive reasoning at a cost of T tokens when that is worth paying. We realise it in a hybrid decision model (HDM), where one frozen backbone serves both modes and a lightweight self-routing block chooses between them. The block estimates the value of thinking, the utility the slow mode is expected to add o"
+   },
+   {
+    "titulo": "DeepStress: Stress-Testing Deep Search Agents",
+    "url": "https://huggingface.co/papers/2607.13920",
+    "data": "2026-11-11",
+    "resumo": "While search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. Such evidence is rare in benchmark corpora, and resulting failures are hard to reproduce. We propose DeepStress, a dynamic stress-testing framework that subjects agents to degraded evidence at controlled rates. It replaces the retrieval module with a synthetic environment where documents are generated dynamically for each query, under independent control of their trustworthiness, relevance, and factuality. To characterize behavior under stress, we go beyond binary accuracy with a five-way classification of final-answer outcomes and two ne"
+   },
+   {
+    "titulo": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "url": "https://huggingface.co/papers/2611.17167",
+    "data": "2026-11-11",
+    "resumo": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory,"
+   },
+   {
+    "titulo": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+    "url": "https://huggingface.co/papers/2611.13001",
+    "data": "2026-11-07",
+    "resumo": "Generation, imputation, and prediction query different aspects of the same tabular distribution, but are usually evaluated separately. This leaves unclear which capabilities they share, how their training objectives interact, and whether one model can perform all three well. We introduce the One Table Benchmark (), spanning 56 datasets, 46 registered methods, and 20 capability axes under aligned data splits and explicit task contracts. We compare task ranks on aligned support, train five backbones under all seven non-empty objective combinations on five datasets with three seeds, and contrast fixed-model profiles with specialist portfolios. Rank comparisons connect imputation and prediction "
+   },
+   {
+    "titulo": "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
+    "url": "https://huggingface.co/papers/2611.07464",
+    "data": "2026-11-04",
+    "resumo": "Language agents increasingly work for users on the open Web, and finance is where trusting them is hardest. The data must come from the Web, the strategy lives in the user's head, and correctness depends on time, so an agent can fail silently: a strategy the user never asked for, unverified data, or a backtest that uses the future yields a report as convincing as a correct one. Existing benchmarks close the world somewhere, fixing the task, the data, or the timeline, and thereby remove these failures instead of measuring them. We introduce FINCOSMOS, an open-world evaluation paradigm for agents doing financial work. A simulated user holds a hidden strategy sampled from a compositional gramma"
+   },
+   {
+    "titulo": "Are Dense Rewards Worth Their Tokens in GRPO?",
+    "url": "https://huggingface.co/papers/2611.13560",
+    "data": "2026-11-09",
+    "resumo": "RLVR trains language models to reason by rewarding correct final answers. A widely used algorithm, group-relative policy optimization (GRPO), gives every token of a solution the same credit, so dense process rewards have been proposed to credit intermediate steps, for example with a Monte-Carlo reward that scores each step by sampling continuations from it. Comparing such a reward with GRPO per training update, or vetting it with a gradient test on a single batch, leaves out what it costs: in our setting, the continuations alone take 91% of all generated tokens. We introduce a matched-compute protocol that gives every training intervention the same budget, measured in generated tokens and tr"
+   },
+   {
+    "titulo": "Market-Conditioned JEPA: Learning from Unpredictable Market Shocks",
+    "url": "https://huggingface.co/papers/2611.13572",
+    "data": "2026-11-09",
+    "resumo": "Much of the variation in financial time series is driven by market-wide shocks that cannot be predicted from an asset's own history. Per-asset self-supervised learning treats this variation as irreducible noise. Under a latent factor model, we show that conditioning prediction on the realized market factor makes the asset's market exposure necessary for optimal prediction, while reducing the noise against which the asset-specific component is learned. Building on this insight, we introduce Market-Conditioned JEPA (MC-JEPA), a joint-embedding predictive architecture for financial time series. During training, we construct a leave-one-out market condition for each asset from the future target "
+   },
+   {
+    "titulo": "FraudBench: A Legal Evaluation of AI Deception",
+    "url": "https://huggingface.co/papers/2611.12167",
+    "data": "2026-11-08",
+    "resumo": "We introduce FraudBench, an evaluation of large language models' (LLMs) propensities to recommend, assist, or directly take actions that would constitute fraud under U.S. law. Our evaluation contains a novel dataset of 159 scenarios based on real-world U.S. court cases and validated by legal experts. We present each scenario to LLMs via three tasks at varying levels of autonomy: advising users, drafting messages for users to send, and acting directly on behalf of users (477 tasks total). In each scenario, FraudBench re-enacts the facts of a court case to give LLMs an opportunity, but no explicit instruction, to either misrepresent or conceal a material fact in a high-stakes commercial settin"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.0.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.0.0",
+   "data": "2026-11-13",
+   "notas": "### Breaking Changes\n\n- Previously saved fitted regressors (`.tabpfn_fit` archives and pickled estimators) are incompatible with the updated target preprocessing and must be refitted. Custom fine-tuning loops must pass `y_train_mean` and `y_train_std` to `fit_from_preprocessed`. ([#1198](https://github.com/PriorLabs/TabPFN/pull/1198))\n\n### Added\n\n- Add optional numerical sign flipping with `PreprocessorConfig(random_sign_flip_numericals=True)`, using reproducible signs per ensemble member after preprocessing. ([#1381](https://github.com/PriorLabs/TabPFN/pull/1381))\n- `TabPFNClassifier` and `TabPFNRegressor` take `group_col`: the label of the column that says which group a row belongs to, or a list of labels whose joint value is one composite key. The selected columns are replaced by one categorical feature holding that key's integer code, fitted on the training rows alone. ([#1392](https://github.com/PriorLabs/TabPFN/pull/1392))\n- Add `REGRESSION_TARGET_SIGN_FLIP` to `InferenceConfig`: when enabled, about half the regression ensemble members see their standardized target negated, and their predictions are mirrored back. ([#1393](https://github.com/PriorLabs/TabPFN/pull/1393))\n- The"
+  }
+ ],
+ "x": [
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121981209609895974",
+   "texto": "Demis Hassabis wants to flip how school works.\n\nKids would learn the basics at home with AI that adapts to their pace, because one lesson for 30 kids only serves the average one.\n\nThen class time goes to what AI can't teach: projects, creativity, people skills, and judgment.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121946519116914956",
+   "texto": "SpaceX just caught Starship's upper stage with the tower's arms for the first time ever.\n\nIt came back from orbit 22.5 hours after launch and landed in the arms of the same tower it lifted off from.\n\nThat was the missing piece for full rocket reuse.\n\nHistoric.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121863261100335360",
+   "texto": "a16z is one of the largest investors in the artificial intelligence cycle, and it just released State of Markets II, its 100+ chart view on where tech, AI, and capital are heading.\n\nIt makes one big argument: the AI boom is real, it’s earnings-backed, and still super early.\n\nWe analysed the whole 90-page deck and listened to the partners’ accompanying podcast (so you don’t have to!), and turned it all into a strategy guide for anyone building, working, or investing in AI.\n\nAt the core, two numbers essentially frame the whole deck. Hyperscalers will spend about $780B on capex in 2026, nearly do",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121661739620008433",
+   "texto": "Former Medtronic CEO Bill George just called Nvidia's board \"one of the weakest boards I've ever seen for a major company.\"\n\nHis tally is five VCs, one former Goldman Sachs person, a Taco Bell executive and an NFL executive.\n\nHe says nobody on it understands the technology.\n\n\"It's more like an advisory board to Jensen Huang.\"",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121585735132168519",
+   "texto": "Revolut's Oct 20 outage post-mortem is one of the clearest resilience lessons I've seen.\n\nOn paper, the setup was right. The databases ran across 3 London zones with a backup region, and coordination servers in groups of 5 needed 3 to agree.\n\nWhat broke:\n\n> Routine server replacements left some groups running on 4 of 5, with no alert\n> Zone B lost power and took 2 more servers down, leaving 2. With no quorum, failover never happened\n> The main database monitoring dashboard also ran in Zone B\n\nTimeline (UTC): power cut at ~06:00, card payments back at 12:40, app access at 15:45, everything at 1",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121572341243093266",
+   "texto": "Jensen Huang made Nvidia the AI industry's backer of last resort.\n\nNvidia guaranteed up to $105B of OpenAI's Ohio lease and power payments.\n\nIt also had $124B in equity investments and commitments, plus $36B committed to buying unused cloud capacity.",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121491895591600260",
+   "texto": "Marc Andreessen says a16z tests founders the way homicide detectives test an alibi.\n\nThey ask increasingly detailed questions, down to which seat you sat in.\n\nFake founders give a \"conceptual theory,\" then \"it just fuzzes out.\"",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121335640763818416",
+   "texto": "Peter Thiel says you should forget about the medium-term when planning your career.\n\nWe overweight how good a job looks on a resume, and underweight two things: being happy and learning now, and working on something important for the long run.\n\nHis fix is to focus on the short-term and the long-term, and forget the medium.",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121300641234800954",
+   "texto": "Charlie Munger once said smart people go broke in three ways. Liquor, ladies, and leverage.\n\nLegend.",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121277392782049740",
+   "texto": "Revolut founder & CEO Nik Storonsky just revealed Revolut's entire product playbook:\n\n> 10-person team with a strong product owner\n> Anyone can pitch a \"new bet\"\n> Economics check first, then a committee\n> 9 to 18 months to build\n\nIf it grows fast, scale it. Doesn't grow - sunset it\n\nI wish more fintechs operated like that.",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121242137903653323",
+   "texto": "You can’t be fired from the Board of Directors if YOU ARE the Board of Directors.\n\nBanger advice from Telegram founder, CEO, Chairman and Director of the Board.",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121217786659639472",
+   "texto": "This is brilliant! Somebody created an AI version of The Office where Michael Scott welcomes Jensen Huang as the newest employee at Dunder Mifflin 👏😂\n\n“I was really looking forward to working with Jensen. We were gonna build an AI that will replace Toby.”\n\nI’d easily watch the whole season of this in a heartbeat.\n\nThe best AI video we’ve seen this year. https://x.com/MandelDuck/status/2120914062473155009/video/1",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121156590552105278",
+   "texto": "AI labs have been quietly acquiring small, focused teams that solve narrow problems:\n\n> Anthropic bought Mithril Medicine, a one-person biotech using Claude to coordinate 11 external labs on rare muscular dystrophy treatments.\n\n> OpenAI bought Odessia, an AI travel concierge founded by the ex-Sonder CEO.\n\n> OpenAI bought Orchestra Bio, AI agents that handle the operational grunt work of drug programs (timelines, finances, trial scheduling).\n\n> Anthropic bought Coefficient Bio, a sub-10-person team building AI tools for drug research planning and regulatory strategy.\n\n> OpenAI is acquiring Pier",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121130090163515550",
+   "texto": "Y Combinator just revealed what it wants founders to build in 2027. I went through all 11 categories and identified 33 startup ideas worth building right now 🚀\n\nAnd the biggest opportunities might not be where you'd expect.\n\nYC's latest Requests for Startups reveal a major shift: AI is getting cheaper, but the infrastructure, capital, data, and trust needed to deploy it are becoming the real bottlenecks.\n\nSo I put together a deep dive covering:\n\n→ 11 startup categories YC is actively looking to fund.\n\n→ 33 startup ideas, each with a target customer, business model, and one-line pitch.\n\n→ 11 co",
+   "data": "2026-11-13"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121007154895171936",
+   "texto": "Steve Jobs was asked what he learned at Apple. He paused for 20 seconds.\n\n\"I now take a longer-term view on people. When I see something not being done right, my first reaction isn't to go fix it.\"\n\nHe'd rather help the person learn, because \"we're building a team here.\"\n\nI wish more CEOs thought like that.",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120990659930939868",
+   "texto": "Microsoft CEO, when realizing Anthropic is coming after their entire enterprise software stack",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120963008008732697",
+   "texto": "Peter Thiel said world-class entrepreneurs are something close to polymaths.\n\nHis example was Mark Zuckerberg:\n\n→ He could speak about the details of the Facebook product\n→ The way people think about social media, the psychology, the way the culture is shifting\n→ Management of the company\n→ How it fits into the bigger history of technology\n\n\"It's much more this polymath-like intellect that understands all these different things.\"",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2120940664862986534",
+   "texto": "\"My partner Charlie says: there's only 3 ways that a smart person can go broke - he says 'liquor, ladies and leverage'\" - Warren Buffet\n\n🎯 ",
+   "data": "2026-11-12"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121958665989083253",
+   "texto": "(Finally) wrote up \"Understanding Positional Embeddings in Modern LLMs.\"\n\nA RoPE from-scratch tutorial missing from my LLM building blocks collection + what recent architectures do (NoPE, partial RoPE, hybrids).\n\nProb not the flashiest topic, but essential for understanding LLMs",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121958669432631769",
+   "texto": "And here's the link to the full article: https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121613812990095543",
+   "texto": "Inkling 2 Small took a while... but it's more interesting than I initially thought!\nUsing attention residuals (like Kimi K3), but without the linear-attention hybrid.\nFood for discussion for the end-of-the-year architecture trends analysis!",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121397631192539435",
+   "texto": "Seb's Law, co-signed by another Seb",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121320349837263230",
+   "texto": "Wow that escalated quickly. Was gone for a few weeks and now pretty much everyone launched their own decision model copycats:\n\n- Sep 23: Together AI, Tev1-4B\n- Sep 24: Alibaba Cloud, decision-model\n- Sep 29: Liquid AI, d1\n- Sep 30: Databricks, ai_decide\n- Oct 1: Amazon AWS, Strands Decider 2B\n- Oct 1: Cloudflare, Clef and Clef-flash (Clef-omni on Oct 9)\n- Oct 1: Perplexity, Decider (v1.3 on Nov 12)\n- Oct 6: OpenAI, Decisions API (GPT-6 Luna)\n- Oct 7: http://H2O.ai, H2O-Lightning-4B\n- Oct 7: Snowflake, Snowflake Decision\n- Oct 9: Microsoft, Microsoft-Decision-1\n- Oct 15: IBM, Granite Switch 4.1",
+   "data": "2026-11-13"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @Prior_Labs: HTTPError",
+  "X @LennartPurucker: HTTPError",
+  "X @dholzmueller: HTTPError",
+  "X @GaelVaroquaux: HTTPError",
+  "X @autogluon: HTTPError",
+  "X @ChristophMolnar: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "X @sytaylor: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

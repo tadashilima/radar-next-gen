@@ -1,17 +1,14 @@
 {
-  "data": "2026-11-14",
-  "novidade": true,
-  "titulo": "Large Payments Model e TabPFN v10 chegam em dia de poucas novidades",
-  "destaque": "O destaque é o Large Payments Model (LPM), um foundation model de pagamentos treinado do zero para fraude, autorização e otimização, desenhado para operação com restrições de latência e custo. O mercado de modelos transacionais segue convergindo para um modelo compartilhado por várias tarefas.",
-  "itens_novos": 3,
-  "principal": {
-    "titulo": "Large Payments Model: foundation model de pagamentos treinado do zero para fraude, autorização e otimização",
-    "url": "http://arxiv.org/abs/2611.15814v1"
-  },
+  "data": "2026-11-15",
+  "novidade": false,
+  "titulo": "",
+  "destaque": "",
+  "itens_novos": 0,
+  "principal": {},
   "fontes_com_falha": [
+    "Coleta de hoje (2026-11-15) ausente: usada a de 2026-11-14, já curada na edição anterior",
     "X (@RohanRamanath): HTTPError na coleta",
     "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError na coleta; buscas web de Reddit não executadas",
-    "Coleta de hoje (2026-11-14) ausente: usada a de 2026-11-13",
-    "Buscas web retornaram principalmente material antigo, sem datas verificáveis para as últimas 48h"
+    "Buscas web retornaram só material já publicado ou sem data verificável nas últimas 48h"
   ]
 }

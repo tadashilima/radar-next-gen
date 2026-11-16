@@ -1,0 +1,238 @@
+{
+ "gerado_em": "2026-11-16T20:28:33+00:00",
+ "janela_dias": 3,
+ "arxiv": [],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "JFinBench: A Continuously Refreshable Japanese Financial Benchmark from the Latest Certification Exams",
+    "url": "https://huggingface.co/papers/2611.18130",
+    "data": "2026-11-12",
+    "resumo": "Large language models (LLMs) are increasingly applied to finance, creating a need for benchmarks that evaluate their capabilities across financial systems with different regulations and practices. However, existing financial benchmarks provide limited coverage of country-specific financial systems, and they are difficult to keep up to date as released questions leak into training data. We introduce JFinBench, a Japanese financial benchmark comprising 321 examples from the 2026 editions of six regularly administered certification exams covering accounting, tax, financial planning, and banking. To construct it, we develop a human-in-the-loop agentic pipeline in which a coding agent writes exam"
+   },
+   {
+    "titulo": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+    "url": "https://huggingface.co/papers/2611.16961",
+    "data": "2026-11-11",
+    "resumo": "Existing adaptive-reasoning methods shorten the explicit reasoning a model writes, or skip it by switching modes; either way the answer is still written out token by token. Rather than deciding how much to think, we explore a different paradigm, zero-or-T thinking: a single model either answers from the implicit thinking inside one forward pass, generating no token, or performs full autoregressive reasoning at a cost of T tokens when that is worth paying. We realise it in a hybrid decision model (HDM), where one frozen backbone serves both modes and a lightweight self-routing block chooses between them. The block estimates the value of thinking, the utility the slow mode is expected to add o"
+   },
+   {
+    "titulo": "DeepStress: Stress-Testing Deep Search Agents",
+    "url": "https://huggingface.co/papers/2607.13920",
+    "data": "2026-11-11",
+    "resumo": "While search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. Such evidence is rare in benchmark corpora, and resulting failures are hard to reproduce. We propose DeepStress, a dynamic stress-testing framework that subjects agents to degraded evidence at controlled rates. It replaces the retrieval module with a synthetic environment where documents are generated dynamically for each query, under independent control of their trustworthiness, relevance, and factuality. To characterize behavior under stress, we go beyond binary accuracy with a five-way classification of final-answer outcomes and two ne"
+   },
+   {
+    "titulo": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "url": "https://huggingface.co/papers/2611.17167",
+    "data": "2026-11-11",
+    "resumo": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory,"
+   },
+   {
+    "titulo": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+    "url": "https://huggingface.co/papers/2611.13001",
+    "data": "2026-11-07",
+    "resumo": "Generation, imputation, and prediction query different aspects of the same tabular distribution, but are usually evaluated separately. This leaves unclear which capabilities they share, how their training objectives interact, and whether one model can perform all three well. We introduce the One Table Benchmark (), spanning 56 datasets, 46 registered methods, and 20 capability axes under aligned data splits and explicit task contracts. We compare task ranks on aligned support, train five backbones under all seven non-empty objective combinations on five datasets with three seeds, and contrast fixed-model profiles with specialist portfolios. Rank comparisons connect imputation and prediction "
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/TokenizedPod/status/2122364983983894810",
+   "texto": "🚨 Ep. 109 of @TokenizedPod: Airwallex Launch Blockchain to Solve $4 Trillion Problem\n\n@sytaylor is joined by:\n\n👉 @terryangelos, Chief Strategy Officer, @getVGS\n\n👉 @aya_kantor, Co-Founder & Co-CEO, @upshift_fi\n\n👉 @marygtruitt, Co-Founder & COO, @formation_so\n\nTo discuss:\n\n➡️ Stablecoin adoption shifts from crypto trading to fintech payments\n\n🛡️ Airwallex and Alta tackle stablecoin on and off-ramp challenges\n\n📊 NYSE selects Avalanche for 24/7 tokenized stock trading and settlement\n\n🆚 Onshore vs offshore tokenized equities and shareholder rights\n\n🤔 Does 24/7 stock trading increase volatility and ",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122313519408509080",
+   "texto": "A picture is worth...",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122281910055444584",
+   "texto": "🚨 BREAKING: JPMorgan and DBS just linked their tokenized deposits.\n\nAnt International is the first client, and I think Ant is why it works.\n\nA tokenized deposit is a bank balance recorded on a blockchain. JPMorgan's blockchain unit, Kinexys, and DBS each ran their own and have now connected them. So a client of both can move USD between the US and Singapore instantly, weekends included.\n\n---\n\nThe fact that it's Ant matters.\n\nAnt runs its own blockchain treasury platform, Whale (great name), and already uses tokenized deposits at HSBC, Standard Chartered, OCBC, DBS and JPMorgan. More than a thi",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122277485253624040",
+   "texto": "Mind the $3trn revenue gap.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121922079012340139",
+   "texto": "The US debt unstoppable train vs the world",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121914775496012191",
+   "texto": "London is statistically much safer than almost every major US city.\n\nHomicide rates per 100k residents:\n\n🇬🇧 London: 1.1 (a record low)\n🇺🇸 NYC: 2.8\n🇺🇸 LA: 5.6\n🇺🇸 Chicago: 11.7\n🇺🇸 Philly: 12.3\n\nWatch your phone around mayfair, sure\n\nBut in terms of violence, incomparable.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121855552078610436",
+   "texto": "Trying to stop the expansion of debt and money printing\n\nNothing stops this train...",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/pitdesi/status/2121729777677849048",
+   "texto": "Bets settled. Thanks for playing ball, @rabois!\n\nKeith's bets were that:\n\n1) No SF-based company founded between March 2020 and Sept 2023 would exit above $10B. Cursor sold for $60B, and Anthropic is set to exit above $1T next week.\n2) Democrats would lose the House",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121578626755739929",
+   "texto": "Watching everyone discover this is kind of sad. \n\nIt's one of the world's most beautiful colours, safest cities. By far.",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/mrjasonchoi/status/2121477575763796338",
+   "texto": "My PR pitch: Jensen rocks a white leather jacket and returns as Jensen the White",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/emilyjnicolle/status/2121539284591431898",
+   "texto": "ngl it’s been so nice this week seeing all the crypto bros realise that london is actually wonderful and not the dystopian nightmare that social media would have you think it is \n\nevery time i visit nyc, i am reminded why london is my city 🩷",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2121531880256274550",
+   "texto": "The bond market is saying the party is over",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122398370023297147",
+   "texto": "Sam Altman was asked if Jensen Huang should return to Nvidia.\n\n\"I don't think I know enough to answer that question. Jensen has long been a hero of mine. Heroes have flaws.\"\n\nFor context, Altman's own board fired him three years ago from OpenAI, and he was back within days.\n\nHe says he has \"personal strong empathy\" for Jensen.\n\n\"It's hard to imagine the AI revolution without Jensen.\"",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122350321955459119",
+   "texto": "$10,000 put into S&P 500 companies run by their founder CEOs in 2015 grew to $120,870 by July 2025.\n\nThe same $10,000 in the S&P 500 became $36,136. \n\nThat's 28% a year against 13.6% 😳\n\nBain found the same pattern: since 2015, founder-led S&P 500 companies returned 2.1x more than their peers.\n\nFounders run companies like owners, and the market pays for it.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122320646159937693",
+   "texto": "Elon Musk says Starship, the largest rocket ever built, was made with no AI.\n\nHe calls it \"the last really big thing... that's not AI,\" built at \"the limit of biological intelligence.\"\n\nEvery rocket, chip, and drug after it will have AI in the loop.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122231631427915901",
+   "texto": "Revolut's CEO stopped trusting his gut on ideas.\n\nNik Storonsky: \"I just had too many failures in the past when my judgment was wrong.\"\n\nNow he backs execution: with a strong team, even an average idea can work.\n\nExecution > Ideas.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122210227680411680",
+   "texto": "Everyone roasted Marc Andreessen for saying he has \"zero\" introspection.\n\nThe part they skipped is that he ties it to neuroticism. In his view, the best founders barely get emotionally fazed, and that's a superpower.\n\nHe also admits some great founders are very neurotic.\n\nSo staying calm helps, but you can still build big without it.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122080440160842228",
+   "texto": "Dwarkesh Patel just said he now expects superintelligence by 2030.\n\nEarlier this year: \"better part of a decade.\"\n\n> METR: Anthropic's AI progress rate is 2x a year ago\n> OpenAI top users: $1,000 → $7,000/day on agents\n> Claude leads 26% of Anthropic's R&D\n\nAI is now building AI.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122054896954249420",
+   "texto": "SBF would have made more than $30,000,000,000 in the Anthropic IPO.\n\nInstead, he decided to commit fraud, and now he's inmate no. 37244-510.\n\nSuch a wasted potential.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121981209609895974",
+   "texto": "Demis Hassabis wants to flip how school works.\n\nKids would learn the basics at home with AI that adapts to their pace, because one lesson for 30 kids only serves the average one.\n\nThen class time goes to what AI can't teach: projects, creativity, people skills, and judgment.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121946519116914956",
+   "texto": "SpaceX just caught Starship's upper stage with the tower's arms for the first time ever.\n\nIt came back from orbit 22.5 hours after launch and landed in the arms of the same tower it lifted off from.\n\nThat was the missing piece for full rocket reuse.\n\nHistoric.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121863261100335360",
+   "texto": "a16z is one of the largest investors in the artificial intelligence cycle, and it just released State of Markets II, its 100+ chart view on where tech, AI, and capital are heading.\n\nIt makes one big argument: the AI boom is real, it’s earnings-backed, and still super early.\n\nWe analysed the whole 90-page deck and listened to the partners’ accompanying podcast (so you don’t have to!), and turned it all into a strategy guide for anyone building, working, or investing in AI.\n\nAt the core, two numbers essentially frame the whole deck. Hyperscalers will spend about $780B on capex in 2026, nearly do",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121661739620008433",
+   "texto": "Former Medtronic CEO Bill George just called Nvidia's board \"one of the weakest boards I've ever seen for a major company.\"\n\nHis tally is five VCs, one former Goldman Sachs person, a Taco Bell executive and an NFL executive.\n\nHe says nobody on it understands the technology.\n\n\"It's more like an advisory board to Jensen Huang.\"",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121585735132168519",
+   "texto": "Revolut's Oct 20 outage post-mortem is one of the clearest resilience lessons I've seen.\n\nOn paper, the setup was right. The databases ran across 3 London zones with a backup region, and coordination servers in groups of 5 needed 3 to agree.\n\nWhat broke:\n\n> Routine server replacements left some groups running on 4 of 5, with no alert\n> Zone B lost power and took 2 more servers down, leaving 2. With no quorum, failover never happened\n> The main database monitoring dashboard also ran in Zone B\n\nTimeline (UTC): power cut at ~06:00, card payments back at 12:40, app access at 15:45, everything at 1",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121572341243093266",
+   "texto": "Jensen Huang made Nvidia the AI industry's backer of last resort.\n\nNvidia guaranteed up to $105B of OpenAI's Ohio lease and power payments.\n\nIt also had $124B in equity investments and commitments, plus $36B committed to buying unused cloud capacity.",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2121491895591600260",
+   "texto": "Marc Andreessen says a16z tests founders the way homicide detectives test an alibi.\n\nThey ask increasingly detailed questions, down to which seat you sat in.\n\nFake founders give a \"conceptual theory,\" then \"it just fuzzes out.\"",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2122336040899711282",
+   "texto": "The open-source LLM ecosystem could really benefit from an LLM building-block API.\n\nWe have so many LLM components across different models now. Whether you are using PyTorch or C++ and CUDA code directly, there is a major switching cost when you want to run experiments or ablation studies, say swapping GQA with MLA, dense FFNs with MoE, attention layers with Mamba2 or Gated DeltaNet, or standard residual connections with attention residuals.\n\nCurrently, it’s very messy even with LLM-assisted coding.\n\nIt could maybe be on top of PyTorch or CUDA directly, but it needs to be carefully engineered ",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121958665989083253",
+   "texto": "(Finally) wrote up \"Understanding Positional Embeddings in Modern LLMs.\"\n\nA RoPE from-scratch tutorial missing from my LLM building blocks collection + what recent architectures do (NoPE, partial RoPE, hybrids).\n\nProb not the flashiest topic, but essential for understanding LLMs",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121958669432631769",
+   "texto": "And here's the link to the full article: https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121613812990095543",
+   "texto": "Inkling 2 Small took a while... but it's more interesting than I initially thought!\nUsing attention residuals (like Kimi K3), but without the linear-attention hybrid.\nFood for discussion for the end-of-the-year architecture trends analysis!",
+   "data": "2026-11-14"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121397631192539435",
+   "texto": "Seb's Law, co-signed by another Seb",
+   "data": "2026-11-14"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @RohanRamanath: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

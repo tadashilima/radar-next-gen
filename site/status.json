@@ -1,16 +1,14 @@
 {
-  "data": "2026-11-16",
+  "data": "2026-11-17",
   "novidade": false,
   "titulo": "",
   "destaque": "",
   "itens_novos": 0,
   "principal": {},
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-16) ainda não existia: usada a de 2026-11-15",
-    "X @Prior_Labs: HTTPError", "X @LennartPurucker: HTTPError", "X @dholzmueller: HTTPError",
-    "X @GaelVaroquaux: HTTPError", "X @autogluon: HTTPError", "X @ChristophMolnar: HTTPError",
-    "X @RohanRamanath: HTTPError", "X @sytaylor: HTTPError",
-    "Reddit r/MachineLearning: HTTPError", "Reddit r/datascience: HTTPError", "Reddit r/fintech: HTTPError",
+    "Coleta de hoje (2026-11-17) ainda não existia: usada a de 2026-11-16",
+    "X @RohanRamanath: HTTPError",
+    "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError",
     "Reddit via WebSearch não executado (cobertura parcial)"
   ]
 }

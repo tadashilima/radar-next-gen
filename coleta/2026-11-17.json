@@ -1,0 +1,141 @@
+{
+ "gerado_em": "2026-11-17T19:10:33+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Tabular Foundation Models as Emulators for Forecasting Terrestrial Ecosystem Dynamics",
+   "url": "http://arxiv.org/abs/2611.20468v1",
+   "data": "2026-11-16",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Process-based terrestrial biosphere models such as the Ecosystem Demography (ED) model underpin global carbon budgets, but their cost limits global, high-resolution and scenario-rich simulation. Deep emulators such as DeepED reduce that cost but require task-specific architectures and training. Tabular foundation models offer a different route: TabPFN predicts new rows by in-context learning, without being trained on the task. We compare TabPFN-3.5 with two DeepED baselines, $DeepED_{LSTM}$ and $DeepED_{Transformer}$, on CarbonGlobe's overall evaluation, which trains on a uniform 1/16 sample of sites and tests on the other 50,779, predicting the 40-year state of all seven ED outputs. We then"
+  },
+  {
+   "titulo": "Weights & Caches: LLMs Can Program Tabular Foundation Models",
+   "url": "http://arxiv.org/abs/2611.20174v1",
+   "data": "2026-11-15",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Neural networks are typically programmed through optimization, rather than by explicitly specifying their computations. Recent work on weight-space programming suggests that large language models (LLMs) can instead reason about and manipulate neural-network weights directly. In this work, we show that LLMs can directly program statistical computations in tabular foundation models (TFMs), whose parameters enable inference across different datasets. We investigate three complementary settings using GPT-6 Astra, without gradient-based optimization. First, Astra directly programs nanoTabPFN from zero-initialized weights, achieving a mean ROC AUC of 0.849 across 20 TabArena datasets, compared to "
+  },
+  {
+   "titulo": "Joint Learning of Factual and Counterfactual Worlds for Causal Prior-data Fitted Networks",
+   "url": "http://arxiv.org/abs/2611.19710v1",
+   "data": "2026-11-15",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "Estimating treatment effects is central to science across many disciplines and requires counterfactual reasoning about alternative worlds. In the real world, however, each unit reveals its outcome only under the factual world. Thus, the factual and counterfactual outcomes can never be jointly learned by any model trained on real data. The problem is therefore tractable only in synthetic settings, where both worlds can be generated. Recent progress on prior-data fitted networks (PFNs) has shown that models pre-trained purely on synthetic data can transfer to real-world prediction. This paradigm has since carried over to causal effect estimation. Despite this fully synthetic setup, existing ca"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+    "url": "https://huggingface.co/papers/2611.19937",
+    "data": "2026-11-14",
+    "resumo": "Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation and execution objectives. We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories. To capture dependencies among portfolio positions, AllocFlow employs a cross-asset flow Transformer conditioned on tempora"
+   },
+   {
+    "titulo": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+    "url": "https://huggingface.co/papers/2611.07222",
+    "data": "2026-11-03",
+    "resumo": "Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so the decision depends on a model that may read the attacker's text and adds model calls to every step. Provenance defenses keep the model off the final check but need a model to plan or route each task first. Where an action goes can instead be read from the tools' typed returns: an email's sender or a payment's account arrives in a typed field, while injected instructions arrive as free text. SPILLWAY turns this observation into a determin"
+   },
+   {
+    "titulo": "JFinBench: A Continuously Refreshable Japanese Financial Benchmark from the Latest Certification Exams",
+    "url": "https://huggingface.co/papers/2611.18130",
+    "data": "2026-11-12",
+    "resumo": "Large language models (LLMs) are increasingly applied to finance, creating a need for benchmarks that evaluate their capabilities across financial systems with different regulations and practices. However, existing financial benchmarks provide limited coverage of country-specific financial systems, and they are difficult to keep up to date as released questions leak into training data. We introduce JFinBench, a Japanese financial benchmark comprising 321 examples from the 2026 editions of six regularly administered certification exams covering accounting, tax, financial planning, and banking. To construct it, we develop a human-in-the-loop agentic pipeline in which a coding agent writes exam"
+   },
+   {
+    "titulo": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+    "url": "https://huggingface.co/papers/2611.16961",
+    "data": "2026-11-11",
+    "resumo": "Existing adaptive-reasoning methods shorten the explicit reasoning a model writes, or skip it by switching modes; either way the answer is still written out token by token. Rather than deciding how much to think, we explore a different paradigm, zero-or-T thinking: a single model either answers from the implicit thinking inside one forward pass, generating no token, or performs full autoregressive reasoning at a cost of T tokens when that is worth paying. We realise it in a hybrid decision model (HDM), where one frozen backbone serves both modes and a lightweight self-routing block chooses between them. The block estimates the value of thinking, the utility the slow mode is expected to add o"
+   },
+   {
+    "titulo": "DeepStress: Stress-Testing Deep Search Agents",
+    "url": "https://huggingface.co/papers/2607.13920",
+    "data": "2026-11-11",
+    "resumo": "While search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. Such evidence is rare in benchmark corpora, and resulting failures are hard to reproduce. We propose DeepStress, a dynamic stress-testing framework that subjects agents to degraded evidence at controlled rates. It replaces the retrieval module with a synthetic environment where documents are generated dynamically for each query, under independent control of their trustworthiness, relevance, and factuality. To characterize behavior under stress, we go beyond binary accuracy with a five-way classification of final-answer outcomes and two ne"
+   },
+   {
+    "titulo": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "url": "https://huggingface.co/papers/2611.17167",
+    "data": "2026-11-11",
+    "resumo": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory,"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.2.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.2.0",
+   "data": "2026-11-17",
+   "notas": "### Added\n\n- Add `TabPFNRegressor(presets=...)`, named bundles of `inference_config` values. The `\"zero_inflated\"` preset is for nonnegative targets with many exact zeros: it sets the `log_fixed_atom` target transform and the `nonnegative_and_capped` readout. On the models up to TabPFN-3.5 it sets `log_quantile_gap` with the same readout instead. `fit` suggests the preset, once per process, for nonnegative targets with more than 20% zeros and at least 50 widely spread, non-count positives. ([#1413](https://github.com/PriorLabs/TabPFN/pull/1413))\n- With GPU preprocessing, a table held in host memory goes through the selective steps (quantile, squashing, safepower, robust) a block at a time, and the fingerprint hashes it where it is. Any other step that cannot run by blocks raises on such a table. ([#1426](https://github.com/PriorLabs/TabPFN/pull/1426))\n- Add the `\"grouped\"` preset for `group_col` data, on both estimators: `presets=\"grouped\"` sets `APPEND_GROUP_AGGREGATES=True` and `POOL_GROUP_PREDICTIONS=\"mean\"`. `TabPFNClassifier` gets the `presets` argument for it. Both modes are computed over the rows passed to predict, so predict all rows of a group in one call. ([#1434](https:/"
+  },
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.1.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.1.0",
+   "data": "2026-11-17",
+   "notas": "### Breaking Changes\n\n- `fit` now accepts `sample_weight`, so scikit-learn meta-estimators pass weights to it, and `fit` raises for models without `SAMPLE_WEIGHT_MODE`. `BaggingClassifier(TabPFNClassifier())` and `BaggingRegressor(TabPFNRegressor())` raise in `fit` with any `bootstrap` and `max_samples`, because they pass their row counts as weights instead of fitting on a row subset. `CalibratedClassifierCV(TabPFNClassifier()).fit(X, y, sample_weight=w)` raises instead of warning that the estimator ignores the weights. No released model supports sample weights yet. ([#1415](https://github.com/PriorLabs/TabPFN/pull/1415))\n- A missing value in a `group_col` column now raises in `fit` and `predict`. Before, such a row was treated as belonging to no known group. ([#1418](https://github.com/PriorLabs/TabPFN/pull/1418))\n\n### Added\n\n- Add the `log_quantile_gap`, `log_fixed_atom` and `log1p_target` regression target transforms for nonnegative targets. `log_quantile_gap` and `log_fixed_atom` decode a range to exactly 0 for zero-inflated targets. `log1p_target` encodes log1p(y) of the raw target and decodes negative codes to 0. ([#1409](https://github.com/PriorLabs/TabPFN/pull/1409))\n- Add "
+  }
+ ],
+ "x": [
+  {
+   "perfil": "LennartPurucker",
+   "url": "https://x.com/LennartPurucker/status/2122684005925712095",
+   "texto": "1/6 Tabular foundation models can be programmed by LLMs.\n\nWe show that LLMs can build, repair, and steer TFMs without gradient descent ‼️\n\nPaper: https://arxiv.org/abs/2611.20174\n\nWith @LiamShiBinHoo, @MagnusBuehler, @o_swelam & @FrankRHutter.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LennartPurucker",
+   "url": "https://x.com/LennartPurucker/status/2122684022962975130",
+   "texto": "5/6 Steering TabPFN-3.5 with natural language.\n\nAstra translates human instructions into reusable KV-cache editing programs for dataset-specific steering, while model weights stay frozen.\n\n“Flip the slope” → reverse a linear trend\n\nThese programs generalize to unseen datasets",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LennartPurucker",
+   "url": "https://x.com/LennartPurucker/status/2122684027954196647",
+   "texto": "6/6 The results are exploratory, and we will continue to dig deeper and discuss them with the community.\n\nLet us know what you think and stay tuned!",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2122721652433715481",
+   "texto": "Could be the start of a trend in new pre-training recipes: no LR decay phase anymore. (Also seen in Kolibri.)\n\nInstead: constant LR + averaging the last N checkpoints (or a running weight average).\n\nI guess that makes it easier in practice because you don't have to commit to a total training length upfront.\n\nA little meta analysis based on those who share training details:\n\n- Classic cosine: Llama 3, OLMo 2, OLMo 3, GLM-4.5, GLM-5, Kimi K3, Phi-4\n\n- WSD (\"Warmup-Stable-Decay\"): DeepSeek V3, DeepSeek V4, DeepSeek V4.1-Flash, Kimi K2, Kimi Linear, Nemotron 3 Nano, Nemotron 3 Super, SmolLM3, Mini",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2122336040899711282",
+   "texto": "The open-source LLM ecosystem could really benefit from an LLM building-block API.\n\nWe have so many LLM components across different models now. Whether you are using PyTorch or C++ and CUDA code directly, there is a major switching cost when you want to run experiments or ablation studies, say swapping GQA with MLA, dense FFNs with MoE, attention layers with Mamba2 or Gated DeltaNet, or standard residual connections with attention residuals.\n\nCurrently, it’s very messy even with LLM-assisted coding.\n\nIt could maybe be on top of PyTorch or CUDA directly, but it needs to be carefully engineered ",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121958665989083253",
+   "texto": "(Finally) wrote up \"Understanding Positional Embeddings in Modern LLMs.\"\n\nA RoPE from-scratch tutorial missing from my LLM building blocks collection + what recent architectures do (NoPE, partial RoPE, hybrids).\n\nProb not the flashiest topic, but essential for understanding LLMs",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2121958669432631769",
+   "texto": "And here's the link to the full article: https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "data": "2026-11-15"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @innixma: HTTPError",
+  "X @GaelVaroquaux: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "X @sytaylor: HTTPError",
+  "X @LinasBeliunas: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

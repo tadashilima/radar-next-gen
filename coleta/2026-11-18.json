@@ -1,0 +1,335 @@
+{
+ "gerado_em": "2026-11-18T18:51:05+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "NVIDIA Kumo Tabular: Pushing the Accuracy-Efficiency Frontier for Tabular Prediction",
+   "url": "http://arxiv.org/abs/2611.23001v1",
+   "data": "2026-11-17",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "We introduce Kumo Tabular, a family of open tabular foundation models for classification and regression, in three sizes: Kumo Tabular-S (27M parameters), Kumo Tabular-M (61M), and Kumo Tabular-L (214M). Pretrained only on artificial tables from the Kumo prior, they can make predictions on new tables without any training. In our approach, a table encoder compresses each row into an embedding, and an in-context learning transformer predicts the unlabeled rows from the labeled ones. Kumo Tabular introduces architectural innovations that improve both training stability and predictive performance, enabling the model to scale up to 150M cells on modern GPUs. Kumo Tabular-L ranks first on eight ben"
+  },
+  {
+   "titulo": "Tabular Foundation Models as Emulators for Forecasting Terrestrial Ecosystem Dynamics",
+   "url": "http://arxiv.org/abs/2611.20468v1",
+   "data": "2026-11-16",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Process-based terrestrial biosphere models such as the Ecosystem Demography (ED) model underpin global carbon budgets, but their cost limits global, high-resolution and scenario-rich simulation. Deep emulators such as DeepED reduce that cost but require task-specific architectures and training. Tabular foundation models offer a different route: TabPFN predicts new rows by in-context learning, without being trained on the task. We compare TabPFN-3.5 with two DeepED baselines, $DeepED_{LSTM}$ and $DeepED_{Transformer}$, on CarbonGlobe's overall evaluation, which trains on a uniform 1/16 sample of sites and tests on the other 50,779, predicting the 40-year state of all seven ED outputs. We then"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose",
+    "url": "https://huggingface.co/papers/2611.15348",
+    "data": "2026-11-10",
+    "resumo": "Electronic nose (eNose) technology offers a portable, non-invasive route for disease screening via exhaled breath analysis. However, progress in the field is hindered by the lack of systematic benchmarks that compare machine learning methods under realistic conditions, particularly sensor drift, a known but rarely quantified failure mode. Most existing studies rely on small, private datasets with inconsistent protocols, rendering results non-comparable and slowing progress. We introduce Breath-Dx, the first comprehensive benchmark of time series classification methods for breath-based disease screening. Our work leverages the Scent of Health (S-OH) dataset, the largest public clinical eNose "
+   },
+   {
+    "titulo": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+    "url": "https://huggingface.co/papers/2611.19937",
+    "data": "2026-11-14",
+    "resumo": "Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation and execution objectives. We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories. To capture dependencies among portfolio positions, AllocFlow employs a cross-asset flow Transformer conditioned on tempora"
+   },
+   {
+    "titulo": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+    "url": "https://huggingface.co/papers/2611.07222",
+    "data": "2026-11-03",
+    "resumo": "Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so the decision depends on a model that may read the attacker's text and adds model calls to every step. Provenance defenses keep the model off the final check but need a model to plan or route each task first. Where an action goes can instead be read from the tools' typed returns: an email's sender or a payment's account arrives in a typed field, while injected instructions arrive as free text. SPILLWAY turns this observation into a determin"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.2.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.2.0",
+   "data": "2026-11-17",
+   "notas": "### Added\n\n- Add `TabPFNRegressor(presets=...)`, named bundles of `inference_config` values. The `\"zero_inflated\"` preset is for nonnegative targets with many exact zeros: it sets the `log_fixed_atom` target transform and the `nonnegative_and_capped` readout. On the models up to TabPFN-3.5 it sets `log_quantile_gap` with the same readout instead. `fit` suggests the preset, once per process, for nonnegative targets with more than 20% zeros and at least 50 widely spread, non-count positives. ([#1413](https://github.com/PriorLabs/TabPFN/pull/1413))\n- With GPU preprocessing, a table held in host memory goes through the selective steps (quantile, squashing, safepower, robust) a block at a time, and the fingerprint hashes it where it is. Any other step that cannot run by blocks raises on such a table. ([#1426](https://github.com/PriorLabs/TabPFN/pull/1426))\n- Add the `\"grouped\"` preset for `group_col` data, on both estimators: `presets=\"grouped\"` sets `APPEND_GROUP_AGGREGATES=True` and `POOL_GROUP_PREDICTIONS=\"mean\"`. `TabPFNClassifier` gets the `presets` argument for it. Both modes are computed over the rows passed to predict, so predict all rows of a group in one call. ([#1434](https:/"
+  },
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.1.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.1.0",
+   "data": "2026-11-17",
+   "notas": "### Breaking Changes\n\n- `fit` now accepts `sample_weight`, so scikit-learn meta-estimators pass weights to it, and `fit` raises for models without `SAMPLE_WEIGHT_MODE`. `BaggingClassifier(TabPFNClassifier())` and `BaggingRegressor(TabPFNRegressor())` raise in `fit` with any `bootstrap` and `max_samples`, because they pass their row counts as weights instead of fitting on a row subset. `CalibratedClassifierCV(TabPFNClassifier()).fit(X, y, sample_weight=w)` raises instead of warning that the estimator ignores the weights. No released model supports sample weights yet. ([#1415](https://github.com/PriorLabs/TabPFN/pull/1415))\n- A missing value in a `group_col` column now raises in `fit` and `predict`. Before, such a row was treated as belonging to no known group. ([#1418](https://github.com/PriorLabs/TabPFN/pull/1418))\n\n### Added\n\n- Add the `log_quantile_gap`, `log_fixed_atom` and `log1p_target` regression target transforms for nonnegative targets. `log_quantile_gap` and `log_fixed_atom` decode a range to exactly 0 for zero-inflated targets. `log1p_target` encodes log1p(y) of the raw target and decodes negative codes to 0. ([#1409](https://github.com/PriorLabs/TabPFN/pull/1409))\n- Add "
+  }
+ ],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/tuanacelik/status/2123101754564751744",
+   "texto": "It's been a week since our short course with @DeepLearningAI and @AndrewYNg  went live: Tabular Foundation Models for Data Science Agents.\n\nI taught it alongside @FrankRHutter and Eliott Kalfon. It covers four main topics: \n\n· How tabular foundation models like TabPFN predict on a new dataset without training\n· Interpreting results\n· How these models are actually built (Frank even walks you through training your own nano TabPFN from scratch, on synthetic data)\n· And how to hand that capability to an AI agent so it can recognise a prediction task and call the model as a tool.\n\nIn the agent less",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2123048382436659353",
+   "texto": "Imagine you forecast the height and width of a plant after 6 hours of sun. If you predict them independently, you may end up with impossibly tall and thin plants (or short and wide ones).\n\nThe same goes for afternoon and night temperatures. Use one model for the afternoon and another for the night, and you may forecast nights warmer than afternoons, which is highly unlikely.\n\nThe charts below show this: two reasonable independent forecasts can add up to an unlikely joint prediction.\n\nBeyond these toy examples, related targets come up in critical domains like molecular property prediction and d",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "LennartPurucker",
+   "url": "https://x.com/LennartPurucker/status/2122684005925712095",
+   "texto": "1/6 Tabular foundation models can be programmed by LLMs.\n\nWe show that LLMs can build, repair, and steer TFMs without gradient descent ‼️\n\nPaper: https://arxiv.org/abs/2611.20174\n\nWith @LiamShiBinHoo, @MagnusBuehler, @o_swelam & @FrankRHutter.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LennartPurucker",
+   "url": "https://x.com/LennartPurucker/status/2122684022962975130",
+   "texto": "5/6 Steering TabPFN-3.5 with natural language.\n\nAstra translates human instructions into reusable KV-cache editing programs for dataset-specific steering, while model weights stay frozen.\n\n“Flip the slope” → reverse a linear trend\n\nThese programs generalize to unseen datasets",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LennartPurucker",
+   "url": "https://x.com/LennartPurucker/status/2122684027954196647",
+   "texto": "6/6 The results are exploratory, and we will continue to dig deeper and discuss them with the community.\n\nLet us know what you think and stay tuned!",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2122963026475372815",
+   "texto": "💻 More and more people are talking about agents for #datascience. Fewer people talk about what makes them reliable.\n\nHere are 6 terms every data scientist should know, handpicked by our CPO @YannDebray  based on the evidence we’ve found while building Skore 🧵",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Simonkhalaf/status/2123099648143634792",
+   "texto": "Valuations at the end are relative. Facebook was not valued as a better version of MySpace. The chart below may give you a peak into the excitement around ramp. The team @eglyman and @karimatiyeh have executed flawlessly and will most likely steal the crown from the Collison Brothers. Karim and Eric are like brothers anyway.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/LaurenKolodny/status/2123099976649875710",
+   "texto": "Well played, @sytaylor. \n\nFair warning though: Growing up, Game Boy was the only console we were allowed to own, and it only came out for flights and vacations. Not sure if you know what you're unleashing as I am about to get on a flight to #FintechNerdCon…",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/outofpilot/status/2123097723251708084",
+   "texto": "Something is cooking at @tempo, @borjaneira warned us early ;)\n\nhttps://x.com/outofpilot/status/2107754312386658347?a=tPYD9ijePZ-w7T9hCec&s=20",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/liamihorne/status/2123072465819832818",
+   "texto": "https://tempo.com 👀",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/aninarayan/status/2123073328844095886",
+   "texto": "https://tempo.com secured 👀",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123074087530672635",
+   "texto": "https://Tempo.com 👀",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/borjaneira_/status/2123070814484631795",
+   "texto": "New infographic: \n\nHow Tokenized Deposits Actually Settle\n\nFull content is up on my website\n\nLink in bio",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/malleshpai/status/2123070129252814888",
+   "texto": "The most unexpected thing I've learned at Tempo: some corporate spam filters block .xyz domains entirely! So our trad-fi team was doing work-arounds from the 90's (\"hey just calling to check, did you get my last email\")!\n\nAnyway, we're now https://tempo.com  :)",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123064302047211831",
+   "texto": "JPMorgan tested AI agents for Treasury Management with Hyundai, just a week after blocking AI agents from consumer bank accounts. \n\nI actually think this is a smart strategy - but first, what did this new thing do?\n\n---\n\nJPMorgan's blockchain unit Kinexys showed AI agents moving money for Hyundai Card, the South Korean card issuer.\n\nHyundai Card's agent saw one overseas unit running low on EUR, asked three banks for an FX quote, then told JPMorgan's agent to convert the cash and send it. The agents did the whole trade between themselves.\n\nThat's a very believable treasury use case, perfect for",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123058226979844242",
+   "texto": "Can the news stop please I'm watching GTA6 reviews getting hyped \n\nIf you're interested 👇\n\n@digitalfoundry absolutely crushed btw \n@SkillUpYT 👏👏👏 yes to the Hawaiian shirt\nEven @IGN dropped my favorite reviewer on it",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/SynthPotato/status/2123008564155363556",
+   "texto": "Grand Theft Auto VI reviews have finally released:\n\nMC: 99\n\nGTA 6 is being widely praised as one of, if not, the greatest game of all time. With a story that rivals RDR2, the best open world, an insane attention to detail and deep gameplay improvements that make GTA 6 the best Rockstar game ever.\n\nScores:\n\n- IGN 10/10\n- Saudi Gamer 10/10\n- GameSpot 10/10\n- CGMagazine 10/10\n\nIT EXCEEDED EXPECTATIONS",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123056522037239816",
+   "texto": "Ramp is in talks to raise at $70B+, a month after raising at $60B \n\nThe WSJ reports @tryramp wants at least $1B at a valuation above $70B. Bloomberg says it could reach $75B. Coatue and Thrive are in talks to lead, the talks are early, and Ramp declined to comment.\n\nIt would be Ramp's third round of 2026:\n- June: $750M at $44B\n- October: $1.85B at $60B\n- November (reported): $1B+ at $70B+\n\n---\n\nI published an interview with co-founder and co-CEO Eric Glyman three weeks ago. The title was \"Why Ramp is worth $60bn.\" \n\nIf the round closes, it is already out of date 😅. Sort of sums up everything a",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123050935522099607",
+   "texto": "Prelude to job cuts?",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122886368028418367",
+   "texto": "The Agentic commerce drops just don't stop.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122763867050934723",
+   "texto": "Yeah no shit.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122763824772346040",
+   "texto": "Stablecoins are ideal for banks to use off hours",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122762070978634151",
+   "texto": "Let me guess \n\nNot cyber related?",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122746989826003176",
+   "texto": "What if the card was the perfect form factor for AI - and it competed with Sapphire?\n\nBy saving you money on more things, and having better cashback.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122742397826429238",
+   "texto": "This is so good it hurts.\n\nBen has, as ever, said the thing I was reaching for better than I did. He starts with Jensen Huang’s exit from Nvidia and ends with an obituary for American exceptionalism. The line that stuck with me was Scott Bessent saying that if Nvidia were a bank, the regulators would already be in the building.\n\nTech is about to become as politicized as banking. \n\nThe biggest firms will be treated as too big to fail, and they’ll be expected to enforce government policy through their customers. Today it’s export controls on chips. What comes next looks a lot more like AML and s",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2122733093803200908",
+   "texto": "Amazing how many \"not cyber related\" issues we're having lately.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123053045852299714",
+   "texto": "Jeff Bezos has one piece of advice for Nvidia's board: hire from inside.\n\n\"If you don't bring Jensen back, I would not hire an outsider. Nvidia is too complicated. I think outside CEOs in complex companies have a vanishingly small chance of succeeding.\"\n\nThe board has since said Jensen isn't coming back, so the search starts with Bezos calling an outside CEO a last resort.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122809216066822635",
+   "texto": "Cybersecurity expert David Kennedy says AI is turning average hackers into elite ones.\n\nGive an average attacker an open-weight model like GLM, Kimi or DeepSeek, and they can \"deploy agent swarms\" across companies.\n\nBreaches that used to take a week or two now take \"14, 15 minutes,\" he told Fox News.\n\nHis warning: \"major pain here in the next 6 months.\"",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122773939906617503",
+   "texto": "Yann LeCun: \"Basing agentic systems on LLMs is a recipe for disaster.\"\n\nAn agent has to plan a sequence of actions, and it can't do that if it can't predict what those actions will cause.\n\n\"If you want intelligent behavior, you need a system to be able to anticipate what's gonna happen in the world.\"\n\nHe left Meta to build the alternative: world models, at his new company AMI.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122731695233183993",
+   "texto": "Marc Andreessen on why AI's inventors are the wrong people to ask about AI's future:\n\nEdison invented the phonograph in 1877 and was sure families would buy it to play sermons from the great preachers.\n\n\"Immediately, of course, it's music. It's ragtime, and swing, then it's jazz. And Edison's just completely horrified.\"\n\nThe people who build a technology rarely see where it ends up.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122684307806323050",
+   "texto": "CEO Dario Amodei told Jamie Dimon at Anthropic's IPO roadshow that he turns down deeply technical talent who fail one test.\n\n\"We don't want people who are jerks. We don't want people who try to steal the show and don't work well with others. We don't want people who aren't oriented towards the public benefit.\"\n\nHe said he spends 40-50% of his time on talent and culture.\n\nWhat’s impressive is that all 7 co-founders are still there.\n\nThat's the asset Wall Street gets to price this week.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122617451565215894",
+   "texto": "Naval Ravikant on networking:\n\n\"Go do something great and your network will instantly emerge.\"\n\nHis advice to founders is to skip meetings unless you really have to.\n\nInstead, build a great product or get a good customer base, and \"I guarantee you we will get you funded.\"\n\nShake hands for two reasons only: recruiting, and learning from really smart people.\n\nFew get it.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122562132382306552",
+   "texto": "This is brilliant! Somebody just created an AI version of Jensen Huang’s first day back in the office as Nvidia’s CEO 👏😂\n\n“You see, even though you betrayed me, you are the best assistant I ever had.”\n\nWith over 175,000 people (including Elon Musk and thousands of claimed Nvidia employees and shareholders) signing the “Stand with Jensen” petition demanding his reinstatement after last week’s resignation, this edit is the return everyone is waiting for.\n\nMight be the funniest Jensen video of the year. https://x.com/SoveyX/status/2122320094827106568/video/1",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122440742304161920",
+   "texto": "And that's not even the best part.\n\nWe're now witnessing the Age of the One-Person Company 🦄\n\nFor over a decade, “solo founder” was startup shorthand for “couldn’t find a co-founder.” Investors read it as a risk flag. Accelerators nudged applicants to pair up.\n\nThe entire venture playbook assumed that building something valuable took a team, because a team was the only way to cover everything a company needs done: code, sales, design, support, books.\n\nThat assumption is now measurably wrong.\n\n> Solo-founded startups grew from 23.7% of new US ventures in 2019 to 36.3% by mid-2025 (Forbes).\n> On",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122398370023297147",
+   "texto": "Sam Altman was asked if Jensen Huang should return to Nvidia.\n\n\"I don't think I know enough to answer that question. Jensen has long been a hero of mine. Heroes have flaws.\"\n\nFor context, Altman's own board fired him three years ago from OpenAI, and he was back within days.\n\nHe says he has \"personal strong empathy\" for Jensen.\n\n\"It's hard to imagine the AI revolution without Jensen.\"",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122350321955459119",
+   "texto": "$10,000 put into S&P 500 companies run by their founder CEOs in 2015 grew to $120,870 by July 2025.\n\nThe same $10,000 in the S&P 500 became $36,136. \n\nThat's 28% a year against 13.6% 😳\n\nBain found the same pattern: since 2015, founder-led S&P 500 companies returned 2.1x more than their peers.\n\nFounders run companies like owners, and the market pays for it.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122320646159937693",
+   "texto": "Elon Musk says Starship, the largest rocket ever built, was made with no AI.\n\nHe calls it \"the last really big thing... that's not AI,\" built at \"the limit of biological intelligence.\"\n\nEvery rocket, chip, and drug after it will have AI in the loop.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122231631427915901",
+   "texto": "Revolut's CEO stopped trusting his gut on ideas.\n\nNik Storonsky: \"I just had too many failures in the past when my judgment was wrong.\"\n\nNow he backs execution: with a strong team, even an average idea can work.\n\nExecution > Ideas.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122210227680411680",
+   "texto": "Everyone roasted Marc Andreessen for saying he has \"zero\" introspection.\n\nThe part they skipped is that he ties it to neuroticism. In his view, the best founders barely get emotionally fazed, and that's a superpower.\n\nHe also admits some great founders are very neurotic.\n\nSo staying calm helps, but you can still build big without it.",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122080440160842228",
+   "texto": "Dwarkesh Patel just said he now expects superintelligence by 2030.\n\nEarlier this year: \"better part of a decade.\"\n\n> METR: Anthropic's AI progress rate is 2x a year ago\n> OpenAI top users: $1,000 → $7,000/day on agents\n> Claude leads 26% of Anthropic's R&D\n\nAI is now building AI.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122054896954249420",
+   "texto": "SBF would have made more than $30,000,000,000 in the Anthropic IPO.\n\nInstead, he decided to commit fraud, and now he's inmate no. 37244-510.\n\nSuch a wasted potential.",
+   "data": "2026-11-15"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123064851383677087",
+   "texto": "Comparing new LLM releases via benchmarks is now a bit like using IQ tests for hiring decisions.\n\nSure, benchmarks are useful baselines and so on, but beyond that, I don't know how indicative they are of our individual tasks and needs. (Yes, also looking at that release yesterday)",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2122721652433715481",
+   "texto": "Could be the start of a trend in new pre-training recipes: no LR decay phase anymore. (Also seen in Kolibri.)\n\nInstead: constant LR + averaging the last N checkpoints (or a running weight average).\n\nI guess that makes it easier in practice because you don't have to commit to a total training length upfront.\n\nA little meta analysis based on those who share training details:\n\n- Classic cosine: Llama 3, OLMo 2, OLMo 3, GLM-4.5, GLM-5, Kimi K3, Phi-4\n\n- WSD (\"Warmup-Stable-Decay\"): DeepSeek V3, DeepSeek V4, DeepSeek V4.1-Flash, Kimi K2, Kimi Linear, Nemotron 3 Nano, Nemotron 3 Super, SmolLM3, Mini",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2122336040899711282",
+   "texto": "The open-source LLM ecosystem could really benefit from an LLM building-block API.\n\nWe have so many LLM components across different models now. Whether you are using PyTorch or C++ and CUDA code directly, there is a major switching cost when you want to run experiments or ablation studies, say swapping GQA with MLA, dense FFNs with MoE, attention layers with Mamba2 or Gated DeltaNet, or standard residual connections with attention residuals.\n\nCurrently, it’s very messy even with LLM-assisted coding.\n\nIt could maybe be on top of PyTorch or CUDA directly, but it needs to be carefully engineered ",
+   "data": "2026-11-16"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @autogluon: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

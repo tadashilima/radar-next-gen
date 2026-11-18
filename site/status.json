@@ -1,14 +1,18 @@
 {
-  "data": "2026-11-17",
-  "novidade": false,
-  "titulo": "",
-  "destaque": "",
-  "itens_novos": 0,
-  "principal": {},
+  "data": "2026-11-18",
+  "novidade": true,
+  "titulo": "Dia calmo: TabPFN ganha duas releases e saem papers de PFNs",
+  "destaque": "Sem novidade de alto sinal em fraude ou crédito hoje. O movimento é no ecossistema tabular: TabPFN publicou v10.1.0 e v10.2.0 em sequência.",
+  "itens_novos": 3,
+  "principal": {
+    "titulo": "TabPFN v10.2.0 e v10.1.0: novas versões em sequência do principal tabular foundation model",
+    "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.2.0"
+  },
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-17) ainda não existia: usada a de 2026-11-16",
-    "X @RohanRamanath: HTTPError",
+    "Coleta de hoje (2026-11-18) ainda não existia: usada a de 2026-11-17",
+    "X (@innixma, @GaelVaroquaux, @RohanRamanath, @sytaylor, @LinasBeliunas): HTTPError",
     "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError",
-    "Reddit via WebSearch não executado (cobertura parcial)"
+    "Reddit via WebSearch não executado (cobertura parcial)",
+    "WebSearch sem resultados datados das últimas 48h"
   ]
 }

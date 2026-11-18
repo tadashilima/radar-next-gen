@@ -1,5 +1,46 @@
 [
   {
+    "id": "2026-11-18",
+    "data": "2026-11-18",
+    "titulo": "Dia calmo: TabPFN ganha duas releases e saem papers de PFNs",
+    "destaque": "Sem novidade de alto sinal em fraude ou crédito hoje. O movimento é no ecossistema tabular: TabPFN publicou v10.1.0 e v10.2.0 em sequência.",
+    "resumo": [
+      "TabPFN v10.1.0 e v10.2.0 lançadas em 17/11",
+      "Paper sobre LLMs programando TFMs",
+      "Paper sobre PFNs causais"
+    ],
+    "itens": [
+      {
+        "titulo": "TabPFN v10.2.0 e v10.1.0: novas versões em sequência do principal tabular foundation model",
+        "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.2.0",
+        "fonte": "github",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-17",
+        "porque": "Duas releases em um dia, logo após a v10.0.0 com quebra de compatibilidade, indicam ciclo de ajustes ainda instável. Quem avalia TabPFN contra GBMs deve fixar versão e ler as notas antes de comparar resultados."
+      },
+      {
+        "titulo": "Weights & Caches: LLMs conseguem 'programar' tabular foundation models",
+        "url": "http://arxiv.org/abs/2611.20174v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-11-15",
+        "porque": "Explora usar LLMs para especificar o comportamento de TFMs sem otimização tradicional. É um sinal de convergência entre LLMs e modelagem tabular, ainda sem evidência em fraude ou crédito."
+      },
+      {
+        "titulo": "Causal PFN: aprendizado conjunto de mundos factuais e contrafactuais",
+        "url": "http://arxiv.org/abs/2611.19710v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-11-15",
+        "porque": "Propõe PFNs para efeito de tratamento, relevante para decisões como limite e oferta de crédito. É pesquisa inicial; vale acompanhar, não adotar."
+      }
+    ],
+    "perguntas": []
+  },
+  {
     "id": "2026-11-14",
     "data": "2026-11-14",
     "titulo": "Large Payments Model e TabPFN v10 chegam em dia de poucas novidades",

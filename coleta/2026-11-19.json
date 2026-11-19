@@ -1,0 +1,384 @@
+{
+ "gerado_em": "2026-11-19T18:58:42+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Morpho-Spectral Projection Analysis (MSPA) for Plant Spectroscopy",
+   "url": "http://arxiv.org/abs/2611.24599v1",
+   "data": "2026-11-18",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Plant reflectance spectroscopy across the visible, near-infrared, and shortwave infrared domain encodes foliar biochemical and anatomical traits into contiguous spectral signatures with locally differentiable structure; however, extreme inter-band collinearity and unfavorable sample-to-feature ratios challenge predictive modeling. Conventional dimensionality reduction methods routinely adopted in spectroscopy, are column-permutation invariant: they treat adjacent wavelengths as unordered tabular columns and discard the sequential differential geometry of absorption features. Here, we propose Morpho-Spectral Projection Analysis (MSPA), a supervised dimensionality reduction operator that proje"
+  },
+  {
+   "titulo": "Towards Reliable Scaling Laws for Tabular Foundation Models",
+   "url": "http://arxiv.org/abs/2611.24214v1",
+   "data": "2026-11-18",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Scaling laws are widely used to predict foundation model performance and guide compute allocation. However, tabular foundation models (TFMs) differ from conventional foundation models in that they are pretrained on virtually unlimited synthetic data from configurable distributions, while ultimately being evaluated on real-world datasets. We investigate whether scaling laws for TabPFNv2-style models reliably extrapolate to larger compute budgets and generalize across evaluation settings. Our analysis reveals differences between synthetic and real-world scaling behavior and shows that accurately fitting a scaling law does not necessarily yield reliable prescriptions on unseen datasets. In part"
+  },
+  {
+   "titulo": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+   "url": "http://arxiv.org/abs/2611.23779v1",
+   "data": "2026-11-18",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmar"
+  },
+  {
+   "titulo": "NVIDIA Kumo Tabular: Pushing the Accuracy-Efficiency Frontier for Tabular Prediction",
+   "url": "http://arxiv.org/abs/2611.23001v1",
+   "data": "2026-11-17",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "We introduce Kumo Tabular, a family of open tabular foundation models for classification and regression, in three sizes: Kumo Tabular-S (27M parameters), Kumo Tabular-M (61M), and Kumo Tabular-L (214M). Pretrained only on artificial tables from the Kumo prior, they can make predictions on new tables without any training. In our approach, a table encoder compresses each row into an embedding, and an in-context learning transformer predicts the unlabeled rows from the labeled ones. Kumo Tabular introduces architectural innovations that improve both training stability and predictive performance, enabling the model to scale up to 150M cells on modern GPUs. Kumo Tabular-L ranks first on eight ben"
+  },
+  {
+   "titulo": "\"I Don't Think It's a Scam\": A First Look at Family Intervention Barriers in Elder Abuse Discussions on Reddit and Baidu Tieba",
+   "url": "http://arxiv.org/abs/2611.24899v1",
+   "data": "2026-11-18",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "When older adults trust scammers despite warnings, families face obstacles to intervention. Complainants aged 60 and older reported \\$4.9 billion in losses in 2024 to the U.S. Internet Crime Complaint Center. To investigate family intervention barriers to elder scams, we collected 2M Reddit posts from May 2021 to June 2026 and 2B Baidu Tieba posts from 2007 to 2026. The final corpora contain 13,082 Reddit posts and 3,933 Baidu Tieba posts, labeled using platform-specific codebooks, manual reference annotations, and LLM coding. Through a mixed-methods analysis, we find that scams often extend beyond a single incident and are reported alongside debt problems and broken family relationships. In"
+  },
+  {
+   "titulo": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
+   "url": "http://arxiv.org/abs/2611.24049v1",
+   "data": "2026-11-18",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "The growth of deceptive online opinions poses a critical risk of misinformation and fraud. This paper proposes a Retrieval-Augmented Generation (RAG) system to automatically distinguish spam reviews. The architecture integrates RoBERTa with Low-Rank Adaptation (LoRA) classification, FAISS semantic vector retrieval, and a Large Language Model (LLM) for final reasoning. The system was evaluated across balanced and severely imbalanced real-world scenarios. Results demonstrate that five epochs of fine-tuning enable robust domain transfer, achieving an F1-score of 0.90 in cross-domain evaluation, outperforming baselines (OpenAI Detector,F1 = 0.82) and demonstrating competitive performance against"
+  },
+  {
+   "titulo": "ICICLE: In-Context Inference for Curve-Learning Extrapolation",
+   "url": "http://arxiv.org/abs/2611.24469v1",
+   "data": "2026-11-18",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "Freeze-thaw Bayesian optimization allocates training budget by predicting how partially observed learning curves will continue. LC-PFN first applied prior-data fitted networks (PFNs) to learning-curve extrapolation, and FT-PFN extended this approach to configuration-aware freeze-thaw optimization with a ten-slot hyperparameter encoder. We introduce In-Context Inference for Curve-Learning Extrapolation (ICICLE), an in-context surrogate that accepts a variable number of hyperparameters through a shared set encoder and is trained on a synthetic prior covering typed hyperparameters, heavy-tailed noise, quantization, and divergence. ICICLE has 1.28 million parameters (8.7% of FT-PFN's count) and "
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+    "url": "https://huggingface.co/papers/2611.22382",
+    "data": "2026-11-16",
+    "resumo": "Large language models (LLMs) have renewed interest in Page Stream Segmentation (PSS), splitting a multi-page file into its constituent documents. Yet published LLM methods still frame the task as boundary classification over one or a few neighboring pages, and commercial document-splitting APIs do not disclose their methods. We reimagine PSS for LLMs as a sequential process over the whole stream and propose RICoT (Recurrent Interleaved Chain-of-Thought), a prompting framework that works through the pages as a reader would: within a sliding window it reasons about each page and commits its boundary decision before moving on, and across windows it carries forward a compact record of what it ha"
+   },
+   {
+    "titulo": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.17600",
+    "data": "2026-11-11",
+    "resumo": "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to the prediction task. LightTAR augments the standard PCA representation with a few target-aware features extracted jointly from the final and an intermediate encoder layer using regularized partial leas"
+   },
+   {
+    "titulo": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "url": "https://huggingface.co/papers/2611.24789",
+    "data": "2026-11-17",
+    "resumo": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards"
+   },
+   {
+    "titulo": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
+    "url": "https://huggingface.co/papers/2611.23824",
+    "data": "2026-11-17",
+    "resumo": "Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supervision assigns identical credit to every search in a trajectory regardless of whether it retrieved useful information. This limitation is especially severe when all sampled rollouts for a question fail, collapsing group-centered outcome advantages to zero even when trajectories gather markedly different evidence. We present Evidence-based Credit Assignment (ECA), which augments terminal outcome rewards with a training-only auxiliary signal measuring how retrieved documents improve the likelihood of a reference answ"
+   },
+   {
+    "titulo": "ALIVE: Making Streaming Video Models Interactive",
+    "url": "https://huggingface.co/papers/2611.21366",
+    "data": "2026-11-15",
+    "resumo": "Streaming video LLMs can continuously observe the world, yet often handle user requests in isolation. We introduce ALIVE, an interactive streaming video model supporting proactive monitoring, streaming task coordination, and feedback-seeking interaction. We construct ALIVE-SFT-288K and ALIVE-RL-3K for two-stage training. Contrastive supervised fine-tuning teaches when and how to respond, while reinforcement learning with Behavior-Aligned Credit Assignment (BACA) combines trajectory-level and local advantages to refine decisions, responses, and silence across multi-turn interactions. We also introduce FSI-Bench to evaluate feedback seeking and subsequent task completion. ALIVE achieves the hi"
+   },
+   {
+    "titulo": "Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose",
+    "url": "https://huggingface.co/papers/2611.15348",
+    "data": "2026-11-10",
+    "resumo": "Electronic nose (eNose) technology offers a portable, non-invasive route for disease screening via exhaled breath analysis. However, progress in the field is hindered by the lack of systematic benchmarks that compare machine learning methods under realistic conditions, particularly sensor drift, a known but rarely quantified failure mode. Most existing studies rely on small, private datasets with inconsistent protocols, rendering results non-comparable and slowing progress. We introduce Breath-Dx, the first comprehensive benchmark of time series classification methods for breath-based disease screening. Our work leverages the Scent of Health (S-OH) dataset, the largest public clinical eNose "
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.2.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.2.0",
+   "data": "2026-11-17",
+   "notas": "### Added\n\n- Add `TabPFNRegressor(presets=...)`, named bundles of `inference_config` values. The `\"zero_inflated\"` preset is for nonnegative targets with many exact zeros: it sets the `log_fixed_atom` target transform and the `nonnegative_and_capped` readout. On the models up to TabPFN-3.5 it sets `log_quantile_gap` with the same readout instead. `fit` suggests the preset, once per process, for nonnegative targets with more than 20% zeros and at least 50 widely spread, non-count positives. ([#1413](https://github.com/PriorLabs/TabPFN/pull/1413))\n- With GPU preprocessing, a table held in host memory goes through the selective steps (quantile, squashing, safepower, robust) a block at a time, and the fingerprint hashes it where it is. Any other step that cannot run by blocks raises on such a table. ([#1426](https://github.com/PriorLabs/TabPFN/pull/1426))\n- Add the `\"grouped\"` preset for `group_col` data, on both estimators: `presets=\"grouped\"` sets `APPEND_GROUP_AGGREGATES=True` and `POOL_GROUP_PREDICTIONS=\"mean\"`. `TabPFNClassifier` gets the `presets` argument for it. Both modes are computed over the rows passed to predict, so predict all rows of a group in one call. ([#1434](https:/"
+  },
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.1.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.1.0",
+   "data": "2026-11-17",
+   "notas": "### Breaking Changes\n\n- `fit` now accepts `sample_weight`, so scikit-learn meta-estimators pass weights to it, and `fit` raises for models without `SAMPLE_WEIGHT_MODE`. `BaggingClassifier(TabPFNClassifier())` and `BaggingRegressor(TabPFNRegressor())` raise in `fit` with any `bootstrap` and `max_samples`, because they pass their row counts as weights instead of fitting on a row subset. `CalibratedClassifierCV(TabPFNClassifier()).fit(X, y, sample_weight=w)` raises instead of warning that the estimator ignores the weights. No released model supports sample weights yet. ([#1415](https://github.com/PriorLabs/TabPFN/pull/1415))\n- A missing value in a `group_col` column now raises in `fit` and `predict`. Before, such a row was treated as belonging to no known group. ([#1418](https://github.com/PriorLabs/TabPFN/pull/1418))\n\n### Added\n\n- Add the `log_quantile_gap`, `log_fixed_atom` and `log1p_target` regression target transforms for nonnegative targets. `log_quantile_gap` and `log_fixed_atom` decode a range to exactly 0 for zero-inflated targets. `log1p_target` encodes log1p(y) of the raw target and decodes negative codes to 0. ([#1409](https://github.com/PriorLabs/TabPFN/pull/1409))\n- Add "
+  }
+ ],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2123457575001936316",
+   "texto": "TabPFN-4 has finished training. Our new tabular foundation model marks a step change in predictive intelligence. Equipped with a novel sub-quadratic architecture, it can easily scale to 10 million rows. Performance-wise, TabPFN-4 sets new standards across the board, with especially strong results where it matters most: on messy, real-world data.\n\nStay tuned!\n\nRead our research preview now: https://priorlabs.ai/technical-reports/tabpfn-4-preview?utm_source=x&utm_medium=social&utm_campaign=tabpfn4-launch",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/tuanacelik/status/2123101754564751744",
+   "texto": "It's been a week since our short course with @DeepLearningAI and @AndrewYNg  went live: Tabular Foundation Models for Data Science Agents.\n\nI taught it alongside @FrankRHutter and Eliott Kalfon. It covers four main topics: \n\n· How tabular foundation models like TabPFN predict on a new dataset without training\n· Interpreting results\n· How these models are actually built (Frank even walks you through training your own nano TabPFN from scratch, on synthetic data)\n· And how to hand that capability to an AI agent so it can recognise a prediction task and call the model as a tool.\n\nIn the agent less",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2123048382436659353",
+   "texto": "Imagine you forecast the height and width of a plant after 6 hours of sun. If you predict them independently, you may end up with impossibly tall and thin plants (or short and wide ones).\n\nThe same goes for afternoon and night temperatures. Use one model for the afternoon and another for the night, and you may forecast nights warmer than afternoons, which is highly unlikely.\n\nThe charts below show this: two reasonable independent forecasts can add up to an unlikely joint prediction.\n\nBeyond these toy examples, related targets come up in critical domains like molecular property prediction and d",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/peterrenton/status/2123453346019524883",
+   "texto": "Excited to be working with @onepay to cover @FintechNerdCon this year in San Diego. After a wonderful kickoff party last night at the Omni Hotel, I am looking forward to hearing from @sytaylor and the many other big-name speakers here.\nThere is a lot happening today with the Anthropic IPO and GTA VI launching on the same day. While I expect people will be talking about those two seismic events, looking at the agenda, we will also hear a lot about AI agents, bank charters, stablecoins, fraud prevention, payments rails, building trust and more. \nStay tuned for more updates. #OnePayPartner",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123449884690743652",
+   "texto": "Starting the day with a solid breakfast of GTA6 \n\n@FintechNerdCon",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/eurofounder/status/2123379258143949101",
+   "texto": "Nice attention to detail from Rockstar - bottle caps in GTA VI seem to be fully compliant with EU requirements\n\nAt least some parts of Vice City are properly regulated",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123426665321918640",
+   "texto": "Yes.\n\nWhy are video games not reviewed in the main stream like movies? \n\nThey make more revenue. They're as culturally relevant.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sonyatweetybird/status/2123321490829455843",
+   "texto": "“We are managing money based on a one-in-three chance of an economically destabilizing attack within the next year.”\n\nInsane stats in @Bridgewater cyber report",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123420597762048085",
+   "texto": "Maybe centralizing all the things is not a good idea?",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/semafor/status/2123146817781006522",
+   "texto": "What does the future of agentic commerce look like?\n\n@stripe and @tempo's Machine Purchase Protocol already processes \"tens of thousands of transactions per day,\"  @patrickc tells @ReedAlbergotti.\n\n\"You can just tell that it's fundamentally a utility in the world that, over the medium to long term, inevitably many people are going to want. And so, despite it being so small and so nascent, we're very excited about it.\"",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2123216520092475742",
+   "texto": "The number of well architected phishing emails getting through to my personal email is growing exponentially. Feels like an opportunity for next-gen spam filters. Would love to have a filter that blocks every email from a sender outside of a pre-set whitelist and requires them to pay $0.01 to get through to my main inbox.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/vigstar1/status/2123230117946089947",
+   "texto": "today is my last day at @Meta.\n\ni'm leaving to build full time to work on what's really holding agentic commerce back: the misaligned economic incentives.\n\ni’m so incredibly excited to build a future where everyone can reliably, safely delegate purchases to our agents, but we have not created the chaordic conditions for this to become a reality.\n\ni'm on a visa, so leaving a big tech job comes with real immigration risk. i thought about that a lot. and then i decided fuck it. some things are worth betting on.\n\na big reason i had the guts to do this is you all. 2.5 weeks ago, i started writing h",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/segall_max/status/2123107842299470291",
+   "texto": "Alsoooo come hang tomorrow night at our beachside  happy hour, 630p at Nolita Hall!\n\nhttps://luma.com/privy-mgdu",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123214549046435962",
+   "texto": "Yes you can play GTA6 at work...\n\n@FintechNerdCon",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2123189895510544693",
+   "texto": "The Tempo team is in San Diego 11/18 - 11/20 for @FintechNerdCon. You can also catch us at the @StripeCrypto happy hour on Thursday with @privy_io and @Stablecoin.\n\nIf you'd like to request a meeting with our team in San Diego you can sign up here: https://tempo.com/fintechnerdcon/?utm_source=x&utm_medium=social&utm_campaign=fintechnerdcon-2026#request-a-meeting",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123142973751955837",
+   "texto": "SUUUPER INTERESTING report by @Affirm and Consumer Reports found AI failed 51% of \"payment advice\" tests\n\nThey created a markdown file (on GitHub) that lifted the pass rate from 48.6% to 71.8%.\n\nEvery model passed more often with the file.\n\n- GPT-6.1 Sol went from 73.3% to 93.3%\n- Claude Sonnet 5.5 went from 53.3% to 71.7%\n- Claude Haiku 5.5 went from 37.8% to 71.1%\n- GPT-5.6 Luna went from 30.0% to 51.1%\n\nI love this data.\n\nClearly, there's a way to go before agents can get to good outcomes. But at least good we have data now.\n\n---\n\nToday, AI agents can shop and pay for you, but only 23% of U",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/brendan_j_ryan/status/2123052654180155567",
+   "texto": "Underpinning this is the fact that the technical debt yield curve™️ is now inverted and, outside of a small number of trapdoor decisions, anything should be assumed to be fixable at a later point at a cheaper cost. \n\nNow onto bigger problems....",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Simonkhalaf/status/2123099648143634792",
+   "texto": "Valuations at the end are relative. Facebook was not valued as a better version of MySpace. The chart below may give you a peak into the excitement around ramp. The team @eglyman and @karimatiyeh have executed flawlessly and will most likely steal the crown from the Collison Brothers. Karim and Eric are like brothers anyway.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/LaurenKolodny/status/2123099976649875710",
+   "texto": "Well played, @sytaylor. \n\nFair warning though: Growing up, Game Boy was the only console we were allowed to own, and it only came out for flights and vacations. Not sure if you know what you're unleashing as I am about to get on a flight to #FintechNerdCon…",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/outofpilot/status/2123097723251708084",
+   "texto": "Something is cooking at @tempo, @borjaneira warned us early ;)\n\nhttps://x.com/outofpilot/status/2107754312386658347?a=tPYD9ijePZ-w7T9hCec&s=20",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/liamihorne/status/2123072465819832818",
+   "texto": "https://tempo.com 👀",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/aninarayan/status/2123073328844095886",
+   "texto": "https://tempo.com secured 👀",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123445593984926145",
+   "texto": "How Anthropic makes (or tries to) money:",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123394906488004991",
+   "texto": "Historic: Anthropic just raised $81.3 billion in the largest IPO ever. Claude AI maker raised more money than SpaceX, Alibaba, and Saudi Aramco ever did in their respective debuts 😳\n\nSpaceX held the record for just 5 months. Now a 5-year-old AI company has taken the crown.\n\nAnd the numbers are extraordinary:\n\n→ $81.3B raised at $83 per share, above the original $70-$78 range.\n→ $1.5 trillion valuation, making Anthropic one of the world’s most valuable publicly traded companies.\n→ 980M shares sold, after expanding the offering by 19% due to overwhelming demand.\n→ $ANT starts trading on Nasdaq t",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123306356727754757",
+   "texto": "Elon Musk on Nvidia pushing out Jensen Huang:\n\n\"Let's say you're Chicago Bulls, middle of your second season, and you've got a winning streak. And then you kick Michael Jordan off your team. Doesn't seem like a smart decision to me.\"\n\nHis case is that Jensen \"does the roles of several people,\" and that much of Nvidia's team has turned down higher offers out of personal loyalty to him.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123143485582708755",
+   "texto": "Coinbase founder & CEO @brian_armstrong wants to put a private banker in everyone's pocket.\n\nHis pitch for Coinbase's AI: you describe a thesis, and it assembles the trade across prediction markets, derivatives, futures, spot, and commodities.\n\nYou just click accept.\n\nIt can then rebalance the position over time and know when to exit.\n\nUntil now, only high-net-worth clients got that kind of help.\n\nAI continues to eat finance.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123053045852299714",
+   "texto": "Jeff Bezos has one piece of advice for Nvidia's board: hire from inside.\n\n\"If you don't bring Jensen back, I would not hire an outsider. Nvidia is too complicated. I think outside CEOs in complex companies have a vanishingly small chance of succeeding.\"\n\nThe board has since said Jensen isn't coming back, so the search starts with Bezos calling an outside CEO a last resort.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122809216066822635",
+   "texto": "Cybersecurity expert David Kennedy says AI is turning average hackers into elite ones.\n\nGive an average attacker an open-weight model like GLM, Kimi or DeepSeek, and they can \"deploy agent swarms\" across companies.\n\nBreaches that used to take a week or two now take \"14, 15 minutes,\" he told Fox News.\n\nHis warning: \"major pain here in the next 6 months.\"",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122773939906617503",
+   "texto": "Yann LeCun: \"Basing agentic systems on LLMs is a recipe for disaster.\"\n\nAn agent has to plan a sequence of actions, and it can't do that if it can't predict what those actions will cause.\n\n\"If you want intelligent behavior, you need a system to be able to anticipate what's gonna happen in the world.\"\n\nHe left Meta to build the alternative: world models, at his new company AMI.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122731695233183993",
+   "texto": "Marc Andreessen on why AI's inventors are the wrong people to ask about AI's future:\n\nEdison invented the phonograph in 1877 and was sure families would buy it to play sermons from the great preachers.\n\n\"Immediately, of course, it's music. It's ragtime, and swing, then it's jazz. And Edison's just completely horrified.\"\n\nThe people who build a technology rarely see where it ends up.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122684307806323050",
+   "texto": "CEO Dario Amodei told Jamie Dimon at Anthropic's IPO roadshow that he turns down deeply technical talent who fail one test.\n\n\"We don't want people who are jerks. We don't want people who try to steal the show and don't work well with others. We don't want people who aren't oriented towards the public benefit.\"\n\nHe said he spends 40-50% of his time on talent and culture.\n\nWhat’s impressive is that all 7 co-founders are still there.\n\nThat's the asset Wall Street gets to price this week.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122617451565215894",
+   "texto": "Naval Ravikant on networking:\n\n\"Go do something great and your network will instantly emerge.\"\n\nHis advice to founders is to skip meetings unless you really have to.\n\nInstead, build a great product or get a good customer base, and \"I guarantee you we will get you funded.\"\n\nShake hands for two reasons only: recruiting, and learning from really smart people.\n\nFew get it.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122562132382306552",
+   "texto": "This is brilliant! Somebody just created an AI version of Jensen Huang’s first day back in the office as Nvidia’s CEO 👏😂\n\n“You see, even though you betrayed me, you are the best assistant I ever had.”\n\nWith over 175,000 people (including Elon Musk and thousands of claimed Nvidia employees and shareholders) signing the “Stand with Jensen” petition demanding his reinstatement after last week’s resignation, this edit is the return everyone is waiting for.\n\nMight be the funniest Jensen video of the year. https://x.com/SoveyX/status/2122320094827106568/video/1",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122440742304161920",
+   "texto": "And that's not even the best part.\n\nWe're now witnessing the Age of the One-Person Company 🦄\n\nFor over a decade, “solo founder” was startup shorthand for “couldn’t find a co-founder.” Investors read it as a risk flag. Accelerators nudged applicants to pair up.\n\nThe entire venture playbook assumed that building something valuable took a team, because a team was the only way to cover everything a company needs done: code, sales, design, support, books.\n\nThat assumption is now measurably wrong.\n\n> Solo-founded startups grew from 23.7% of new US ventures in 2019 to 36.3% by mid-2025 (Forbes).\n> On",
+   "data": "2026-11-16"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123433827234111659",
+   "texto": "Whoa, great and even excessive Marin Mochi (535B-A23B) checkpoint drop (in a good way!)\n\nComes with great tech report btw with insights into why / how components were picked (for training stability and GPU throughput).\n\nShort fact sheet:\n\n1) Latent MoE with an extra RMSNorm on the latent that made latent MoE actually work (better)\n\n2) Classic 3:1 sliding-window/global gated GQA, partial RoPE (local) and NoPE (global)\n\n3) Adding short convolutions on keys, attention output, and MoE output\n\n4) Exclusive self-attention (XSA) -- I guess the end-of-the year architecture roundup this year won't be b",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123415801105445340",
+   "texto": "Shipping without the drama is an underrated skill",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123239870394991087",
+   "texto": "Just also added a lot of the additional content I originally trimmed from this article to an optional appendix (plus YaRN and ALiBi). \nSo, if you already read the article and are looking for this bonus content, search for the \"appendix\" in this article. \nYou can also find a direct link here, but it makes most sense to read passages of this where it is referenced throughout the text: https://sebastianraschka.com/supplementary/positional-embeddings/",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123064851383677087",
+   "texto": "Comparing new LLM releases via benchmarks is now a bit like using IQ tests for hiring decisions.\n\nSure, benchmarks are useful baselines and so on, but beyond that, I don't know how indicative they are of our individual tasks and needs. (Yes, also looking at that release yesterday)",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123186674117087433",
+   "texto": "Chris said it even better here: https://x.com/llm_wizard/status/2123158042535411978?a=n12knyRsDNSD3ayy4gM&s=20",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2122721652433715481",
+   "texto": "Could be the start of a trend in new pre-training recipes: no LR decay phase anymore. (Also seen in Kolibri.)\n\nInstead: constant LR + averaging the last N checkpoints (or a running weight average).\n\nI guess that makes it easier in practice because you don't have to commit to a total training length upfront.\n\nA little meta analysis based on those who share training details:\n\n- Classic cosine: Llama 3, OLMo 2, OLMo 3, GLM-4.5, GLM-5, Kimi K3, Phi-4\n\n- WSD (\"Warmup-Stable-Decay\"): DeepSeek V3, DeepSeek V4, DeepSeek V4.1-Flash, Kimi K2, Kimi Linear, Nemotron 3 Nano, Nemotron 3 Super, SmolLM3, Mini",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123136233073529297",
+   "texto": "The gradient of openness in Tabular Foundation Models.\n\nWhat is the difference between open-weight TFMs and fully open TFMs, and why does the difference even matter?\n\nCailean and I have summarized the landscape to help you answer that question with confidence.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123136236772880884",
+   "texto": "The devil is in the details: Most TFMs are open-weight, but under non-commercial licenses. In some edge cases, weights are permissively licensed but inherit restrictions from restrictively licensed training data.\n\nOur analysis can be found here.\nhttps://www.probabl.ai/blog/tfms-gradient-of-openness/",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2122963026475372815",
+   "texto": "💻 More and more people are talking about agents for #datascience. Fewer people talk about what makes them reliable.\n\nHere are 6 terms every data scientist should know, handpicked by our CPO @YannDebray  based on the evidence we’ve found while building Skore 🧵",
+   "data": "2026-11-18"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @LennartPurucker: HTTPError",
+  "X @dholzmueller: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "X @emilygsands: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

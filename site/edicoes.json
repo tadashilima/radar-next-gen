@@ -1,5 +1,38 @@
 [
   {
+    "id": "2026-11-19",
+    "data": "2026-11-19",
+    "titulo": "Kumo Tabular da NVIDIA entra na disputa dos tabular foundation models",
+    "destaque": "Dia de poucas novidades: o paper do Kumo Tabular (NVIDIA) apresenta uma família aberta de TFMs que diz superar concorrentes em benchmarks. Vale incluir nas comparações contra TabPFN e GBMs, com cautela até haver teste em fraude e crédito.",
+    "resumo": [
+      "Kumo Tabular: TFMs abertos de 27M a 214M de parâmetros",
+      "Curso sobre TFMs para agentes de dados com Prior Labs e DeepLearning.AI"
+    ],
+    "itens": [
+      {
+        "titulo": "NVIDIA Kumo Tabular: família aberta de tabular foundation models (27M, 61M e 214M) que concorre com TabPFN",
+        "url": "http://arxiv.org/abs/2611.23001v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-17",
+        "porque": "Os autores dizem que o Kumo Tabular-L lidera benchmarks tabulares, com modelos abertos e escalando até 150M de células. Para quem compara TFMs com GBMs em crédito e fraude, é um novo candidato a incluir no bake-off; o resultado ainda é dos próprios autores e sem teste em dados de fraude."
+      },
+      {
+        "titulo": "Prior Labs, DeepLearning.AI e Andrew Ng lançam curso curto sobre tabular foundation models para agentes de ciência de dados",
+        "url": "https://x.com/tuanacelik/status/2123101754564751744",
+        "fonte": "x",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-11-18",
+        "porque": "Sinaliza que TFMs estão migrando de pesquisa para prática de ciência de dados, inclusive combinados com agentes. Útil para treinar times; não muda decisão de adoção."
+      }
+    ],
+    "perguntas": [
+      "Vale incluir o Kumo Tabular no próximo bake-off de TFMs contra GBMs em fraude e crédito?"
+    ]
+  },
+  {
     "id": "2026-11-18",
     "data": "2026-11-18",
     "titulo": "Dia calmo: TabPFN ganha duas releases e saem papers de PFNs",

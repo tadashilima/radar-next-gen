@@ -1,18 +1,17 @@
 {
-  "data": "2026-11-19",
+  "data": "2026-11-20",
   "novidade": true,
-  "titulo": "Kumo Tabular da NVIDIA entra na disputa dos tabular foundation models",
-  "destaque": "Dia de poucas novidades: o paper do Kumo Tabular (NVIDIA) apresenta uma família aberta de TFMs que diz superar concorrentes em benchmarks. Vale incluir nas comparações contra TabPFN e GBMs, com cautela até haver teste em fraude e crédito.",
-  "itens_novos": 2,
+  "titulo": "TabPFN-4 anunciado e debate sobre licenças abertas de TFMs",
+  "destaque": "A Prior Labs diz que o TabPFN-4 terminou o treino e escala a 10 milhões de linhas, o que, se confirmado, torna TFMs viáveis para bases grandes de fraude e crédito. Em paralelo, a Probabl alerta que pesos abertos frequentemente não significam uso comercial liberado.",
+  "itens_novos": 3,
   "principal": {
-    "titulo": "NVIDIA Kumo Tabular: família aberta de tabular foundation models (27M, 61M e 214M) que concorre com TabPFN",
-    "url": "http://arxiv.org/abs/2611.23001v1"
+    "titulo": "Prior Labs anuncia que o TabPFN-4 terminou o treino: arquitetura sub-quadrática e escala até 10 milhões de linhas",
+    "url": "https://x.com/prior_labs/status/2123457575001936316"
   },
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-19) ainda não existia: usada a de 2026-11-18",
-    "X: sem resultados novos relevantes",
-    "Coleta: X @autogluon e @RohanRamanath, Reddit r/MachineLearning, r/datascience e r/fintech com HTTPError",
+    "Coleta de hoje (2026-11-20) ainda não existia: usada a de 2026-11-19",
+    "Coleta: X (@LennartPurucker, @dholzmueller, @RohanRamanath, @emilygsands) e Reddit (r/MachineLearning, r/datascience, r/fintech) com HTTPError",
     "Reddit via WebSearch não executado (cobertura parcial)",
-    "WebSearch sem resultados datados das últimas 48h"
+    "WebSearch sem resultados datados das últimas 48h sobre NeoSpace, Pix e Banco Central; priorlabs.ai inacessível (rede da nuvem)"
   ]
 }

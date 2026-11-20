@@ -1,5 +1,49 @@
 [
   {
+    "id": "2026-11-20",
+    "data": "2026-11-20",
+    "titulo": "TabPFN-4 anunciado e debate sobre licenças abertas de TFMs",
+    "destaque": "A Prior Labs diz que o TabPFN-4 terminou o treino e escala a 10 milhões de linhas, o que, se confirmado, torna TFMs viáveis para bases grandes de fraude e crédito. Em paralelo, a Probabl alerta que pesos abertos frequentemente não significam uso comercial liberado.",
+    "resumo": [
+      "TabPFN-4 em research preview, com arquitetura sub-quadrática",
+      "Licenças de TFMs: pesos abertos x uso comercial",
+      "Scaling laws de TFMs podem não extrapolar para dados reais"
+    ],
+    "itens": [
+      {
+        "titulo": "Prior Labs anuncia que o TabPFN-4 terminou o treino: arquitetura sub-quadrática e escala até 10 milhões de linhas",
+        "url": "https://x.com/prior_labs/status/2123457575001936316",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "alto",
+        "data": "2026-11-19",
+        "porque": "Segundo a própria Prior Labs, o modelo escala a 10 milhões de linhas e tem ganho maior em dados bagunçados do mundo real. Se confirmado, remove o principal limite de volume dos TFMs para bases de fraude e crédito; os números ainda são do fornecedor (research preview), então vale esperar licença e benchmark independente."
+      },
+      {
+        "titulo": "Probabl e Gaël Varoquaux mapeiam o 'gradiente de abertura' dos tabular foundation models: pesos abertos nem sempre significam uso comercial liberado",
+        "url": "https://www.probabl.ai/blog/tfms-gradient-of-openness/",
+        "fonte": "blog",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-18",
+        "porque": "A análise diz que a maioria dos TFMs tem pesos abertos, mas com licenças não comerciais ou restrições herdadas dos dados de treino. Para bancos que avaliam TFMs em produção, a checagem de licença e de proveniência dos dados passa a fazer parte do bake-off."
+      },
+      {
+        "titulo": "Paper investiga se scaling laws de TFMs estilo TabPFNv2 extrapolam de forma confiável",
+        "url": "http://arxiv.org/abs/2611.24214v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-11-18",
+        "porque": "Os autores relatam diferenças entre o comportamento de escala em dados sintéticos e reais, e que ajustar bem a lei não garante previsões confiáveis em datasets novos. É um aviso para não extrapolar ganhos de TFMs maiores sem testar em dados próprios."
+      }
+    ],
+    "perguntas": [
+      "O TabPFN-4 mantém o ganho sobre GBMs em bases de fraude com dezenas de milhões de linhas e forte desbalanceamento?",
+      "A licença dos TFMs que vocês avaliam permite uso comercial em produção?"
+    ]
+  },
+  {
     "id": "2026-11-19",
     "data": "2026-11-19",
     "titulo": "Kumo Tabular da NVIDIA entra na disputa dos tabular foundation models",

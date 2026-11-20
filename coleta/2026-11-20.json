@@ -1,0 +1,340 @@
+{
+ "gerado_em": "2026-11-20T18:36:28+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Physics-Informed Feature Representations and Pretrained Tabular Foundation Models for Generalizable Melt Pool Geometry Prediction",
+   "url": "http://arxiv.org/abs/2611.26235v1",
+   "data": "2026-11-19",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Developing generalizable, data-efficient machine learning (ML) models for advanced manufacturing remains challenging because experimental datasets are limited and process-property relationships vary across materials and operating conditions. In laser powder bed fusion (LPBF), melt pool width, depth, and melting mode (conduction, transition, or keyhole) govern process stability and defect formation. Conventional ML models typically use dimensional process parameters, which represent laser-material interactions only implicitly and may limit cross-material transfer. This study evaluates whether two physics-informed dimensionless features, normalized enthalpy and Peclet number, combining laser p"
+  },
+  {
+   "titulo": "Morpho-Spectral Projection Analysis (MSPA) for Plant Spectroscopy",
+   "url": "http://arxiv.org/abs/2611.24599v1",
+   "data": "2026-11-18",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Plant reflectance spectroscopy across the visible, near-infrared, and shortwave infrared domain encodes foliar biochemical and anatomical traits into contiguous spectral signatures with locally differentiable structure; however, extreme inter-band collinearity and unfavorable sample-to-feature ratios challenge predictive modeling. Conventional dimensionality reduction methods routinely adopted in spectroscopy, are column-permutation invariant: they treat adjacent wavelengths as unordered tabular columns and discard the sequential differential geometry of absorption features. Here, we propose Morpho-Spectral Projection Analysis (MSPA), a supervised dimensionality reduction operator that proje"
+  },
+  {
+   "titulo": "Towards Reliable Scaling Laws for Tabular Foundation Models",
+   "url": "http://arxiv.org/abs/2611.24214v1",
+   "data": "2026-11-18",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Scaling laws are widely used to predict foundation model performance and guide compute allocation. However, tabular foundation models (TFMs) differ from conventional foundation models in that they are pretrained on virtually unlimited synthetic data from configurable distributions, while ultimately being evaluated on real-world datasets. We investigate whether scaling laws for TabPFNv2-style models reliably extrapolate to larger compute budgets and generalize across evaluation settings. Our analysis reveals differences between synthetic and real-world scaling behavior and shows that accurately fitting a scaling law does not necessarily yield reliable prescriptions on unseen datasets. In part"
+  },
+  {
+   "titulo": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+   "url": "http://arxiv.org/abs/2611.23779v1",
+   "data": "2026-11-18",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmar"
+  },
+  {
+   "titulo": "\"I Don't Think It's a Scam\": A First Look at Family Intervention Barriers in Elder Abuse Discussions on Reddit and Baidu Tieba",
+   "url": "http://arxiv.org/abs/2611.24899v1",
+   "data": "2026-11-18",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "When older adults trust scammers despite warnings, families face obstacles to intervention. Complainants aged 60 and older reported \\$4.9 billion in losses in 2024 to the U.S. Internet Crime Complaint Center. To investigate family intervention barriers to elder scams, we collected 2M Reddit posts from May 2021 to June 2026 and 2B Baidu Tieba posts from 2007 to 2026. The final corpora contain 13,082 Reddit posts and 3,933 Baidu Tieba posts, labeled using platform-specific codebooks, manual reference annotations, and LLM coding. Through a mixed-methods analysis, we find that scams often extend beyond a single incident and are reported alongside debt problems and broken family relationships. In"
+  },
+  {
+   "titulo": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
+   "url": "http://arxiv.org/abs/2611.24049v1",
+   "data": "2026-11-18",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "The growth of deceptive online opinions poses a critical risk of misinformation and fraud. This paper proposes a Retrieval-Augmented Generation (RAG) system to automatically distinguish spam reviews. The architecture integrates RoBERTa with Low-Rank Adaptation (LoRA) classification, FAISS semantic vector retrieval, and a Large Language Model (LLM) for final reasoning. The system was evaluated across balanced and severely imbalanced real-world scenarios. Results demonstrate that five epochs of fine-tuning enable robust domain transfer, achieving an F1-score of 0.90 in cross-domain evaluation, outperforming baselines (OpenAI Detector,F1 = 0.82) and demonstrating competitive performance against"
+  },
+  {
+   "titulo": "ICICLE: In-Context Inference for Curve-Learning Extrapolation",
+   "url": "http://arxiv.org/abs/2611.24469v1",
+   "data": "2026-11-18",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "Freeze-thaw Bayesian optimization allocates training budget by predicting how partially observed learning curves will continue. LC-PFN first applied prior-data fitted networks (PFNs) to learning-curve extrapolation, and FT-PFN extended this approach to configuration-aware freeze-thaw optimization with a ten-slot hyperparameter encoder. We introduce In-Context Inference for Curve-Learning Extrapolation (ICICLE), an in-context surrogate that accepts a variable number of hyperparameters through a shared set encoder and is trained on a synthetic prior covering typed hyperparameters, heavy-tailed noise, quantization, and divergence. ICICLE has 1.28 million parameters (8.7% of FT-PFN's count) and "
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+    "url": "https://huggingface.co/papers/2611.08136",
+    "data": "2026-11-08",
+    "resumo": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AU"
+   },
+   {
+    "titulo": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.23779",
+    "data": "2026-11-17",
+    "resumo": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmar"
+   },
+   {
+    "titulo": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+    "url": "https://huggingface.co/papers/2611.22382",
+    "data": "2026-11-16",
+    "resumo": "Large language models (LLMs) have renewed interest in Page Stream Segmentation (PSS), splitting a multi-page file into its constituent documents. Yet published LLM methods still frame the task as boundary classification over one or a few neighboring pages, and commercial document-splitting APIs do not disclose their methods. We reimagine PSS for LLMs as a sequential process over the whole stream and propose RICoT (Recurrent Interleaved Chain-of-Thought), a prompting framework that works through the pages as a reader would: within a sliding window it reasons about each page and commits its boundary decision before moving on, and across windows it carries forward a compact record of what it ha"
+   },
+   {
+    "titulo": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.17600",
+    "data": "2026-11-11",
+    "resumo": "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to the prediction task. LightTAR augments the standard PCA representation with a few target-aware features extracted jointly from the final and an intermediate encoder layer using regularized partial leas"
+   },
+   {
+    "titulo": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "url": "https://huggingface.co/papers/2611.24789",
+    "data": "2026-11-17",
+    "resumo": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards"
+   },
+   {
+    "titulo": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
+    "url": "https://huggingface.co/papers/2611.23824",
+    "data": "2026-11-17",
+    "resumo": "Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supervision assigns identical credit to every search in a trajectory regardless of whether it retrieved useful information. This limitation is especially severe when all sampled rollouts for a question fail, collapsing group-centered outcome advantages to zero even when trajectories gather markedly different evidence. We present Evidence-based Credit Assignment (ECA), which augments terminal outcome rewards with a training-only auxiliary signal measuring how retrieved documents improve the likelihood of a reference answ"
+   },
+   {
+    "titulo": "ALIVE: Making Streaming Video Models Interactive",
+    "url": "https://huggingface.co/papers/2611.21366",
+    "data": "2026-11-15",
+    "resumo": "Streaming video LLMs can continuously observe the world, yet often handle user requests in isolation. We introduce ALIVE, an interactive streaming video model supporting proactive monitoring, streaming task coordination, and feedback-seeking interaction. We construct ALIVE-SFT-288K and ALIVE-RL-3K for two-stage training. Contrastive supervised fine-tuning teaches when and how to respond, while reinforcement learning with Behavior-Aligned Credit Assignment (BACA) combines trajectory-level and local advantages to refine decisions, responses, and silence across multi-turn interactions. We also introduce FSI-Bench to evaluate feedback seeking and subsequent task completion. ALIVE achieves the hi"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.2.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.2.0",
+   "data": "2026-11-17",
+   "notas": "### Added\n\n- Add `TabPFNRegressor(presets=...)`, named bundles of `inference_config` values. The `\"zero_inflated\"` preset is for nonnegative targets with many exact zeros: it sets the `log_fixed_atom` target transform and the `nonnegative_and_capped` readout. On the models up to TabPFN-3.5 it sets `log_quantile_gap` with the same readout instead. `fit` suggests the preset, once per process, for nonnegative targets with more than 20% zeros and at least 50 widely spread, non-count positives. ([#1413](https://github.com/PriorLabs/TabPFN/pull/1413))\n- With GPU preprocessing, a table held in host memory goes through the selective steps (quantile, squashing, safepower, robust) a block at a time, and the fingerprint hashes it where it is. Any other step that cannot run by blocks raises on such a table. ([#1426](https://github.com/PriorLabs/TabPFN/pull/1426))\n- Add the `\"grouped\"` preset for `group_col` data, on both estimators: `presets=\"grouped\"` sets `APPEND_GROUP_AGGREGATES=True` and `POOL_GROUP_PREDICTIONS=\"mean\"`. `TabPFNClassifier` gets the `presets` argument for it. Both modes are computed over the rows passed to predict, so predict all rows of a group in one call. ([#1434](https:/"
+  }
+ ],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2123457575001936316",
+   "texto": "TabPFN-4 has finished training. Our new tabular foundation model marks a step change in predictive intelligence. Equipped with a novel sub-quadratic architecture, it can easily scale to 10 million rows. Performance-wise, TabPFN-4 sets new standards across the board, with especially strong results where it matters most: on messy, real-world data.\n\nStay tuned!\n\nRead our research preview now: https://priorlabs.ai/technical-reports/tabpfn-4-preview?utm_source=x&utm_medium=social&utm_campaign=tabpfn4-launch",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/tuanacelik/status/2123101754564751744",
+   "texto": "It's been a week since our short course with @DeepLearningAI and @AndrewYNg  went live: Tabular Foundation Models for Data Science Agents.\n\nI taught it alongside @FrankRHutter and Eliott Kalfon. It covers four main topics: \n\n· How tabular foundation models like TabPFN predict on a new dataset without training\n· Interpreting results\n· How these models are actually built (Frank even walks you through training your own nano TabPFN from scratch, on synthetic data)\n· And how to hand that capability to an AI agent so it can recognise a prediction task and call the model as a tool.\n\nIn the agent less",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2123048382436659353",
+   "texto": "Imagine you forecast the height and width of a plant after 6 hours of sun. If you predict them independently, you may end up with impossibly tall and thin plants (or short and wide ones).\n\nThe same goes for afternoon and night temperatures. Use one model for the afternoon and another for the night, and you may forecast nights warmer than afternoons, which is highly unlikely.\n\nThe charts below show this: two reasonable independent forecasts can add up to an unlikely joint prediction.\n\nBeyond these toy examples, related targets come up in critical domains like molecular property prediction and d",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/pandeyparul/status/2123404830630953095",
+   "texto": "The @nvidia  Kumo Tabular technical report is finally out, and I think it was well worth the wait.\n\nThe team has open-sourced both the synthetic data prior, which generates the training table  and the pretraining recipe. This gives researchers something to build on, and I also like what it offers people learning about tabular foundation models.\n\nYou can see how the training tables are generated, follow how the model is trained, and download a pretrained checkpoint to try on your own data.\n\nThere is also a detailed ablation study alongside details on the evaluations and checkpoints which shows ",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/DHolzmueller/status/2123177368085045413",
+   "texto": "The paper and pretraining code for @Nvidia Kumo Tabular are out! \nThis includes optimized pretraining, many updates to the prior including a distributional numerical converter, and an ablation study! The largest gains come from scaling and interleaved row-colum attention.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/jure/status/2123096895220548026",
+   "texto": "Today we share the NVIDIA Kumo Tabular technical report as well as the training recipe! 🚀\n\nTrained entirely on synthetic tables, Kumo Tabular-L leads 8 benchmark suites. All 3 model sizes achieve Pareto-optimal accuracy vs. inference time.\n\nArxiv: https://arxiv.org/abs/2611.23001\nHuggingFace: https://huggingface.co/nvidia/Kumo-Tabular\nGitHub: https://github.com/NVIDIA/structured-data-models",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/GaelVaroquaux/status/2123136233073529297",
+   "texto": "The gradient of openness in Tabular Foundation Models.\n\nWhat is the difference between open-weight TFMs and fully open TFMs, and why does the difference even matter?\n\nCailean and I have summarized the landscape to help you answer that question with confidence.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123586755576377658",
+   "texto": "Turns out teaching a model the reasoning behind its decisions makes it better... but only when we train in the right order :)\n\nWe train on labels and explanations, then on labels alone, then use on-policy distillation to bring the explanations back.\n\nFor fraud reviews at @stripe, that gets us 39% higher recall at human-review precision -- and the explanations beat the teacher's!",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123586757543461048",
+   "texto": "For the interested reader: https://stripe.dev/blog/learning-from-explanations",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479742813024563",
+   "texto": "Coding agents now write *a lot* of @stripe  integrations. We wanted to know how good those integrations really are, so we built Stripe evals. Open-sourcing the benchmark and harness today: https://stripe.dev/evals",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479747053416613",
+   "texto": "The Stripe agent plugin improves all 14 agents by 3 to 8 points and cuts outdated API parameters from 7% to 1.3%. Web searches also fall 96% as agents use trusted guidance instead.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479748559208657",
+   "texto": "We'll keep updating results as new models ship. More on our approach at https://stripe.dev/blog/stripe-integration-evals-methodology",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123429300242407916",
+   "texto": "The AI bubble debate runs on valuations and capex. For a read on demand, we built the @stripe AI Index: weekly, same-business pay-in volume across ~20K AI businesses. \n• Aggregate is +103% Y/Y \n• Median is +41%, nearly 3x median SaaS \n• Some recent cooling: ~80% annualized over 13 wks, from ~140%\n• US lead is widening\n\nGiven how fast the sector is moving, we're now publishing our AI Index weekly.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123829473930039511",
+   "texto": "Ashton Kutcher is one of the greatest VCs of all time.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123763889674260639",
+   "texto": "In 2023, Ashton Kutcher was asked on CNBC if AI valuations were too high.\n\n\"None of these companies have really even started capturing revenues yet.\" If 2 or 3 companies own the foundational layer, \"the TAM is so large that marking the value of a company based on anything other than the potential would be wrong.\"\n\nThat spring, his fund Sound Ventures backed both OpenAI and Anthropic, when Anthropic was valued at just over $4B.\n\nAfter $435M invested, its Anthropic stake is now worth nearly $9B.\n\nLegend.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123742366632649109",
+   "texto": "WHOA: Anthropic's 5,300 founders and employees are now worth more than the bottom third of U.S. households (45 million families) 😳\n\nThe beauty of startups at its finest.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123504482927497219",
+   "texto": "Microsoft offered buyouts to 60,000 employees.\n\nCEO Satya Nadella says the point was making sure \"everyone felt like they had agency in making choices.\"\n\nHis view of where engineering is heading: \"software engineering is very much alive and in fact is going to thrive,\" but the way teams are organized has to change. \n\n\"That reorganization and change is hard.\"",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123445593984926145",
+   "texto": "How Anthropic makes (or tries to) money:",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123394906488004991",
+   "texto": "Historic: Anthropic just raised $81.3 billion in the largest IPO ever. Claude AI maker raised more money than SpaceX, Alibaba, and Saudi Aramco ever did in their respective debuts 😳\n\nSpaceX held the record for just 5 months. Now a 5-year-old AI company has taken the crown.\n\nAnd the numbers are extraordinary:\n\n→ $81.3B raised at $83 per share, above the original $70-$78 range.\n→ $1.5 trillion valuation, making Anthropic one of the world’s most valuable publicly traded companies.\n→ 980M shares sold, after expanding the offering by 19% due to overwhelming demand.\n→ $ANT starts trading on Nasdaq t",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123306356727754757",
+   "texto": "Elon Musk on Nvidia pushing out Jensen Huang:\n\n\"Let's say you're Chicago Bulls, middle of your second season, and you've got a winning streak. And then you kick Michael Jordan off your team. Doesn't seem like a smart decision to me.\"\n\nHis case is that Jensen \"does the roles of several people,\" and that much of Nvidia's team has turned down higher offers out of personal loyalty to him.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123143485582708755",
+   "texto": "Coinbase founder & CEO @brian_armstrong wants to put a private banker in everyone's pocket.\n\nHis pitch for Coinbase's AI: you describe a thesis, and it assembles the trade across prediction markets, derivatives, futures, spot, and commodities.\n\nYou just click accept.\n\nIt can then rebalance the position over time and know when to exit.\n\nUntil now, only high-net-worth clients got that kind of help.\n\nAI continues to eat finance.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123053045852299714",
+   "texto": "Jeff Bezos has one piece of advice for Nvidia's board: hire from inside.\n\n\"If you don't bring Jensen back, I would not hire an outsider. Nvidia is too complicated. I think outside CEOs in complex companies have a vanishingly small chance of succeeding.\"\n\nThe board has since said Jensen isn't coming back, so the search starts with Bezos calling an outside CEO a last resort.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122809216066822635",
+   "texto": "Cybersecurity expert David Kennedy says AI is turning average hackers into elite ones.\n\nGive an average attacker an open-weight model like GLM, Kimi or DeepSeek, and they can \"deploy agent swarms\" across companies.\n\nBreaches that used to take a week or two now take \"14, 15 minutes,\" he told Fox News.\n\nHis warning: \"major pain here in the next 6 months.\"",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2122773939906617503",
+   "texto": "Yann LeCun: \"Basing agentic systems on LLMs is a recipe for disaster.\"\n\nAn agent has to plan a sequence of actions, and it can't do that if it can't predict what those actions will cause.\n\n\"If you want intelligent behavior, you need a system to be able to anticipate what's gonna happen in the world.\"\n\nHe left Meta to build the alternative: world models, at his new company AMI.",
+   "data": "2026-11-17"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123433827234111659",
+   "texto": "Whoa, great and even excessive Marin Mochi (535B-A23B) checkpoint drop (in a good way!)\n\nComes with great tech report btw with insights into why / how components were picked (for training stability and GPU throughput).\n\nShort fact sheet:\n\n1) Latent MoE with an extra RMSNorm on the latent that made latent MoE actually work (better)\n\n2) Classic 3:1 sliding-window/global gated GQA, partial RoPE (local) and NoPE (global)\n\n3) Adding short convolutions on keys, attention output, and MoE output\n\n4) Exclusive self-attention (XSA) -- I guess the end-of-the year architecture roundup this year won't be b",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123415801105445340",
+   "texto": "Shipping without the drama is an underrated skill",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123239870394991087",
+   "texto": "Just also added a lot of the additional content I originally trimmed from this article to an optional appendix (plus YaRN and ALiBi). \nSo, if you already read the article and are looking for this bonus content, search for the \"appendix\" in this article. \nYou can also find a direct link here, but it makes most sense to read passages of this where it is referenced throughout the text: https://sebastianraschka.com/supplementary/positional-embeddings/",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123064851383677087",
+   "texto": "Comparing new LLM releases via benchmarks is now a bit like using IQ tests for hiring decisions.\n\nSure, benchmarks are useful baselines and so on, but beyond that, I don't know how indicative they are of our individual tasks and needs. (Yes, also looking at that release yesterday)",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123186674117087433",
+   "texto": "Chris said it even better here: https://x.com/llm_wizard/status/2123158042535411978?a=n12knyRsDNSD3ayy4gM&s=20",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123806044270805444",
+   "texto": "What knowledge do AIs mediate: consolidated, statistical, or social?\n\nLanguage models excel at interpretation more than at certainties. Their fuzziness is detrimental to simple truths, but it yields knowledge machines that embrace complexity and cultural lenses.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123806047962054805",
+   "texto": "In this AI chronicle, I bridge technical aspects of large language models to philosophy of knowledge (with the input of a real philosopher, Stéphan-Eloïse Gras):\nhttps://gael-varoquaux.info/science/what-knowledge-do-ais-mediate-consolidated-statistical-or-social.html",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/Maitre_Eolas/status/2123347355994882392",
+   "texto": "Soyons clair : cette loi fera des morts. Ne serait-ce qu'en relevant le seuil psychologique de décision de tir. Y compris des morts innocents, c'est inéluctable, mais qui ne pourront pas prouver qu'ils l'étaient. Est-ce un prix acceptable à payer pour complaire aux syndicats de policiers ?",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/Michel_Zecler/status/2123116804231008452",
+   "texto": "",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123136233073529297",
+   "texto": "The gradient of openness in Tabular Foundation Models.\n\nWhat is the difference between open-weight TFMs and fully open TFMs, and why does the difference even matter?\n\nCailean and I have summarized the landscape to help you answer that question with confidence.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123136236772880884",
+   "texto": "The devil is in the details: Most TFMs are open-weight, but under non-commercial licenses. In some edge cases, weights are permissively licensed but inherit restrictions from restrictively licensed training data.\n\nOur analysis can be found here.\nhttps://www.probabl.ai/blog/tfms-gradient-of-openness/",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2122963026475372815",
+   "texto": "💻 More and more people are talking about agents for #datascience. Fewer people talk about what makes them reliable.\n\nHere are 6 terms every data scientist should know, handpicked by our CPO @YannDebray  based on the evidence we’ve found while building Skore 🧵",
+   "data": "2026-11-18"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @innixma: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "X @sytaylor: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

@@ -1,17 +1,17 @@
 {
-  "data": "2026-11-20",
+  "data": "2026-11-21",
   "novidade": true,
-  "titulo": "TabPFN-4 anunciado e debate sobre licenças abertas de TFMs",
-  "destaque": "A Prior Labs diz que o TabPFN-4 terminou o treino e escala a 10 milhões de linhas, o que, se confirmado, torna TFMs viáveis para bases grandes de fraude e crédito. Em paralelo, a Probabl alerta que pesos abertos frequentemente não significam uso comercial liberado.",
-  "itens_novos": 3,
+  "titulo": "Stripe mostra ganho de recall em fraude ao treinar LLM com explicações",
+  "destaque": "A Stripe reporta 39% mais recall em revisão de fraude ao treinar o modelo com explicações antes de rótulos puros e reintroduzi-las por destilação on-policy. É um dado raro de LLM aplicado a fraude em produção.",
+  "itens_novos": 1,
   "principal": {
-    "titulo": "Prior Labs anuncia que o TabPFN-4 terminou o treino: arquitetura sub-quadrática e escala até 10 milhões de linhas",
-    "url": "https://x.com/prior_labs/status/2123457575001936316"
+    "titulo": "Stripe: treinar modelo com explicações antes de só rótulos eleva em 39% o recall em revisão de fraude",
+    "url": "https://x.com/emilygsands/status/2123586755576377658"
   },
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-20) ainda não existia: usada a de 2026-11-19",
-    "Coleta: X (@LennartPurucker, @dholzmueller, @RohanRamanath, @emilygsands) e Reddit (r/MachineLearning, r/datascience, r/fintech) com HTTPError",
+    "Coleta de hoje (2026-11-21) ainda não existia: usada a de 2026-11-20",
+    "Coleta: X (@innixma, @RohanRamanath, @sytaylor) e Reddit (r/MachineLearning, r/datascience, r/fintech) com HTTPError",
     "Reddit via WebSearch não executado (cobertura parcial)",
-    "WebSearch sem resultados datados das últimas 48h sobre NeoSpace, Pix e Banco Central; priorlabs.ai inacessível (rede da nuvem)"
+    "stripe.dev inacessível (rede da nuvem); WebSearch sem novidades datadas sobre NeoSpace e Pix/BC"
   ]
 }

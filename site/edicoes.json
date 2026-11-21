@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-11-21",
+    "data": "2026-11-21",
+    "titulo": "Stripe mostra ganho de recall em fraude ao treinar LLM com explicações",
+    "destaque": "A Stripe reporta 39% mais recall em revisão de fraude ao treinar o modelo com explicações antes de rótulos puros e reintroduzi-las por destilação on-policy. É um dado raro de LLM aplicado a fraude em produção.",
+    "resumo": [
+      "Stripe: explicações no treino melhoram recall em revisão de fraude",
+      "Dia fraco no restante: sem novidades de fornecedores de LDM ou do BC"
+    ],
+    "itens": [
+      {
+        "titulo": "Stripe: treinar modelo com explicações antes de só rótulos eleva em 39% o recall em revisão de fraude",
+        "url": "https://x.com/emilygsands/status/2123586755576377658",
+        "fonte": "x",
+        "tema": "agentes",
+        "sinal": "alto",
+        "data": "2026-11-20",
+        "porque": "Segundo a pesquisadora da Stripe, treinar com rótulos e explicações, depois só rótulos, e trazer as explicações de volta por destilação on-policy rende 39% mais recall com a mesma precisão da revisão humana. Se replicável, é receita prática para LLMs em filas de revisão de fraude; os números são do autor e o post completo não pôde ser aberto aqui."
+      }
+    ],
+    "perguntas": []
+  },
+  {
     "id": "2026-11-20",
     "data": "2026-11-20",
     "titulo": "TabPFN-4 anunciado e debate sobre licenças abertas de TFMs",

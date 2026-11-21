@@ -1,0 +1,375 @@
+{
+ "gerado_em": "2026-11-21T17:31:07+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "Physics-Informed Feature Representations and Pretrained Tabular Foundation Models for Generalizable Melt Pool Geometry Prediction",
+   "url": "http://arxiv.org/abs/2611.26235v1",
+   "data": "2026-11-19",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Developing generalizable, data-efficient machine learning (ML) models for advanced manufacturing remains challenging because experimental datasets are limited and process-property relationships vary across materials and operating conditions. In laser powder bed fusion (LPBF), melt pool width, depth, and melting mode (conduction, transition, or keyhole) govern process stability and defect formation. Conventional ML models typically use dimensional process parameters, which represent laser-material interactions only implicitly and may limit cross-material transfer. This study evaluates whether two physics-informed dimensionless features, normalized enthalpy and Peclet number, combining laser p"
+  },
+  {
+   "titulo": "\"I Don't Think It's a Scam\": A First Look at Family Intervention Barriers in Elder Abuse Discussions on Reddit and Baidu Tieba",
+   "url": "http://arxiv.org/abs/2611.24899v1",
+   "data": "2026-11-18",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "When older adults trust scammers despite warnings, families face obstacles to intervention. Complainants aged 60 and older reported \\$4.9 billion in losses in 2024 to the U.S. Internet Crime Complaint Center. To investigate family intervention barriers to elder scams, we collected 2M Reddit posts from May 2021 to June 2026 and 2B Baidu Tieba posts from 2007 to 2026. The final corpora contain 13,082 Reddit posts and 3,933 Baidu Tieba posts, labeled using platform-specific codebooks, manual reference annotations, and LLM coding. Through a mixed-methods analysis, we find that scams often extend beyond a single incident and are reported alongside debt problems and broken family relationships. In"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+    "url": "https://huggingface.co/papers/2611.08136",
+    "data": "2026-11-08",
+    "resumo": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AU"
+   },
+   {
+    "titulo": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.23779",
+    "data": "2026-11-17",
+    "resumo": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmar"
+   },
+   {
+    "titulo": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+    "url": "https://huggingface.co/papers/2611.22382",
+    "data": "2026-11-16",
+    "resumo": "Large language models (LLMs) have renewed interest in Page Stream Segmentation (PSS), splitting a multi-page file into its constituent documents. Yet published LLM methods still frame the task as boundary classification over one or a few neighboring pages, and commercial document-splitting APIs do not disclose their methods. We reimagine PSS for LLMs as a sequential process over the whole stream and propose RICoT (Recurrent Interleaved Chain-of-Thought), a prompting framework that works through the pages as a reader would: within a sliding window it reasons about each page and commits its boundary decision before moving on, and across windows it carries forward a compact record of what it ha"
+   },
+   {
+    "titulo": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.17600",
+    "data": "2026-11-11",
+    "resumo": "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to the prediction task. LightTAR augments the standard PCA representation with a few target-aware features extracted jointly from the final and an intermediate encoder layer using regularized partial leas"
+   },
+   {
+    "titulo": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "url": "https://huggingface.co/papers/2611.24789",
+    "data": "2026-11-17",
+    "resumo": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards"
+   },
+   {
+    "titulo": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
+    "url": "https://huggingface.co/papers/2611.23824",
+    "data": "2026-11-17",
+    "resumo": "Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supervision assigns identical credit to every search in a trajectory regardless of whether it retrieved useful information. This limitation is especially severe when all sampled rollouts for a question fail, collapsing group-centered outcome advantages to zero even when trajectories gather markedly different evidence. We present Evidence-based Credit Assignment (ECA), which augments terminal outcome rewards with a training-only auxiliary signal measuring how retrieved documents improve the likelihood of a reference answ"
+   },
+   {
+    "titulo": "ALIVE: Making Streaming Video Models Interactive",
+    "url": "https://huggingface.co/papers/2611.21366",
+    "data": "2026-11-15",
+    "resumo": "Streaming video LLMs can continuously observe the world, yet often handle user requests in isolation. We introduce ALIVE, an interactive streaming video model supporting proactive monitoring, streaming task coordination, and feedback-seeking interaction. We construct ALIVE-SFT-288K and ALIVE-RL-3K for two-stage training. Contrastive supervised fine-tuning teaches when and how to respond, while reinforcement learning with Behavior-Aligned Credit Assignment (BACA) combines trajectory-level and local advantages to refine decisions, responses, and silence across multi-turn interactions. We also introduce FSI-Bench to evaluate feedback seeking and subsequent task completion. ALIVE achieves the hi"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/pandeyparul/status/2123404830630953095",
+   "texto": "The @nvidia  Kumo Tabular technical report is finally out, and I think it was well worth the wait.\n\nThe team has open-sourced both the synthetic data prior, which generates the training table  and the pretraining recipe. This gives researchers something to build on, and I also like what it offers people learning about tabular foundation models.\n\nYou can see how the training tables are generated, follow how the model is trained, and download a pretrained checkpoint to try on your own data.\n\nThere is also a detailed ablation study alongside details on the evaluations and checkpoints which shows ",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/DHolzmueller/status/2123177368085045413",
+   "texto": "The paper and pretraining code for @Nvidia Kumo Tabular are out! \nThis includes optimized pretraining, many updates to the prior including a distributional numerical converter, and an ablation study! The largest gains come from scaling and interleaved row-colum attention.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/GaelVaroquaux/status/2123136233073529297",
+   "texto": "The gradient of openness in Tabular Foundation Models.\n\nWhat is the difference between open-weight TFMs and fully open TFMs, and why does the difference even matter?\n\nCailean and I have summarized the landscape to help you answer that question with confidence.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/ernietedeschi/status/2123852064027471901",
+   "texto": "We're releasing new @Stripe agentic commerce data today, telling the story so far as we look ahead to the kickoff of the holiday season next week. https://x.com/i/article/2123849094036881408",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123586755576377658",
+   "texto": "Turns out teaching a model the reasoning behind its decisions makes it better... but only when we train in the right order :)\n\nWe train on labels and explanations, then on labels alone, then use on-policy distillation to bring the explanations back.\n\nFor fraud reviews at @stripe, that gets us 39% higher recall at human-review precision -- and the explanations beat the teacher's!",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123586757543461048",
+   "texto": "For the interested reader: https://stripe.dev/blog/learning-from-explanations",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479742813024563",
+   "texto": "Coding agents now write *a lot* of @stripe  integrations. We wanted to know how good those integrations really are, so we built Stripe evals. Open-sourcing the benchmark and harness today: https://stripe.dev/evals",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479747053416613",
+   "texto": "The Stripe agent plugin improves all 14 agents by 3 to 8 points and cuts outdated API parameters from 7% to 1.3%. Web searches also fall 96% as agents use trusted guidance instead.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479748559208657",
+   "texto": "We'll keep updating results as new models ship. More on our approach at https://stripe.dev/blog/stripe-integration-evals-methodology",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123429300242407916",
+   "texto": "The AI bubble debate runs on valuations and capex. For a read on demand, we built the @stripe AI Index: weekly, same-business pay-in volume across ~20K AI businesses. \n• Aggregate is +103% Y/Y \n• Median is +41%, nearly 3x median SaaS \n• Some recent cooling: ~80% annualized over 13 wks, from ~140%\n• US lead is widening\n\nGiven how fast the sector is moving, we're now publishing our AI Index weekly.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124186698318053643",
+   "texto": "Merchants.\n\nLaunch your MCP",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/zaidrmn/status/2123850224611537134",
+   "texto": "Reminder on bad market days. Since this tweet in 2022's bear market:\n\n- ChatGPT (10 months after)\n- Anthropic\n- Cursor\n- Cognition\n- Lovable\n- ElevenLabs\n- Sierra\n- Mercor\n- Micro1\n- OpenEvidence\n- Suno\n- Granola\n- Saronic\n- SPCX\n- Bridge\n- Tempo\n- Hyperliquid\n- Rain\n- Mesh\n\nAnd many more.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/TheObiTrice/status/2123741903921479849",
+   "texto": "Cried my fucking eyes out listening to this. 🥹\n\nHe’s perfectly summed up being in your late 30s, with a family and responsibilities, but still longing to be back in your 20s, carefree, playing GTA with the whole world ahead of you. #GTAVI #GTA6 #InternationalMensDay2026",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124150801526632558",
+   "texto": "In before the late stage VC fuelled AI bubble ends",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124133175647682836",
+   "texto": "Ruh roh",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/soupsranjan/status/2124005508738580540",
+   "texto": "The theme for our compliance corner at @FintechNerdCon was Grand Theft Auto - to coincide with the release of GTA VI.\n\nI still call it a booth but @sytaylor - who has done a remarkable job with this event always remind us to call it an activation.\n\nWhen they were tearing the \"activation area\" down, I couldn't bear myself to see the @sardine car being trashed - so bringing it back to our office :)\n\nThe level of planning and details that went into Nerdcon are next level\n\nBig shout out to the entire Nerdcon team and Sardine marketing team for pulling this off!",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/jbahrdestefano/status/2123931002426794094",
+   "texto": "WOW @UseCorgi applied to the @USOCC for a national bank charter + filed separately w/ the @FDICgov for deposit insurance\n\nplanned products:\n> checking + savings accts\n> treasury services\n> credit cards\n> loans + lines of credit\n\nwould launch w/ $75M+ in initial capital + be HQd in SLC\n\nper @business, demand from its ~300K insurance customers was part of the push into banking\n\nCorgi launched in ‘24 as an AI-native insurance carrier, has since moved into ETFs, and is now valued at ~$7B\n\nhttps://www.bloomberg.com/news/articles/2026-11-18/ai-driven-firm-corgi-ventures-into-banking-after-etfs-insur",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/rexsalisbury/status/2123800031207604416",
+   "texto": "Ramp is nearly JPMorgan-sized in corporate cards, yet doesn't want to be a card company. Simon Taylor says fintech is dead, and that's the good news.\n\n(0:00) Is Fintech Really Dead?\n(2:08) What Does \"Fintech Is Dead\" Actually Mean?\n(5:04) Why Must Stripe and Nubank Go Multi-Product?\n(5:57) Why Did Stripe Buy OpenRouter?\n(8:48) Is Fintech Climbing the Jobs-to-Be-Done Ladder?\n(9:44) Is Ramp Really a Productivity Company?\n(13:09) Why Is Ramp Worth $60B If Not for Cards?\n(14:05) Can Fintechs Beat the AI Labs at Automation?\n(18:01) Is NVIDIA the Fannie Mae of Compute?\n(20:34) Are Banks About to Be ",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123902464554414530",
+   "texto": "\"There's no volume in Agentic commerce* \n\n...\n\nYet.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123902252804866172",
+   "texto": "Wow",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2123801885530599724",
+   "texto": "Remittance providers are looking for ways to serve customers after their money arrives.\n\nCompared to last year @FintechNerdCon, instant cross-border payments are now table stakes. LATAM companies now want further ways to engage their customers such as credit on Tempo.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Brainfoodxyz/status/2123832714260541624",
+   "texto": "Brainfood and Nerdcon Founder @sytaylor opening the second ever Fintech NerdCon conference in a packed room! Standing room only. 😎",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/kimmurphy81/status/2123828604580876490",
+   "texto": "Kicking off day 2 of #FintechNerdcon with @sytaylor on stage. Spot the announcement!",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123805119540052361",
+   "texto": "Day 2 of @FintechNerdCon \n\nLet's do this!",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/juokaz/status/2123741572541927865",
+   "texto": "Ben Thompson on agentic commerce.\n\n1. Most retailers are not Amazon. They are harming themselves by blocking agents. They don't have an advertising business to protect and this is an opportunity to be discovered. (video clip)\n2. Agentic commerce will work when it unlocks brand new demand. That demand will likely originate on horizontal agents, not retailer agents. \n3. Simply texting an AI agent to make routine purchases (such as reordering toilet paper) offers a worse user experience than traditional web browsing/apps.\n4. Complex cart construction, like in Ben's example ordering 250 specific b",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2123787178279051398",
+   "texto": "🚨 BREAKING: OakNorth just beat Revolut and Nubank to a US bank charter 🇬🇧\n\nBritish Bank @oaknorth announced today that the Fed and OCC have approved its purchase of Community Unity Bank in Michigan. It says it will be the first foreign digital bank to hold a US national bank charter.\n\n---\n\nOakNorth is one of the lesser-known (especially to US readers) UK digital banks, founded in 2015, that lends to businesses with $5m to $100m in revenue.\n\nTo date, it has lent $24bn over 11 years and made £223m in pre-tax profit in 2025, with a 26% efficiency ratio.\n\nAnd its progress in the US has been solid,",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/ezrajsolo/status/2123567663008162004",
+   "texto": "Has anyone been able to beat this mission in GTA yet",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/willrobinson23/status/2123650505763328483",
+   "texto": "Honored to tell a bit of @Plaid's AI story onstage at @FintechNerdCon this morning! @edawerd from @GustoHQ and @jenny_colgate from @OpenAI taught me several things in realtime as well. :-) Thanks to @sytaylor and team for throwing a great event.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/jevgenijs/status/2123758209953325357",
+   "texto": "Visa and Mastercard now let issuers fund daily net settlement in stablecoins, including weekends and bank holidays.\n\nIf you’re a sponsor bank or BIN sponsor, this is something you can use to win more programs. There are two angles.\n\n✔️ Scheme collateral. It’s sized to cover settlement exposure over non-banking days: 3 days of spend on a normal weekend, 4 over a holiday. Settle daily and exposure drops to about 1 day plus a buffer.\n\n✔️ Program prefunding. Program managers fund their settlement account before the Friday cut-off, sized for peak weekend spend. Accept stablecoin top-ups 7 days a we",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Zack_Shooter/status/2123580194791608324",
+   "texto": "Nerdcon is a vibe",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124155112620794012",
+   "texto": "In April, Demis Hassabis said AI solving the Riemann hypothesis or another Millennium Prize problem was \"maybe a couple of years out.\"\n\nLess than 7 months later, Anthropic's Levent Alpöge has posted claimed proofs of both Riemann and Navier-Stokes, the second with NYU's Tristan Buckmaster.\n\nBoth used Claude.\n\nOf course, neither is confirmed yet.\n\nThe Riemann proof compiles independently, and the Navier-Stokes team still has to release a key numerical certificate.\n\nBut it's clear that AI timelines in math keep landing early.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124113955732045832",
+   "texto": "\"Diversification is a protection against ignorance. It makes very little sense for those who know what they're doing.\"\n\n- Warren Buffett",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124065220746170626",
+   "texto": "In 2024, Peter Thiel said AI looked \"much worse for the math people than the word people.\"\n\nPeople had told him AI would solve all the US Math Olympiad problems within 3 to 5 years. He called Silicon Valley \"way too biased towards the math people\" and bet that would get reversed.\n\nTwo years later, an Anthropic mathematician says Claude helped him prove the Riemann hypothesis.\n\nThiel's chess analogy is aging well.\n\nComputers broke chess in 1997, and math looks next.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123893710236926013",
+   "texto": "Trump wants Jensen Huang back as Nvidia CEO.\n\n\"I'd like to see Jensen make a big apology and go back because he created something with Blackwell.\"\n\nNvidia's board already said it \"unanimously accepted his resignation and does not intend to reinstate Jensen as CEO.\"\n\nJensen is the Steve Jobs of this era.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123829473930039511",
+   "texto": "Ashton Kutcher is one of the greatest VCs of all time.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123763889674260639",
+   "texto": "In 2023, Ashton Kutcher was asked on CNBC if AI valuations were too high.\n\n\"None of these companies have really even started capturing revenues yet.\" If 2 or 3 companies own the foundational layer, \"the TAM is so large that marking the value of a company based on anything other than the potential would be wrong.\"\n\nThat spring, his fund Sound Ventures backed both OpenAI and Anthropic, when Anthropic was valued at just over $4B.\n\nAfter $435M invested, its Anthropic stake is now worth nearly $9B.\n\nLegend.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123742366632649109",
+   "texto": "WHOA: Anthropic's 5,300 founders and employees are now worth more than the bottom third of U.S. households (45 million families) 😳\n\nThe beauty of startups at its finest.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123504482927497219",
+   "texto": "Microsoft offered buyouts to 60,000 employees.\n\nCEO Satya Nadella says the point was making sure \"everyone felt like they had agency in making choices.\"\n\nHis view of where engineering is heading: \"software engineering is very much alive and in fact is going to thrive,\" but the way teams are organized has to change. \n\n\"That reorganization and change is hard.\"",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123445593984926145",
+   "texto": "How Anthropic makes (or tries to) money:",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123394906488004991",
+   "texto": "Historic: Anthropic just raised $81.3 billion in the largest IPO ever. Claude AI maker raised more money than SpaceX, Alibaba, and Saudi Aramco ever did in their respective debuts 😳\n\nSpaceX held the record for just 5 months. Now a 5-year-old AI company has taken the crown.\n\nAnd the numbers are extraordinary:\n\n→ $81.3B raised at $83 per share, above the original $70-$78 range.\n→ $1.5 trillion valuation, making Anthropic one of the world’s most valuable publicly traded companies.\n→ 980M shares sold, after expanding the offering by 19% due to overwhelming demand.\n→ $ANT starts trading on Nasdaq t",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123306356727754757",
+   "texto": "Elon Musk on Nvidia pushing out Jensen Huang:\n\n\"Let's say you're Chicago Bulls, middle of your second season, and you've got a winning streak. And then you kick Michael Jordan off your team. Doesn't seem like a smart decision to me.\"\n\nHis case is that Jensen \"does the roles of several people,\" and that much of Nvidia's team has turned down higher offers out of personal loyalty to him.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123143485582708755",
+   "texto": "Coinbase founder & CEO @brian_armstrong wants to put a private banker in everyone's pocket.\n\nHis pitch for Coinbase's AI: you describe a thesis, and it assembles the trade across prediction markets, derivatives, futures, spot, and commodities.\n\nYou just click accept.\n\nIt can then rebalance the position over time and know when to exit.\n\nUntil now, only high-net-worth clients got that kind of help.\n\nAI continues to eat finance.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2123457575001936316",
+   "texto": "TabPFN-4 has finished training. Our new tabular foundation model marks a step change in predictive intelligence. Equipped with a novel sub-quadratic architecture, it can easily scale to 10 million rows. Performance-wise, TabPFN-4 sets new standards across the board, with especially strong results where it matters most: on messy, real-world data.\n\nStay tuned!\n\nRead our research preview now: https://priorlabs.ai/technical-reports/tabpfn-4-preview?utm_source=x&utm_medium=social&utm_campaign=tabpfn4-launch",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123806044270805444",
+   "texto": "What knowledge do AIs mediate: consolidated, statistical, or social?\n\nLanguage models excel at interpretation more than at certainties. Their fuzziness is detrimental to simple truths, but it yields knowledge machines that embrace complexity and cultural lenses.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123806047962054805",
+   "texto": "In this AI chronicle, I bridge technical aspects of large language models to philosophy of knowledge (with the input of a real philosopher, Stéphan-Eloïse Gras):\nhttps://gael-varoquaux.info/science/what-knowledge-do-ais-mediate-consolidated-statistical-or-social.html",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/Maitre_Eolas/status/2123347355994882392",
+   "texto": "Soyons clair : cette loi fera des morts. Ne serait-ce qu'en relevant le seuil psychologique de décision de tir. Y compris des morts innocents, c'est inéluctable, mais qui ne pourront pas prouver qu'ils l'étaient. Est-ce un prix acceptable à payer pour complaire aux syndicats de policiers ?",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/Michel_Zecler/status/2123116804231008452",
+   "texto": "",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123136233073529297",
+   "texto": "The gradient of openness in Tabular Foundation Models.\n\nWhat is the difference between open-weight TFMs and fully open TFMs, and why does the difference even matter?\n\nCailean and I have summarized the landscape to help you answer that question with confidence.",
+   "data": "2026-11-18"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123136236772880884",
+   "texto": "The devil is in the details: Most TFMs are open-weight, but under non-commercial licenses. In some edge cases, weights are permissively licensed but inherit restrictions from restrictively licensed training data.\n\nOur analysis can be found here.\nhttps://www.probabl.ai/blog/tfms-gradient-of-openness/",
+   "data": "2026-11-18"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @noahholl: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "X @rasbt: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

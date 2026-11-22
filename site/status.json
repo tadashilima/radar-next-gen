@@ -1,17 +1,18 @@
 {
-  "data": "2026-11-21",
+  "data": "2026-11-22",
   "novidade": true,
-  "titulo": "Stripe mostra ganho de recall em fraude ao treinar LLM com explicações",
-  "destaque": "A Stripe reporta 39% mais recall em revisão de fraude ao treinar o modelo com explicações antes de rótulos puros e reintroduzi-las por destilação on-policy. É um dado raro de LLM aplicado a fraude em produção.",
-  "itens_novos": 1,
+  "titulo": "Antifraude de fornecedores e Banco Central no radar",
+  "destaque": "Dia sem novidade forte na coleta: Feedzai (RiskFM) e Sardine reforçam a corrida de foundation models em antifraude, e o BC estuda um score central de fraude para o Pix.",
+  "itens_novos": 3,
   "principal": {
-    "titulo": "Stripe: treinar modelo com explicações antes de só rótulos eleva em 39% o recall em revisão de fraude",
-    "url": "https://x.com/emilygsands/status/2123586755576377658"
+    "titulo": "Feedzai lança RiskFM, tabular foundation model para crime financeiro",
+    "url": "https://thepaypers.com/fraud-and-fincrime/news/feedzai-launches-riskfm-tabular-foundation-model-for-financial-crime"
   },
   "fontes_com_falha": [
-    "Coleta de hoje (2026-11-21) ainda não existia: usada a de 2026-11-20",
-    "Coleta: X (@innixma, @RohanRamanath, @sytaylor) e Reddit (r/MachineLearning, r/datascience, r/fintech) com HTTPError",
-    "Reddit via WebSearch não executado (cobertura parcial)",
-    "stripe.dev inacessível (rede da nuvem); WebSearch sem novidades datadas sobre NeoSpace e Pix/BC"
+    "Coleta de 2026-11-21 (a de hoje ainda não existia)",
+    "X @noahholl, @RohanRamanath, @rasbt: HTTPError",
+    "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError",
+    "Posts do X da coleta sem resumo, não avaliados",
+    "thepaypers.com, sardine.ai e letsmoney.com.br inacessíveis para verificação de data"
   ]
 }

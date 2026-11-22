@@ -1,0 +1,326 @@
+{
+ "gerado_em": "2026-11-22T17:49:43+00:00",
+ "janela_dias": 3,
+ "arxiv": [],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+    "url": "https://huggingface.co/papers/2611.08136",
+    "data": "2026-11-08",
+    "resumo": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AU"
+   },
+   {
+    "titulo": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.23779",
+    "data": "2026-11-17",
+    "resumo": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmar"
+   },
+   {
+    "titulo": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+    "url": "https://huggingface.co/papers/2611.22382",
+    "data": "2026-11-16",
+    "resumo": "Large language models (LLMs) have renewed interest in Page Stream Segmentation (PSS), splitting a multi-page file into its constituent documents. Yet published LLM methods still frame the task as boundary classification over one or a few neighboring pages, and commercial document-splitting APIs do not disclose their methods. We reimagine PSS for LLMs as a sequential process over the whole stream and propose RICoT (Recurrent Interleaved Chain-of-Thought), a prompting framework that works through the pages as a reader would: within a sliding window it reasons about each page and commits its boundary decision before moving on, and across windows it carries forward a compact record of what it ha"
+   },
+   {
+    "titulo": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.17600",
+    "data": "2026-11-11",
+    "resumo": "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to the prediction task. LightTAR augments the standard PCA representation with a few target-aware features extracted jointly from the final and an intermediate encoder layer using regularized partial leas"
+   },
+   {
+    "titulo": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "url": "https://huggingface.co/papers/2611.24789",
+    "data": "2026-11-17",
+    "resumo": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards"
+   },
+   {
+    "titulo": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
+    "url": "https://huggingface.co/papers/2611.23824",
+    "data": "2026-11-17",
+    "resumo": "Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supervision assigns identical credit to every search in a trajectory regardless of whether it retrieved useful information. This limitation is especially severe when all sampled rollouts for a question fail, collapsing group-centered outcome advantages to zero even when trajectories gather markedly different evidence. We present Evidence-based Credit Assignment (ECA), which augments terminal outcome rewards with a training-only auxiliary signal measuring how retrieved documents improve the likelihood of a reference answ"
+   },
+   {
+    "titulo": "ALIVE: Making Streaming Video Models Interactive",
+    "url": "https://huggingface.co/papers/2611.21366",
+    "data": "2026-11-15",
+    "resumo": "Streaming video LLMs can continuously observe the world, yet often handle user requests in isolation. We introduce ALIVE, an interactive streaming video model supporting proactive monitoring, streaming task coordination, and feedback-seeking interaction. We construct ALIVE-SFT-288K and ALIVE-RL-3K for two-stage training. Contrastive supervised fine-tuning teaches when and how to respond, while reinforcement learning with Behavior-Aligned Credit Assignment (BACA) combines trajectory-level and local advantages to refine decisions, responses, and silence across multi-turn interactions. We also introduce FSI-Bench to evaluate feedback seeking and subsequent task completion. ALIVE achieves the hi"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/RudeOnion/status/2124197236469121444",
+   "texto": "GTA 6 pissing off the extremes while being generally enjoyable to normal people is about the most GTA thing imaginable.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/pavanincredible/status/2124536152636149958",
+   "texto": "#FintechNerdcon = best conference for fintech builders. High-signal speakers, no sales-y booths, builder crowd\n\n2 talks, 1 roundtable, 1 podcast later: so much more clarity on where agentic commerce is headed.\n\n@sytaylor , Micky, & team - Brilliant taste and execution!",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/mayazi/status/2124438639367147853",
+   "texto": "Hot take - if regulators are serious about trying to bring clarity to the AI trade, the most impactful thing they can do in the short term is impose Dodd Frank on compute contracts, to mandate a third party clearinghouse to guarantee the physically settled trade. \nThat would create a settlement price, counterparty clarity, margin signals & a real forward curve instead of a synthetic one.",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Halfrack_8/status/2123818582299525492",
+   "texto": "“Women whose only hobby is phone”",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/nikitabier/status/2123949893014388933",
+   "texto": "Well, the verdict is out:\n\nAI was a fad this whole time and people will stop using it, just like the internet. \n$NVDA",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124469003410182639",
+   "texto": "💯",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/theojaffee/status/2123874753698238751",
+   "texto": "$1.38 trillion ARR. At a conservative 20x revenue multiple this means Rockstar is worth $27.7 trillion, more than the mag 7 combined",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124422345477533807",
+   "texto": "Really looking like the bubble went pop.\n\nGonna be a slower couple of years for funding.",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/vigstar1/status/2124301866972623013",
+   "texto": "it was so fun moderating the “wallets for an agentic world” session sponsored by @tempo with @idobn and @irfanganchi at @FintechNerdCon! \n\nwe shared our thoughts on the several approaches we are seeing today (raw card autofill, agentic tokens, virtual card issuance, stored balance etc.) and what we think the responsibility of wallets are.\n\nwe aligned that the wallets that’ll win would need to ultimately optimize for three main things:\n - provide the most reliable user experience \n- ensure user trust/control is maintained in its design and execution\n- share economics with the agent companies\n\nt",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124289935201189994",
+   "texto": "What if the cybersecurity problem gets SO bad that we actually need decentralization and micropayments to act as a firewall / anti-spam filter / for resilience?",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/HadickM/status/2124181052625502498",
+   "texto": "It can fundamentally be true that both ASI is coming and this is the largest technical innovation since the internet but also that the business models of many of the companies in the AI value chain are fundamentally unsustainable on medium time horizons so without access to irrationally cheap and easy financing many of them will go bankrupt/need to be acquired/have large valuation resets. \n\nThese things are not incongruous, despite the seeming lack of nuance across the timeline.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124277846625718620",
+   "texto": "You either have revenue growth or you're an acquisition target",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/borjaneira_/status/2124181749618077767",
+   "texto": "First email is out!\n\nA Saturday read over a good espresso on tokenized deposits, payments, and corporate treasury\n\nIf you want to receive it, the link to my site is in my bio",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124252165841867262",
+   "texto": "Well said.\n\nGTA6 is art. It's social commentary. It is a monumental achievement by nearly 5,000 people working for over a decade.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124202685985374230",
+   "texto": "Interesting the ChatGPT app is making voice noting more prominent.\n\nI wonder how long it is until every interface does that.\n\nGoogle keyboard and iOS keyboard should have a stronger language model behind them to remove the friction of mobile typing.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124186698318053643",
+   "texto": "Merchants.\n\nLaunch your MCP",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/zaidrmn/status/2123850224611537134",
+   "texto": "Reminder on bad market days. Since this tweet in 2022's bear market:\n\n- ChatGPT (10 months after)\n- Anthropic\n- Cursor\n- Cognition\n- Lovable\n- ElevenLabs\n- Sierra\n- Mercor\n- Micro1\n- OpenEvidence\n- Suno\n- Granola\n- Saronic\n- SPCX\n- Bridge\n- Tempo\n- Hyperliquid\n- Rain\n- Mesh\n\nAnd many more.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/TheObiTrice/status/2123741903921479849",
+   "texto": "Cried my fucking eyes out listening to this. 🥹\n\nHe’s perfectly summed up being in your late 30s, with a family and responsibilities, but still longing to be back in your 20s, carefree, playing GTA with the whole world ahead of you. #GTAVI #GTA6 #InternationalMensDay2026",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124150801526632558",
+   "texto": "In before the late stage VC fuelled AI bubble ends",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124133175647682836",
+   "texto": "Ruh roh",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2124142247285235990",
+   "texto": "I seriously think US open-weight models wouldn't be this good without Chinese open-weight models and vice versa. \nAnd proprietary models wouldn't be this good (and cheap) without open-weight models.\n\nCompetition is a good thing.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123897364503310431",
+   "texto": "Benchmarks loved it.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2123853084216455549",
+   "texto": "Yeah. Also, LLMs are specifically fine-tuned to work in specific harnesses and with specific tools.\n\nI.e., the harness is part of the training setup, so the model can't really absorb it.\n\nIt’s a bit like the CPU/GPU absorbing the operating system.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123806044270805444",
+   "texto": "What knowledge do AIs mediate: consolidated, statistical, or social?\n\nLanguage models excel at interpretation more than at certainties. Their fuzziness is detrimental to simple truths, but it yields knowledge machines that embrace complexity and cultural lenses.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2123806047962054805",
+   "texto": "In this AI chronicle, I bridge technical aspects of large language models to philosophy of knowledge (with the input of a real philosopher, Stéphan-Eloïse Gras):\nhttps://gael-varoquaux.info/science/what-knowledge-do-ais-mediate-consolidated-statistical-or-social.html",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/ernietedeschi/status/2123852064027471901",
+   "texto": "We're releasing new @Stripe agentic commerce data today, telling the story so far as we look ahead to the kickoff of the holiday season next week. https://x.com/i/article/2123849094036881408",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123586755576377658",
+   "texto": "Turns out teaching a model the reasoning behind its decisions makes it better... but only when we train in the right order :)\n\nWe train on labels and explanations, then on labels alone, then use on-policy distillation to bring the explanations back.\n\nFor fraud reviews at @stripe, that gets us 39% higher recall at human-review precision -- and the explanations beat the teacher's!",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123586757543461048",
+   "texto": "For the interested reader: https://stripe.dev/blog/learning-from-explanations",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479742813024563",
+   "texto": "Coding agents now write *a lot* of @stripe  integrations. We wanted to know how good those integrations really are, so we built Stripe evals. Open-sourcing the benchmark and harness today: https://stripe.dev/evals",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479747053416613",
+   "texto": "The Stripe agent plugin improves all 14 agents by 3 to 8 points and cuts outdated API parameters from 7% to 1.3%. Web searches also fall 96% as agents use trusted guidance instead.",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2123479748559208657",
+   "texto": "We'll keep updating results as new models ship. More on our approach at https://stripe.dev/blog/stripe-integration-evals-methodology",
+   "data": "2026-11-19"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124518336696316167",
+   "texto": "DocuSign is a $14 billion company. Kevin Rose got tired of paying $8,100 a year for 15 people to sign PDFs. So he built a FREE competitor, and made it open-source for everyone 😳\n\nMeet SignuDoc:\n\n→ $0 per seat, regardless of team size.\n→ One-click deployment to your own Vercel account.\n→ Custom branding, audit trails, and tamper-evident seals.\n→ Documents stay in your own cloud.\n→ MIT-licensed and available on GitHub.\n\nOf course, DocuSign offers enterprise features and compliance infrastructure that aren't easily replaced.\n\nBut many small businesses just need PDFs signed.\n\nAnd AI is making it i",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124437320350765297",
+   "texto": "Peter Thiel on AI and jobs: \"In a world without growth, everything becomes a zero-sum game.\"\n\nHe argues that every trend is overrated, AI included.\n\nMost importantly, companies leaning on hype words are usually bluffing and undifferentiated.\n\nThe underrated ones fit no existing category and don't even have the language to describe themselves yet.\n\nHence, the companies worth backing in AI are the ones that are hard to name.",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124256370799378514",
+   "texto": "Consumer app alpha here",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124231778097623123",
+   "texto": "Here's how to learn anything, according to Elon Musk:",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124155112620794012",
+   "texto": "In April, Demis Hassabis said AI solving the Riemann hypothesis or another Millennium Prize problem was \"maybe a couple of years out.\"\n\nLess than 7 months later, Anthropic's Levent Alpöge has posted claimed proofs of both Riemann and Navier-Stokes, the second with NYU's Tristan Buckmaster.\n\nBoth used Claude.\n\nOf course, neither is confirmed yet.\n\nThe Riemann proof compiles independently, and the Navier-Stokes team still has to release a key numerical certificate.\n\nBut it's clear that AI timelines in math keep landing early.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124113955732045832",
+   "texto": "\"Diversification is a protection against ignorance. It makes very little sense for those who know what they're doing.\"\n\n- Warren Buffett",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124065220746170626",
+   "texto": "In 2024, Peter Thiel said AI looked \"much worse for the math people than the word people.\"\n\nPeople had told him AI would solve all the US Math Olympiad problems within 3 to 5 years. He called Silicon Valley \"way too biased towards the math people\" and bet that would get reversed.\n\nTwo years later, an Anthropic mathematician says Claude helped him prove the Riemann hypothesis.\n\nThiel's chess analogy is aging well.\n\nComputers broke chess in 1997, and math looks next.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123893710236926013",
+   "texto": "Trump wants Jensen Huang back as Nvidia CEO.\n\n\"I'd like to see Jensen make a big apology and go back because he created something with Blackwell.\"\n\nNvidia's board already said it \"unanimously accepted his resignation and does not intend to reinstate Jensen as CEO.\"\n\nJensen is the Steve Jobs of this era.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123829473930039511",
+   "texto": "Ashton Kutcher is one of the greatest VCs of all time.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123763889674260639",
+   "texto": "In 2023, Ashton Kutcher was asked on CNBC if AI valuations were too high.\n\n\"None of these companies have really even started capturing revenues yet.\" If 2 or 3 companies own the foundational layer, \"the TAM is so large that marking the value of a company based on anything other than the potential would be wrong.\"\n\nThat spring, his fund Sound Ventures backed both OpenAI and Anthropic, when Anthropic was valued at just over $4B.\n\nAfter $435M invested, its Anthropic stake is now worth nearly $9B.\n\nLegend.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123742366632649109",
+   "texto": "WHOA: Anthropic's 5,300 founders and employees are now worth more than the bottom third of U.S. households (45 million families) 😳\n\nThe beauty of startups at its finest.",
+   "data": "2026-11-20"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2123504482927497219",
+   "texto": "Microsoft offered buyouts to 60,000 employees.\n\nCEO Satya Nadella says the point was making sure \"everyone felt like they had agency in making choices.\"\n\nHis view of where engineering is heading: \"software engineering is very much alive and in fact is going to thrive,\" but the way teams are organized has to change. \n\n\"That reorganization and change is hard.\"",
+   "data": "2026-11-19"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @noahholl: HTTPError",
+  "X @innixma: HTTPError",
+  "X @dholzmueller: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "X @NeoSpaceAI: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

@@ -1,18 +1,14 @@
 {
-  "data": "2026-11-22",
-  "novidade": true,
-  "titulo": "Antifraude de fornecedores e Banco Central no radar",
-  "destaque": "Dia sem novidade forte na coleta: Feedzai (RiskFM) e Sardine reforçam a corrida de foundation models em antifraude, e o BC estuda um score central de fraude para o Pix.",
-  "itens_novos": 3,
-  "principal": {
-    "titulo": "Feedzai lança RiskFM, tabular foundation model para crime financeiro",
-    "url": "https://thepaypers.com/fraud-and-fincrime/news/feedzai-launches-riskfm-tabular-foundation-model-for-financial-crime"
-  },
+  "data": "2026-11-23",
+  "novidade": false,
+  "titulo": "",
+  "destaque": "",
+  "itens_novos": 0,
+  "principal": {},
   "fontes_com_falha": [
-    "Coleta de 2026-11-21 (a de hoje ainda não existia)",
-    "X @noahholl, @RohanRamanath, @rasbt: HTTPError",
+    "Coleta de 2026-11-23 não existia; usada a de 2026-11-22",
+    "X @noahholl, @innixma, @dholzmueller, @RohanRamanath, @NeoSpaceAI: HTTPError",
     "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError",
-    "Posts do X da coleta sem resumo, não avaliados",
-    "thepaypers.com, sardine.ai e letsmoney.com.br inacessíveis para verificação de data"
+    "Posts do X da coleta sem conteúdo relevante ou já cobertos"
   ]
 }

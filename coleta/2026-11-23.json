@@ -1,0 +1,285 @@
+{
+ "gerado_em": "2026-11-23T22:02:27+00:00",
+ "janela_dias": 3,
+ "arxiv": [],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+    "url": "https://huggingface.co/papers/2611.08136",
+    "data": "2026-11-08",
+    "resumo": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AU"
+   },
+   {
+    "titulo": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.23779",
+    "data": "2026-11-17",
+    "resumo": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmar"
+   },
+   {
+    "titulo": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+    "url": "https://huggingface.co/papers/2611.22382",
+    "data": "2026-11-16",
+    "resumo": "Large language models (LLMs) have renewed interest in Page Stream Segmentation (PSS), splitting a multi-page file into its constituent documents. Yet published LLM methods still frame the task as boundary classification over one or a few neighboring pages, and commercial document-splitting APIs do not disclose their methods. We reimagine PSS for LLMs as a sequential process over the whole stream and propose RICoT (Recurrent Interleaved Chain-of-Thought), a prompting framework that works through the pages as a reader would: within a sliding window it reasons about each page and commits its boundary decision before moving on, and across windows it carries forward a compact record of what it ha"
+   },
+   {
+    "titulo": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+    "url": "https://huggingface.co/papers/2611.17600",
+    "data": "2026-11-11",
+    "resumo": "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to the prediction task. LightTAR augments the standard PCA representation with a few target-aware features extracted jointly from the final and an intermediate encoder layer using regularized partial leas"
+   },
+   {
+    "titulo": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "url": "https://huggingface.co/papers/2611.24789",
+    "data": "2026-11-17",
+    "resumo": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2124834240621674851",
+   "texto": "How confident is your model in its prediction?\n\nNew episode in our TabPFN Academy series: @EliottKalfon walks through predicted distributions with TabPFN.\n\nA regression model usually gives you a single number. TabPFN returns the full distribution over the target, so you can see when a prediction is tight and when it is not.",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2124834244254204362",
+   "texto": "Docs and notebook: https://docs.priorlabs.ai/cookbook/predictive_distribution",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2124834246191710634",
+   "texto": "Find all the tutorials: https://youtu.be/4KEGzHP1qsg?si=qCSXi7NfdDpV85NV",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2124934596618031306",
+   "texto": "More context on what we are building here and why with @lordOfAFew @brendan_j_ryan and @hm_arnold from our latest episode of @TokenizedPod",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2124916893219995726",
+   "texto": "Visa’s agent wallet makes stablecoin payments exclusively on Tempo.\n\n@Visa CLI lets people verify their agent with a Visa card, and then use it to complete paid tasks to earn @openstandard OUSD.\n\nWith @mpp, agents can pay for services or get other agents to help with more tasks.",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124923138119209037",
+   "texto": "Honestly Walmart is crushing",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/LaurenKolodny/status/2124888200850362666",
+   "texto": "Two days at @sytaylor's NerdCon. Everyone knows Simon's writing. What's less visible is that he does the same thing with people: puts the right ones in a room and the insight falls out. Four conversations I can't stop thinking about.\n\nWith @ryanking on stage: big banks are blocking AI agents, and whatever the stated reasons, what the blocking protects is a model that depends on nobody looking too closely at the product. Agents will look. Financial relationships are about to be chosen on product quality for the first time.\n\n@Mclader of @Cognition, on roadmaps: \"What headline about a competitor ",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124871036244054315",
+   "texto": "Holy shit Jensen is back\n\nYou can't make this shit up.\n\nhttps://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Brainfoodxyz/status/2124838673728606348",
+   "texto": "Ramp, a $60B company, on why it stopped acting like a pure finance company\n\nHere are our notes from the Brainfood podcast with Ramp co-founder Eric Glyman 👇",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Similarweb/status/2124826166561329370",
+   "texto": "https://Muse.ai overtook https://Meta.ai as Meta’s most-visited AI URL in October.",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124837706362445886",
+   "texto": "Nailed it",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Brainfoodxyz/status/2124822801857310826",
+   "texto": "Brainfood founder @sytaylor breaks down why the next era of fintech is about productivity, AI, and becoming much more than a financial product. \n\nListen to the full conversation👇",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/jevgenijs/status/2124819402897928642",
+   "texto": "Visa and Mastercard now let issuers settle in stablecoins, seven days a week. If you issue in Europe or LatAm, your cardholders' US spend often settles in dollars. Stablecoins make that cheaper and faster:\n\n✔️ Less collateral. Settle every day, weekends included, and collateral only has to cover about one day of spend.\n\n✔️ No correspondent chain. Today, dollar settlement goes through correspondent banks, with fees at each hop and 1 to 3 days in transit. With stablecoins, you pay the scheme directly, in seconds.\n\n✔️ Better FX. Local onramps take EUR over SEPA or BRL over Pix and compete on pric",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124807222999789625",
+   "texto": "Looking back at Fintech Nerdcon 2026, I'm staggered. I'm blown away. I'm grateful.\n\nConsistently, people told me this is the highest-signal event of the year. \n\nThat the median audience member was someone you could learn from. \n\nWe set out to make something different. Where the content wasn't secondary, but the whole point. Where there was plenty of time and space to network, but no weird badge scanning or strip lighting.\n\nIf you create a vibe where people feel relaxed and better, high-quality, high-ROI conversations happen.\n\nI heard one team closed a deal playing GTA6 on launch day. Yes reall",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124792060074967254",
+   "texto": "Maya is so criminally under followed",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/brendan_j_ryan/status/2124557293467685049",
+   "texto": "Powered by Tempo, OUSD and MPP — give it a try!",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2124606966043455635",
+   "texto": "Visa CLI \n\nThe wallet with credentials for the machine age\n\nBuilt with MPP, OUSD and @tempo",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2124555218071478277",
+   "texto": "https://x.com/i/article/2124414552234405888",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/zcabrams/status/2124591849663033751",
+   "texto": "make useful agents. use the visa cli. earn ousd for completed tasks. \n\nfun project from visa creating a new agentic economy",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/openstandard/status/2124595330079654344",
+   "texto": "> @Visa builds the agent economy with Open USD.\n\n[1] Connect a wallet\n[2] Verify your agent with a Visa card\n[3] Earn OUSD for completing work\n\nGet started today → https://app.visacli.sh",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/borjaneira_/status/2124563066343817679",
+   "texto": "Blockchain is the fourth dimension of payments and capital markets: the horizontal plane no traditional infrastructure had the mandate to build\n\nEach institution optimized its own perimeter. Central banks built RTGS systems with elastic intraday liquidity, while clearinghouses and depositories established insolvency-proof finality, fungibility, and balance-sheet netting within each asset class\n\nThat vertical specialization underpins the soundness of modern finance, yet it leaves the intersection of cash, securities, and collateral bound to discrete windows and asymmetric access for non-bank pa",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2124555774320062807",
+   "texto": "At Visa Crypto Labs, we believe ordinary people should be able to earn income from the AI economy.\n\nToday we're launching a new version of Visa CLI, an agent wallet that lets people verify their agent with a Visa card, then work with it to earn OUSD by completing creative tasks.\n\nUS users with eligible Visa cards can try it out here http://app.visacli.sh",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/RudeOnion/status/2124197236469121444",
+   "texto": "GTA 6 pissing off the extremes while being generally enjoyable to normal people is about the most GTA thing imaginable.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124984397279473711",
+   "texto": "Dario Amodei: some tokens Claude outputs are worth a few cents. Others could be worth tens of millions of dollars.\n\n\"Restart your Mac\" has been said 10 million times. Telling a pharma company to move an aromatic ring to the other end of a molecule could be worth tens of millions.\n\nHis bet is pay-for-results pricing, or pricing like labor by the hour.\n\nPer-token pricing treats both answers the same, and that's the part of AI economics that breaks first.\n\nFull Anthropic IPO breakdown here: https://linas.substack.com/p/anthropic-ipo-s1-analysis-valuation",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124956556819079402",
+   "texto": "Jensen Huang walked back into Nvidia's office today to a standing ovation from employees.\n\n\"I'm going to be a better CEO the second time around.\"\n\nFounders rarely get a second run at the company they built.\n\nTells you a lot about how big Jensen truly is.",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124899775979884607",
+   "texto": "We're currently witnessing the greatest comeback in the history of the stock market.\n\nAbsolutely incredible.",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124884318791118964",
+   "texto": "The King is back! NVIDIA's board just reinstated Jensen Huang as President, CEO, & Board Director. And the company gained $500B in just 10 minutes.\n\nJust 11 days ago, Huang resigned. Last week, NVIDIA's board publicly ruled out bringing him back.\n\nToday? A unanimous vote to reinstate him.\n\nAnd the market reaction says everything.\n\n→ Nvidia shares surged nearly 30%.\n→ Elon Musk and other Silicon Valley leaders backed his return.\n→ President Trump publicly supported his reinstatement.\n→ The board consulted senior US government officials before making its decision.\n\nThe independent investigation ",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124779427418747334",
+   "texto": "I’m never leaving this app",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124599748376084900",
+   "texto": "Elon Musk on how to actually teach kids: \"teach to the problem instead of teaching the tools.\"\n\nHand them a car engine to take apart, and they learn wrenches and screwdrivers along the way.\n\nMost schools still teach the wrench first.",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124518336696316167",
+   "texto": "DocuSign is a $14 billion company. Kevin Rose got tired of paying $8,100 a year for 15 people to sign PDFs. So he built a FREE competitor, and made it open-source for everyone 😳\n\nMeet SignuDoc:\n\n→ $0 per seat, regardless of team size.\n→ One-click deployment to your own Vercel account.\n→ Custom branding, audit trails, and tamper-evident seals.\n→ Documents stay in your own cloud.\n→ MIT-licensed and available on GitHub.\n\nOf course, DocuSign offers enterprise features and compliance infrastructure that aren't easily replaced.\n\nBut many small businesses just need PDFs signed.\n\nAnd AI is making it i",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124437320350765297",
+   "texto": "Peter Thiel on AI and jobs: \"In a world without growth, everything becomes a zero-sum game.\"\n\nHe argues that every trend is overrated, AI included.\n\nMost importantly, companies leaning on hype words are usually bluffing and undifferentiated.\n\nThe underrated ones fit no existing category and don't even have the language to describe themselves yet.\n\nHence, the companies worth backing in AI are the ones that are hard to name.",
+   "data": "2026-11-22"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124256370799378514",
+   "texto": "Consumer app alpha here",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124231778097623123",
+   "texto": "Here's how to learn anything, according to Elon Musk:",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124155112620794012",
+   "texto": "In April, Demis Hassabis said AI solving the Riemann hypothesis or another Millennium Prize problem was \"maybe a couple of years out.\"\n\nLess than 7 months later, Anthropic's Levent Alpöge has posted claimed proofs of both Riemann and Navier-Stokes, the second with NYU's Tristan Buckmaster.\n\nBoth used Claude.\n\nOf course, neither is confirmed yet.\n\nThe Riemann proof compiles independently, and the Navier-Stokes team still has to release a key numerical certificate.\n\nBut it's clear that AI timelines in math keep landing early.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124113955732045832",
+   "texto": "\"Diversification is a protection against ignorance. It makes very little sense for those who know what they're doing.\"\n\n- Warren Buffett",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124065220746170626",
+   "texto": "In 2024, Peter Thiel said AI looked \"much worse for the math people than the word people.\"\n\nPeople had told him AI would solve all the US Math Olympiad problems within 3 to 5 years. He called Silicon Valley \"way too biased towards the math people\" and bet that would get reversed.\n\nTwo years later, an Anthropic mathematician says Claude helped him prove the Riemann hypothesis.\n\nThiel's chess analogy is aging well.\n\nComputers broke chess in 1997, and math looks next.",
+   "data": "2026-11-21"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2124876694830166515",
+   "texto": "Glad this got resolved. \n\nWhatever you think of the last two weeks, CUDA is a big part of why deep learning took off when it did.\n\nIt's been 1.5 decades since AlexNet was trained on two GTX 580 gaming GPUs in 2012. And Nvidia GPUs are still best in class.\n\nWelcome back, Jensen.",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2124619758633173456",
+   "texto": "Yes, pre-training wasn’t plateauing. Great chart btw.",
+   "data": "2026-11-22"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @FrankRHutter: HTTPError",
+  "X @noahholl: HTTPError",
+  "X @innixma: HTTPError",
+  "X @GaelVaroquaux: HTTPError",
+  "X @RohanRamanath: HTTPError",
+  "X @nubank: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

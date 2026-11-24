@@ -1,5 +1,38 @@
 [
   {
+    "id": "2026-11-24",
+    "data": "2026-11-24",
+    "titulo": "Convergência em transaction foundation models e TabPFN com distribuições",
+    "destaque": "Dia calmo: a coleta não trouxe papers novos e as buscas só renderam material de contexto sobre transaction foundation models em bancos, com afirmações de fornecedores ainda sem benchmark independente.",
+    "resumo": [
+      "NVIDIA descreve convergência de instituições financeiras em transaction foundation models",
+      "Prior Labs mostra distribuições preditivas no TabPFN, útil para risco de crédito"
+    ],
+    "itens": [
+      {
+        "titulo": "NVIDIA: instituições financeiras convergem para transaction foundation models próprios",
+        "url": "https://blogs.nvidia.com/blog/financial-institutions-transaction-foundation-models/",
+        "fonte": "blog",
+        "tema": "transacional",
+        "sinal": "medio",
+        "data": "2026-11-24",
+        "porque": "Posiciona o modelo próprio sobre transações como tendência de mercado e reforça a pergunta construir x comprar de fornecedor. Conteúdo de fornecedor; data de publicação e detalhes não verificados (página inacessível na nuvem, só o resultado da busca)."
+      },
+      {
+        "titulo": "Prior Labs: TabPFN devolve a distribuição completa da predição, não só um número",
+        "url": "https://x.com/prior_labs/status/2124834240621674851",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-11-23",
+        "porque": "Distribuição preditiva dá medida de incerteza por cliente, relevante para limites de crédito e para decidir quando mandar casos duvidosos à revisão. Material tutorial, sem resultado em fraude ou crédito."
+      }
+    ],
+    "perguntas": [
+      "Construir um foundation model transacional próprio ou contratar de fornecedor, dado que os resultados publicados são quase todos autorreportados?"
+    ]
+  },
+  {
     "id": "2026-11-22",
     "data": "2026-11-22",
     "titulo": "Antifraude de fornecedores e Banco Central no radar",

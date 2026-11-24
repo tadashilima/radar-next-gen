@@ -1,14 +1,16 @@
 {
-  "data": "2026-11-23",
-  "novidade": false,
-  "titulo": "",
-  "destaque": "",
-  "itens_novos": 0,
-  "principal": {},
+  "data": "2026-11-24",
+  "novidade": true,
+  "titulo": "Convergência em transaction foundation models e TabPFN com distribuições",
+  "destaque": "Dia calmo: a coleta não trouxe papers novos e as buscas só renderam material de contexto sobre transaction foundation models em bancos, com afirmações de fornecedores ainda sem benchmark independente.",
+  "itens_novos": 2,
+  "principal": {
+    "titulo": "NVIDIA: instituições financeiras convergem para transaction foundation models próprios",
+    "url": "https://blogs.nvidia.com/blog/financial-institutions-transaction-foundation-models/"
+  },
   "fontes_com_falha": [
-    "Coleta de 2026-11-23 não existia; usada a de 2026-11-22",
-    "X @noahholl, @innixma, @dholzmueller, @RohanRamanath, @NeoSpaceAI: HTTPError",
-    "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError",
-    "Posts do X da coleta sem conteúdo relevante ou já cobertos"
+    "X @FrankRHutter, @noahholl, @innixma, @GaelVaroquaux, @RohanRamanath, @nubank: HTTPError",
+    "Reddit r/MachineLearning, r/datascience, r/fintech: HTTPError (coleta); buscas Reddit não feitas",
+    "blogs.nvidia.com inacessível na nuvem; algumas buscas (Building Nubank, Banco Central) sem novidade datada"
   ]
 }

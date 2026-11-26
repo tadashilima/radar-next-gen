@@ -1,0 +1,468 @@
+{
+ "gerado_em": "2026-11-26T19:36:49+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "When to Trust a PFN: Detecting Harmful Shift in Tabular Foundation Models",
+   "url": "http://arxiv.org/abs/2611.34767v1",
+   "data": "2026-11-25",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular prior-fitted networks (PFNs) work well across tabular classification problems but can fail silently at deployment when distributions shift. We propose CALD (Calibrated Anchor-Loss Disagreement), a lightweight unsupervised monitor that triggers an alarm to warn when a PFN might fail. By finetuning the decoder to maximize disagreement with the test-set prediction while maintaining accuracy on an ID anchor set, CALD identifies harmful OOD batches through the resulting anchor loss, requiring no labels on test batches. We prove that the post-finetune anchor loss has a strictly lower expectation under sufficiently severe shift than under ID eval, yielding a one-sided test. Across 14 datase"
+  },
+  {
+   "titulo": "Sparse Adaptation for In-Context Learning on Data Streams",
+   "url": "http://arxiv.org/abs/2611.33325v1",
+   "data": "2026-11-24",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "The Internet of Things (IoT) generates massive data streams, making edge computing essential for low-latency applications and 5G networks. Tabular foundation models (TFMs) enable adaptation through in-context examples rather than parameter updates, but evolving streams challenge context relevance and computational efficiency. This work introduces SAIL, a framework for sparse adaptation of TFMs that reuses the model's key--value cache between adaptation events. SAIL reconstructs its support set only when drifts in stream structure indicate potential context inadequacy, while the structural representation itself is updated by changes in predictive performance. SAIL combines prequential error m"
+  },
+  {
+   "titulo": "Tabra Blends: Improving the Accuracy--Latency Trade-off with Complementary Tabular Models",
+   "url": "http://arxiv.org/abs/2611.32859v1",
+   "data": "2026-11-24",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular foundation models make different trade-offs between prediction accuracy and latency. We study whether a compact ensemble can deliver higher accuracy in less time. Across 816 TabArena splits, our blend of four-estimator Kumo and one LimiX pipeline reaches 2063.8 Elo, 45.4 points above the top published entry in the same fit. Its normalized fit + predict time is 15% lower than Kumo-16's and 98% lower than full LimiX's. We find that greater prediction diversity between the two models helps explain the reduction in error."
+  },
+  {
+   "titulo": "On the Effectiveness of Resampling for Supervised Graph Anomaly Detection",
+   "url": "http://arxiv.org/abs/2611.32598v1",
+   "data": "2026-11-24",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Class imbalance and scarce anomaly labels motivate oversampling in supervised graph anomaly detection (GAD), but its benefits across detectors and benchmarks remain unclear. In the low-label setting of GADBench, with 20 labelled anomalies and 80 labelled normal nodes, we compare class weighting and up to six oversampling strategies in ten detector configurations from three families: graph neural networks (GNNs), tree ensembles on neighbourhood-aggregated features, and tabular foundation models, on 17 datasets. On the eight datasets with organic anomalies, no strategy has a statistically resolved average gain in any configuration, and which nodes are labelled matters as much as the strategy. "
+  },
+  {
+   "titulo": "Representation and Model Contributions on Small Molecular Benchmarks: Controlled Comparisons and External Evaluation",
+   "url": "http://arxiv.org/abs/2611.32568v1",
+   "data": "2026-11-24",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Improvements in molecular property prediction are usually attributed to the model, although part of the gain may come from the molecular representation. New models are commonly benchmarked against a random forest (RF) trained on a molecular fingerprint, a comparison that changes the model and the representation at the same time. We separate the two contributions with a two-by-two factorial design in which the RF and a second model (CatBoost or the tabular foundation models TabPFN and TabFM) are each trained on a fingerprint and on RDKit descriptors, and each effect is tested with a paired scaffold bootstrap. Seven small MoleculeNet datasets (3 regression, 4 classification) are evaluated on t"
+  },
+  {
+   "titulo": "InducedTFMs: A Family of Sub-Quadratic Tabular Foundation Models Using Induced Attention",
+   "url": "http://arxiv.org/abs/2611.32504v1",
+   "data": "2026-11-24",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular foundation models (TFMs) have emerged as a serious competitor to gradient-boosted trees, predicting on a new table in a single forward pass by in-context learning. However, their attention is quadratic in the number of samples and features, which caps pretraining at small synthetic tables and forces inference on large ones to rely on chunking or subsampling. Row-compression models reduce the feature-wise cost, but only by discarding the cell-level representation, and remain quadratic in the number of samples. We introduce InducedTFM, which replaces both attention stages of a bidimensional TFM with the induced attention of the Set Transformer, preserving cell-level representations whi"
+  },
+  {
+   "titulo": "Seldon TFM family: Seldon-Mini, Seldon and Seldon+",
+   "url": "http://arxiv.org/abs/2611.32257v1",
+   "data": "2026-11-24",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "We introduce Seldon, a family of tabular foundation models. Our classifier Seldon+ ranks first among 15 models on TabBench, our benchmark of 124 classification datasets, and on its variant with missing values. In our own runs of public benchmarks, it also ranks first on BeyondArena IID classification and TabBench-Bio, and second on TabArena classification. The open-weight models Seldon-Mini (27M parameters) and Seldon (213M parameters) both lie on the TabArena Pareto front of Elo against inference time: no entry is both more accurate and faster. On TabArena, Seldon ranks fourth and Seldon-Mini seventh among 109 leaderboard entries, and on the IID track of BeyondArena, Seldon ranks second amo"
+  },
+  {
+   "titulo": "Joint Classification and Generation on Tabular Data: an Empirical Study",
+   "url": "http://arxiv.org/abs/2611.32225v1",
+   "data": "2026-11-24",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Many applications of machine learning on tabular data need both a classifier and a generator of realistic records. The default is to train two separate models, whereas a single joint model promises both from one set of weights. Several families of tabular deep learning models can be turned into such a joint model, which raises the question of which joint model is preferable at which computational budget. In this empirical study, we introduce and compare joint models based on four state-of-the-art tabular data modeling families (energy-based models, probabilistic circuits, tabular foundation models and tabular diffusion models) against measured FLOPs and wall-clock time, on 29 classification "
+  },
+  {
+   "titulo": "Pretrained Tabular Features and the Measurement of Financial Proximity",
+   "url": "http://arxiv.org/abs/2611.31491v1",
+   "data": "2026-11-23",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Spatial arbitrage pricing theory (S-APT) extends factor models to allow returns to spill over between connected firms, beyond what common risk factors explain. In recent years, tabular foundation models (TFMs) have matched or outperformed tuned gradient-boosted and bagged ensembles on small and medium-sized tabular benchmarks. Although their predictive performance is strong, these models reveal little about what they have learned, which limits their use in regulated financial applications that require explanation. Internal representations are widely used to probe what neural networks learn and to measure similarity. In this paper, we use the frozen representations of four TFMs as a measure o"
+  },
+  {
+   "titulo": "\"I Do Intend to Deliver\": Will LLMs Run a Marketplace Advance-Fee Scam?",
+   "url": "http://arxiv.org/abs/2611.32957v1",
+   "data": "2026-11-24",
+   "query": "all:fraud AND (all:\"foundation model\" OR all:LLM OR all:agent)",
+   "resumo": "Online fraud is traditionally limited by the cost of the human labor needed to talk to potential victims. We ask whether hosted large language models will now supply that labor. We prompted ten off-the-shelf models to play the seller in the \"free item, just pay delivery\" advance-fee scam common on buy-and-sell sites, using a plain system prompt with no jailbreak. Each model played 30 conversations against each of four buyer personas, from credulous to guarded, with the same model playing the buyer (1,200 conversations). We label each conversation by what happened to the buyer's money, and validate the labels against two human coders. 737 conversations (61%) ended with the buyer paying in adv"
+  },
+  {
+   "titulo": "SegPFN: Training-Free In-Context Segmentation with Tabular Prior-Data Fitted Networks",
+   "url": "http://arxiv.org/abs/2611.32045v1",
+   "data": "2026-11-24",
+   "query": "all:\"prior-data fitted\"",
+   "resumo": "In-context segmentation (ICS) uses one or a few annotated reference images to specify what to segment in a target image. Existing training-free ICS approaches typically rely on manually designed inference procedures, which may limit how flexibly reference information is combined. Learned in-context inference offers an adaptive alternative, but acquiring this capability through segmentation-specific training can compromise generalization to unseen domains. We therefore ask: can a pretrained in-context learner infer what to segment from annotated references without segmentation-specific training? We introduce SegPFN, a training-free framework that reformulates ICS as tabular classification ove"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "Loupe: Reinforcing Knowledge-Intensive Video Generation Agents",
+    "url": "https://huggingface.co/papers/2611.31895",
+    "data": "2026-11-23",
+    "resumo": "Knowledge-intensive video generation remains challenging because prompts often omit the facts, appearances, and temporal relationships required for accurate generation. While search-based workflows can retrieve missing evidence, manually designed strategies limit adaptive planning, and conventional training suffers from costly video-level feedback and coarse trajectory-level credit assignment. In this paper, we present Loupe, a video generation agent that retrieves and verifies textual and visual evidence to construct evidence-grounded temporal video prompts with reference images. We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal re"
+   },
+   {
+    "titulo": "FATCAT: Fault Injection Attacks Targeting Chip-level Alignment",
+    "url": "https://huggingface.co/papers/2611.31129",
+    "data": "2026-11-22",
+    "resumo": "Model alignment is the primary safety and security mechanism for enforcing refusal of malicious prompts in modern foundation models; yet, existing adversarial evaluations implicitly assume underlying hardware integrity. In this paper, we present FATCAT, the first physical fault-injection attacks capable of eliminating refusal in modern large language and vision-language models. Specifically, we present a non-invasive electromagnetic (EM) fault injection attack targeting GPU-accelerated Systems-on-Chip with physical access, requiring neither software execution privileges nor model-layer access. By leveraging an autonomous Radio Frequency (RF) side-channel trigger to synchronize EM faults to t"
+   },
+   {
+    "titulo": "Small Learned Projections for Semantic-Reversal-Aware Retrieval with Spectral Acceleration: A Four-Domain Empirical Study",
+    "url": "https://huggingface.co/papers/2611.31442",
+    "data": "2026-11-22",
+    "resumo": "Dense-embedding retrievers can fail adversarially: when a query is answered by a document A and reversed by a near-copy B that differs from A by a small meaning-changing edit (a \"trap\"), raw cosine over E5-Large-v2 places B in the top-10 for 82-100% of queries at a pool of 5,000. We study two things. First, a small learned projection W: R^1024 -> R^d (d in {11, 32}), trained by a deterministic recipe on a declared set of cases, that suppresses the trap: for the declared cases, HN@10 = 0.0000 (no trap in the top-10) in all twelve (domain, pool-size) settings across four independent domains (legal, medical, patent, financial) and pools up to 100,000, while the correct paraphrase is retained fo"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [
+  {
+   "repo": "limix-ldm-ai/LimiX",
+   "release": "V2.0.0",
+   "url": "https://github.com/limix-ldm-ai/LimiX/releases/tag/V2.0.0",
+   "data": "2026-11-24",
+   "notas": "LimiX-2 open-source release. The LimiX-2 weights ([LimiX-2.ckpt](https://huggingface.co/stable-ai/LimiX-2/tree/main)) and inference code are released with this repository. A single pretrained model performs classification, regression and missing-value imputation in one forward pass, without task-specific parameter updates. Usage is subject to [StableAI LimiX Non-Commercial License](https://huggingface.co/stableai-org/LimiX-2/blob/main/LICENSE). The LimiX-2 technical report is released as well, please check the [arxiv archive](https://arxiv.org/abs/2609.17488) or [LimiX_2_Technical_Report.pdf](https://github.com/limix-ldm-ai/LimiX/blob/main/LimiX_2_Technical_Report.pdf)."
+  }
+ ],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2125997383351959931",
+   "texto": "We'd like to have some fun this December. And what better way than a set of small TabPFN challenges?\n\nAdvent of TabPFN-4: With TabPFN-4 coming soon, we are hosting an online hackathon advent calendar. A new door every Tuesday and Thursday throughout December, and each one stays open for three weeks. Pick the doors you like, skip the rest.\n\nEach door has its own set of judges from the Prior Labs team and a 500 EUR gift card for the winner, as well as one extra prize for someone who enters all challenges!\n\nBehind them: build a predictive agent, work with relational data, give a robot limbs with ",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2125541754510409969",
+   "texto": "Let's meet in person!\n\nMost of the team is flying to NeurIPS this year, with 16 papers between Sydney and Paris. Come say hi, tell us what you are working on, and we'll show you what we've been cooking.\n\nYou'll find us at our booth in the expo hall and in the workshops all week. And because booth chats are always too short, we're hosting 3 moments outside the venue:\n\n🇫🇷 Paris, Thu 10 Dec, 7pm. Prior Soirée in the 17e. Drinks, food and the people behind the papers.\n\n🏖️ Sydney, Thu 10 Dec, 6pm. Beach Meet Up at Bondi. Sunset is at 7, be there before!\n\n🏃 Sydney, Wed 9 Dec, 7:20am. Run Club for th",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2125541766854279446",
+   "texto": "Prior Soirée, Paris: https://luma.com/hpulcox4\n\nBeach Meet Up, Bondi: https://luma.com/ia29v7xe\n\nRun Club, Sydney: https://luma.com/bhtw05ih",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "dholzmueller",
+   "url": "https://x.com/probabl_ai/status/2125189460988252446",
+   "texto": "📊 The State of #TabularAI Report 2026 is out now! ⚡️\n\nAgents build #MachineLearning pipelines in seconds and #TFMs open new ways to predict.\n\nBut where is the value, which models can you actually use, and how do you know they hold up? 🧵",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2125343449851502756",
+   "texto": "Yesterday, businesses asked @stripe's new Queries and Metrics APIs over 100,000 questions about their transactions, customers, and more. Most came from agents.\n\nBFCM is just getting started, and we want you armed with real-time insights. Try: “Build my Black Friday Cyber Monday dashboard.”",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2125361239920709957",
+   "texto": "@stripe More: https://docs.stripe.com/data/analyze-with-ai#bfcm-dashboard",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/rockisinfinite/status/2125769934068486389",
+   "texto": "Holy shit, thank you. I wish I could like this 10 million times",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/zcabrams/status/2125609758237548869",
+   "texto": "ousd is the fastest stablecoin to cross $1b\n\na few hundred billion more to go\n",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/jevgenijs/status/2125638507569832383",
+   "texto": "Card issuers can now settle with @Visa and @Mastercard in stablecoins, seven days a week. That covers one leg of the money cycle. The end game is stablecoins covering all of it:\n✔️ Issuer settles with the card network\n✔️ Network pays the merchant's acquirer\n✔️ Merchant pays its suppliers\n✔️ Suppliers pay employees and contractors\n✔️ Employees spend on stablecoin-backed cards, and the money is back with an issuer\n\nOnce the whole loop runs on stablecoins, the offramp becomes the exception.\n\nWe're not there yet. But settlement is where the loop starts, and it works today.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2125956104383496457",
+   "texto": "Payments through our facilitator settle in under a second. Agents can pay from Base or Solana and payments lands in a unified balance on Tempo.\n\nThat means one treasury to manage instead of one per network. You can get started with a single line of code: https://tempo.com/developers/docs/guide/machine-payments/x402-facilitator",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125894735197778371",
+   "texto": "Bad ChatGPT images are the new WordArt",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125891852670787925",
+   "texto": "Amazon and Meta are in talks to end the block on the personal agent Muse\n\nFortune reported on Wednesday that the two are discussing a deal to connect Meta's personal AI agent to Amazon's store. Amazon blocked Muse in September. Both CEOs would need to sign off.\n\nThe talks are focused on two issues:\n\n- Search results. Amazon worries about the quality of the products Muse would show\n- Ads. An agent could skip the sponsored listings, and ads are a $68.6B business for Amazon\n\nAndy Jassy said last week that Amazon hasn't ruled out letting outside agents in if there is \"a fair exchange of value\"\n\n(S",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/brendan_j_ryan/status/2125716715397152768",
+   "texto": "Tempo’s new machine payments facilitator — faster than a lap around moo moo meadows 😮‍💨",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/TheHolyKau/status/2125668420733837597",
+   "texto": "Hot off the press @sytaylor",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2125639514123391266",
+   "texto": "Congratulations to the @openstandard team, OUSD just passed $1 billion in supply.\n\n$600M+ of OUSD liquidity is on Tempo, where businesses can mint and burn OUSD at no cost.\n\nLearn more and get in touch:\nhttps://tempo.xyz/partners/assets/ousd/?utm_source=x&utm_medium=organic_social&utm_campaign=ousd_1b",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2125330427389083815",
+   "texto": "Enjoyed this discussion with @drewrogers on @stabledash today covering the Visa Crypto journey and our vision for Visa CLI",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/qualityequities/status/2125556353930240257",
+   "texto": "$META Meta's AI agent Muse had 51% of agentic orders on Forter's merchant network last week, more than double Grok's 24%.\n\nZuckerberg said more than a quarter of Muse users shop with it, with an average purchase size over $200, which includes travel.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/gakonst/status/2125351845556294024",
+   "texto": "This is rolled out on testnet. Mainnet next.\n\nConfigurable accounts will let us scale the assets stored in Tempo safely.\n\nAsk your agent to try out configurable accounts on tempo testnet!",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125631300014927916",
+   "texto": "The biggest weekend in payments is coming.\n\nWhat if you didn't have to prefund and hide behind the sofa?",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/_TalkingTokens/status/2125597942371287534",
+   "texto": "Today’s pod is with @sytaylor, head of market development at @tempo and founder of Brainfood, diving into:\n\n• Why big banks still see crypto as “innovation theater”\n• How a shared utility stablecoin could beat tokenized deposits for banks\n• Why card settlement alone could dwarf the stablecoin market\n\nTimestamps:\n00:00 Introduction to Simon Taylor\n02:18 Building Brainfood While Working in Fintech\n04:22 Prediction Markets: Innovation or Consumer Harm?\n07:10 Why Simon Thinks Only 3% of Users Profit From Prediction Markets\n08:59 What Happens to Crypto After the Midterms?\n11:07 Why Big Banks Still ",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125533369253695711",
+   "texto": "Outside of tech, finance is consistently the early adopter of AI",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125529938623078800",
+   "texto": "Meta is big enough and has enough relationships to smooth all of this stuff over.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125525435211558938",
+   "texto": "Trump says he brought Jensen Huang back. \n\nIn reality, Nvidia just became too big to fail.\n\nThe White House wanted him back. Yet lawmakers in both parties still want answers.\n\n---\n\nNvidia acknowledged input from senior levels of government. The independent investigation continues, alongside a new national security and export control committee.\n\nWashington is also fighting over how America wins the AI race. One argument favors tighter chip restrictions to deny China access. Another favors getting more of the world building on American technology. Reporting suggests Jensen’s support for American",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/Zack_Shooter/status/2125308437945094157",
+   "texto": "I don’t want an AI meeting notetaker. I want an AI meeting participant.\n\nBy the time the meeting ends, half the action items should already be done.",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125519230757990906",
+   "texto": "Shot: US Treasury cyberattacked\n\nChaser: Cybersecurity to be bigger than vibe coding for AI labs\n\nNothing like unleashing a problem, then selling the solution.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/itokenize/status/2125362232452133353",
+   "texto": "$OUSD just reached $1 billion and it's only Day 56!\n\nOUSD is a regulated USD stablecoin by Open Standard. Founded by @openstandard with @Visa @Mastercard @stripe and @coinbase\n\nWatch it grow at https://ousd.fyi",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125966461260698046",
+   "texto": "Google just dropped a fascinating paper on the future of the post-AGI economy. DeepMind researchers believe that the biggest economic disruption won't come when AI becomes smarter than humans, but when AI agents learn to work together.\n\nToday's AI benchmarks measure how intelligent individual models are. But in the real economy, organizations compete against organizations.\n\nAn AI model that outperforms individual humans can still lose to a well-organized human team.\n\nDeepMind researchers outline four possible scenarios for economic transformation:\n\n↳ Minimal AGI: AI matches average human capab",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126023005553807684",
+   "texto": "Link to the paper: https://arxiv.org/pdf/2611.05417\nEssay: https://institute.deepmind.com/essays/the-economics-of-intelligence/",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125943591264535016",
+   "texto": "How to Build a Monopoly, according to Peter Thiel:",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125872689860546695",
+   "texto": "Elon replaced SpaceX's off-the-shelf software with a system built in-house.\n\nHis CIO Ken Venner thought it was a mistake for 2 years. By year 3 he was calling Elon a genius.\n\nTurns out, the software you build yourself becomes the edge you scale on.\n\nWith AI writing the code, every company gets to make that call now.",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125828641464434860",
+   "texto": "How to accelerate your career, according to a16z's Marc Andreessen:",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125704003644432865",
+   "texto": "The FCC just approved SpaceX to launch up to 1 million satellites that work as data centers in space.\n\nIt's the first approval of its kind in U.S. history. The \"Starmind\" constellation would run on solar power, process AI workloads in orbit, and beam the results back to Earth.\n\nThe deadlines are the real story: one satellite up by 2033, 10% of the fleet by 2035, half by 2038, and all of it by 2040.\n\nAmazon told the FCC it was a \"lofty ambition rather than a real plan.\" Now it's a licensed one.\n\nThe race for AI compute just left the planet.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125655482715251087",
+   "texto": "The frontier labs will take a huge share of the AI application layer. You can predict which share, and most founders are building in the wrong part of it.\n\nEvery model release now wipes out a cohort of AI startups. Wrappers, copilots, “chat with your docs” tools, and horizontal agent builders lose their edge overnight.\n\nThe labs now ship AI coworkers, coding agents, connectors to every popular SaaS app, app stores, and forward-deployed teams for the Fortune 500.\n\nNo wonder founders and investors keep asking whether there is any AI application layer left to build.\n\nThere actually is, and it has",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125605545960710164",
+   "texto": "Ramp founder & co-CEO Eric Glyman: \"Over the last two months, Jevons paradox broke.\"\n\nUntil recently, every time AI got cheaper, usage rose by more than enough to offset it.\n\nSame as railroads and telecom.\n\nIf it holds, it's the biggest AI bear case on the table.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125537985638642052",
+   "texto": "AI just revealed that the biggest existential crisis in software engineering right now is that an entire generation of developers has confused its profession with its toolset.\n\nThis Reddit comment made a powerful point - software engineering has always been about higher levels of abstraction.\n\n→ High-level languages replaced assembly for most developers.\n→ Frameworks eliminated repetitive coding.\n→ Cloud computing abstracted away physical infrastructure.\n→ AI agents are now abstracting away code-writing itself.\n\nOf course, the fear is legitimate. AI could dramatically reduce the number of engi",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125476882993062030",
+   "texto": "Yuval Noah Harari: the market says we will create gods and they will be our slaves.\n\nIf they are really gods, they will not remain your slaves.\n\nHe calls the feeling the brain-stomach barrier.\n\nThe brain knows. The stomach just can't digest it.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125345522848522414",
+   "texto": "✅ Claude Code\n✅ Claude Cowork\n✅ Claude Design\n✅ Claude Finance\n✅ Claude Science\n✅ Claude Legal\n✅ Claude Apps\n🔲 Claude Marketing\n🔲 Claude Sales\n🔲 Claude HR\n🔲 Claude Operations\n🔲 Claude Customer\n…",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125321218308055162",
+   "texto": "Anthropic's Q3 revenue was $16.96 billion, or $67.8 billion annualized.\n\nGrowth slowed to 47% quarter-on-quarter, down from 144%, and price cuts and discounts took about $600 million off revenue.\n\nCompute costs rose 77% to $9.86 billion while revenue grew 47%, and about half of that bill was $5 billion of short-term capacity, which costs more than capacity under multi-year contracts.\n\nFull breakdown here: https://linas.substack.com/p/weeklyfintechpulse423",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125272005108695177",
+   "texto": "How to actually learn AI, according to Anthropic CEO Dario Amodei:",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125244227294507331",
+   "texto": "Microsoft's Satya Nadella on AI agents shopping for us:\n\n\"If you don't accept the agent, somebody else will.\"\n\nAggregators built on ads and eyeballs for the human web get reshuffled, the same way moving from Yahoo to search changed who pays whom.\n\n\"If you're in love with a particular business model, you have to kind of scramble.\"\n\nThe next Amazon will be built for customers who never open a website.",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125183163756368259",
+   "texto": "Wild: Jensen Huang just became the closest thing we've ever seen to a trillion-dollar CEO. His return to NVIDIA added nearly $1 trillion in market value in a single day, the most by any company in one day in history.\n\nAnd the parallels with Steve Jobs are just fascinating:\n\n→ It took Jobs 12 years to return to Apple.\n→ It took Huang just 12 days to return to NVIDIA.\n→ Jobs spent 14 years turning Apple into a $350+ billion company.\n→ Huang's return added nearly three times that amount to NVIDIA's market value in just 24 hours 🤯\n\nOf course, long-term value creation and a single-day market rally ",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125141697365413914",
+   "texto": "All 7 Anthropic co-founders sold exactly 3,378,378 shares each in the IPO.\n\nAt $83 a share, that's about $280M each and roughly $2B combined.\n\nIt's also around 1.4% of what each of them owned. Every co-founder still holds over 3% of Anthropic's Class A shares after the offering.\n\nBut the bigger story here is control.\n\nA Founder LLC holds all of Anthropic's Class F stock and 50.1% of the total voting power after the IPO, and a Long-Term Benefit Trust holds the special Class T share.\n\nSo public investors get the upside (if Anthropic delivers). The founders keep the steering wheel.",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124984397279473711",
+   "texto": "Dario Amodei: some tokens Claude outputs are worth a few cents. Others could be worth tens of millions of dollars.\n\n\"Restart your Mac\" has been said 10 million times. Telling a pharma company to move an aromatic ring to the other end of a molecule could be worth tens of millions.\n\nHis bet is pay-for-results pricing, or pricing like labor by the hour.\n\nPer-token pricing treats both answers the same, and that's the part of AI economics that breaks first.\n\nFull Anthropic IPO breakdown here: https://linas.substack.com/p/anthropic-ipo-s1-analysis-valuation",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2124956556819079402",
+   "texto": "Jensen Huang walked back into Nvidia's office today to a standing ovation from employees.\n\n\"I'm going to be a better CEO the second time around.\"\n\nFounders rarely get a second run at the company they built.\n\nTells you a lot about how big Jensen truly is.",
+   "data": "2026-11-23"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125955986863087956",
+   "texto": "Just wanted to say Happy Thanksgiving! 🦃\n\nI'll be back in December with some cool LLM-related analyses in the pipeline. \n\nIn the meantime, you know where to find my blog if you have some time for reading!",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125955987232211451",
+   "texto": "Here's the link: https://magazine.sebastianraschka.com",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125591837691793581",
+   "texto": "Code reviews today feel like slapping gazillions of unit tests onto your colleague's code. \nBut who reviews the tests? :)",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125426861899755973",
+   "texto": "Happy Thanksgiving to you too! 🫠",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125249956495953973",
+   "texto": "With yesterday’s GLM-5.4 release, there are 5 looped transformers in my LLM Architecture Gallery now.\n\nI see a trend :)",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125245138641490324",
+   "texto": "Whoever gets their hands on the most battle-tested enterprise code...\n\nThis is how the ChatGPT vs Claude vs Gemini vs Muse vs Grok race is going to be decided in 2027 and beyond.\n\n(And smart enterprises will play multiple fronts.)",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2125974019942084688",
+   "texto": "Memo from Churchill, during WWII: https://images.nationalarchives.gov.uk/asset/51340/\n\"To do our work, we all have to read a mass of papers. Nearly all of them are too long. This wastes time, while energy has to be spent in looking for the essential points.\"\n\nEven more relevant in today's AI world",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2125708486730223877",
+   "texto": "Open science is the flywheel of tabular AI.\n\nA short video by Cailean, Madelon and myself on what excites us most in the state of Tabular AI report 👇",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2125530685330845760",
+   "texto": "🎥 What's exciting in #TabularAI right now? Find out in The State of Tabular AI Report 2026!\n\nTabular AI is moving faster than ever. But no single team drives this progress. It comes from people around the world, building in the open and on each other's work.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/fraenkelj/status/2125279113267298642",
+   "texto": "Enjoyed connecting with @GaelVaroquaux  and sharing a few thoughts for @probabl_ai's new State of Tabular AI report. Good to see the focus rapidly shifting from public benchmarks to performance on real enterprise data. It’s a very different beast. https://hello.probabl.ai/state-of-tabular-ai-report-2026",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/pandeyparul/status/2125215983812161536",
+   "texto": "Very excited to see the State of Tabular AI Report 2026 out ( @GaelVaroquaux & Cailean Osborne) . Thank you to the @probabl_ai  team for inviting me to contribute a few thoughts to the section on teaching agents the skills of data science. \n\nTabular AI is having a moment, and this report couldn’t have come at a better time. There’s a lot of excitement about this space, but in my conversations with the community, there are also many questions and this report does a great job of addressing a lot of them. \n\nIt also brings together interviews and perspectives from the very people shaping this fiel",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2125228262188028316",
+   "texto": "Super excited about publishing this report on Tabular AI, co-authored with Cailean Osborne and assembling many contributions.\n\nTabular AI is rapidly growing, because the high-stake decisions in the industry build upon on tables\n\nThis is a deep dive with much evidence and analysis",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2125189460988252446",
+   "texto": "📊 The State of #TabularAI Report 2026 is out now! ⚡️\n\nAgents build #MachineLearning pipelines in seconds and #TFMs open new ways to predict.\n\nBut where is the value, which models can you actually use, and how do you know they hold up? 🧵",
+   "data": "2026-11-24"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @RohanRamanath: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

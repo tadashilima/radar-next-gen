@@ -1,5 +1,103 @@
 [
   {
+    "id": "2026-11-26",
+    "data": "2026-11-26",
+    "titulo": "TabPFN-4 escala para 10M de linhas e TFMs ganham versões mais rápidas",
+    "destaque": "O time do TabPFN afirma que o TabPFN-4 processa 10 milhões de linhas em uma só passada, e três papers novos atacam latência e custo de TFMs. Para fraude e crédito, a discussão passa de 'TFM funciona?' para 'a que custo em produção?'.",
+    "resumo": [
+      "TabPFN-4 anunciado com 10M de linhas (afirmação do autor)",
+      "Seldon, InducedTFMs e Tabra Blends: mais precisão ou menos latência",
+      "LimiX-2 aberto, mas com licença não comercial",
+      "Relatório State of Tabular AI 2026 publicado"
+    ],
+    "itens": [
+      {
+        "titulo": "TabPFN-4 chega a 10 milhões de linhas em uma única passada",
+        "url": "https://x.com/FrankRHutter/status/2124854329475555839",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "alto",
+        "data": "2026-11-23",
+        "porque": "Segundo o autor, o limite de 10 mil linhas do TabPFN v2 caiu e o modelo agora lida com datasets grandes in-context. Se confirmado em bases de fraude e crédito, o argumento de que GBM é a única opção em escala perde força; vale replicar em dados próprios."
+      },
+      {
+        "titulo": "Seldon TFM: nova família de tabular foundation models lidera o TabBench",
+        "url": "http://arxiv.org/abs/2611.32257v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-24",
+        "porque": "Os autores dizem que o Seldon+ fica em 1º entre 15 modelos em 124 datasets de classificação. O benchmark é dos próprios autores, então a comparação independente ainda falta."
+      },
+      {
+        "titulo": "InducedTFMs: tabular foundation models sub-quadráticos",
+        "url": "http://arxiv.org/abs/2611.32504v1",
+        "fonte": "arxiv",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-24",
+        "porque": "Ataca o custo quadrático da atenção, que limita TFMs em tabelas grandes. Importa para latência e custo de inferência em bases de transações."
+      },
+      {
+        "titulo": "Tabra Blends: ensemble de TFMs melhora a relação precisão x latência",
+        "url": "http://arxiv.org/abs/2611.32859v1",
+        "fonte": "arxiv",
+        "tema": "producao",
+        "sinal": "medio",
+        "data": "2026-11-24",
+        "porque": "Mistura Kumo e LimiX e reporta ganho sobre a melhor entrada publicada no TabArena (816 splits), com ênfase em latência. Útil para quem precisa decidir TFM em produção com orçamento de tempo."
+      },
+      {
+        "titulo": "LimiX-2: pesos abertos para classificação, regressão e imputação",
+        "url": "https://github.com/limix-ldm-ai/LimiX/releases/tag/V2.0.0",
+        "fonte": "github",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-24",
+        "porque": "Um modelo único cobre várias tarefas tabulares sem ajuste por tarefa. A licença é não comercial, o que limita o uso direto em banco."
+      },
+      {
+        "titulo": "State of Tabular AI Report 2026 (Probabl)",
+        "url": "https://x.com/probabl_ai/status/2125189460988252446",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-24",
+        "porque": "Relatório sobre onde TFMs e agentes de ciência de dados geram valor e como validá-los; os autores apontam foco migrando de benchmarks públicos para dados reais de empresas."
+      },
+      {
+        "titulo": "Sobre o uso de resampling em detecção supervisionada de anomalias em grafos",
+        "url": "http://arxiv.org/abs/2611.32598v1",
+        "fonte": "arxiv",
+        "tema": "transacional",
+        "sinal": "baixo",
+        "data": "2026-11-24",
+        "porque": "Compara oversampling e class weighting com poucos rótulos de anomalia (GADBench). Relevante para fraude com rótulos escassos."
+      },
+      {
+        "titulo": "LLMs comerciais executariam um golpe de taxa antecipada?",
+        "url": "http://arxiv.org/abs/2611.32957v1",
+        "fonte": "arxiv",
+        "tema": "agentes",
+        "sinal": "baixo",
+        "data": "2026-11-24",
+        "porque": "Testa dez modelos no papel de golpista em marketplace. Sinaliza risco de automação de golpes conversacionais."
+      },
+      {
+        "titulo": "Fintech NerdCon: token fraud segue como problema maior do que parece",
+        "url": "https://x.com/soupsranjan/status/2125292433097601405",
+        "fonte": "x",
+        "tema": "producao",
+        "sinal": "baixo",
+        "data": "2026-11-24",
+        "porque": "Relato de participante do evento sobre fraude com tokens e IA em fintech; opinião pessoal, não dado verificado."
+      }
+    ],
+    "perguntas": [
+      "Os ganhos de TFMs em benchmarks públicos se mantêm em dados de fraude com desbalanceamento extremo e drift?"
+    ]
+  },
+  {
     "id": "2026-11-24",
     "data": "2026-11-24",
     "titulo": "Convergência em transaction foundation models e TabPFN com distribuições",

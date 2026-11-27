@@ -1,0 +1,386 @@
+{
+ "gerado_em": "2026-11-27T19:28:25+00:00",
+ "janela_dias": 3,
+ "arxiv": [
+  {
+   "titulo": "When to Trust a PFN: Detecting Harmful Shift in Tabular Foundation Models",
+   "url": "http://arxiv.org/abs/2611.34767v1",
+   "data": "2026-11-25",
+   "query": "all:\"tabular foundation model\"",
+   "resumo": "Tabular prior-fitted networks (PFNs) work well across tabular classification problems but can fail silently at deployment when distributions shift. We propose CALD (Calibrated Anchor-Loss Disagreement), a lightweight unsupervised monitor that triggers an alarm to warn when a PFN might fail. By finetuning the decoder to maximize disagreement with the test-set prediction while maintaining accuracy on an ID anchor set, CALD identifies harmful OOD batches through the resulting anchor loss, requiring no labels on test batches. We prove that the post-finetune anchor loss has a strictly lower expectation under sufficiently severe shift than under ID eval, yielding a one-sided test. Across 14 datase"
+  }
+ ],
+ "huggingface": {
+  "papers": [
+   {
+    "titulo": "Pretrained Tabular Features and the Measurement of Financial Proximity",
+    "url": "https://huggingface.co/papers/2611.31491",
+    "data": "2026-11-22",
+    "resumo": "Spatial arbitrage pricing theory (S-APT) extends factor models to allow returns to spill over between connected firms, beyond what common risk factors explain. In recent years, tabular foundation models (TFMs) have matched or outperformed tuned gradient-boosted and bagged ensembles on small and medium-sized tabular benchmarks. Although their predictive performance is strong, these models reveal little about what they have learned, which limits their use in regulated financial applications that require explanation. Internal representations are widely used to probe what neural networks learn and to measure similarity. In this paper, we use the frozen representations of four TFMs as a measure o"
+   },
+   {
+    "titulo": "Who Makes the Decision? Auditing an Agentic LLM Pipeline for Illicit Cryptocurrency Transaction Monitoring",
+    "url": "https://huggingface.co/papers/2611.29829",
+    "data": "2026-11-21",
+    "resumo": "Agentic pipelines that combine graph detectors, deterministic rules, retrieval-augmented generation and an LLM judge are being proposed to monitor illicit cryptocurrency flows and to write regulation-citing justifications for analysts. They are evaluated on end-to-end accuracy or on the quality of those justifications, and neither shows which component made a decision. We audit such a pipeline on the Elliptic++ Bitcoin dataset with decision-source attribution, a trace-level protocol with three layers: per-case actual causation, interventional Shapley credit, and mediation of upstream risk scores. A deterministic wallet-score override carries about 94% of the credit for flags, and a verificat"
+   },
+   {
+    "titulo": "CARE-3D: Reinforcement Learning for Evidence Grounded Agentic Reasoning in Situated 3D Scenes",
+    "url": "https://huggingface.co/papers/2611.29969",
+    "data": "2026-11-22",
+    "resumo": "Situated 3D reasoning requires embodied agents to interpret objects, scene geometry, and viewpoint dependent spatial relations. Existing methods learn grounded interactions from supervised traces, but largely imitate prescribed evidence acquisition patterns rather than optimizing the support that the returned evidence provides for the correct answer. Moreover, outcome rewards provide limited credit for intermediate tool choices and may leave infrequent tools underexplored. An effective agent should instead adaptively decide what to ground, which tool to invoke, and how to assess the utility of returned evidence. To this end, this paper presents CARE-3D, a reinforcement post-training framewor"
+   },
+   {
+    "titulo": "Loupe: Reinforcing Knowledge-Intensive Video Generation Agents",
+    "url": "https://huggingface.co/papers/2611.31895",
+    "data": "2026-11-23",
+    "resumo": "Knowledge-intensive video generation remains challenging because prompts often omit the facts, appearances, and temporal relationships required for accurate generation. While search-based workflows can retrieve missing evidence, manually designed strategies limit adaptive planning, and conventional training suffers from costly video-level feedback and coarse trajectory-level credit assignment. In this paper, we present Loupe, a video generation agent that retrieves and verifies textual and visual evidence to construct evidence-grounded temporal video prompts with reference images. We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal re"
+   },
+   {
+    "titulo": "FATCAT: Fault Injection Attacks Targeting Chip-level Alignment",
+    "url": "https://huggingface.co/papers/2611.31129",
+    "data": "2026-11-22",
+    "resumo": "Model alignment is the primary safety and security mechanism for enforcing refusal of malicious prompts in modern foundation models; yet, existing adversarial evaluations implicitly assume underlying hardware integrity. In this paper, we present FATCAT, the first physical fault-injection attacks capable of eliminating refusal in modern large language and vision-language models. Specifically, we present a non-invasive electromagnetic (EM) fault injection attack targeting GPU-accelerated Systems-on-Chip with physical access, requiring neither software execution privileges nor model-layer access. By leveraging an autonomous Radio Frequency (RF) side-channel trigger to synchronize EM faults to t"
+   }
+  ],
+  "modelos_prior_labs": []
+ },
+ "github": [
+  {
+   "repo": "PriorLabs/TabPFN",
+   "release": "v10.3.0",
+   "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.3.0",
+   "data": "2026-11-26",
+   "notas": "### Added\n\n- Add `SKILL.md`, a usage guide for coding agents that use TabPFN. ([#1443](https://github.com/PriorLabs/TabPFN/pull/1443))\n- Add the `TABPFN_HOST_MODEL_INPUT_MIN_BYTES` setting: the input size from which a model that reads its input from host memory gets it there instead of on the inference device (default 16 GiB). ([#1451](https://github.com/PriorLabs/TabPFN/pull/1451))\n- Add a `kv_cache_on_host` option to `TabPFNClassifier`/`TabPFNRegressor` for `fit_mode=\"fit_with_cache\"`: whether the KV cache keeps its keys and values in host memory. `None` (default) lets the model architecture decide. ([#1457](https://github.com/PriorLabs/TabPFN/pull/1457))\n\n### Changed\n\n- `fit_mode=\"fit_with_cache\"` writes an ensemble member that shares the caller's table to the device a block of rows at a time, rather than building the member's whole table on the host first. ([#1445](https://github.com/PriorLabs/TabPFN/pull/1445))\n- The fingerprint feature copies and rounds a block of rows at a time on the host, rather than the whole table, so GPU preprocessing no longer holds two host copies of each ensemble member's training table. ([#1446](https://github.com/PriorLabs/TabPFN/pull/1446))\n- At p"
+  }
+ ],
+ "x": [
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2126254093966377364",
+   "texto": "Most enterprises have an AI pilot running somewhere. Getting it into production is the harder part: the model has to work on real data, and Legal, Compliance and IT have to be on board. Responsible AI Day is a day with people who've been through exactly that.\n\n13:30, @dianaak_  will show our latest model TabPFN-4 live.\n\n14:00, @noahholl will join the panel \"Responsible AI in Practice: do's, don'ts and lessons learned\" with people who've put AI into banking and clinical workflows: what they'd do again, what they wouldn't, and who owns the model once it's live.\n\nSpots are limited: https://msft.i",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2125997383351959931",
+   "texto": "We'd like to have some fun this December. And what better way than a set of small TabPFN challenges?\n\nAdvent of TabPFN-4: With TabPFN-4 coming soon, we are hosting an online hackathon advent calendar. A new door every Tuesday and Thursday throughout December, and each one stays open for three weeks. Pick the doors you like, skip the rest.\n\nEach door has its own set of judges from the Prior Labs team and a 500 EUR gift card for the winner, as well as one extra prize for someone who enters all challenges!\n\nBehind them: build a predictive agent, work with relational data, give a robot limbs with ",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2125541754510409969",
+   "texto": "Let's meet in person!\n\nMost of the team is flying to NeurIPS this year, with 16 papers between Sydney and Paris. Come say hi, tell us what you are working on, and we'll show you what we've been cooking.\n\nYou'll find us at our booth in the expo hall and in the workshops all week. And because booth chats are always too short, we're hosting 3 moments outside the venue:\n\n🇫🇷 Paris, Thu 10 Dec, 7pm. Prior Soirée in the 17e. Drinks, food and the people behind the papers.\n\n🏖️ Sydney, Thu 10 Dec, 6pm. Beach Meet Up at Bondi. Sunset is at 7, be there before!\n\n🏃 Sydney, Wed 9 Dec, 7:20am. Run Club for th",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "Prior_Labs",
+   "url": "https://x.com/prior_labs/status/2125541766854279446",
+   "texto": "Prior Soirée, Paris: https://luma.com/hpulcox4\n\nBeach Meet Up, Bondi: https://luma.com/ia29v7xe\n\nRun Club, Sydney: https://luma.com/bhtw05ih",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2125343449851502756",
+   "texto": "Yesterday, businesses asked @stripe's new Queries and Metrics APIs over 100,000 questions about their transactions, customers, and more. Most came from agents.\n\nBFCM is just getting started, and we want you armed with real-time insights. Try: “Build my Black Friday Cyber Monday dashboard.”",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "emilygsands",
+   "url": "https://x.com/emilygsands/status/2125361239920709957",
+   "texto": "@stripe More: https://docs.stripe.com/data/analyze-with-ai#bfcm-dashboard",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2126377466776424627",
+   "texto": "Woah",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2126251350916788566",
+   "texto": "Had too much fun at our Brainfood mixer with @tryramp to celebrate their arrival in the UK.\n\nWe\n\n- Created custom fingerboards (a real hit with parents)\n- A Brainfood Times (1 of 1 limited edition) with some exclusive content\n- Gave a sneak peak of this years \"State of Fintech\" report\n\nMy favorite part was getting out and seeing you all. London has plenty of fintech nerds, itching to build new and exciting things.\n\nItching to see what you all do next.",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/SynthPotato/status/2125838535680762175",
+   "texto": "Hilarious that 99% of the complaints about GTA 6 can really be boiled down to “I have not progressed enough into the story to unlock the thing I am specifically complaining is not in the game.”",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2126039048976470525",
+   "texto": "Smart",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/rockisinfinite/status/2125769934068486389",
+   "texto": "Holy shit, thank you. I wish I could like this 10 million times",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/zcabrams/status/2125609758237548869",
+   "texto": "ousd is the fastest stablecoin to cross $1b\n\na few hundred billion more to go\n",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/jevgenijs/status/2125638507569832383",
+   "texto": "Card issuers can now settle with @Visa and @Mastercard in stablecoins, seven days a week. That covers one leg of the money cycle. The end game is stablecoins covering all of it:\n✔️ Issuer settles with the card network\n✔️ Network pays the merchant's acquirer\n✔️ Merchant pays its suppliers\n✔️ Suppliers pay employees and contractors\n✔️ Employees spend on stablecoin-backed cards, and the money is back with an issuer\n\nOnce the whole loop runs on stablecoins, the offramp becomes the exception.\n\nWe're not there yet. But settlement is where the loop starts, and it works today.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2125956104383496457",
+   "texto": "Payments through our facilitator settle in under a second. Agents can pay from Base or Solana and payments lands in a unified balance on Tempo.\n\nThat means one treasury to manage instead of one per network. You can get started with a single line of code: https://tempo.com/developers/docs/guide/machine-payments/x402-facilitator",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125894735197778371",
+   "texto": "Bad ChatGPT images are the new WordArt",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125891852670787925",
+   "texto": "Amazon and Meta are in talks to end the block on the personal agent Muse\n\nFortune reported on Wednesday that the two are discussing a deal to connect Meta's personal AI agent to Amazon's store. Amazon blocked Muse in September. Both CEOs would need to sign off.\n\nThe talks are focused on two issues:\n\n- Search results. Amazon worries about the quality of the products Muse would show\n- Ads. An agent could skip the sponsored listings, and ads are a $68.6B business for Amazon\n\nAndy Jassy said last week that Amazon hasn't ruled out letting outside agents in if there is \"a fair exchange of value\"\n\n(S",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/brendan_j_ryan/status/2125716715397152768",
+   "texto": "Tempo’s new machine payments facilitator — faster than a lap around moo moo meadows 😮‍💨",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/TheHolyKau/status/2125668420733837597",
+   "texto": "Hot off the press @sytaylor",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/tempo/status/2125639514123391266",
+   "texto": "Congratulations to the @openstandard team, OUSD just passed $1 billion in supply.\n\n$600M+ of OUSD liquidity is on Tempo, where businesses can mint and burn OUSD at no cost.\n\nLearn more and get in touch:\nhttps://tempo.xyz/partners/assets/ousd/?utm_source=x&utm_medium=organic_social&utm_campaign=ousd_1b",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/cuysheffield/status/2125330427389083815",
+   "texto": "Enjoyed this discussion with @drewrogers on @stabledash today covering the Visa Crypto journey and our vision for Visa CLI",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/qualityequities/status/2125556353930240257",
+   "texto": "$META Meta's AI agent Muse had 51% of agentic orders on Forter's merchant network last week, more than double Grok's 24%.\n\nZuckerberg said more than a quarter of Muse users shop with it, with an average purchase size over $200, which includes travel.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/gakonst/status/2125351845556294024",
+   "texto": "This is rolled out on testnet. Mainnet next.\n\nConfigurable accounts will let us scale the assets stored in Tempo safely.\n\nAsk your agent to try out configurable accounts on tempo testnet!",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125631300014927916",
+   "texto": "The biggest weekend in payments is coming.\n\nWhat if you didn't have to prefund and hide behind the sofa?",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/_TalkingTokens/status/2125597942371287534",
+   "texto": "Today’s pod is with @sytaylor, head of market development at @tempo and founder of Brainfood, diving into:\n\n• Why big banks still see crypto as “innovation theater”\n• How a shared utility stablecoin could beat tokenized deposits for banks\n• Why card settlement alone could dwarf the stablecoin market\n\nTimestamps:\n00:00 Introduction to Simon Taylor\n02:18 Building Brainfood While Working in Fintech\n04:22 Prediction Markets: Innovation or Consumer Harm?\n07:10 Why Simon Thinks Only 3% of Users Profit From Prediction Markets\n08:59 What Happens to Crypto After the Midterms?\n11:07 Why Big Banks Still ",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125533369253695711",
+   "texto": "Outside of tech, finance is consistently the early adopter of AI",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "sytaylor",
+   "url": "https://x.com/sytaylor/status/2125529938623078800",
+   "texto": "Meta is big enough and has enough relationships to smooth all of this stuff over.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126340026258649289",
+   "texto": "Gemini Neon's advice to all the marketers:",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126313299016868283",
+   "texto": "This is already visible in frontier AI labs.\n\nAnthropic, the company behind Claude, has just published the most detailed evidence yet of what happens to work when AI agents do most of it.\n\nIts October 2026 report, How Employment is Changing at Anthropic, tracks a company where AI agents now log 6 hours for every hour its employees work.\n\nFour numbers stand out:\n\n🚀 Productivity: code commits per engineer rose 5.1x in 6 months, with no rise in code later reverted or deleted.\n\n👥 Hiring: junior roles fell from 27% to 9% of Anthropic’s technical hires.\n\n⏳ Attention: AI agents spend about 80% of the",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126238009909477618",
+   "texto": "This is cool, yet it misses some key names:\n\nAustria 🇦🇹 – Eric Demuth (Bitpanda)\n\nBulgaria 🇧🇬 – Hristo Borisov (Payhawk)\n\nDenmark 🇩🇰 – Jeppe Rindom (Pleo), Peter Holten Mühlmann (Trustpilot)\n\nEstonia 🇪🇪 – Kristo Käärmann & Taavet Hinrikus (Wise)\n\nGermany 🇩🇪 – Valentin Stalf (N26)\n\nLithuania 🇱🇹 – Tomas Okmanas & Eimantas Sabaliauskas (Tesonet)\n\nNetherlands 🇳🇱 – Adriaan Mol (Mollie)\n\nSweden 🇸🇪 – Sebastian Siemiatkowski (Klarna) Niklas Zennström (Skype)\n\nSwitzerland 🇨🇭 – Guillaume Pousaz (http://Checkout.com)\n\nUnited Kingdom 🇬🇧 – Nikolay Storonsky (Revolut)",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126220930972078202",
+   "texto": "Big Short’s Steve Eisman, who called the 2008 crash, did the math on how much of the S&P 500 is really an AI bet.\n\nTech is 40%. Add Google and Amazon, and you're at 50%. Add the banks and asset managers funding data centers, plus Eaton, Quanta, and GE Vernova building and powering them, and you're at 65%.\n\n\"In a sense, the entire market has become one AI trade.\"\n\nTurns out, your index fund is a concentrated bet on AI.",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126195960648769896",
+   "texto": "Morph founder Tejas Bhakta has a contrarian AI take: it won't cause mass unemployment. It will create more bullshit jobs.\n\n\"Basically, most jobs are UBI right now.\"\n\nDavid Graeber made this case in 2018, before AI could do any of the work.\n\nMaybe, AI won't kill busywork. It might make busywork the whole job.",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126074930802405430",
+   "texto": "Elon Musk learned how to build from Walter Isaacson's biography of Benjamin Franklin.\n\n\"He sort of started from nothing, actually just like a runaway kid basically, and created his printing business.\"\n\nYears later, Isaacson wrote Elon's biography.\n\nRead the lives of builders long enough, and you might become one.",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126047973838889368",
+   "texto": "Satya Nadella (Microsoft CEO) just described what every company will look like after AI:\n\n\"What is an AI native company? They start with a token budget and a human.\"\n\nThat person maxes out their tokens. Then you add the next human, and they get a budget too.\n\n\"Every company is going to start looking like that.\"\n\nYour headcount plan is now a token budget.",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125966461260698046",
+   "texto": "Google just dropped a fascinating paper on the future of the post-AGI economy. DeepMind researchers believe that the biggest economic disruption won't come when AI becomes smarter than humans, but when AI agents learn to work together.\n\nToday's AI benchmarks measure how intelligent individual models are. But in the real economy, organizations compete against organizations.\n\nAn AI model that outperforms individual humans can still lose to a well-organized human team.\n\nDeepMind researchers outline four possible scenarios for economic transformation:\n\n↳ Minimal AGI: AI matches average human capab",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2126023005553807684",
+   "texto": "Link to the paper: https://arxiv.org/pdf/2611.05417\nEssay: https://institute.deepmind.com/essays/the-economics-of-intelligence/",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125943591264535016",
+   "texto": "How to Build a Monopoly, according to Peter Thiel:",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125872689860546695",
+   "texto": "Elon replaced SpaceX's off-the-shelf software with a system built in-house.\n\nHis CIO Ken Venner thought it was a mistake for 2 years. By year 3 he was calling Elon a genius.\n\nTurns out, the software you build yourself becomes the edge you scale on.\n\nWith AI writing the code, every company gets to make that call now.",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125828641464434860",
+   "texto": "How to accelerate your career, according to a16z's Marc Andreessen:",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125704003644432865",
+   "texto": "The FCC just approved SpaceX to launch up to 1 million satellites that work as data centers in space.\n\nIt's the first approval of its kind in U.S. history. The \"Starmind\" constellation would run on solar power, process AI workloads in orbit, and beam the results back to Earth.\n\nThe deadlines are the real story: one satellite up by 2033, 10% of the fleet by 2035, half by 2038, and all of it by 2040.\n\nAmazon told the FCC it was a \"lofty ambition rather than a real plan.\" Now it's a licensed one.\n\nThe race for AI compute just left the planet.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125655482715251087",
+   "texto": "The frontier labs will take a huge share of the AI application layer. You can predict which share, and most founders are building in the wrong part of it.\n\nEvery model release now wipes out a cohort of AI startups. Wrappers, copilots, “chat with your docs” tools, and horizontal agent builders lose their edge overnight.\n\nThe labs now ship AI coworkers, coding agents, connectors to every popular SaaS app, app stores, and forward-deployed teams for the Fortune 500.\n\nNo wonder founders and investors keep asking whether there is any AI application layer left to build.\n\nThere actually is, and it has",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125605545960710164",
+   "texto": "Ramp founder & co-CEO Eric Glyman: \"Over the last two months, Jevons paradox broke.\"\n\nUntil recently, every time AI got cheaper, usage rose by more than enough to offset it.\n\nSame as railroads and telecom.\n\nIf it holds, it's the biggest AI bear case on the table.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125537985638642052",
+   "texto": "AI just revealed that the biggest existential crisis in software engineering right now is that an entire generation of developers has confused its profession with its toolset.\n\nThis Reddit comment made a powerful point - software engineering has always been about higher levels of abstraction.\n\n→ High-level languages replaced assembly for most developers.\n→ Frameworks eliminated repetitive coding.\n→ Cloud computing abstracted away physical infrastructure.\n→ AI agents are now abstracting away code-writing itself.\n\nOf course, the fear is legitimate. AI could dramatically reduce the number of engi",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125476882993062030",
+   "texto": "Yuval Noah Harari: the market says we will create gods and they will be our slaves.\n\nIf they are really gods, they will not remain your slaves.\n\nHe calls the feeling the brain-stomach barrier.\n\nThe brain knows. The stomach just can't digest it.",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125345522848522414",
+   "texto": "✅ Claude Code\n✅ Claude Cowork\n✅ Claude Design\n✅ Claude Finance\n✅ Claude Science\n✅ Claude Legal\n✅ Claude Apps\n🔲 Claude Marketing\n🔲 Claude Sales\n🔲 Claude HR\n🔲 Claude Operations\n🔲 Claude Customer\n…",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "LinasBeliunas",
+   "url": "https://x.com/linasbeliunas/status/2125321218308055162",
+   "texto": "Anthropic's Q3 revenue was $16.96 billion, or $67.8 billion annualized.\n\nGrowth slowed to 47% quarter-on-quarter, down from 144%, and price cuts and discounts took about $600 million off revenue.\n\nCompute costs rose 77% to $9.86 billion while revenue grew 47%, and about half of that bill was $5 billion of short-term capacity, which costs more than capacity under multi-year contracts.\n\nFull breakdown here: https://linas.substack.com/p/weeklyfintechpulse423",
+   "data": "2026-11-24"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/ysinjab/status/2126329349477392889",
+   "texto": "I really enjoyed reading this book by @rasbt. Great hands-on explanations of how reasoning models work, from inference time scaling to reinforcement learning and knowledge distillation. It helps connect the dots between the different approaches to reasoning.",
+   "data": "2026-11-27"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125955986863087956",
+   "texto": "Just wanted to say Happy Thanksgiving! 🦃\n\nI'll be back in December with some cool LLM-related analyses in the pipeline. \n\nIn the meantime, you know where to find my blog if you have some time for reading!",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125955987232211451",
+   "texto": "Here's the link: https://magazine.sebastianraschka.com",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125591837691793581",
+   "texto": "Code reviews today feel like slapping gazillions of unit tests onto your colleague's code. \nBut who reviews the tests? :)",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "rasbt",
+   "url": "https://x.com/rasbt/status/2125426861899755973",
+   "texto": "Happy Thanksgiving to you too! 🫠",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2125974019942084688",
+   "texto": "Memo from Churchill, during WWII: https://images.nationalarchives.gov.uk/asset/51340/\n\"To do our work, we all have to read a mass of papers. Nearly all of them are too long. This wastes time, while energy has to be spent in looking for the essential points.\"\n\nEven more relevant in today's AI world",
+   "data": "2026-11-26"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/GaelVaroquaux/status/2125708486730223877",
+   "texto": "Open science is the flywheel of tabular AI.\n\nA short video by Cailean, Madelon and myself on what excites us most in the state of Tabular AI report 👇",
+   "data": "2026-11-25"
+  },
+  {
+   "perfil": "GaelVaroquaux",
+   "url": "https://x.com/probabl_ai/status/2125530685330845760",
+   "texto": "🎥 What's exciting in #TabularAI right now? Find out in The State of Tabular AI Report 2026!\n\nTabular AI is moving faster than ever. But no single team drives this progress. It comes from people around the world, building in the open and on each other's work.",
+   "data": "2026-11-25"
+  }
+ ],
+ "reddit": [],
+ "falhas": [
+  "X @RohanRamanath: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/MachineLearning: HTTPError",
+  "Reddit r/datascience: HTTPError",
+  "Reddit r/fintech: HTTPError"
+ ]
+}

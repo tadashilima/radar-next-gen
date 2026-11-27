@@ -1,16 +1,17 @@
 {
-  "data": "2026-11-26",
+  "data": "2026-11-27",
   "novidade": true,
-  "titulo": "TabPFN-4 escala para 10M de linhas e TFMs ganham versões mais rápidas",
-  "destaque": "O time do TabPFN afirma que o TabPFN-4 processa 10 milhões de linhas em uma só passada, e três papers novos atacam latência e custo de TFMs. Para fraude e crédito, a discussão passa de 'TFM funciona?' para 'a que custo em produção?'.",
-  "itens_novos": 9,
+  "titulo": "Monitorar shift em tabular foundation models",
+  "destaque": "Um novo paper propõe detectar quando um PFN deixa de ser confiável sob mudança de distribuição. É um ponto de governança para levar TFMs à produção.",
+  "itens_novos": 1,
   "principal": {
-    "titulo": "TabPFN-4 chega a 10 milhões de linhas em uma única passada",
-    "url": "https://x.com/FrankRHutter/status/2124854329475555839"
+    "titulo": "Quando confiar em um PFN: detectando shift prejudicial em tabular foundation models",
+    "url": "http://arxiv.org/abs/2611.34767v1"
   },
   "fontes_com_falha": [
-    "Coleta de 2026-11-26 ausente: usada a de 2026-11-25",
+    "Coleta de 2026-11-27 ausente (usada a de 2026-11-26)",
     "X @RohanRamanath: HTTPError",
-    "Reddit: r/MachineLearning, r/datascience e r/fintech com HTTPError; buscas web de Reddit não feitas"
+    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError",
+    "thepaypers.com bloqueado na nuvem"
   ]
 }

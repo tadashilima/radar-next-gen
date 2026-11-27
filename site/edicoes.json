@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-27",
+    "data": "2026-11-27",
+    "titulo": "Monitorar shift em tabular foundation models",
+    "destaque": "Um novo paper propõe detectar quando um PFN deixa de ser confiável sob mudança de distribuição. É um ponto de governança para levar TFMs à produção.",
+    "resumo": [
+      "Dia de poucas novidades: a coleta de hoje não rodou e usamos a de 26/11.",
+      "Paper trata de falha silenciosa de PFNs sob shift."
+    ],
+    "itens": [
+      {
+        "titulo": "Quando confiar em um PFN: detectando shift prejudicial em tabular foundation models",
+        "url": "http://arxiv.org/abs/2611.34767v1",
+        "fonte": "arxiv",
+        "tema": "producao",
+        "sinal": "medio",
+        "data": "2026-11-25",
+        "porque": "Segundo o abstract, PFNs podem falhar em silêncio quando a distribuição muda em produção. Para quem avalia TFMs em fraude e crédito, monitoramento de drift passa a ser requisito de adoção."
+      }
+    ],
+    "perguntas": [
+      "Qual é o plano de monitoramento de drift antes de colocar um TFM em fraude ou crédito?"
+    ]
+  },
+  {
     "id": "2026-11-26",
     "data": "2026-11-26",
     "titulo": "TabPFN-4 escala para 10M de linhas e TFMs ganham versões mais rápidas",

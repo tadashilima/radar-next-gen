@@ -1,17 +1,16 @@
 {
-  "data": "2026-11-27",
+  "data": "2026-11-28",
   "novidade": true,
-  "titulo": "Monitorar shift em tabular foundation models",
-  "destaque": "Um novo paper propõe detectar quando um PFN deixa de ser confiável sob mudança de distribuição. É um ponto de governança para levar TFMs à produção.",
-  "itens_novos": 1,
+  "titulo": "TabPFN-4 no radar e dia calmo nas demais frentes",
+  "destaque": "A Prior Labs sinaliza o TabPFN-4 para breve. Não houve novidade relevante de LDM ou foundation models transacionais nas últimas 48h.",
+  "itens_novos": 3,
   "principal": {
-    "titulo": "Quando confiar em um PFN: detectando shift prejudicial em tabular foundation models",
-    "url": "http://arxiv.org/abs/2611.34767v1"
+    "titulo": "Prior Labs anuncia TabPFN-4 e hackathon 'Advent of TabPFN-4' em dezembro",
+    "url": "https://x.com/prior_labs/status/2125997383351959931"
   },
   "fontes_com_falha": [
-    "Coleta de 2026-11-27 ausente (usada a de 2026-11-26)",
+    "Coleta de 2026-11-28 ausente (usada a de 2026-11-27)",
     "X @RohanRamanath: HTTPError",
-    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError",
-    "thepaypers.com bloqueado na nuvem"
+    "Reddit (r/MachineLearning, r/datascience, r/fintech): HTTPError, cobertura parcial"
   ]
 }

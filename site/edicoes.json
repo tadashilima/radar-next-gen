@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-11-28",
+    "data": "2026-11-28",
+    "titulo": "TabPFN-4 no radar e dia calmo nas demais frentes",
+    "destaque": "A Prior Labs sinaliza o TabPFN-4 para breve. Não houve novidade relevante de LDM ou foundation models transacionais nas últimas 48h.",
+    "resumo": [
+      "TabPFN-4 anunciado como 'coming soon'",
+      "TabPFN v10.3.0 reduz pressão de memória no cache",
+      "Relatório State of Tabular AI 2026 circula"
+    ],
+    "itens": [
+      {
+        "titulo": "Prior Labs anuncia TabPFN-4 e hackathon 'Advent of TabPFN-4' em dezembro",
+        "url": "https://x.com/prior_labs/status/2125997383351959931",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "medio",
+        "data": "2026-11-26",
+        "porque": "O post diz que o TabPFN-4 vem em breve, mas não traz detalhes técnicos. Quem avalia tabular foundation models para crédito e fraude deve reservar um benchmark contra o GBM atual quando houver release."
+      },
+      {
+        "titulo": "TabPFN v10.3.0: guia SKILL.md para agentes e opções de cache KV em memória do host",
+        "url": "https://github.com/PriorLabs/TabPFN/releases/tag/v10.3.0",
+        "fonte": "github",
+        "tema": "producao",
+        "sinal": "baixo",
+        "data": "2026-11-26",
+        "porque": "As mudanças reduzem o uso de memória de GPU em fit_with_cache. Isso pesa no custo de inferência em escala, mas é release incremental."
+      },
+      {
+        "titulo": "Probabl e Inria publicam o 'State of Tabular AI Report 2026'",
+        "url": "https://x.com/probabl_ai/status/2125530685330845760",
+        "fonte": "x",
+        "tema": "tabular",
+        "sinal": "baixo",
+        "data": "2026-11-25",
+        "porque": "O relatório faz um panorama do ecossistema aberto de tabular AI. Serve de referência para mapear opções além de GBMs. Não li o relatório completo, só o post de divulgação."
+      }
+    ],
+    "perguntas": [
+      "Vale reservar capacidade para benchmarkar o TabPFN-4 contra GBMs em fraude e crédito assim que sair?"
+    ]
+  },
+  {
     "id": "2026-11-27",
     "data": "2026-11-27",
     "titulo": "Monitorar shift em tabular foundation models",
